@@ -1,0 +1,265 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\urlstyle{same}
+
+\title{Literature Review: Remote Work and Urban Housing Prices}
+\author{Sai Krishna Varshith Danda$^{1}$, Gayathri Kota$^{1}$,
+Eshitha Chowdary Kaka$^{1}$, and Zain Khan$^{1}$\\
+$^{1}$Arizona State University, Tempe, AZ 85281, USA}
+\date{September 20, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Where people choose to live depends heavily on where they work. For most of the last century, homes close to job centers sold at a premium because they saved workers time and money on the daily commute. The COVID-19 pandemic disrupted this pattern quickly. Before 2020, full days worked from home accounted for about seven percent of paid workdays in the United States \cite{barrero2023evolution}. By mid-2023, full days at home made up about 28 percent of paid workdays for Americans aged 20 to 64, roughly four times the 2019 level \cite{barrero2023evolution}. If people commute less often, living near the city center should matter less, and housing prices should adjust.
+
+This review traces how researchers have studied that link, from early urban theory and pre-pandemic telecommuting research through the evidence of 2020 to 2023. It then turns to the open questions that motivate our project: whether the shift has lasted, how it differs in high-growth U.S. Sun Belt metropolitan areas, and which data and methods are best suited to answer these questions. The project focuses on three sub-questions: how ZIP-level price gradients changed from 2018 to 2025, whether pre-pandemic remote-work potential helps explain post-2020 price growth, and which groups of ZIP codes followed similar price trajectories.
+
+\section{Background: From Urban Theory to Telecommuting}
+
+\subsection{The Monocentric City Model}
+
+The standard framework for housing prices within cities was developed in the 1960s. Alonso \cite{alonso1964location} described a city where everyone works in a single central business district (CBD) and pays to travel there. Residents who live farther out spend more on commuting, so they bid less for land, and land values fall with distance from the center. Mills \cite{mills1967aggregative} built this idea into a model of an entire metropolitan economy. Muth \cite{muth1969cities} added housing production, showing how housing prices and population density decline together as distance from the center increases.
+
+Together these works form what is now called the Alonso-Muth-Mills model. One of its key predictions is that when commuting becomes cheaper, the price gap between central and outer locations narrows and the city spreads outward.
+
+Real metro areas soon departed from the single-center assumption. As jobs moved to suburban office parks and retail centers, researchers began to study cities with several employment centers. Waddell, Berry, and Hoch \cite{waddell1993residential} estimated housing price gradients in the Dallas-Fort Worth area using sales transactions. They found that employment centers outside the CBD had their own effect on prices, alongside a strong but uneven gradient from the CBD. Section 5 returns to this point.
+
+\subsection{Early Research on Telecommuting and Residential Location}
+
+Researchers were asking how working from home might reshape cities decades before the pandemic. Lund and Mokhtarian \cite{lund1994telecommuting} applied the monocentric model to telecommuting in the early 1990s, examining how it could change where telecommuters live and how far they travel to work.
+
+Mokhtarian, Collantes, and Gertz \cite{mokhtarian2004telecommuting} later tested these ideas using ten years of data on California state employees. Telecommuters had longer one-way commutes than non-telecommuters, but because they commuted less often, their total commuting distance was generally lower. The authors could not tell which way the relationship ran: telecommuting may have led people to move farther away, or people who already lived far away may have been more likely to telecommute. This problem of direction, known as reverse causality, is still central in current research, as Section 3 shows.
+
+Before 2020, remote work was too rare to test these ideas across entire housing markets \cite{barrero2021stick}. Brueckner, Kahn, and Lin \cite{brueckner2023spatial} later formalized the predictions in a modern spatial model. Within cities, remote work should weaken the price premium for being close to jobs. Across cities, it should let some workers move from expensive, high-productivity metros to cheaper ones while keeping their jobs. The pandemic provided the first large-scale test of predictions that researchers had discussed for decades.
+
+\section{The Pandemic Shift in Housing Demand, 2020 to 2022}
+
+\subsection{The Donut Effect}
+
+Ramani and Bloom \cite{ramani2021donut} were among the first to measure the shift, using U.S. Postal Service change-of-address records and Zillow price and rent data. In large U.S. cities, households, businesses, and real estate demand moved from dense centers into lower-density suburban ZIP codes. They called this the ``Donut Effect'': a weaker center surrounded by a ring of growing suburbs.
+
+Gupta et al. \cite{gupta2022flattening} measured the change through the price gradient itself, using the distance from each ZIP code to the city hall of its metro's main city. Between December 2019 and December 2020, the relationship between rents and distance went from clearly negative to nearly flat in most U.S. metros. Prices moved in the same direction, but by less. The flattening was largest where more people could work from home, housing was more regulated, and new supply was harder to build. Brueckner, Kahn, and Lin \cite{brueckner2023spatial} found similar flattening within cities, along with relative price declines in expensive, high-productivity counties.
+
+Outside the United States, Ahrend et al. \cite{ahrend2023expanding} used transaction data from 2018 to 2021 across OECD countries. They found that price gains spread beyond metropolitan boundaries, which fits the idea that people accepted longer but less frequent commutes: demand rose most in low-density, affordable places within commuting zones, and in denser towns beyond them. Across these studies, demand moved away from dense centers toward lower-density locations \cite{brueckner2023spatial,ramani2021donut,gupta2022flattening,ahrend2023expanding}.
+
+\subsection{Remote Work or Temporary Pandemic Factors?}
+
+The main debate about this period concerns cause. Several things happened at once in 2020 and 2021: fear of infection in crowded places, closed restaurants and venues, record-low mortgage rates, and stimulus payments. Any of these could have pushed people toward the suburbs without a lasting change in how they worked.
+
+The two explanations predict different futures: a shift caused by temporary conditions should reverse once those conditions end, while one caused by remote work should last as long as remote work does. In 2020, the housing market appeared to expect a partial reversal. Gupta et al. \cite{gupta2022flattening} found that prices implied investors expected rents in city centers to grow faster than suburban rents as working from home receded.
+
+Several studies have tried to isolate the remote-work channel, and in doing so they return to the reverse-causality problem raised by Mokhtarian, Collantes, and Gertz \cite{mokhtarian2004telecommuting}. Dingel and Neiman \cite{dingel2020jobs} classified occupations by whether they can be done from home. They estimated that about 37 percent of U.S. jobs could be done entirely at home, with large differences across cities. Their measure captures which jobs could be done remotely, not who actually worked remotely. For that reason, it is less affected by people moving into areas after prices had already started to rise.
+
+Mondragon and Wieland \cite{mondragon2022housing} used a related strategy. They measured each metro's remote-work share before the pandemic using 2015 to 2019 American Community Survey data. They estimated that each additional percentage point of remote work raised house prices by about 0.92 percent, and that remote work explains more than half of the 18.9 percent rise in real U.S. house prices from 2019 to 2023. Larger homes gained more, and commercial rents fell, which is what one would expect if people needed more space at home and less space at the office. Together with the finding that gradients flattened most where remote work was common, this evidence points to remote work as a major driver of the shift \cite{gupta2022flattening,mondragon2022housing}.
+
+Not all studies expect the price effects to be large in the long run. Howard, Liebersohn, and Ozimek \cite{howard2023short} modeled a housing market in which some areas can add supply more easily than others. They agree that rents and prices rose sharply in the short run, but estimate that once builders respond, higher housing demand raises rents by only about 1.8 percentage points in the long run, while the shift in where people want to live lowers rents by about 0.3 percentage points. Much of the early price jump may therefore fade where it is easy to build.
+
+\section{Has the Shift Lasted?}
+
+Whether these changes have lasted is the central open question for our project. From 2023, many employers required workers back in the office for part of the week, which could restore some of the value of central locations. Remote work did not fall back to its pre-pandemic level, however. It settled far above that level, mostly in the form of hybrid work \cite{barrero2023evolution,ramani2024reshapes}.
+
+Ramani, Alcedo, and Bloom \cite{ramani2024reshapes} revisited the Donut Effect with newer data, including updated change-of-address records and consumer spending records from cities around the world. They found the effect larger and more persistent in cities with more remote work, and that about three-fifths of U.S. households leaving the centers of large cities moved to suburbs of the same city. They link this to hybrid workers who still commute a few days a week, and expect the pattern to continue as long as hybrid work remains common.
+
+Mondragon and Wieland \cite{mondragon2022housing} found a consistent pattern at the metro level. The effect of remote work on house prices grew from 2020 until mid-2022 and then stayed nearly constant through the end of 2023. Both studies suggest that the shift has persisted \cite{mondragon2022housing,ramani2024reshapes}. This contrasts with the partial urban revival that 2020 prices implied \cite{gupta2022flattening} and with the long-run fading predicted once supply responds \cite{howard2023short}.
+
+Rising mortgage rates make this question harder to answer. Rates rose sharply in 2022, which affected housing demand across entire metro areas. Metro-wide price movements can hide changes in the gap between central and suburban neighborhoods, so a study should compare ZIP codes within the same metro and month. At the same time, neighborhoods within a metro may not respond equally to higher rates. Areas with larger or more expensive homes, or with more recent buyers, could be more sensitive to borrowing costs. Comparing price trends with rent trends offers one check, since rents do not depend directly on mortgage financing.
+
+Higher rates also reduce how often people move. Fonseca and Liu \cite{fonseca2024mortgage} estimate that a one percentage point decline in the difference between a homeowner's locked-in mortgage rate and the current market rate reduces moving by about 9 percent overall. When estimated for 2022 to 2024 alone, the reduction is about 16 percent. Fewer moves mean fewer sales behind each price index, and fewer chances for households to move back toward city centers after returning to the office. A stable gradient after 2022 could therefore reflect frozen mobility rather than lasting preferences.
+
+These problems leave a specific gap. Estimates of price gradients within metros \cite{brueckner2023spatial,gupta2022flattening} mostly cover the first pandemic years. Studies that extend through 2023 either measure effects at the metro level \cite{mondragon2022housing} or focus mainly on the largest metros \cite{ramani2024reshapes}. We found no study that measures ZIP-level price gradients in high-growth Sun Belt metros for 2023 to 2025, the years when return-to-office policies and high mortgage rates overlapped. As a result, it is not known whether the flattening seen after 2020 widened, held steady, or reversed once workers were partly called back.
+
+\section{Urban Form in Sun Belt Metros}
+
+Studies agree that the effect varied across metros. Gradients flattened more, and lasted longer, where remote work was common, regulation was stricter, and supply was less elastic \cite{gupta2022flattening,ramani2024reshapes}. Between metros, remote work let some households leave expensive areas for cheaper ones, and the long-run losses from this shift fall mostly on cities that were expensive to begin with \cite{brueckner2023spatial,howard2023short}. This pattern plausibly favored lower-cost, fast-growing Sun Belt metros.
+
+A more important difference is urban form. Much of the Donut Effect evidence is measured relative to a main city center or CBD, even when the sample includes Sun Belt metros such as Phoenix, Dallas, Houston, and Atlanta \cite{ramani2021donut}. Ramani and Bloom \cite{ramani2021donut} found sizeable donuts in large cities, smaller ones in mid-sized cities, and essentially none in small cities. They explain this pattern partly by the concentration of remote-capable skilled service, finance, and technology workers in large cities, and partly by the stronger incentive to relocate from dense, high-priced locations.
+
+Many Sun Belt metros grew rapidly during the automobile era: they are spread out, depend heavily on cars, and have several employment centers rather than one. Phoenix is a clear example. Leslie \cite{leslie2010identification} notes that the metro grew by more than a factor of thirty between 1950 and 2005, and he identified multiple employment centers across it that differ in their mix of industries. The Dallas-Fort Worth evidence in Section 2.1 points in the same direction \cite{waddell1993residential}.
+
+This changes what we should expect to find. If distance from one downtown was always a weak predictor of prices in these metros, there was less of a downtown premium for remote work to erase. The measured flattening could then be small even if remote work reshaped demand. The effect might instead appear as a weaker premium near suburban job centers, or along dimensions that distance does not capture at all. Prior studies also proxy the center differently, by CBD coordinates, city hall, or downtown ZIP codes, which need not agree in a polycentric metro. A study that uses only distance to the CBD could therefore underestimate the effect of remote work in metros with several centers \cite{waddell1993residential,leslie2010identification}. The remaining gap is not whether Sun Belt metros appear in earlier samples, but whether their post-2023 ZIP-level price gradients and polycentric structure are studied directly.
+
+\section{Data and Methods in Earlier Work}
+
+\subsection{Data}
+
+Zillow's research data \cite{zillow2026data} are the most common source of housing prices in this literature \cite{ramani2021donut,gupta2022flattening,mondragon2022housing,ramani2024reshapes}. The Zillow Home Value Index (ZHVI) tracks typical home values each month at the ZIP-code level, and the Zillow Observed Rent Index (ZORI) does the same for rents. The ZHVI is built from Zillow's own valuation models and is smoothed, so it may hide short-term changes, and the rent index covers fewer ZIP codes and years than the price index.
+
+The American Community Survey (ACS) \cite{census2026acs} reports how residents get to work and whether they work from home, and Mondragon and Wieland \cite{mondragon2022housing} used it to measure remote-work exposure. Two features of the ACS matter for our project. First, five-year estimates combine responses from five years, so a release covering 2019 to 2023 mixes behavior from before and after the pandemic began. Using a release that ends before 2020 as a baseline, as Mondragon and Wieland \cite{mondragon2022housing} did, avoids counting people who moved into an area after prices had already risen. This is why pre-pandemic remote-work potential is preferable to observed post-pandemic work-from-home shares alone. Second, the ACS reports data for ZIP Code Tabulation Areas, which approximate postal ZIP codes but do not match them exactly, so some ZIP codes will not match cleanly when we combine ACS and Zillow data \cite{census2026acs}.
+
+Other studies used data that are harder to obtain: change-of-address records \cite{ramani2021donut,ramani2024reshapes}, consumer spending data \cite{ramani2024reshapes}, and transaction records from several countries \cite{ahrend2023expanding}. The occupation-based measure of Dingel and Neiman \cite{dingel2020jobs} offers a public alternative for measuring how many local jobs could be done remotely.
+
+\subsection{Methods}
+
+Earlier work mostly uses three approaches. The first tracks how the price gradient changes over time: Gupta et al. \cite{gupta2022flattening} estimated the relationship between prices and distance to the center separately for each month, the approach closest to our first sub-question. The second compares places with more and less pre-pandemic exposure to remote work, as Mondragon and Wieland \cite{mondragon2022housing} did across metros. The third builds economic models of cities to predict long-run outcomes \cite{brueckner2023spatial,howard2023short}.
+
+Our plan uses an event-study design that interacts distance to downtown with time periods. Distance is a continuous measure rather than a yes-or-no treatment. Callaway, Goodman-Bacon, and Sant'Anna \cite{callaway2024did} show that standard fixed-effects regressions with continuous treatments can be hard to interpret, and that comparing effects across different treatment levels requires stronger assumptions than usual. In a companion paper, the same authors discuss event studies with continuous treatments and how aggregation choices affect the interpretation of event-study figures \cite{callaway2024event}. In addition, the pandemic affected every neighborhood at once, so there is no untouched comparison group. Both points support our decision to describe results as patterns consistent or inconsistent with a remote-work explanation, rather than as causal effects.
+
+Several limits appear across the literature. Nearly all of the evidence is observational, and because the pandemic's shocks happened together, it is hard to separate remote work from everything else. Measures of who actually works from home also face the reverse-causality problem recognized for two decades \cite{mokhtarian2004telecommuting,dingel2020jobs,mondragon2022housing}. Finally, most results are averages, which can hide groups of neighborhoods that moved in very different directions.
+
+\subsection{Grouping Neighborhoods by Price Path}
+
+This last limit matters because demand did not shift along distance alone: it also shifted by home size \cite{mondragon2022housing} and by location relative to the edge of the commuting zone \cite{ahrend2023expanding}. Averages and regression coefficients assume all neighborhoods follow the same basic relationship. Another approach groups neighborhoods by the shape of their paths over time.
+
+Delmelle \cite{delmelle2016mapping} used this approach to study neighborhood change in Chicago and Los Angeles from 1970 to 2010, first classifying census tracts with k-means clustering and then clustering their sequences of classes into a typology of neighborhood trajectories. More recently, Delmelle, Nilsson, and Duma \cite{delmelle2025time} introduced a time-series clustering approach for neighborhood racial and ethnic dynamics across U.S. metropolitan areas from 1990 to 2020, which preserves continuous trajectories rather than reducing change to fixed categories or assuming a functional form in advance. Genolini and Falissard \cite{genolini2010kml} developed a version of k-means designed for longitudinal data, with ways to handle missing values and to choose the number of groups. These methods have been applied to changes in neighborhoods' socioeconomic and demographic makeup \cite{delmelle2016mapping,delmelle2025time}, but to our knowledge not to housing price trajectories after the pandemic.
+
+\section{Conclusions}
+
+Researchers predicted long before 2020 that working from home could loosen the link between jobs and housing locations \cite{lund1994telecommuting,mokhtarian2004telecommuting,brueckner2023spatial}, and the pandemic tested that prediction at scale. Between 2020 and 2022, price gradients flattened \cite{brueckner2023spatial,gupta2022flattening} and demand moved from dense centers toward lower-density areas \cite{ramani2021donut,ahrend2023expanding}, a change that remote work, not only temporary pandemic conditions, appears to explain in large part \cite{gupta2022flattening,mondragon2022housing}. Its size depended on how common remote work was, how easily new housing could be built, and how strongly each metro's pre-pandemic structure favored central locations \cite{ramani2021donut,gupta2022flattening,howard2023short}.
+
+The main open debate is about persistence. Newer evidence suggests the Donut Effect held through 2023 where hybrid work stayed common \cite{mondragon2022housing,ramani2024reshapes}, while other work expected a partial return to city centers \cite{gupta2022flattening} or a fading effect as new supply is built \cite{howard2023short}. Rising mortgage rates and reduced mobility since 2022 make recent patterns harder to read \cite{fonseca2024mortgage}.
+
+Three gaps shape our project. First, no study we found measures ZIP-level price gradients in high-growth Sun Belt metros during the return-to-office years of 2023 to 2025, the focus of our first sub-question. Second, because these metros often have several employment centers \cite{waddell1993residential,leslie2010identification}, neighborhoods with more remote-work potential may not follow the pattern found in large, dense cities; our second sub-question tests that link using pre-pandemic and occupation-based measures, which reduce reverse causality \cite{dingel2020jobs,mondragon2022housing}. Third, most studies report average effects, so our third sub-question groups ZIP codes by the shape of their price paths, using clustering methods from neighborhood research \cite{delmelle2016mapping,delmelle2025time,genolini2010kml}.
+
+\begin{thebibliography}{25}
+
+\bibitem{barrero2023evolution}
+J. M. Barrero, N. Bloom, and S. J. Davis.
+\newblock The evolution of work from home.
+\newblock \emph{Journal of Economic Perspectives}, 37(4):23--50, 2023.
+\newblock \url{https://doi.org/10.1257/jep.37.4.23}.
+
+\bibitem{alonso1964location}
+W. Alonso.
+\newblock \emph{Location and Land Use: Toward a General Theory of Land Rent}.
+\newblock Harvard University Press, 1964.
+
+\bibitem{mills1967aggregative}
+E. S. Mills.
+\newblock An aggregative model of resource allocation in a metropolitan area.
+\newblock \emph{American Economic Review}, 57(2):197--210, 1967.
+
+\bibitem{muth1969cities}
+R. F. Muth.
+\newblock \emph{Cities and Housing: The Spatial Pattern of Urban Residential Land Use}.
+\newblock University of Chicago Press, 1969.
+
+\bibitem{waddell1993residential}
+P. Waddell, B. J. L. Berry, and I. Hoch.
+\newblock Residential property values in a multinodal urban area: New evidence on the implicit price of location.
+\newblock \emph{Journal of Real Estate Finance and Economics}, 7(2):117--141, 1993.
+
+\bibitem{lund1994telecommuting}
+J. R. Lund and P. L. Mokhtarian.
+\newblock Telecommuting and residential location: Theory and implications for commute travel in the monocentric metropolis.
+\newblock \emph{Transportation Research Record}, 1463:10--14, 1994.
+
+\bibitem{mokhtarian2004telecommuting}
+P. L. Mokhtarian, G. O. Collantes, and C. Gertz.
+\newblock Telecommuting, residential location, and commute-distance traveled: Evidence from State of California employees.
+\newblock \emph{Environment and Planning A}, 36(10):1877--1897, 2004.
+
+\bibitem{barrero2021stick}
+J. M. Barrero, N. Bloom, and S. J. Davis.
+\newblock Why working from home will stick.
+\newblock NBER Working Paper 28731, 2021.
+\newblock \url{https://www.nber.org/papers/w28731}.
+
+\bibitem{brueckner2023spatial}
+J. K. Brueckner, M. E. Kahn, and G. C. Lin.
+\newblock A new spatial hedonic equilibrium in the emerging work-from-home economy?
+\newblock \emph{American Economic Journal: Applied Economics}, 15(2):285--319, 2023.
+\newblock \url{https://doi.org/10.1257/app.20210190}.
+
+\bibitem{ramani2021donut}
+A. Ramani and N. Bloom.
+\newblock The donut effect of COVID-19 on cities.
+\newblock NBER Working Paper 28876, 2021.
+\newblock \url{https://www.nber.org/papers/w28876}.
+
+\bibitem{gupta2022flattening}
+A. Gupta, V. Mittal, J. Peeters, and S. Van Nieuwerburgh.
+\newblock Flattening the curve: Pandemic-induced revaluation of urban real estate.
+\newblock \emph{Journal of Financial Economics}, 146(2):594--636, 2022.
+\newblock \url{https://doi.org/10.1016/j.jfineco.2022.06.003}.
+
+\bibitem{ahrend2023expanding}
+R. Ahrend et al.
+\newblock Expanding the doughnut? How the geography of housing demand has changed since the rise of remote work with COVID-19.
+\newblock OECD Regional Development Papers, No. 54, 2023.
+\newblock \url{https://doi.org/10.1787/cf591216-en}.
+
+\bibitem{dingel2020jobs}
+J. I. Dingel and B. Neiman.
+\newblock How many jobs can be done at home?
+\newblock \emph{Journal of Public Economics}, 189:104235, 2020.
+\newblock \url{https://doi.org/10.1016/j.jpubeco.2020.104235}.
+
+\bibitem{mondragon2022housing}
+J. A. Mondragon and J. Wieland.
+\newblock Housing demand and remote work.
+\newblock NBER Working Paper 30041, 2022, revised May 2025.
+\newblock \url{https://www.nber.org/papers/w30041}.
+
+\bibitem{howard2023short}
+G. Howard, J. Liebersohn, and A. Ozimek.
+\newblock The short- and long-run effects of remote work on U.S. housing markets.
+\newblock \emph{Journal of Financial Economics}, 150(1):166--184, 2023.
+\newblock \url{https://doi.org/10.1016/j.jfineco.2023.103705}.
+
+\bibitem{ramani2024reshapes}
+A. Ramani, J. Alcedo, and N. Bloom.
+\newblock How working from home reshapes cities.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 121(45):e2408930121, 2024.
+\newblock \url{https://doi.org/10.1073/pnas.2408930121}.
+
+\bibitem{fonseca2024mortgage}
+J. Fonseca and L. Liu.
+\newblock Mortgage lock-in, mobility, and labor reallocation.
+\newblock \emph{Journal of Finance}, 79(6):3729--3772, 2024.
+\newblock \url{https://doi.org/10.1111/jofi.13398}.
+
+\bibitem{leslie2010identification}
+T. F. Leslie.
+\newblock Identification and differentiation of urban centers in Phoenix through a multi-criteria kernel-density approach.
+\newblock \emph{International Regional Science Review}, 33(2):205--235, 2010.
+\newblock \url{https://doi.org/10.1177/0160017610365538}.
+
+\bibitem{zillow2026data}
+Zillow Group.
+\newblock Housing data.
+\newblock Zillow Research, 2026. \url{https://www.zillow.com/research/data/}.
+
+\bibitem{census2026acs}
+U.S. Census Bureau.
+\newblock American Community Survey 5-year data.
+\newblock \url{https://www.census.gov/data/developers/data-sets/acs-5year.html}.
+
+\bibitem{callaway2024did}
+B. Callaway, A. Goodman-Bacon, and P. H. C. Sant'Anna.
+\newblock Difference-in-differences with a continuous treatment.
+\newblock NBER Working Paper 32117, 2024.
+\newblock \url{https://www.nber.org/papers/w32117}.
+
+\bibitem{callaway2024event}
+B. Callaway, A. Goodman-Bacon, and P. H. C. Sant'Anna.
+\newblock Event studies with a continuous treatment.
+\newblock \emph{AEA Papers and Proceedings}, 114:601--605, 2024. Also NBER Working Paper 32118.
+\newblock \url{https://doi.org/10.1257/pandp.20241047}.
+
+\bibitem{delmelle2016mapping}
+E. C. Delmelle.
+\newblock Mapping the DNA of urban neighborhoods: Clustering longitudinal sequences of neighborhood socioeconomic change.
+\newblock \emph{Annals of the American Association of Geographers}, 106(1):36--56, 2016.
+\newblock \url{https://doi.org/10.1080/00045608.2015.1096188}.
+
+\bibitem{delmelle2025time}
+E. C. Delmelle, I. Nilsson, and N. Duma.
+\newblock Time series clustering for exploring neighborhood dynamics: The case of U.S. neighborhood racial and ethnic trends, 1990--2020.
+\newblock \emph{Geographical Analysis}, 57(3):402--420, 2025.
+\newblock \url{https://doi.org/10.1111/gean.70006}.
+
+\bibitem{genolini2010kml}
+C. Genolini and B. Falissard.
+\newblock KmL: k-means for longitudinal data.
+\newblock \emph{Computational Statistics}, 25(2):317--328, 2010.
+\newblock \url{https://doi.org/10.1007/s00180-009-0178-4}.
+
+\end{thebibliography}
+
+\end{document}

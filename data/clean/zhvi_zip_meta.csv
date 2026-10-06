@@ -1,0 +1,1100 @@
+zip,metro_short,metro_cbsa,city,state,county,regionid,sizerank,first_obs,last_obs,n_obs_window,n_months_window,n_interior_gaps,complete_window,late_entry,xwalk_status,metro_xwalk
+27013,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Cleveland,NC,Rowan County,69170,11077,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+27054,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Woodleaf,NC,Rowan County,69199,18706,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28006,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Alexis,NC,Lincoln County,69657,22436,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28012,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Belmont,NC,Gaston County,69661,4432,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28016,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Bessemer City,NC,Gaston County,69662,8340,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28021,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Cherryville,NC,Gaston County,69667,7950,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28023,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",China Grove,NC,Rowan County,69668,7318,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28025,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Concord,NC,Cabarrus County,69670,450,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28027,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Concord,NC,Cabarrus County,69672,97,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28031,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Cornelius,NC,Mecklenburg County,69673,3539,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28032,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Cramerton,NC,Gaston County,69674,16274,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28033,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Crouse,NC,Lincoln County,69675,16023,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28034,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Dallas,NC,Gaston County,69676,6610,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28036,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Davidson,NC,Mecklenburg County,69678,5687,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28037,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Denver,NC,Lincoln County,69679,4739,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28052,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Gastonia,NC,Gaston County,69686,2612,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28054,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Gastonia,NC,Gaston County,69688,2343,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28056,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Gastonia,NC,Gaston County,69690,2086,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28071,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Gold Hill,NC,Rowan County,69692,14779,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28075,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Harrisburg,NC,Cabarrus County,69696,5729,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28078,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Huntersville,NC,Mecklenburg County,69699,181,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28079,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Lake Park,NC,Union County,69700,1696,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28080,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Iron Station,NC,Lincoln County,69701,10893,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28081,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Kannapolis,NC,Cabarrus County,69702,4193,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28083,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Kannapolis,NC,Cabarrus County,69704,4631,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28088,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Landis,NC,Rowan County,69706,17109,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28091,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Lilesville,NC,Anson County,69709,16889,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28092,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Lincolnton,NC,Lincoln County,69710,2026,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28098,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Lowell,NC,Gaston County,69713,14354,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28101,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mc Adenville,NC,Gaston County,69714,24188,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28103,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Marshville,NC,Union County,69716,9269,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28104,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Matthews,NC,Union County,69717,2801,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28105,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Matthews,NC,Mecklenburg County,69718,1453,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28107,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Midland,NC,Cabarrus County,69720,9499,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28110,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Monroe,NC,Union County,69723,651,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28112,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Monroe,NC,Union County,69725,4078,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28115,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mooresville,NC,Iredell County,69727,1352,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28117,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mooresville,NC,Iredell County,69728,1263,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28119,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Morven,NC,Anson County,69729,17535,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28120,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mount Holly,NC,Gaston County,69730,5352,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28124,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mount Pleasant,NC,Cabarrus County,69732,11273,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28125,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mount Ulla,NC,Rowan County,69733,14840,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28133,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Peachland,NC,Anson County,69739,18364,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28134,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Pineville,NC,Mecklenburg County,69740,7793,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28135,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Polkton,NC,Anson County,69741,13017,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28138,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Rockwell,NC,Rowan County,69744,9919,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28144,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Salisbury,NC,Rowan County,69746,4015,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28146,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Salisbury,NC,Rowan County,69748,3759,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28147,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Salisbury,NC,Rowan County,69749,4860,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28159,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Spencer,NC,Rowan County,69753,16718,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28164,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Stanley,NC,Gaston County,69756,6601,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28166,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Troutman,NC,Iredell County,69757,8298,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28170,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Wadesboro,NC,Anson County,69761,10049,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28173,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Waxhaw,NC,Union County,69762,310,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28174,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Wingate,NC,Union County,69763,10001,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28202,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69765,7525,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28203,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69766,7356,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28204,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69767,10212,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28205,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69768,942,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28206,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69769,7629,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28207,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69770,9892,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28208,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69771,1942,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28209,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69772,5321,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28210,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69773,1259,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28211,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69774,3156,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28212,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69775,1645,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28213,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69776,1198,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28214,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69777,1465,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28215,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69778,315,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28216,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69779,839,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28217,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69780,2980,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28226,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69788,2259,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28227,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mint Hill,NC,Mecklenburg County,69789,516,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28262,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69813,898,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28269,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69816,93,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28270,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69817,3192,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28273,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69820,961,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28277,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69823,162,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28278,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Charlotte,NC,Mecklenburg County,69824,2274,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28625,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Statesville,NC,Iredell County,70078,2140,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28634,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Harmony,NC,Iredell County,70086,13149,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28660,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Olin,NC,Iredell County,70110,18213,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28677,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Statesville,NC,Iredell County,70127,2430,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+28689,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Union Grove,NC,Iredell County,70138,16762,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29031,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Carlisle,SC,Chester County,70263,19892,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29055,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Great Falls,SC,Chester County,70282,16706,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29058,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Heath Springs,SC,Lancaster County,70284,13325,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29067,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Kershaw,SC,Lancaster County,70290,9425,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29704,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Catawba,SC,York County,70677,15027,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29706,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Eureka Mill,SC,Chester County,70678,6760,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29707,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Fort Mill,SC,Lancaster County,399565,2668,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29708,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Fort Mill,SC,York County,70679,1778,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29710,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Clover,SC,York County,70681,1820,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29712,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Edgemoor,SC,Chester County,70682,17565,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29714,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Fort Lawn,SC,Chester County,70683,15360,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29715,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Fort Mill,SC,York County,70684,1265,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29717,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Hickory Grove,SC,York County,70686,20225,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Charlotte
+29720,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Lancaster,SC,Lancaster County,70688,697,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29726,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Mc Connells,SC,York County,70692,18616,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29729,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Richburg,SC,Chester County,70695,17457,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29730,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Rock Hill,SC,York County,70696,508,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29732,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Rock Hill,SC,York County,70698,632,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29742,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Sharon,SC,York County,70702,17187,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29743,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",Smyrna,SC,York County,70703,18765,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+29745,Charlotte,"Charlotte-Concord-Gastonia, NC-SC",York,SC,York County,70705,3212,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Charlotte
+30002,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Avondale Estates,GA,Dekalb County,70789,13171,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30004,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Milton,GA,Fulton County,70791,278,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30005,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Alpharetta,GA,Fulton County,70792,1796,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30008,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70795,2911,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30009,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Alpharetta,GA,Fulton County,70796,5818,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30011,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Auburn,GA,Barrow County,70798,6461,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30012,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Conyers,GA,Rockdale County,70799,3006,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30013,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Conyers,GA,Rockdale County,70800,4467,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30014,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Covington,GA,Newton County,70801,1867,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30016,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Covington,GA,Newton County,70803,377,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30017,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Grayson,GA,Gwinnett County,70804,4546,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30019,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dacula,GA,Gwinnett County,70806,633,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30021,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Clarkston,GA,Dekalb County,70807,4368,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30022,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Johns Creek,GA,Fulton County,70808,344,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30024,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Suwanee,GA,Gwinnett County,70810,70,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30025,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Social Circle,GA,Walton County,70811,9014,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30028,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Cumming,GA,Forsyth County,70813,2408,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30030,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Decatur,GA,Dekalb County,70815,3550,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30032,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Decatur,GA,Dekalb County,70817,1616,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30033,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Decatur,GA,Dekalb County,70818,3431,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30034,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Decatur,GA,Dekalb County,70819,1878,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30035,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Decatur,GA,Dekalb County,70820,5634,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30038,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lithonia,GA,Dekalb County,70823,1581,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30039,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Snellville,GA,Gwinnett County,70824,891,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30040,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Cumming,GA,Forsyth County,70825,96,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30041,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Cumming,GA,Forsyth County,70826,132,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30043,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lawrenceville,GA,Gwinnett County,70828,65,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30044,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lawrenceville,GA,Gwinnett County,70829,13,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30045,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lawrenceville,GA,Gwinnett County,70830,1622,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30046,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lawrenceville,GA,Gwinnett County,70831,1595,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30047,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lilburn,GA,Gwinnett County,70832,191,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30052,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Loganville,GA,Walton County,70835,111,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30054,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Oxford,GA,Newton County,70836,9803,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30055,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Mansfield,GA,Newton County,70837,12762,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30056,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Newborn,GA,Jasper County,70838,17504,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30058,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lithonia,GA,Dekalb County,70839,311,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30060,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70840,2028,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30062,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70842,423,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30064,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70844,940,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30066,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70846,453,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30067,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70847,1270,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30068,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marietta,GA,Cobb County,70848,3092,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30071,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Norcross,GA,Gwinnett County,70851,4235,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30072,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Pine Lake,GA,Dekalb County,70852,24422,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30075,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Roswell,GA,Fulton County,70854,683,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30076,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Roswell,GA,Fulton County,70855,1518,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30078,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Snellville,GA,Gwinnett County,70857,1976,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30079,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Scottdale,GA,Dekalb County,70858,14114,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30080,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Smyrna,GA,Cobb County,70859,885,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30082,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Smyrna,GA,Cobb County,70861,4645,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30083,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Stone Mountain,GA,Dekalb County,70862,430,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30084,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Tucker,GA,Dekalb County,70863,2125,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30087,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Stone Mountain,GA,Dekalb County,70866,2399,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30088,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Stone Mountain,GA,Dekalb County,70867,4227,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30092,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Peachtree Corners,GA,Gwinnett County,70870,2849,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30093,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Norcross,GA,Gwinnett County,70871,1415,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30094,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Conyers,GA,Rockdale County,70872,3079,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30096,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Duluth,GA,Gwinnett County,70874,248,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30097,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Duluth,GA,Gwinnett County,70875,1032,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30101,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Acworth,GA,Cobb County,70878,444,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30102,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Acworth,GA,Cherokee County,70879,1767,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30103,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Adairsville,GA,Bartow County,70880,7972,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30106,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Austell,GA,Cobb County,70883,5128,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30107,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Ball Ground,GA,Cherokee County,70884,6372,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30108,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Bowdon,GA,Carroll County,70885,11581,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30110,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Bremen,GA,Haralson County,70887,7614,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30113,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Buchanan,GA,Haralson County,70890,12237,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30114,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Canton,GA,Cherokee County,70891,452,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30115,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Canton,GA,Cherokee County,70892,757,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30116,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Carrollton,GA,Carroll County,70893,4993,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30117,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Carrollton,GA,Carroll County,70894,2157,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30120,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Cartersville,GA,Bartow County,70897,1578,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30121,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Cartersville,GA,Bartow County,70898,5205,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30122,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Lithia Springs,GA,Douglas County,70899,3810,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30126,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Mableton,GA,Cobb County,70903,1783,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30127,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Powder Springs,GA,Cobb County,70904,200,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30132,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dallas,GA,Paulding County,70906,862,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30134,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Douglasville,GA,Douglas County,70908,1444,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30135,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Douglasville,GA,Douglas County,70909,324,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30137,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Emerson,GA,Bartow County,70910,21337,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30141,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Hiram,GA,Paulding County,70914,3926,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30143,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Jasper,GA,Pickens County,70916,5247,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30144,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Kennesaw,GA,Cobb County,70917,413,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30145,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Kingston,GA,Bartow County,70918,9678,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30148,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Marble Hill,GA,Pickens County,70921,22642,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30152,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Kennesaw,GA,Cobb County,70925,1456,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30157,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dallas,GA,Paulding County,70929,948,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30168,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Austell,GA,Cobb County,70936,4703,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30170,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Bowdon,GA,Carroll County,70938,15932,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30171,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Fairmount,GA,Bartow County,70939,15589,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30175,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Talking Rock,GA,Pickens County,70942,11748,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30176,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Tallapoosa,GA,Haralson County,70943,11518,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30177,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Tate,GA,Pickens County,70944,21265,2021-02-28,2025-12-31,59,96,0,False,True,both_agree,Atlanta
+30178,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Taylorsville,GA,Bartow County,70945,12832,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30179,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Temple,GA,Carroll County,70946,6227,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30180,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Villa Rica,GA,Carroll County,70947,1997,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30182,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Mount Zion,GA,Carroll County,70948,14836,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30183,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Waleska,GA,Cherokee County,70949,11621,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30184,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Cartersville,GA,Bartow County,70950,10666,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30185,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Whitesburg,GA,Carroll County,70951,13474,2018-01-31,2025-12-31,95,96,1,False,False,both_agree,Atlanta
+30187,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Winston,GA,Douglas County,70952,10629,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30188,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Woodstock,GA,Cherokee County,70953,268,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30189,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Woodstock,GA,Cherokee County,70954,1764,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30204,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Barnesville,GA,Lamar County,70955,8102,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+30205,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Brooks,GA,Fayette County,70956,15179,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30206,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Concord,GA,Pike County,70957,14851,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30213,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Fairburn,GA,Fulton County,70959,957,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30214,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Fayetteville,GA,Fayette County,70960,3559,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30215,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Fayetteville,GA,Fayette County,70961,1920,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30216,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Flovilla,GA,Butts County,70962,20868,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30217,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Franklin,GA,Heard County,70963,9766,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30218,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Gay,GA,Meriwether County,70964,18806,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30220,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Grantville,GA,Coweta County,70966,13562,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30222,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Greenville,GA,Meriwether County,70967,13583,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30223,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Experiment,GA,Spalding County,70968,2149,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30224,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Griffin,GA,Spalding County,70969,4327,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30228,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Hampton,GA,Henry County,70970,991,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30233,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Jackson,GA,Butts County,70973,4668,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30234,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Jenkinsburg,GA,Butts County,70974,19291,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30236,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Jonesboro,GA,Clayton County,70975,986,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30238,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Jonesboro,GA,Clayton County,70977,1858,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30248,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Locust Grove,GA,Henry County,70980,2780,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30251,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Luthersville,GA,Meriwether County,70982,18568,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30252,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",McDonough,GA,Henry County,70983,929,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30253,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",McDonough,GA,Henry County,70984,367,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30256,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Meansville,GA,Pike County,70985,15785,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30257,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Milner,GA,Lamar County,70986,13592,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+30258,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Molena,GA,Pike County,70987,16079,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30259,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Moreland,GA,Coweta County,70988,13844,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30260,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Morrow,GA,Clayton County,70989,3333,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30263,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Newnan,GA,Coweta County,70991,584,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30265,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Newnan,GA,Coweta County,70993,1591,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30268,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Palmetto,GA,Fulton County,70995,9166,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30269,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Peachtree City,GA,Fayette County,70996,2251,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30273,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Rex,GA,Clayton County,71000,7474,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30274,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Riverdale,GA,Clayton County,71001,2696,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30276,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Senoia,GA,Coweta County,71003,5939,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30277,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Sharpsburg,GA,Coweta County,71004,6496,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30281,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Stockbridge,GA,Henry County,71005,244,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30288,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Conley,GA,Dekalb County,71010,9244,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30290,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Tyrone,GA,Fayette County,71012,9475,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30291,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Union City,GA,Fulton County,71013,5187,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30292,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Williamson,GA,Pike County,71014,12765,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30293,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Woodbury,GA,Meriwether County,71015,16259,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30294,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Ellenwood,GA,Henry County,71016,1725,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30295,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Zebulon,GA,Pike County,71017,12931,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30296,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Riverdale,GA,Clayton County,71018,4352,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30297,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Forest Park,GA,Clayton County,71019,4862,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30303,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71023,11247,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30305,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71025,4260,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30306,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71026,4655,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30307,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Dekalb County,71027,5617,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30308,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71028,5519,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30309,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71029,3601,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30310,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71030,4088,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30311,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71031,3151,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30312,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71032,4872,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30313,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71033,10102,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30314,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71034,5647,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30315,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71035,2764,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30316,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Dekalb County,71036,2830,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30317,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Dekalb County,71037,7655,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30318,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71038,337,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30319,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Brookhaven,GA,Dekalb County,71039,1413,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30324,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71043,3726,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30326,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71045,9913,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30327,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71046,5300,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30328,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Sandy Springs,GA,Fulton County,71047,2004,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30329,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Dekalb County,71048,4194,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30331,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71050,482,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30336,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71054,13212,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30337,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",College Park,GA,Fulton County,71055,9503,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30338,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dunwoody,GA,Dekalb County,71056,2293,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30339,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Vinings,GA,Cobb County,71057,3001,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30340,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Dekalb County,71058,3668,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30341,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Chamblee,GA,Dekalb County,71059,3078,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30342,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Sandy Springs,GA,Fulton County,71060,3188,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30344,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",East Point,GA,Fulton County,71062,2640,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30345,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Dekalb County,71063,4910,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30346,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dunwoody,GA,Dekalb County,71064,13397,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30349,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71067,140,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30350,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Sandy Springs,GA,Fulton County,71068,2726,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30354,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71070,7433,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30360,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dunwoody,GA,Dekalb County,71076,7254,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30363,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Atlanta,GA,Fulton County,71079,19180,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30517,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Braselton,GA,Barrow County,71167,6683,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30518,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Buford,GA,Gwinnett County,71168,549,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30519,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Buford,GA,Gwinnett County,71169,681,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30534,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Dawsonville,GA,Dawson County,71181,2282,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30548,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Hoschton,GA,Barrow County,71195,5002,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30620,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Bethlehem,GA,Barrow County,71236,6803,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30625,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Buckhead,GA,Morgan County,71241,17379,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30641,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Good Hope,GA,Walton County,71252,17791,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30650,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Madison,GA,Morgan County,71259,8176,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30655,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Monroe,GA,Walton County,71260,4688,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30656,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Monroe,GA,Walton County,71261,6222,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30663,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Rutledge,GA,Morgan County,71264,16023,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30666,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Statham,GA,Barrow County,71267,9256,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+30680,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Winder,GA,Barrow County,71275,1195,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+31064,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Monticello,GA,Jasper County,71413,9726,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+31085,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Shady Dale,GA,Jasper County,71431,20396,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+31816,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Manchester,GA,Meriwether County,71698,14375,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+31830,Atlanta,"Atlanta-Sandy Springs-Alpharetta, GA",Warm Springs,GA,Meriwether County,71708,19257,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Atlanta
+33510,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Brandon,FL,Hillsborough County,72652,3955,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33511,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Brandon,FL,Hillsborough County,72653,446,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33523,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Dade City,FL,Pasco County,72657,6874,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33525,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Dade City,FL,Pasco County,72659,5112,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33527,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Dover,FL,Hillsborough County,72661,7250,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33534,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Gibsonton,FL,Hillsborough County,72663,6602,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33540,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Zephyrhills,FL,Pasco County,72667,9130,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33541,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Zephyrhills,FL,Pasco County,72668,4897,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33542,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Zephyrhills,FL,Pasco County,72669,5511,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33543,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Wesley Chapel,FL,Pasco County,72670,1970,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33544,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Wesley Chapel,FL,Pasco County,72671,3874,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33545,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Wesley Chapel,FL,Pasco County,399575,3763,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33547,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Lithia,FL,Hillsborough County,72672,4419,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33548,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Lutz,FL,Hillsborough County,72673,9937,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33549,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Lutz,FL,Hillsborough County,72674,6268,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33556,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Odessa,FL,Hillsborough County,72676,2988,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33558,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Lutz,FL,Hillsborough County,72677,3419,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33559,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Lutz,FL,Hillsborough County,72678,6830,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33563,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Plant City,FL,Hillsborough County,72679,4753,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33565,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Plant City,FL,Hillsborough County,72681,6817,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33566,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Plant City,FL,Hillsborough County,72682,5385,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33567,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Plant City,FL,Hillsborough County,72683,8401,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33569,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Riverview,FL,Hillsborough County,72685,3916,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33570,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Ruskin,FL,Hillsborough County,72686,2957,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33572,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Apollo Beach,FL,Hillsborough County,72688,4735,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33573,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Sun City Center,FL,Hillsborough County,72689,3219,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33576,Tampa,"Tampa-St. Petersburg-Clearwater, FL",San Antonio,FL,Pasco County,72692,12288,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33578,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Riverview,FL,Hillsborough County,399576,424,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33579,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Riverview,FL,Hillsborough County,399577,999,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33584,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Seffner,FL,Hillsborough County,72694,3709,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33592,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Thonotosassa,FL,Hillsborough County,72698,8026,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33594,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Valrico,FL,Hillsborough County,72700,2317,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33596,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Valrico,FL,Hillsborough County,399578,4031,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33598,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Wimauma,FL,Hillsborough County,72703,3012,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33602,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72705,6084,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33603,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72706,6248,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33604,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72707,2090,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33605,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72708,7462,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33606,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72709,5182,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33607,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72710,5206,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33609,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72712,6436,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33610,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72713,1230,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33611,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72714,2739,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33612,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72715,845,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33613,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72716,2035,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33614,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72717,1298,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33615,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72718,1125,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33616,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72719,7099,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33617,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Temple Terrace,FL,Hillsborough County,72720,1177,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33618,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72721,4525,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33619,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72722,1694,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33624,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72727,1953,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33625,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Citrus Park,FL,Hillsborough County,72728,3928,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33626,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Westchase,FL,Hillsborough County,72729,3612,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33629,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72730,4435,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33634,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72734,5724,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33635,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72735,6704,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33637,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Temple Terrace,FL,Hillsborough County,72736,6937,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33647,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tampa,FL,Hillsborough County,72737,206,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33701,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72764,6684,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33702,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72765,3613,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33703,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72766,4809,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33704,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72767,7226,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33705,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72768,3910,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33706,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Pete Beach,FL,Pinellas County,72769,7834,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33707,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Gulfport,FL,Pinellas County,72770,5211,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33708,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Madeira Beach,FL,Pinellas County,72771,7955,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33709,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72772,5012,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33710,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72773,3089,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33711,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72774,6361,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33712,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72775,5057,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33713,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72776,3536,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33714,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72777,6395,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33715,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tierra Verde,FL,Pinellas County,72778,11760,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33716,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Saint Petersburg,FL,Pinellas County,72779,7362,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33755,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72796,4520,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33756,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72797,3414,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33759,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72800,7292,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33760,Tampa,"Tampa-St. Petersburg-Clearwater, FL",South Highpoint,FL,Pinellas County,72801,7671,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33761,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72802,6659,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33762,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72803,12420,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33763,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72804,6048,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33764,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72805,3968,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33765,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72806,8285,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33767,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Clearwater,FL,Pinellas County,72808,10943,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33770,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Largo,FL,Pinellas County,72810,4873,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33771,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Largo,FL,Pinellas County,72811,4291,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33772,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Seminole,FL,Pinellas County,72812,5550,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33773,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Largo,FL,Pinellas County,72813,7557,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33774,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Largo,FL,Pinellas County,72814,6089,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33776,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Seminole,FL,Pinellas County,72816,8374,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33777,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Seminole,FL,Pinellas County,72817,6629,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33778,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Largo,FL,Pinellas County,72818,7612,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33781,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Pinellas Park,FL,Pinellas County,72821,4126,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33782,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Pinellas Park,FL,Pinellas County,72822,5477,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33785,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Indian Rocks Beach,FL,Pinellas County,72824,13404,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+33786,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Belleair Beach,FL,Pinellas County,72825,20502,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34601,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Brooksville,FL,Hernando County,73137,5315,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34602,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Brooksville,FL,Hernando County,73138,9060,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34604,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Brooksville,FL,Hernando County,73140,8327,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34606,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Spring Hill,FL,Hernando County,73142,3898,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34607,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Hernando Beach,FL,Hernando County,73143,10530,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34608,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Spring Hill,FL,Hernando County,73144,2686,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34609,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Spring Hill,FL,Hernando County,73145,1250,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34610,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Spring Hill,FL,Pasco County,73146,7129,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34613,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Weeki Wachee,FL,Hernando County,73148,6619,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34614,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Weeki Wachee,FL,Hernando County,73149,8886,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34637,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Land O Lakes,FL,Pasco County,73151,9665,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34638,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Land O Lakes,FL,Pasco County,73152,2008,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34639,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Land O Lakes,FL,Pasco County,73153,3033,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34652,Tampa,"Tampa-St. Petersburg-Clearwater, FL",New Port Richey,FL,Pasco County,73154,4107,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34653,Tampa,"Tampa-St. Petersburg-Clearwater, FL",New Port Richey,FL,Pasco County,73155,2901,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34654,Tampa,"Tampa-St. Petersburg-Clearwater, FL",New Port Richey,FL,Pasco County,73156,5001,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34655,Tampa,"Tampa-St. Petersburg-Clearwater, FL",New Port Richey,FL,Pasco County,73157,1023,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34661,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Nobleton,FL,Hernando County,73160,32153,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34667,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Hudson,FL,Pasco County,73161,3718,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34668,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Port Richey,FL,Pasco County,73162,1110,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34669,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Hudson,FL,Pasco County,73163,7962,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34677,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Oldsmar,FL,Pinellas County,73166,5756,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34681,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Palm Harbor,FL,Pinellas County,73169,33010,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34683,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Palm Harbor,FL,Pinellas County,73171,3113,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34684,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Palm Harbor,FL,Pinellas County,73172,4504,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34685,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Palm Harbor,FL,Pinellas County,73173,7511,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34688,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tarpon Springs,FL,Pinellas County,73174,10119,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34689,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Tarpon Springs,FL,Pinellas County,73175,4803,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34690,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Holiday,FL,Pasco County,73176,8677,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34691,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Holiday,FL,Pasco County,73177,6100,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34695,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Safety Harbor,FL,Pinellas County,73179,6266,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+34698,Tampa,"Tampa-St. Petersburg-Clearwater, FL",Dunedin,FL,Pinellas County,73181,2494,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Tampa
+37012,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Alexandria,TN,Dekalb County,74100,16954,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+37013,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74101,11,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37014,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Arrington,TN,Williamson County,74102,13277,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37015,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Ashland City,TN,Cheatham County,74103,6835,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37016,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Auburntown,TN,Cannon County,74104,22571,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37022,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Bethpage,TN,Sumner County,74108,11952,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37025,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Bon Aqua,TN,Hickman County,74111,11673,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37026,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Bradyville,TN,Cannon County,74112,18765,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37027,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Brentwood,TN,Williamson County,74113,635,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37029,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Burns,TN,Dickson County,74115,11504,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37030,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Carthage,TN,Smith County,74116,11073,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37031,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Castalian Springs,TN,Sumner County,74117,14989,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37032,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Cedar Hill,TN,Robertson County,74118,13604,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37035,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Chapmansboro,TN,Cheatham County,74121,13812,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37036,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Charlotte,TN,Dickson County,74122,11652,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37037,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Christiana,TN,Rutherford County,74123,10079,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37046,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",College Grove,TN,Williamson County,74129,11294,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37048,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Walnut Grove,TN,Sumner County,74131,11117,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37049,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Cross Plains,TN,Robertson County,74132,15146,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37051,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Vanleer,TN,Dickson County,74134,15251,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37055,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Dickson,TN,Dickson County,74136,3879,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37057,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Dixon Springs,TN,Trousdale County,74138,18523,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Nashville
+37060,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Eagleville,TN,Rutherford County,74141,15443,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37062,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Fairview,TN,Williamson County,74143,8450,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37064,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Franklin,TN,Williamson County,74145,280,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37066,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Gallatin,TN,Sumner County,74147,381,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37067,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Franklin,TN,Williamson County,74148,3276,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37069,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Franklin,TN,Williamson County,74150,5585,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37072,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Goodlettsville,TN,Davidson County,74153,3267,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37073,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Greenbrier,TN,Robertson County,74154,7978,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37074,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Hartsville,TN,Trousdale County,74155,9962,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37075,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Hendersonville,TN,Sumner County,74156,201,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37076,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74157,2057,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37080,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74161,11594,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37082,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Kingston Springs,TN,Cheatham County,74162,12744,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37083,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Lafayette,TN,Macon County,74163,7643,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37085,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Lascassas,TN,Rutherford County,74164,12067,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37086,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",La Vergne,TN,Rutherford County,74165,1817,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37087,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Lebanon,TN,Wilson County,74166,884,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37090,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Lebanon,TN,Wilson County,74169,5958,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37095,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Liberty,TN,Dekalb County,74171,17809,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+37115,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74178,2010,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37118,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Milton,TN,Rutherford County,74180,20794,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Nashville
+37122,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Mount Juliet,TN,Wilson County,74183,225,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37127,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Murfreesboro,TN,Rutherford County,74184,5599,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37128,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Murfreesboro,TN,Rutherford County,74185,202,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37129,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Murfreesboro,TN,Rutherford County,74186,320,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37130,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Murfreesboro,TN,Rutherford County,74187,515,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37135,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nolensville,TN,Williamson County,74192,5522,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37138,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74195,4567,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37141,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Orlinda,TN,Robertson County,74197,21177,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37143,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Pegram,TN,Cheatham County,74199,14260,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37145,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Pleasant Shade,TN,Smith County,74201,17189,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37146,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Pleasant View,TN,Cheatham County,74202,11834,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37148,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Portland,TN,Sumner County,74203,4566,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37149,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Readyville,TN,Rutherford County,74204,15327,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37150,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Red Boiling Springs,TN,Macon County,74205,13463,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37151,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Riddleton,TN,Smith County,74206,25774,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Nashville
+37153,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Rockvale,TN,Rutherford County,74208,11452,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37167,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Smyrna,TN,Rutherford County,74214,376,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37172,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Springfield,TN,Robertson County,74216,3221,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37174,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Spring Hill,TN,Maury County,74217,1118,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37179,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Thompsons Station,TN,Williamson County,74220,6183,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37181,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Vanleer,TN,Dickson County,74222,19380,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37184,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Watertown,TN,Wilson County,74224,11782,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37186,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Westmoreland,TN,Sumner County,74226,9581,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37187,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",White Bluff,TN,Dickson County,74227,10810,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37188,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",White House,TN,Robertson County,74228,7231,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37189,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74229,12710,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37190,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Woodbury,TN,Cannon County,74230,10074,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37201,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74232,19841,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37203,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74234,5088,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37204,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74235,7399,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37205,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74236,4759,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37206,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74237,4705,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37207,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74238,1849,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37208,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74239,6299,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37209,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74240,2522,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37210,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74241,7404,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37211,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74242,172,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37212,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74243,6719,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37214,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74245,3786,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37215,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74246,5355,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37216,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74247,6569,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37217,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74248,3167,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37218,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74249,8135,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37219,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74250,20615,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37220,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74251,11917,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+37221,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Nashville,TN,Davidson County,74252,1877,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38401,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Columbia,TN,Maury County,74815,273,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38451,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Culleoka,TN,Maury County,74820,13423,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38461,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Hampshire,TN,Lewis County,74829,18421,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+38474,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Mount Pleasant,TN,Maury County,74838,10890,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38476,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Primm Springs,TN,Maury County,74840,20634,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38482,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Santa Fe,TN,Maury County,74844,19056,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38487,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Williamsport,TN,Maury County,74848,21715,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38547,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Carthage,TN,Smith County,74861,18213,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38552,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Chestnut Mound,TN,Smith County,74866,27929,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Nashville
+38560,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Elmwood,TN,Smith County,74874,20259,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38563,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Gordonsville,TN,Smith County,74876,19153,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38567,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Hickman,TN,Smith County,74879,21015,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Nashville
+38569,Nashville,"Nashville-Davidson--Murfreesboro--Franklin, TN",Lancaster,TN,Dekalb County,74881,25745,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+75001,Dallas,"Dallas-Fort Worth-Arlington, TX",Addison,TX,Dallas County,90611,7252,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75002,Dallas,"Dallas-Fort Worth-Arlington, TX",Allen,TX,Collin County,90612,110,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75006,Dallas,"Dallas-Fort Worth-Arlington, TX",Carrollton,TX,Dallas County,90613,1056,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75007,Dallas,"Dallas-Fort Worth-Arlington, TX",Carrollton,TX,Denton County,90614,644,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75009,Dallas,"Dallas-Fort Worth-Arlington, TX",Celina,TX,Collin County,90616,3163,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75010,Dallas,"Dallas-Fort Worth-Arlington, TX",Carrollton,TX,Denton County,90617,2909,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75013,Dallas,"Dallas-Fort Worth-Arlington, TX",Allen,TX,Collin County,90619,1084,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75019,Dallas,"Dallas-Fort Worth-Arlington, TX",Coppell,TX,Dallas County,90624,1548,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75022,Dallas,"Dallas-Fort Worth-Arlington, TX",Flower Mound,TX,Denton County,90627,4547,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75023,Dallas,"Dallas-Fort Worth-Arlington, TX",Plano,TX,Collin County,90628,1261,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75024,Dallas,"Dallas-Fort Worth-Arlington, TX",Plano,TX,Collin County,90629,1335,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75025,Dallas,"Dallas-Fort Worth-Arlington, TX",Plano,TX,Collin County,90630,708,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75028,Dallas,"Dallas-Fort Worth-Arlington, TX",Flower Mound,TX,Denton County,90633,1157,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75032,Dallas,"Dallas-Fort Worth-Arlington, TX",Rockwall,TX,Rockwall County,90636,2057,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75033,Dallas,"Dallas-Fort Worth-Arlington, TX",Frisco,TX,Denton County,422746,552,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75034,Dallas,"Dallas-Fort Worth-Arlington, TX",Frisco,TX,Collin County,90637,926,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75035,Dallas,"Dallas-Fort Worth-Arlington, TX",Frisco,TX,Collin County,90638,76,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75036,Dallas,"Dallas-Fort Worth-Arlington, TX",Frisco,TX,Denton County,787971,2917,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75038,Dallas,"Dallas-Fort Worth-Arlington, TX",Irving,TX,Dallas County,90640,2858,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75039,Dallas,"Dallas-Fort Worth-Arlington, TX",Irving,TX,Dallas County,90641,5053,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75040,Dallas,"Dallas-Fort Worth-Arlington, TX",Garland,TX,Dallas County,90642,356,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75041,Dallas,"Dallas-Fort Worth-Arlington, TX",Garland,TX,Dallas County,90643,3050,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75042,Dallas,"Dallas-Fort Worth-Arlington, TX",Garland,TX,Dallas County,90644,2248,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75043,Dallas,"Dallas-Fort Worth-Arlington, TX",Garland,TX,Dallas County,90645,401,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75044,Dallas,"Dallas-Fort Worth-Arlington, TX",Garland,TX,Dallas County,90646,1214,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75048,Dallas,"Dallas-Fort Worth-Arlington, TX",Sachse,TX,Dallas County,90650,3815,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75050,Dallas,"Dallas-Fort Worth-Arlington, TX",Grand Prairie,TX,Dallas County,90652,1381,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75051,Dallas,"Dallas-Fort Worth-Arlington, TX",Grand Prairie,TX,Dallas County,90653,1911,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75052,Dallas,"Dallas-Fort Worth-Arlington, TX",Grand Prairie,TX,Dallas County,90654,21,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75054,Dallas,"Dallas-Fort Worth-Arlington, TX",Grand Prairie,TX,Tarrant County,90656,7683,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75056,Dallas,"Dallas-Fort Worth-Arlington, TX",The Colony,TX,Denton County,90657,276,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75057,Dallas,"Dallas-Fort Worth-Arlington, TX",Lewisville,TX,Denton County,90658,7829,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75060,Dallas,"Dallas-Fort Worth-Arlington, TX",Irving,TX,Dallas County,90660,1408,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75061,Dallas,"Dallas-Fort Worth-Arlington, TX",Irving,TX,Dallas County,90661,728,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75062,Dallas,"Dallas-Fort Worth-Arlington, TX",Irving,TX,Dallas County,90662,1005,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75063,Dallas,"Dallas-Fort Worth-Arlington, TX",Irving,TX,Dallas County,90663,1450,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75065,Dallas,"Dallas-Fort Worth-Arlington, TX",Lake Dallas,TX,Denton County,90664,8956,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75067,Dallas,"Dallas-Fort Worth-Arlington, TX",Lewisville,TX,Denton County,90665,285,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75068,Dallas,"Dallas-Fort Worth-Arlington, TX",Little Elm,TX,Denton County,90666,183,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75069,Dallas,"Dallas-Fort Worth-Arlington, TX",McKinney,TX,Collin County,90667,1688,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75070,Dallas,"Dallas-Fort Worth-Arlington, TX",McKinney,TX,Collin County,90668,301,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75071,Dallas,"Dallas-Fort Worth-Arlington, TX",McKinney,TX,Collin County,90669,219,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75072,Dallas,"Dallas-Fort Worth-Arlington, TX",McKinney,TX,Collin County,787970,598,2018-02-28,2025-12-31,95,96,0,False,True,both_agree,Dallas
+75074,Dallas,"Dallas-Fort Worth-Arlington, TX",Plano,TX,Collin County,90670,861,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75075,Dallas,"Dallas-Fort Worth-Arlington, TX",Plano,TX,Collin County,90671,2319,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75077,Dallas,"Dallas-Fort Worth-Arlington, TX",Highland Village,TX,Denton County,90673,1988,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75078,Dallas,"Dallas-Fort Worth-Arlington, TX",Prosper,TX,Collin County,90674,794,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75080,Dallas,"Dallas-Fort Worth-Arlington, TX",Richardson,TX,Dallas County,90675,712,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75081,Dallas,"Dallas-Fort Worth-Arlington, TX",Richardson,TX,Dallas County,90676,2632,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75082,Dallas,"Dallas-Fort Worth-Arlington, TX",Richardson,TX,Collin County,90677,4059,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75087,Dallas,"Dallas-Fort Worth-Arlington, TX",Rockwall,TX,Rockwall County,90681,1356,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75088,Dallas,"Dallas-Fort Worth-Arlington, TX",Rowlett,TX,Dallas County,90682,4138,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75089,Dallas,"Dallas-Fort Worth-Arlington, TX",Rowlett,TX,Dallas County,90683,3392,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75093,Dallas,"Dallas-Fort Worth-Arlington, TX",Plano,TX,Collin County,90687,1225,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75094,Dallas,"Dallas-Fort Worth-Arlington, TX",Murphy,TX,Collin County,90688,5302,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75098,Dallas,"Dallas-Fort Worth-Arlington, TX",Wylie,TX,Collin County,90690,221,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75104,Dallas,"Dallas-Fort Worth-Arlington, TX",Cedar Hill,TX,Dallas County,90695,996,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75114,Dallas,"Dallas-Fort Worth-Arlington, TX",Crandall,TX,Kaufman County,90700,7988,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75115,Dallas,"Dallas-Fort Worth-Arlington, TX",Desoto,TX,Dallas County,90701,586,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75116,Dallas,"Dallas-Fort Worth-Arlington, TX",Duncanville,TX,Dallas County,90702,6080,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75119,Dallas,"Dallas-Fort Worth-Arlington, TX",Ennis,TX,Ellis County,90705,3008,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75125,Dallas,"Dallas-Fort Worth-Arlington, TX",Ferris,TX,Ellis County,90710,10290,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75126,Dallas,"Dallas-Fort Worth-Arlington, TX",Forney,TX,Kaufman County,90711,158,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75134,Dallas,"Dallas-Fort Worth-Arlington, TX",Lancaster,TX,Dallas County,90714,5921,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75135,Dallas,"Dallas-Fort Worth-Arlington, TX",Caddo Mills,TX,Hunt County,90715,8920,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75137,Dallas,"Dallas-Fort Worth-Arlington, TX",Duncanville,TX,Dallas County,90716,6557,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75141,Dallas,"Dallas-Fort Worth-Arlington, TX",Hutchins,TX,Dallas County,90719,11536,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75142,Dallas,"Dallas-Fort Worth-Arlington, TX",Kaufman,TX,Kaufman County,90720,5896,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75143,Dallas,"Dallas-Fort Worth-Arlington, TX",Kemp,TX,Kaufman County,90721,7444,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75146,Dallas,"Dallas-Fort Worth-Arlington, TX",Lancaster,TX,Dallas County,90723,5047,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75147,Dallas,"Dallas-Fort Worth-Arlington, TX",Mabank,TX,Van Zandt County,90724,10605,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+75149,Dallas,"Dallas-Fort Worth-Arlington, TX",Mesquite,TX,Dallas County,90726,641,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75150,Dallas,"Dallas-Fort Worth-Arlington, TX",Mesquite,TX,Dallas County,90727,468,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75152,Dallas,"Dallas-Fort Worth-Arlington, TX",Palmer,TX,Ellis County,90729,13029,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75154,Dallas,"Dallas-Fort Worth-Arlington, TX",Red Oak,TX,Ellis County,90731,1060,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75158,Dallas,"Dallas-Fort Worth-Arlington, TX",Scurry,TX,Kaufman County,90735,11920,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75159,Dallas,"Dallas-Fort Worth-Arlington, TX",Seagoville,TX,Dallas County,90736,4537,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75160,Dallas,"Dallas-Fort Worth-Arlington, TX",Terrell,TX,Kaufman County,90737,4200,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75161,Dallas,"Dallas-Fort Worth-Arlington, TX",Terrell,TX,Kaufman County,90738,10680,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75165,Dallas,"Dallas-Fort Worth-Arlington, TX",Waxahachie,TX,Ellis County,90741,878,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75166,Dallas,"Dallas-Fort Worth-Arlington, TX",Lavon,TX,Collin County,90742,13061,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75167,Dallas,"Dallas-Fort Worth-Arlington, TX",Waxahachie,TX,Ellis County,90743,7761,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75169,Dallas,"Dallas-Fort Worth-Arlington, TX",Wills Point,TX,Van Zandt County,90745,7303,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+75172,Dallas,"Dallas-Fort Worth-Arlington, TX",Wilmer,TX,Dallas County,90746,16283,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75173,Dallas,"Dallas-Fort Worth-Arlington, TX",Lavon,TX,Collin County,90747,10092,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75180,Dallas,"Dallas-Fort Worth-Arlington, TX",Balch Springs,TX,Dallas County,90748,4361,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75181,Dallas,"Dallas-Fort Worth-Arlington, TX",Mesquite,TX,Dallas County,90749,3251,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75182,Dallas,"Dallas-Fort Worth-Arlington, TX",Sunnyvale,TX,Dallas County,90750,9531,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75189,Dallas,"Dallas-Fort Worth-Arlington, TX",Royse City,TX,Rockwall County,90753,1155,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75201,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90754,6934,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75202,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90755,13555,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75203,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90756,7748,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75204,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90757,3067,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75205,Dallas,"Dallas-Fort Worth-Arlington, TX",Highland Park,TX,Dallas County,90758,4641,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75206,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90759,2300,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75208,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90761,3419,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75209,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90762,7910,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75210,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90763,10653,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75211,Dallas,"Dallas-Fort Worth-Arlington, TX",Cockrell Hill,TX,Dallas County,90764,184,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75212,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90765,4449,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75214,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90766,3141,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75215,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90767,7492,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75216,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90768,788,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75217,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90769,116,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75218,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90770,5055,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75219,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90771,5534,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75220,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90772,1614,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75223,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90775,8961,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75224,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90776,2507,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75225,Dallas,"Dallas-Fort Worth-Arlington, TX",University Park,TX,Dallas County,90777,5581,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75226,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90778,13620,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75227,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90779,476,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75228,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90780,263,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75229,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90781,2967,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75230,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90782,4770,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75231,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90783,2244,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75232,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90784,3291,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75233,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90785,8259,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75234,Dallas,"Dallas-Fort Worth-Arlington, TX",Farmers Branch,TX,Dallas County,90786,4006,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75235,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90787,6444,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75236,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90788,7184,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75237,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90789,6086,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75238,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90790,3299,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75240,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90792,5831,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75241,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90793,3103,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75243,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90795,357,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75244,Dallas,"Dallas-Fort Worth-Arlington, TX",Farmers Branch,TX,Dallas County,90796,8408,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75246,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90798,18215,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75248,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90800,2258,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75249,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90801,7319,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75252,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Collin County,90804,4473,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75253,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90805,5586,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75254,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Dallas County,90806,4366,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75287,Dallas,"Dallas-Fort Worth-Arlington, TX",Dallas,TX,Collin County,90823,772,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75401,Dallas,"Dallas-Fort Worth-Arlington, TX",Greenville,TX,Hunt County,90875,5967,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75402,Dallas,"Dallas-Fort Worth-Arlington, TX",Greenville,TX,Hunt County,90876,6491,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75407,Dallas,"Dallas-Fort Worth-Arlington, TX",Princeton,TX,Collin County,90879,3859,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75409,Dallas,"Dallas-Fort Worth-Arlington, TX",Anna,TX,Collin County,90880,3482,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75422,Dallas,"Dallas-Fort Worth-Arlington, TX",Campbell,TX,Hunt County,90892,14518,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75423,Dallas,"Dallas-Fort Worth-Arlington, TX",Celeste,TX,Hunt County,90893,15228,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75424,Dallas,"Dallas-Fort Worth-Arlington, TX",Blue Ridge,TX,Collin County,90894,15360,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75428,Dallas,"Dallas-Fort Worth-Arlington, TX",Commerce,TX,Hunt County,90897,9389,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75442,Dallas,"Dallas-Fort Worth-Arlington, TX",Farmersville,TX,Collin County,90910,8355,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75453,Dallas,"Dallas-Fort Worth-Arlington, TX",Lone Oak,TX,Hunt County,90920,15645,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75454,Dallas,"Dallas-Fort Worth-Arlington, TX",Melissa,TX,Collin County,90921,6681,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+75474,Dallas,"Dallas-Fort Worth-Arlington, TX",Quinlan,TX,Hunt County,90936,6813,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76001,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91175,2269,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76002,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91176,2733,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76005,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91179,33010,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76006,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91180,5960,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76008,Dallas,"Dallas-Fort Worth-Arlington, TX",Aledo,TX,Parker County,91182,5201,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76009,Dallas,"Dallas-Fort Worth-Arlington, TX",Alvarado,TX,Johnson County,91183,4939,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76010,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91184,690,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76011,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91185,5137,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76012,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91186,3832,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76013,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91187,2958,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76014,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91188,3359,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76015,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91189,6878,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76016,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91190,3490,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76017,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91191,1234,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76018,Dallas,"Dallas-Fort Worth-Arlington, TX",Arlington,TX,Tarrant County,91192,4378,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76020,Dallas,"Dallas-Fort Worth-Arlington, TX",Azle,TX,Parker County,91194,2911,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76021,Dallas,"Dallas-Fort Worth-Arlington, TX",Bedford,TX,Tarrant County,91195,2891,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76022,Dallas,"Dallas-Fort Worth-Arlington, TX",Bedford,TX,Tarrant County,91196,8288,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76023,Dallas,"Dallas-Fort Worth-Arlington, TX",Boyd,TX,Wise County,91197,10753,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76028,Dallas,"Dallas-Fort Worth-Arlington, TX",Burleson,TX,Johnson County,91198,106,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76031,Dallas,"Dallas-Fort Worth-Arlington, TX",Cleburne,TX,Johnson County,91199,5453,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76033,Dallas,"Dallas-Fort Worth-Arlington, TX",Cleburne,TX,Johnson County,91200,3278,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76034,Dallas,"Dallas-Fort Worth-Arlington, TX",Colleyville,TX,Tarrant County,91201,4675,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76036,Dallas,"Dallas-Fort Worth-Arlington, TX",Crowley,TX,Tarrant County,91203,2509,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76039,Dallas,"Dallas-Fort Worth-Arlington, TX",Euless,TX,Tarrant County,91204,2096,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76040,Dallas,"Dallas-Fort Worth-Arlington, TX",Euless,TX,Tarrant County,91205,1990,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76044,Dallas,"Dallas-Fort Worth-Arlington, TX",Godley,TX,Johnson County,91208,10570,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76050,Dallas,"Dallas-Fort Worth-Arlington, TX",Grandview,TX,Johnson County,91211,10789,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76051,Dallas,"Dallas-Fort Worth-Arlington, TX",Grapevine,TX,Tarrant County,91212,1091,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76052,Dallas,"Dallas-Fort Worth-Arlington, TX",Haslet,TX,Tarrant County,91213,3286,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76053,Dallas,"Dallas-Fort Worth-Arlington, TX",Hurst,TX,Tarrant County,91214,3145,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76054,Dallas,"Dallas-Fort Worth-Arlington, TX",Hurst,TX,Tarrant County,91215,9154,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76058,Dallas,"Dallas-Fort Worth-Arlington, TX",Joshua,TX,Johnson County,91217,5916,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76059,Dallas,"Dallas-Fort Worth-Arlington, TX",Keene,TX,Johnson County,91218,16713,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76060,Dallas,"Dallas-Fort Worth-Arlington, TX",Kennedale,TX,Tarrant County,91219,10126,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76063,Dallas,"Dallas-Fort Worth-Arlington, TX",Mansfield,TX,Tarrant County,91221,104,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76064,Dallas,"Dallas-Fort Worth-Arlington, TX",Maypearl,TX,Ellis County,91222,18144,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76065,Dallas,"Dallas-Fort Worth-Arlington, TX",Midlothian,TX,Ellis County,91223,1178,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76066,Dallas,"Dallas-Fort Worth-Arlington, TX",Millsap,TX,Parker County,91224,12291,2019-02-28,2025-12-31,83,96,0,False,True,both_agree,Dallas
+76071,Dallas,"Dallas-Fort Worth-Arlington, TX",Newark,TX,Wise County,91228,16202,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76073,Dallas,"Dallas-Fort Worth-Arlington, TX",Paradise,TX,Wise County,91229,11374,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76078,Dallas,"Dallas-Fort Worth-Arlington, TX",Rhome,TX,Wise County,91231,9726,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76082,Dallas,"Dallas-Fort Worth-Arlington, TX",Springtown,TX,Parker County,91232,5229,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76084,Dallas,"Dallas-Fort Worth-Arlington, TX",Venus,TX,Johnson County,91233,8751,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76085,Dallas,"Dallas-Fort Worth-Arlington, TX",Weatherford,TX,Parker County,91234,8166,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76086,Dallas,"Dallas-Fort Worth-Arlington, TX",Weatherford,TX,Parker County,91235,6473,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76087,Dallas,"Dallas-Fort Worth-Arlington, TX",Weatherford,TX,Parker County,91236,2240,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76088,Dallas,"Dallas-Fort Worth-Arlington, TX",Weatherford,TX,Parker County,91237,7389,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76092,Dallas,"Dallas-Fort Worth-Arlington, TX",Southlake,TX,Tarrant County,91238,2961,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76093,Dallas,"Dallas-Fort Worth-Arlington, TX",Rio Vista,TX,Johnson County,91239,18910,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76102,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91247,9285,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76103,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91248,7305,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76104,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91249,6007,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76105,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91250,5456,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76106,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91251,2846,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76107,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91252,3269,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76108,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91253,1572,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76109,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91254,4253,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76110,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91255,3258,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76111,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91256,6226,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76112,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91257,1639,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76114,Dallas,"Dallas-Fort Worth-Arlington, TX",River Oaks,TX,Tarrant County,91259,4356,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76115,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91260,7015,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76116,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91261,1058,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76117,Dallas,"Dallas-Fort Worth-Arlington, TX",Haltom City,TX,Tarrant County,91262,3123,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76118,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91263,6899,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76119,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91264,809,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76120,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91265,6386,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76123,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91268,1697,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76126,Dallas,"Dallas-Fort Worth-Arlington, TX",Benbrook,TX,Tarrant County,91270,4196,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76131,Dallas,"Dallas-Fort Worth-Arlington, TX",Saginaw,TX,Tarrant County,91274,833,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76132,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91275,4451,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76133,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91276,888,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76134,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91277,3589,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76135,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91278,5789,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76137,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91280,528,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76140,Dallas,"Dallas-Fort Worth-Arlington, TX",Everman,TX,Tarrant County,91281,2809,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76148,Dallas,"Dallas-Fort Worth-Arlington, TX",Watauga,TX,Tarrant County,91283,5429,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76164,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91289,8052,2018-01-31,2025-12-31,94,96,2,False,False,both_agree,Dallas
+76177,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91290,4958,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76179,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91291,85,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76180,Dallas,"Dallas-Fort Worth-Arlington, TX",North Richland Hills,TX,Tarrant County,91292,2017,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76182,Dallas,"Dallas-Fort Worth-Arlington, TX",North Richland Hills,TX,Tarrant County,91294,3633,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76201,Dallas,"Dallas-Fort Worth-Arlington, TX",Denton,TX,Denton County,91304,4207,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76205,Dallas,"Dallas-Fort Worth-Arlington, TX",Denton,TX,Denton County,91308,5557,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76207,Dallas,"Dallas-Fort Worth-Arlington, TX",Denton,TX,Denton County,91310,6390,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76208,Dallas,"Dallas-Fort Worth-Arlington, TX",Denton,TX,Denton County,91311,3584,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76209,Dallas,"Dallas-Fort Worth-Arlington, TX",Denton,TX,Denton County,91312,4433,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76210,Dallas,"Dallas-Fort Worth-Arlington, TX",Corinth,TX,Denton County,91313,1189,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76225,Dallas,"Dallas-Fort Worth-Arlington, TX",Alvord,TX,Wise County,91314,15104,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76226,Dallas,"Dallas-Fort Worth-Arlington, TX",Argyle,TX,Denton County,91315,1570,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76227,Dallas,"Dallas-Fort Worth-Arlington, TX",Aubrey,TX,Denton County,91316,471,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76234,Dallas,"Dallas-Fort Worth-Arlington, TX",Decatur,TX,Wise County,91320,5731,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76244,Dallas,"Dallas-Fort Worth-Arlington, TX",Fort Worth,TX,Tarrant County,91325,115,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76247,Dallas,"Dallas-Fort Worth-Arlington, TX",Justin,TX,Denton County,91328,5893,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76248,Dallas,"Dallas-Fort Worth-Arlington, TX",Keller,TX,Tarrant County,91329,2155,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76249,Dallas,"Dallas-Fort Worth-Arlington, TX",Krum,TX,Denton County,91330,10133,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76258,Dallas,"Dallas-Fort Worth-Arlington, TX",Pilot Point,TX,Denton County,91336,9507,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76259,Dallas,"Dallas-Fort Worth-Arlington, TX",Ponder,TX,Denton County,91337,13047,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76262,Dallas,"Dallas-Fort Worth-Arlington, TX",Roanoke,TX,Denton County,91339,1184,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76266,Dallas,"Dallas-Fort Worth-Arlington, TX",Sanger,TX,Denton County,91343,6087,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76270,Dallas,"Dallas-Fort Worth-Arlington, TX",Alvord,TX,Montague County,91346,18135,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+76426,Dallas,"Dallas-Fort Worth-Arlington, TX",Chico,TX,Wise County,91386,9122,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76431,Dallas,"Dallas-Fort Worth-Arlington, TX",Chico,TX,Wise County,91390,15618,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76486,Dallas,"Dallas-Fort Worth-Arlington, TX",Perrin,TX,Jack County,91432,22461,2022-02-28,2025-12-31,47,96,0,False,True,metro_col_only,
+76487,Dallas,"Dallas-Fort Worth-Arlington, TX",Poolville,TX,Parker County,91433,14319,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76527,Austin,"Austin-Round Rock-Georgetown, TX",Florence,TX,Williamson County,91452,13229,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+76530,Austin,"Austin-Round Rock-Georgetown, TX",Granger,TX,Williamson County,91454,17837,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+76537,Austin,"Austin-Round Rock-Georgetown, TX",Jarrell,TX,Williamson County,91458,7499,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+76574,Austin,"Austin-Round Rock-Georgetown, TX",Taylor,TX,Williamson County,91486,6055,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+76578,Austin,"Austin-Round Rock-Georgetown, TX",Thrall,TX,Williamson County,91488,20919,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+76651,Dallas,"Dallas-Fort Worth-Arlington, TX",Italy,TX,Ellis County,91521,14627,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+76670,Dallas,"Dallas-Fort Worth-Arlington, TX",Italy,TX,Ellis County,91534,21066,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Dallas
+78602,Austin,"Austin-Round Rock-Georgetown, TX",Bastrop,TX,Bastrop County,92541,2336,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78610,Austin,"Austin-Round Rock-Georgetown, TX",Buda,TX,Hays County,92548,1127,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78612,Austin,"Austin-Round Rock-Georgetown, TX",Cedar Creek,TX,Bastrop County,92550,7591,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78613,Austin,"Austin-Round Rock-Georgetown, TX",Cedar Park,TX,Williamson County,92551,48,2018-01-31,2025-12-31,94,96,2,False,False,both_agree,Austin
+78615,Austin,"Austin-Round Rock-Georgetown, TX",Coupland,TX,Williamson County,92553,15617,2019-02-28,2025-12-31,83,96,0,False,True,both_agree,Austin
+78616,Austin,"Austin-Round Rock-Georgetown, TX",Dale,TX,Caldwell County,92554,9030,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78617,Austin,"Austin-Round Rock-Georgetown, TX",Del Valle,TX,Travis County,92555,3831,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78619,Austin,"Austin-Round Rock-Georgetown, TX",Driftwood,TX,Hays County,92557,13472,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78620,Austin,"Austin-Round Rock-Georgetown, TX",Dripping Springs,TX,Hays County,92558,5238,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78621,Austin,"Austin-Round Rock-Georgetown, TX",Elgin,TX,Bastrop County,92559,4369,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78622,Austin,"Austin-Round Rock-Georgetown, TX",Luling,TX,Caldwell County,92560,32057,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Austin
+78626,Austin,"Austin-Round Rock-Georgetown, TX",Georgetown,TX,Williamson County,92563,1310,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78628,Austin,"Austin-Round Rock-Georgetown, TX",Georgetown,TX,Williamson County,92565,717,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78632,Austin,"Austin-Round Rock-Georgetown, TX",Harwood,TX,Caldwell County,92569,21007,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Austin
+78633,Austin,"Austin-Round Rock-Georgetown, TX",Georgetown,TX,Williamson County,399637,3803,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78634,Austin,"Austin-Round Rock-Georgetown, TX",Hutto,TX,Williamson County,92570,855,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78640,Austin,"Austin-Round Rock-Georgetown, TX",Kyle,TX,Hays County,92575,151,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78641,Austin,"Austin-Round Rock-Georgetown, TX",Leander,TX,Williamson County,92576,28,2018-01-31,2025-12-31,94,96,2,False,False,both_agree,Austin
+78642,Austin,"Austin-Round Rock-Georgetown, TX",Liberty Hill,TX,Williamson County,92577,5604,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78644,Austin,"Austin-Round Rock-Georgetown, TX",Lockhart,TX,Caldwell County,92579,4979,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78645,Austin,"Austin-Round Rock-Georgetown, TX",Lago Vista,TX,Travis County,92580,8277,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78648,Austin,"Austin-Round Rock-Georgetown, TX",Luling,TX,Caldwell County,92582,10451,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78650,Austin,"Austin-Round Rock-Georgetown, TX",McDade,TX,Bastrop County,92583,15961,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78652,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92585,9254,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78653,Austin,"Austin-Round Rock-Georgetown, TX",Manor,TX,Travis County,92586,1030,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78654,Austin,"Austin-Round Rock-Georgetown, TX",Marble Falls,TX,Burnet County,92587,6030,2018-01-31,2025-12-31,96,96,0,True,False,metro_col_only,
+78655,Austin,"Austin-Round Rock-Georgetown, TX",Martindale,TX,Caldwell County,92588,14041,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78656,Austin,"Austin-Round Rock-Georgetown, TX",Maxwell,TX,Caldwell County,92589,19748,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78659,Austin,"Austin-Round Rock-Georgetown, TX",Paige,TX,Bastrop County,92592,15412,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78660,Austin,"Austin-Round Rock-Georgetown, TX",Pflugerville,TX,Travis County,92593,4,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78661,Austin,"Austin-Round Rock-Georgetown, TX",Luling,TX,Caldwell County,92594,32290,2022-02-28,2025-12-31,47,96,0,False,True,both_agree,Austin
+78662,Austin,"Austin-Round Rock-Georgetown, TX",Red Rock,TX,Bastrop County,92595,14531,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78664,Austin,"Austin-Round Rock-Georgetown, TX",Round Rock,TX,Williamson County,92597,449,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78665,Austin,"Austin-Round Rock-Georgetown, TX",Round Rock,TX,Williamson County,399638,463,2018-01-31,2025-12-31,95,96,1,False,False,both_agree,Austin
+78666,Austin,"Austin-Round Rock-Georgetown, TX",San Marcos,TX,Hays County,92598,80,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78669,Austin,"Austin-Round Rock-Georgetown, TX",Spicewood,TX,Travis County,92600,7892,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78676,Austin,"Austin-Round Rock-Georgetown, TX",Wimberley,TX,Hays County,92607,6377,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78681,Austin,"Austin-Round Rock-Georgetown, TX",Round Rock,TX,Williamson County,92610,595,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78701,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92614,8853,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78702,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92615,4799,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78703,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92616,5309,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78704,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92617,952,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78705,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92618,4816,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78717,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Williamson County,92628,2190,2018-01-31,2025-12-31,94,96,2,False,False,both_agree,Austin
+78719,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92630,15943,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78721,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92632,9443,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78722,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92633,11792,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78723,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92634,2311,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78724,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92635,3254,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78725,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92636,10462,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78726,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92637,7979,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78727,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92638,4575,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78728,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92639,4302,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78729,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Williamson County,92640,3789,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78730,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92641,10118,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78731,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92642,4622,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78732,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92643,6193,2018-01-31,2025-12-31,95,96,1,False,False,both_agree,Austin
+78733,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92644,9153,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78734,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92645,5760,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78735,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92646,6331,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78736,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92647,9364,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78737,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Hays County,92648,4096,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78738,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92649,4914,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78739,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92650,6107,2018-01-31,2025-12-31,95,96,1,False,False,both_agree,Austin
+78741,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92651,1387,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78744,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92653,1180,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78745,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92654,492,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78746,Austin,"Austin-Round Rock-Georgetown, TX",West Lake Hills,TX,Travis County,92655,4278,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78747,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92656,5131,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78748,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92657,997,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78749,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92658,3161,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78750,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92659,3518,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78751,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92660,7549,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78752,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92661,6083,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78753,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92662,648,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78754,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92663,3945,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78756,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92665,9723,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78757,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92666,4800,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78758,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92667,1035,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78759,Austin,"Austin-Round Rock-Georgetown, TX",Austin,TX,Travis County,92668,1531,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78953,Austin,"Austin-Round Rock-Georgetown, TX",Rosanky,TX,Bastrop County,92747,19527,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+78957,Austin,"Austin-Round Rock-Georgetown, TX",Smithville,TX,Bastrop County,92750,10010,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Austin
+85003,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94719,9505,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85004,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94720,9038,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85006,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94722,5857,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85007,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94723,8308,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85008,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94724,562,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85009,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94725,774,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85012,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94728,10169,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85013,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94729,5474,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85014,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94730,4514,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85015,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94731,1799,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85016,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94732,2622,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85017,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94733,1433,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85018,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94734,2472,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85019,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94735,4115,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85020,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94736,2895,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85021,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94737,2042,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85022,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94738,783,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85023,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94739,2667,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85024,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94740,4289,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85027,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94743,1985,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85028,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94744,6156,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85029,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94745,1080,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85031,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94747,3572,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85032,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94748,232,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85033,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94749,567,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85034,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94750,11890,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85035,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94751,873,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85037,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94753,820,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85040,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94756,2913,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85041,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94757,378,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85042,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94758,1373,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85043,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94759,2308,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85044,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94760,2197,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85045,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94761,11543,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85048,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94763,2714,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85050,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94764,3130,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85051,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94765,1496,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85053,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94766,3670,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85054,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94767,9675,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85083,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,399652,6181,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85085,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94791,3553,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85086,Phoenix,"Phoenix-Mesa-Chandler, AZ",Anthem,AZ,Maricopa County,94792,1853,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85087,Phoenix,"Phoenix-Mesa-Chandler, AZ",New River,AZ,Maricopa County,94793,9760,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85118,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gold Canyon,AZ,Pinal County,417434,7711,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85119,Phoenix,"Phoenix-Mesa-Chandler, AZ",Apache Junction,AZ,Pinal County,417435,4743,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85120,Phoenix,"Phoenix-Mesa-Chandler, AZ",Apache Junction,AZ,Pinal County,417436,3405,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85122,Phoenix,"Phoenix-Mesa-Chandler, AZ",Casa Grande,AZ,Pinal County,417437,486,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85123,Phoenix,"Phoenix-Mesa-Chandler, AZ",Arizona City,AZ,Pinal County,417461,10152,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85128,Phoenix,"Phoenix-Mesa-Chandler, AZ",Coolidge,AZ,Pinal County,417438,6319,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85131,Phoenix,"Phoenix-Mesa-Chandler, AZ",Eloy,AZ,Pinal County,417439,6029,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85132,Phoenix,"Phoenix-Mesa-Chandler, AZ",Florence,AZ,Pinal County,417440,1941,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85137,Phoenix,"Phoenix-Mesa-Chandler, AZ",Miami,AZ,Pinal County,417441,17401,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85138,Phoenix,"Phoenix-Mesa-Chandler, AZ",Maricopa,AZ,Pinal County,417442,710,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85139,Phoenix,"Phoenix-Mesa-Chandler, AZ",Maricopa,AZ,Pinal County,417443,5650,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85140,Phoenix,"Phoenix-Mesa-Chandler, AZ",San Tan Valley,AZ,Pinal County,399654,1904,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85142,Phoenix,"Phoenix-Mesa-Chandler, AZ",Queen Creek,AZ,Maricopa County,417444,238,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85143,Phoenix,"Phoenix-Mesa-Chandler, AZ",San Tan Valley,AZ,Pinal County,94835,1343,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85145,Phoenix,"Phoenix-Mesa-Chandler, AZ",Red Rock,AZ,Pinal County,417445,28589,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85173,Phoenix,"Phoenix-Mesa-Chandler, AZ",Superior,AZ,Pinal County,417447,16797,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85192,Phoenix,"Phoenix-Mesa-Chandler, AZ",Bylas,AZ,Pinal County,417449,21660,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85193,Phoenix,"Phoenix-Mesa-Chandler, AZ",Casa Grande,AZ,Pinal County,417450,11977,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85194,Phoenix,"Phoenix-Mesa-Chandler, AZ",Casa Grande,AZ,Pinal County,417451,9584,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85201,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94796,1111,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85202,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94797,1978,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85203,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94798,2629,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85204,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94799,361,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85205,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94800,1514,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85206,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94801,2314,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85207,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94802,916,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85208,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94803,2537,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85209,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94804,1588,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85210,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94805,2286,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85212,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94807,470,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85213,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94808,2130,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85215,Phoenix,"Phoenix-Mesa-Chandler, AZ",Mesa,AZ,Maricopa County,94810,7207,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85224,Phoenix,"Phoenix-Mesa-Chandler, AZ",Chandler,AZ,Maricopa County,94819,1264,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85225,Phoenix,"Phoenix-Mesa-Chandler, AZ",Chandler,AZ,Maricopa County,94820,180,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85226,Phoenix,"Phoenix-Mesa-Chandler, AZ",Chandler,AZ,Maricopa County,94821,1712,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85233,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gilbert,AZ,Maricopa County,94827,2066,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85234,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gilbert,AZ,Maricopa County,94828,844,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85248,Phoenix,"Phoenix-Mesa-Chandler, AZ",Chandler,AZ,Maricopa County,94840,2414,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85249,Phoenix,"Phoenix-Mesa-Chandler, AZ",Chandler,AZ,Maricopa County,94841,1217,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85250,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94842,7481,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85251,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94843,2094,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85253,Phoenix,"Phoenix-Mesa-Chandler, AZ",Paradise Valley,AZ,Maricopa County,94845,6917,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85254,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94846,1325,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85255,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94847,1498,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85257,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94849,3822,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85258,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94850,5036,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85259,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94851,5718,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85260,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94852,2048,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85262,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94854,8806,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85263,Phoenix,"Phoenix-Mesa-Chandler, AZ",Rio Verde,AZ,Maricopa County,94855,14868,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85264,Phoenix,"Phoenix-Mesa-Chandler, AZ",Fort McDowell,AZ,Maricopa County,94856,19740,2023-12-31,2025-12-31,25,96,0,False,True,both_agree,Phoenix
+85266,Phoenix,"Phoenix-Mesa-Chandler, AZ",Scottsdale,AZ,Maricopa County,94857,9341,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85268,Phoenix,"Phoenix-Mesa-Chandler, AZ",Fountain Hills,AZ,Maricopa County,94859,5191,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85281,Phoenix,"Phoenix-Mesa-Chandler, AZ",Tempe,AZ,Maricopa County,94870,1216,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85282,Phoenix,"Phoenix-Mesa-Chandler, AZ",Tempe,AZ,Maricopa County,94871,793,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85283,Phoenix,"Phoenix-Mesa-Chandler, AZ",Tempe,AZ,Maricopa County,94872,1516,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85284,Phoenix,"Phoenix-Mesa-Chandler, AZ",Tempe,AZ,Maricopa County,94873,5786,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85286,Phoenix,"Phoenix-Mesa-Chandler, AZ",Chandler,AZ,Maricopa County,399655,978,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85295,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gilbert,AZ,Maricopa County,399658,876,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85296,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gilbert,AZ,Maricopa County,94880,1024,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85297,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gilbert,AZ,Maricopa County,94881,1822,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85298,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gilbert,AZ,Maricopa County,399659,1741,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85301,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94883,314,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85302,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94884,2348,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85303,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94885,2458,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85304,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94886,4096,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85305,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94887,7192,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85306,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94888,4788,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85307,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94889,7903,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85308,Phoenix,"Phoenix-Mesa-Chandler, AZ",Glendale,AZ,Maricopa County,94890,334,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85310,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94892,6302,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85322,Phoenix,"Phoenix-Mesa-Chandler, AZ",Arlington,AZ,Maricopa County,94899,19174,2023-12-31,2025-12-31,25,96,0,False,True,both_agree,Phoenix
+85323,Phoenix,"Phoenix-Mesa-Chandler, AZ",Avondale,AZ,Maricopa County,94900,1106,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85326,Phoenix,"Phoenix-Mesa-Chandler, AZ",Buckeye,AZ,Maricopa County,94903,199,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85331,Phoenix,"Phoenix-Mesa-Chandler, AZ",Cave Creek,AZ,Maricopa County,94907,2984,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85335,Phoenix,"Phoenix-Mesa-Chandler, AZ",El Mirage,AZ,Maricopa County,94911,2759,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85337,Phoenix,"Phoenix-Mesa-Chandler, AZ",Gila Bend,AZ,Maricopa County,94913,15509,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85338,Phoenix,"Phoenix-Mesa-Chandler, AZ",Goodyear,AZ,Maricopa County,94914,296,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85339,Phoenix,"Phoenix-Mesa-Chandler, AZ",Phoenix,AZ,Maricopa County,94915,657,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85340,Phoenix,"Phoenix-Mesa-Chandler, AZ",Litchfield Park,AZ,Maricopa County,94916,1743,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85342,Phoenix,"Phoenix-Mesa-Chandler, AZ",Morristown,AZ,Maricopa County,94918,13966,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85345,Phoenix,"Phoenix-Mesa-Chandler, AZ",Peoria,AZ,Maricopa County,94921,415,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85351,Phoenix,"Phoenix-Mesa-Chandler, AZ",Sun City,AZ,Maricopa County,94927,3602,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85353,Phoenix,"Phoenix-Mesa-Chandler, AZ",Tolleson,AZ,Maricopa County,94929,1033,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85354,Phoenix,"Phoenix-Mesa-Chandler, AZ",Tonopah,AZ,Maricopa County,94930,10793,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85355,Phoenix,"Phoenix-Mesa-Chandler, AZ",Waddell,AZ,Maricopa County,94931,7506,2018-01-31,2025-12-31,93,96,3,False,False,both_agree,Phoenix
+85361,Phoenix,"Phoenix-Mesa-Chandler, AZ",Wittmann,AZ,Maricopa County,94937,10346,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85363,Phoenix,"Phoenix-Mesa-Chandler, AZ",Youngtown,AZ,Maricopa County,94939,12263,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85373,Phoenix,"Phoenix-Mesa-Chandler, AZ",Sun City,AZ,Maricopa County,94947,6735,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85374,Phoenix,"Phoenix-Mesa-Chandler, AZ",Surprise,AZ,Maricopa County,94948,1770,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85375,Phoenix,"Phoenix-Mesa-Chandler, AZ",Sun City West,AZ,Maricopa County,94949,3240,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85377,Phoenix,"Phoenix-Mesa-Chandler, AZ",Carefree,AZ,Maricopa County,94951,28361,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85378,Phoenix,"Phoenix-Mesa-Chandler, AZ",Surprise,AZ,Maricopa County,94952,10085,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85379,Phoenix,"Phoenix-Mesa-Chandler, AZ",Surprise,AZ,Maricopa County,94953,903,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85381,Phoenix,"Phoenix-Mesa-Chandler, AZ",Peoria,AZ,Maricopa County,94955,4166,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85382,Phoenix,"Phoenix-Mesa-Chandler, AZ",Peoria,AZ,Maricopa County,94956,1641,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85383,Phoenix,"Phoenix-Mesa-Chandler, AZ",Peoria,AZ,Maricopa County,94957,233,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85387,Phoenix,"Phoenix-Mesa-Chandler, AZ",Surprise,AZ,Maricopa County,94959,5266,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85388,Phoenix,"Phoenix-Mesa-Chandler, AZ",Surprise,AZ,Maricopa County,94960,2804,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85390,Phoenix,"Phoenix-Mesa-Chandler, AZ",Wickenburg,AZ,Maricopa County,94961,10925,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85392,Phoenix,"Phoenix-Mesa-Chandler, AZ",Avondale,AZ,Maricopa County,399660,2261,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85395,Phoenix,"Phoenix-Mesa-Chandler, AZ",Goodyear,AZ,Maricopa County,399661,2107,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85396,Phoenix,"Phoenix-Mesa-Chandler, AZ",Buckeye,AZ,Maricopa County,94962,2815,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85623,Phoenix,"Phoenix-Mesa-Chandler, AZ",Oracle,AZ,Pinal County,95007,12864,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85631,Phoenix,"Phoenix-Mesa-Chandler, AZ",San Manuel,AZ,Pinal County,95015,15777,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+85739,Phoenix,"Phoenix-Mesa-Chandler, AZ",Saddlebrooke,AZ,Pinal County,95075,7678,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Phoenix
+89002,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,399665,2540,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89004,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95743,32153,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89005,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Boulder City,NV,Clark County,95744,7801,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89007,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Bunkerville,NV,Clark County,95746,23842,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89011,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95750,3485,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89012,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95751,2556,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89014,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95753,1995,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89015,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95754,851,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89018,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Indian Springs,NV,Clark County,95757,21343,2023-02-28,2025-12-31,35,96,0,False,True,both_agree,Las Vegas
+89019,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Jean,NV,Clark County,95758,18454,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89021,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Logandale,NV,Clark County,95760,15906,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89027,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Mesquite,NV,Clark County,95766,6379,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89029,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Laughlin,NV,Clark County,95768,10342,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89030,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95769,1014,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89031,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95770,137,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89032,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95771,1067,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89034,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Mesquite,NV,Lincoln County,399666,17536,2018-01-31,2025-12-31,94,96,2,False,False,metro_col_only,
+89040,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Overton,NV,Clark County,95775,16126,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89044,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95779,3619,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89046,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Searchlight,NV,Clark County,95781,21792,2023-02-28,2025-12-31,35,96,0,False,True,both_agree,Las Vegas
+89052,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95785,566,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89074,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Henderson,NV,Clark County,95790,821,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89081,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95792,2459,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89084,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95793,1524,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89085,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95794,14112,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89086,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95795,9706,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89101,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95797,1625,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89102,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95798,2690,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89103,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95799,1171,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89104,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95800,1966,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89106,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95802,4234,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89107,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95803,2565,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89108,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95804,182,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89109,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95805,11457,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89110,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95806,279,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89113,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95809,2837,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89115,Las Vegas,"Las Vegas-Henderson-Paradise, NV",North Las Vegas,NV,Clark County,95811,269,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89117,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95813,618,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89118,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95814,4923,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89119,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95815,1009,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89120,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95816,5051,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89121,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95817,265,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89122,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95818,899,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89123,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95819,537,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89124,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Mount Charleston,NV,Clark County,95820,12513,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89128,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95824,1972,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89129,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95825,707,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89130,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95826,2704,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89131,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95827,956,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89134,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95830,5220,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89135,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95831,3372,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89138,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95834,7743,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89139,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95835,1315,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89141,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95837,1658,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89142,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95838,2851,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89143,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95839,7501,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89144,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95840,6736,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89145,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95841,4396,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89146,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95842,5620,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89147,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95843,675,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89148,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95844,379,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89149,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95845,1361,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89156,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95852,4090,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89158,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,418163,30164,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89161,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95856,5279,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89166,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95861,4719,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89169,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,399670,5497,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89178,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95865,4306,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89179,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,95866,8290,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas
+89183,Las Vegas,"Las Vegas-Henderson-Paradise, NV",Las Vegas,NV,Clark County,399671,1562,2018-01-31,2025-12-31,96,96,0,True,False,both_agree,Las Vegas

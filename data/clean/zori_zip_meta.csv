@@ -1,0 +1,1100 @@
+zip,metro_short,city,sizerank,dist_cityhall_mi,dist_band,first_obs,last_obs,n_obs_window,n_interior_gaps,in_zori_file,has_any_zori,complete_window,late_entry,zori_both_ends
+27013,Charlotte,Cleveland,11077,37.399717939310534,30+ mi,,,0,0,False,False,False,False,False
+27054,Charlotte,Woodleaf,18706,41.747503586089714,30+ mi,,,0,0,False,False,False,False,False
+28006,Charlotte,Alexis,22436,19.322587214474904,10-20 mi,,,0,0,False,False,False,False,False
+28012,Charlotte,Belmont,4432,11.212206426583272,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+28016,Charlotte,Bessemer City,8340,25.85310847258113,20-30 mi,,,0,0,True,False,False,False,False
+28021,Charlotte,Cherryville,7950,34.11976099526381,30+ mi,,,0,0,True,False,False,False,False
+28023,Charlotte,China Grove,7318,27.462291509546834,20-30 mi,2025-09-30,2025-12-31,4,0,True,True,False,True,False
+28025,Charlotte,Concord,450,21.02455761155447,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28027,Charlotte,Concord,97,16.17760809443868,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28031,Charlotte,Cornelius,3539,17.808238218791075,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28032,Charlotte,Cramerton,16274,13.565518693507912,10-20 mi,,,0,0,True,False,False,False,False
+28033,Charlotte,Crouse,16023,30.76245256461145,30+ mi,,,0,0,False,False,False,False,False
+28034,Charlotte,Dallas,6610,21.212868917433862,20-30 mi,2022-07-31,2025-12-31,42,0,True,True,False,True,False
+28036,Charlotte,Davidson,5687,18.209176914159404,10-20 mi,2021-09-30,2025-12-31,50,2,True,True,False,True,False
+28037,Charlotte,Denver,4739,21.462035023730778,20-30 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+28052,Charlotte,Gastonia,2612,22.135619965886654,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28054,Charlotte,Gastonia,2343,17.74255539853599,10-20 mi,2019-05-31,2025-12-31,80,0,True,True,False,True,True
+28056,Charlotte,Gastonia,2086,16.112926540555016,10-20 mi,2023-03-31,2025-12-31,34,0,True,True,False,True,False
+28071,Charlotte,Gold Hill,14779,35.91106202449025,30+ mi,,,0,0,False,False,False,False,False
+28075,Charlotte,Harrisburg,5729,12.600850779320591,10-20 mi,2024-02-29,2025-12-31,23,0,True,True,False,True,False
+28078,Charlotte,Huntersville,181,12.770946400204236,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28079,Charlotte,Lake Park,1696,15.377259027573595,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28080,Charlotte,Iron Station,10893,22.12837190427675,20-30 mi,,,0,0,False,False,False,False,False
+28081,Charlotte,Kannapolis,4193,21.669996285213585,20-30 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+28083,Charlotte,Kannapolis,4631,23.66154899855132,20-30 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+28088,Charlotte,Landis,17109,25.671704573327183,20-30 mi,,,0,0,False,False,False,False,False
+28091,Charlotte,Lilesville,16889,53.73271799426745,30+ mi,,,0,0,False,False,False,False,False
+28092,Charlotte,Lincolnton,2026,29.5048346189178,20-30 mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+28098,Charlotte,Lowell,14354,15.135915085301017,10-20 mi,,,0,0,False,False,False,False,False
+28101,Charlotte,Mc Adenville,24188,13.520351722881625,10-20 mi,,,0,0,False,False,False,False,False
+28103,Charlotte,Marshville,9269,31.576997197959376,30+ mi,,,0,0,False,False,False,False,False
+28104,Charlotte,Matthews,2801,13.83769589530995,10-20 mi,2022-10-31,2025-12-31,39,0,True,True,False,True,False
+28105,Charlotte,Matthews,1453,10.147884302638886,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28107,Charlotte,Midland,9499,18.2788696992074,10-20 mi,,,0,0,True,False,False,False,False
+28110,Charlotte,Monroe,651,21.533443501667016,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+28112,Charlotte,Monroe,4078,28.1637669041634,20-30 mi,2023-11-30,2025-12-31,25,1,True,True,False,True,False
+28115,Charlotte,Mooresville,1352,24.738595426917957,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28117,Charlotte,Mooresville,1263,24.63142224127129,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28119,Charlotte,Morven,17535,53.37219474762159,30+ mi,,,0,0,False,False,False,False,False
+28120,Charlotte,Mount Holly,5352,12.88621748306422,10-20 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+28124,Charlotte,Mount Pleasant,11273,27.27662077584479,20-30 mi,,,0,0,False,False,False,False,False
+28125,Charlotte,Mount Ulla,14840,31.270777625724083,30+ mi,,,0,0,False,False,False,False,False
+28133,Charlotte,Peachland,18364,41.597332269360706,30+ mi,,,0,0,False,False,False,False,False
+28134,Charlotte,Pineville,7793,9.895284545333464,0-10 mi,2022-06-30,2025-12-31,43,0,True,True,False,True,False
+28135,Charlotte,Polkton,13017,37.57479496759531,30+ mi,,,0,0,False,False,False,False,False
+28138,Charlotte,Rockwell,9919,30.39689761346556,30+ mi,,,0,0,False,False,False,False,False
+28144,Charlotte,Salisbury,4015,40.32520335820741,30+ mi,2025-12-31,2025-12-31,1,0,True,True,False,True,False
+28146,Charlotte,Salisbury,3759,37.260723523400074,30+ mi,2025-11-30,2025-11-30,1,0,True,True,False,True,False
+28147,Charlotte,Salisbury,4860,35.379171271707605,30+ mi,2023-03-31,2025-12-31,34,0,True,True,False,True,False
+28159,Charlotte,Spencer,16718,39.81965331438765,30+ mi,,,0,0,False,False,False,False,False
+28164,Charlotte,Stanley,6601,16.09679876449131,10-20 mi,,,0,0,True,False,False,False,False
+28166,Charlotte,Troutman,8298,31.544679827876784,30+ mi,2023-06-30,2025-12-31,31,0,True,True,False,True,False
+28170,Charlotte,Wadesboro,10049,44.60578499661744,30+ mi,,,0,0,False,False,False,False,False
+28173,Charlotte,Waxhaw,310,21.76326099844254,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28174,Charlotte,Wingate,10001,28.549411850686397,20-30 mi,,,0,0,True,False,False,False,False
+28202,Charlotte,Charlotte,7525,0.4900314579116887,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28203,Charlotte,Charlotte,7356,1.321372074730007,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28204,Charlotte,Charlotte,10212,0.8583926026866425,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28205,Charlotte,Charlotte,942,2.826280110544605,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28206,Charlotte,Charlotte,7629,2.5717667890234783,0-10 mi,2018-12-31,2025-12-31,85,0,True,True,False,True,True
+28207,Charlotte,Charlotte,9892,2.055721525374961,0-10 mi,2022-09-30,2025-12-31,40,0,True,True,False,True,False
+28208,Charlotte,Charlotte,1942,3.764887782543303,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28209,Charlotte,Charlotte,5321,3.0495638834218854,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28210,Charlotte,Charlotte,1259,6.343847201482285,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28211,Charlotte,Charlotte,3156,4.4836222831425845,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28212,Charlotte,Charlotte,1645,5.844935522422817,0-10 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+28213,Charlotte,Charlotte,1198,7.404497102665419,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28214,Charlotte,Charlotte,1465,8.05579023542733,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28215,Charlotte,Charlotte,315,8.114382576857022,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28216,Charlotte,Charlotte,839,6.762225603467019,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28217,Charlotte,Charlotte,2980,5.314160716456701,0-10 mi,2020-05-31,2025-12-31,67,1,True,True,False,True,False
+28226,Charlotte,Charlotte,2259,8.250814475858288,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28227,Charlotte,Mint Hill,516,11.179423925542828,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28262,Charlotte,Charlotte,898,8.949399588394524,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28269,Charlotte,Charlotte,93,8.273602687605543,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28270,Charlotte,Charlotte,3192,8.653838554686908,0-10 mi,2018-12-31,2025-12-31,85,0,True,True,False,True,True
+28273,Charlotte,Charlotte,961,9.125399282285873,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28277,Charlotte,Charlotte,162,11.905169387488195,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28278,Charlotte,Charlotte,2274,11.32365832228445,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+28625,Charlotte,Statesville,2140,44.883327513335246,30+ mi,2023-01-31,2025-12-31,35,1,True,True,False,True,False
+28634,Charlotte,Harmony,13149,52.131361672694986,30+ mi,,,0,0,False,False,False,False,False
+28660,Charlotte,Olin,18213,51.64609165090594,30+ mi,,,0,0,False,False,False,False,False
+28677,Charlotte,Statesville,2430,36.04054566057866,30+ mi,2022-07-31,2025-12-31,42,0,True,True,False,True,False
+28689,Charlotte,Union Grove,16762,57.02856360890189,30+ mi,,,0,0,False,False,False,False,False
+29031,Charlotte,Carlisle,19892,54.01279887813072,30+ mi,,,0,0,False,False,False,False,False
+29055,Charlotte,Great Falls,16706,44.90727729454537,30+ mi,,,0,0,False,False,False,False,False
+29058,Charlotte,Heath Springs,13325,46.36428820602048,30+ mi,,,0,0,False,False,False,False,False
+29067,Charlotte,Kershaw,9425,49.82523541566299,30+ mi,,,0,0,False,False,False,False,False
+29704,Charlotte,Catawba,15027,27.17574828066065,20-30 mi,,,0,0,False,False,False,False,False
+29706,Charlotte,Eureka Mill,6760,41.483049458812715,30+ mi,,,0,0,False,False,False,False,False
+29707,Charlotte,Fort Mill,2668,16.181547803536162,10-20 mi,2020-11-30,2025-12-31,59,3,True,True,False,True,False
+29708,Charlotte,Fort Mill,1778,14.559380737956523,10-20 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+29710,Charlotte,Clover,1820,22.986331752036893,20-30 mi,2024-10-31,2025-12-31,15,0,True,True,False,True,False
+29712,Charlotte,Edgemoor,17565,30.241329314184657,30+ mi,,,0,0,False,False,False,False,False
+29714,Charlotte,Fort Lawn,15360,35.43004001583583,30+ mi,,,0,0,False,False,False,False,False
+29715,Charlotte,Fort Mill,1265,15.324257652796046,10-20 mi,2023-04-30,2025-12-31,33,0,True,True,False,True,False
+29717,Charlotte,Hickory Grove,20225,39.191013270261,30+ mi,,,0,0,False,False,False,False,False
+29720,Charlotte,Lancaster,697,33.33320892683433,30+ mi,,,0,0,False,False,False,False,False
+29726,Charlotte,Mc Connells,18616,33.515823696956375,30+ mi,,,0,0,False,False,False,False,False
+29729,Charlotte,Richburg,17457,37.9652104797981,30+ mi,,,0,0,False,False,False,False,False
+29730,Charlotte,Rock Hill,508,25.40534345903573,20-30 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+29732,Charlotte,Rock Hill,632,22.055844068306197,20-30 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+29742,Charlotte,Sharon,17187,39.57770997731655,30+ mi,,,0,0,False,False,False,False,False
+29743,Charlotte,Smyrna,18765,35.62285477942181,30+ mi,,,0,0,False,False,False,False,False
+29745,Charlotte,York,3212,26.47910309735777,20-30 mi,,,0,0,False,False,False,False,False
+30002,Atlanta,Avondale Estates,13171,7.578349780136131,0-10 mi,,,0,0,False,False,False,False,False
+30004,Atlanta,Milton,278,27.986631318699775,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30005,Atlanta,Alpharetta,1796,25.516007213936504,20-30 mi,2019-04-30,2025-12-31,81,0,True,True,False,True,True
+30008,Atlanta,Marietta,2911,15.571236999877272,10-20 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+30009,Atlanta,Alpharetta,5818,23.287499785110388,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30011,Atlanta,Auburn,6461,36.83834193359972,30+ mi,2023-03-31,2025-12-31,34,0,True,True,False,True,False
+30012,Atlanta,Conyers,3006,22.384323640488315,20-30 mi,2021-09-30,2025-12-31,52,0,True,True,False,True,False
+30013,Atlanta,Conyers,4467,25.14950055367111,20-30 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+30014,Atlanta,Covington,1867,34.52588930379135,30+ mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+30016,Atlanta,Covington,377,30.99710767942062,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30017,Atlanta,Grayson,4546,26.32469421961238,20-30 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+30019,Atlanta,Dacula,633,33.01430886754302,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30021,Atlanta,Clarkston,4368,9.601230936347696,0-10 mi,2024-10-31,2025-12-31,15,0,True,True,False,True,False
+30022,Atlanta,Johns Creek,344,20.831262508868548,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30024,Atlanta,Suwanee,70,27.691294675076932,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30025,Atlanta,Social Circle,9014,40.43409864339031,30+ mi,,,0,0,False,False,False,False,False
+30028,Atlanta,Cumming,2408,39.55850733197861,30+ mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+30030,Atlanta,Decatur,3550,5.9353242952924115,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30032,Atlanta,Decatur,1616,7.250626939231792,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30033,Atlanta,Decatur,3431,7.552057097506482,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30034,Atlanta,Decatur,1878,9.07456104564326,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30035,Atlanta,Decatur,5634,10.821794908453445,10-20 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+30038,Atlanta,Lithonia,1581,15.479600740918109,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30039,Atlanta,Snellville,891,20.73276473116403,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30040,Atlanta,Cumming,96,35.00183568019264,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30041,Atlanta,Cumming,132,35.189601916545,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30043,Atlanta,Lawrenceville,65,28.5288031106922,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30044,Atlanta,Lawrenceville,13,21.965841925763986,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30045,Atlanta,Lawrenceville,1622,29.54395277168682,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30046,Atlanta,Lawrenceville,1595,26.66509917698911,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30047,Atlanta,Lilburn,191,18.022285556942222,10-20 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+30052,Atlanta,Loganville,111,28.698469223745104,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30054,Atlanta,Oxford,9803,29.56189893638141,20-30 mi,,,0,0,False,False,False,False,False
+30055,Atlanta,Mansfield,12762,40.74114420485624,30+ mi,,,0,0,False,False,False,False,False
+30056,Atlanta,Newborn,17504,46.13578415081474,30+ mi,,,0,0,False,False,False,False,False
+30058,Atlanta,Lithonia,311,16.27008422738407,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30060,Atlanta,Marietta,2028,14.72412256612518,10-20 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+30062,Atlanta,Marietta,423,18.420214115340357,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30064,Atlanta,Marietta,940,18.26873375602436,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30066,Atlanta,Marietta,453,20.66621995843432,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30067,Atlanta,Marietta,1270,13.457356062826818,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30068,Atlanta,Marietta,3092,15.332409966766033,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+30071,Atlanta,Norcross,4235,16.92602538693914,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+30072,Atlanta,Pine Lake,24422,11.04838036466116,10-20 mi,,,0,0,False,False,False,False,False
+30075,Atlanta,Roswell,683,20.990576323785778,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30076,Atlanta,Roswell,1518,19.84759557891958,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30078,Atlanta,Snellville,1976,22.734589003332463,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30079,Atlanta,Scottdale,14114,8.007214864632843,0-10 mi,,,0,0,False,False,False,False,False
+30080,Atlanta,Smyrna,885,10.966672651623632,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30082,Atlanta,Smyrna,4645,11.127370725666832,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30083,Atlanta,Stone Mountain,430,11.822168205942214,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30084,Atlanta,Tucker,2125,12.360667014788929,10-20 mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+30087,Atlanta,Stone Mountain,2399,17.026627918520155,10-20 mi,2020-10-31,2025-12-31,61,2,True,True,False,True,False
+30088,Atlanta,Stone Mountain,4227,11.954540014012638,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30092,Atlanta,Peachtree Corners,2849,17.91487396601857,10-20 mi,2019-01-31,2025-12-31,83,1,True,True,False,True,True
+30093,Atlanta,Norcross,1415,16.40017302640221,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30094,Atlanta,Conyers,3079,21.63680073856233,20-30 mi,2018-04-30,2025-12-31,92,1,True,True,False,True,True
+30096,Atlanta,Duluth,248,20.975854000002258,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30097,Atlanta,Duluth,1032,23.755080522129315,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30101,Atlanta,Acworth,444,26.83581537059611,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30102,Atlanta,Acworth,1767,28.416873287727427,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+30103,Atlanta,Adairsville,7972,52.17207828606093,30+ mi,2025-12-31,2025-12-31,1,0,True,True,False,True,False
+30106,Atlanta,Austell,5128,14.83552604651718,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30107,Atlanta,Ball Ground,6372,40.65325816391022,30+ mi,,,0,0,True,False,False,False,False
+30108,Atlanta,Bowdon,11581,52.39550074267906,30+ mi,,,0,0,False,False,False,False,False
+30110,Atlanta,Bremen,7614,42.81646773175621,30+ mi,,,0,0,True,False,False,False,False
+30113,Atlanta,Buchanan,12237,47.321485475308606,30+ mi,,,0,0,False,False,False,False,False
+30114,Atlanta,Canton,452,35.179411028207554,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30115,Atlanta,Canton,757,32.24850189540857,30+ mi,2018-12-31,2025-12-31,85,0,True,True,False,True,True
+30116,Atlanta,Carrollton,4993,37.71470347159358,30+ mi,,,0,0,True,False,False,False,False
+30117,Atlanta,Carrollton,2157,44.21125532136811,30+ mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+30120,Atlanta,Cartersville,1578,39.9050338896723,30+ mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+30121,Atlanta,Cartersville,5205,38.90961529333925,30+ mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+30122,Atlanta,Lithia Springs,3810,14.476387338731277,10-20 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+30126,Atlanta,Mableton,1783,10.443161830340753,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30127,Atlanta,Powder Springs,200,19.769042810675224,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30132,Atlanta,Dallas,862,30.823210141573796,30+ mi,2020-01-31,2025-12-31,72,0,True,True,False,True,False
+30134,Atlanta,Douglasville,1444,22.55235671793569,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30135,Atlanta,Douglasville,324,20.3974336828544,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30137,Atlanta,Emerson,21337,33.29409703363191,30+ mi,,,0,0,False,False,False,False,False
+30141,Atlanta,Hiram,3926,23.11470777188444,20-30 mi,2020-02-29,2025-12-31,71,0,True,True,False,True,False
+30143,Atlanta,Jasper,5247,49.36394518611307,30+ mi,,,0,0,False,False,False,False,False
+30144,Atlanta,Kennesaw,413,22.987172782645523,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30145,Atlanta,Kingston,9678,48.39517677327108,30+ mi,,,0,0,False,False,False,False,False
+30148,Atlanta,Marble Hill,22642,49.68075407760835,30+ mi,,,0,0,False,False,False,False,False
+30152,Atlanta,Kennesaw,1456,22.311889254607458,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30157,Atlanta,Dallas,948,29.199719961701536,20-30 mi,2019-06-30,2025-12-31,79,0,True,True,False,True,True
+30168,Atlanta,Austell,4703,11.612271344190576,10-20 mi,2020-09-30,2025-12-31,64,0,True,True,False,True,False
+30170,Atlanta,Bowdon,15932,49.63383851156668,30+ mi,,,0,0,False,False,False,False,False
+30171,Atlanta,Fairmount,15589,46.63675272922397,30+ mi,,,0,0,False,False,False,False,False
+30175,Atlanta,Talking Rock,11748,54.86666164233318,30+ mi,,,0,0,False,False,False,False,False
+30176,Atlanta,Tallapoosa,11518,52.531269833955164,30+ mi,,,0,0,False,False,False,False,False
+30177,Atlanta,Tate,21265,45.490008245142626,30+ mi,,,0,0,False,False,False,False,False
+30178,Atlanta,Taylorsville,12832,41.015397425783725,30+ mi,,,0,0,False,False,False,False,False
+30179,Atlanta,Temple,6227,35.94156146573757,30+ mi,,,0,0,True,False,False,False,False
+30180,Atlanta,Villa Rica,1997,30.439428990376868,30+ mi,2019-05-31,2025-12-31,80,0,True,True,False,True,True
+30182,Atlanta,Mount Zion,14836,49.76746121104434,30+ mi,,,0,0,False,False,False,False,False
+30183,Atlanta,Waleska,11621,42.530260585209014,30+ mi,,,0,0,False,False,False,False,False
+30184,Atlanta,Cartersville,10666,40.15440337035274,30+ mi,,,0,0,False,False,False,False,False
+30185,Atlanta,Whitesburg,13474,34.24145784901642,30+ mi,,,0,0,False,False,False,False,False
+30187,Atlanta,Winston,10629,27.59601706153382,20-30 mi,,,0,0,False,False,False,False,False
+30188,Atlanta,Woodstock,268,26.171897641681255,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30189,Atlanta,Woodstock,1764,27.918894907528763,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30204,Atlanta,Barnesville,8102,50.304125825170495,30+ mi,,,0,0,False,False,False,False,False
+30205,Atlanta,Brooks,15179,33.62303694905876,30+ mi,,,0,0,False,False,False,False,False
+30206,Atlanta,Concord,14851,45.2760081949964,30+ mi,,,0,0,False,False,False,False,False
+30213,Atlanta,Fairburn,957,17.515811043866677,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30214,Atlanta,Fayetteville,3559,18.685535929140396,10-20 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+30215,Atlanta,Fayetteville,1920,24.97752138210368,20-30 mi,2019-02-28,2025-12-31,82,1,True,True,False,True,True
+30216,Atlanta,Flovilla,20868,46.25283812336581,30+ mi,,,0,0,False,False,False,False,False
+30217,Atlanta,Franklin,9766,53.4217032929866,30+ mi,,,0,0,False,False,False,False,False
+30218,Atlanta,Gay,18806,44.894975171886465,30+ mi,,,0,0,False,False,False,False,False
+30220,Atlanta,Grantville,13562,43.68386882398818,30+ mi,,,0,0,False,False,False,False,False
+30222,Atlanta,Greenville,13583,52.77074713440988,30+ mi,,,0,0,False,False,False,False,False
+30223,Atlanta,Experiment,2149,32.41901030860112,30+ mi,2022-08-31,2025-12-31,41,0,True,True,False,True,False
+30224,Atlanta,Griffin,4327,38.60599699627172,30+ mi,2024-06-30,2025-12-31,19,0,True,True,False,True,False
+30228,Atlanta,Hampton,991,24.52874070688292,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30233,Atlanta,Jackson,4668,39.43871086153098,30+ mi,2025-12-31,2025-12-31,1,0,True,True,False,True,False
+30234,Atlanta,Jenkinsburg,19291,35.62618755511104,30+ mi,,,0,0,False,False,False,False,False
+30236,Atlanta,Jonesboro,986,16.256966467710104,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30238,Atlanta,Jonesboro,1858,17.075387196888908,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30248,Atlanta,Locust Grove,2780,31.936746847409456,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30251,Atlanta,Luthersville,18568,41.98358541329856,30+ mi,,,0,0,False,False,False,False,False
+30252,Atlanta,McDonough,929,27.008005390295477,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30253,Atlanta,McDonough,367,23.513650029463506,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30256,Atlanta,Meansville,15785,51.43577254047842,30+ mi,,,0,0,False,False,False,False,False
+30257,Atlanta,Milner,13592,43.45706493873688,30+ mi,,,0,0,False,False,False,False,False
+30258,Atlanta,Molena,16079,52.577118473850966,30+ mi,,,0,0,False,False,False,False,False
+30259,Atlanta,Moreland,13844,39.045650174088216,30+ mi,,,0,0,False,False,False,False,False
+30260,Atlanta,Morrow,3333,11.628459031945928,10-20 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+30263,Atlanta,Newnan,584,36.71898136748522,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30265,Atlanta,Newnan,1591,29.426693880031703,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30268,Atlanta,Palmetto,9166,23.687665154443973,20-30 mi,2025-11-30,2025-12-31,2,0,True,True,False,True,False
+30269,Atlanta,Peachtree City,2251,26.605253161074085,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30273,Atlanta,Rex,7474,13.309459780162127,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30274,Atlanta,Riverdale,2696,13.253156954490176,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30276,Atlanta,Senoia,5939,35.34781500856666,30+ mi,,,0,0,True,False,False,False,False
+30277,Atlanta,Sharpsburg,6496,29.807365190935347,20-30 mi,,,0,0,True,False,False,False,False
+30281,Atlanta,Stockbridge,244,17.375548681455328,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30288,Atlanta,Conley,9244,7.561497159021493,0-10 mi,,,0,0,True,False,False,False,False
+30290,Atlanta,Tyrone,9475,22.04821359820393,20-30 mi,,,0,0,False,False,False,False,False
+30291,Atlanta,Union City,5187,14.859472475419544,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30292,Atlanta,Williamson,12765,40.102248779866414,30+ mi,,,0,0,False,False,False,False,False
+30293,Atlanta,Woodbury,16259,54.50139407658454,30+ mi,,,0,0,False,False,False,False,False
+30294,Atlanta,Ellenwood,1725,10.58188778566912,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30295,Atlanta,Zebulon,12931,45.6940591628465,30+ mi,,,0,0,False,False,False,False,False
+30296,Atlanta,Riverdale,4352,13.162081524808553,10-20 mi,2020-11-30,2025-12-31,62,0,True,True,False,True,False
+30297,Atlanta,Forest Park,4862,9.313400128991514,0-10 mi,2023-05-31,2025-12-31,32,0,True,True,False,True,False
+30303,Atlanta,Atlanta,11247,0.2732820803986372,0-10 mi,2022-06-30,2025-12-31,43,0,True,True,False,True,False
+30305,Atlanta,Atlanta,4260,5.885784301421907,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30306,Atlanta,Atlanta,4655,3.468731709626922,0-10 mi,2018-01-31,2025-12-31,94,2,True,True,False,False,True
+30307,Atlanta,Atlanta,5617,3.598735368933976,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30308,Atlanta,Atlanta,5519,1.6865016197803453,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30309,Atlanta,Atlanta,3601,3.5303038975830185,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30310,Atlanta,Atlanta,4088,2.690976807784421,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30311,Atlanta,Atlanta,3151,5.233640483484245,0-10 mi,2022-08-31,2025-12-31,41,0,True,True,False,True,False
+30312,Atlanta,Atlanta,4872,0.881995189902533,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30313,Atlanta,Atlanta,10102,1.1022876715026966,0-10 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+30314,Atlanta,Atlanta,5647,2.473478258224466,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+30315,Atlanta,Atlanta,2764,3.217028719683565,0-10 mi,2018-02-28,2025-12-31,95,0,True,True,False,True,True
+30316,Atlanta,Atlanta,2830,4.048035791634062,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30317,Atlanta,Atlanta,7655,4.29163098716642,0-10 mi,2018-05-31,2025-12-31,91,1,True,True,False,True,True
+30318,Atlanta,Atlanta,337,4.487758287913619,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30319,Atlanta,Brookhaven,1413,9.339877660862106,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30324,Atlanta,Atlanta,3726,5.14472910636326,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30326,Atlanta,Atlanta,9913,7.127168913026538,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30327,Atlanta,Atlanta,5300,8.489678720487436,0-10 mi,2020-10-31,2025-12-31,63,0,True,True,False,True,False
+30328,Atlanta,Sandy Springs,2004,12.740382159573144,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30329,Atlanta,Atlanta,4194,6.679529830068999,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30331,Atlanta,Atlanta,482,9.335808428550258,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30336,Atlanta,Atlanta,13212,10.308918741664812,10-20 mi,,,0,0,True,False,False,False,False
+30337,Atlanta,College Park,9503,8.262917110055135,0-10 mi,2023-03-31,2025-12-31,34,0,True,True,False,True,False
+30338,Atlanta,Dunwoody,2293,14.249015649131602,10-20 mi,2019-03-31,2025-12-31,82,0,True,True,False,True,True
+30339,Atlanta,Vinings,3001,9.243643533834732,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30340,Atlanta,Atlanta,3668,12.970374616842626,10-20 mi,2023-02-28,2025-12-31,35,0,True,True,False,True,False
+30341,Atlanta,Chamblee,3078,11.247236979337412,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30342,Atlanta,Sandy Springs,3188,9.400599354404587,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30344,Atlanta,East Point,2640,6.459525325004221,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30345,Atlanta,Atlanta,4910,9.373859942035672,0-10 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+30346,Atlanta,Dunwoody,13397,12.47311010633316,10-20 mi,2019-01-31,2025-12-31,84,0,True,True,False,True,True
+30349,Atlanta,Atlanta,140,11.63170095051746,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30350,Atlanta,Sandy Springs,2726,16.355356187646986,10-20 mi,2018-02-28,2025-12-31,95,0,True,True,False,True,True
+30354,Atlanta,Atlanta,7433,6.120624830875943,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+30360,Atlanta,Dunwoody,7254,14.471555510970962,10-20 mi,2023-10-31,2025-12-31,27,0,True,True,False,True,False
+30363,Atlanta,Atlanta,19180,2.9838343352663914,0-10 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+30517,Atlanta,Braselton,6683,43.00994721459083,30+ mi,2022-03-31,2025-12-31,46,0,True,True,False,True,False
+30518,Atlanta,Buford,549,33.94232815186152,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30519,Atlanta,Buford,681,34.62231819510509,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+30534,Atlanta,Dawsonville,2282,49.192254490119886,30+ mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+30548,Atlanta,Hoschton,5002,42.94805943136664,30+ mi,2024-02-29,2025-12-31,23,0,True,True,False,True,False
+30620,Atlanta,Bethlehem,6803,38.34640267877323,30+ mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+30625,Atlanta,Buckhead,17379,62.80905597179041,30+ mi,,,0,0,False,False,False,False,False
+30641,Atlanta,Good Hope,17791,47.44222116778487,30+ mi,,,0,0,False,False,False,False,False
+30650,Atlanta,Madison,8176,54.17391042332134,30+ mi,,,0,0,False,False,False,False,False
+30655,Atlanta,Monroe,4688,40.1375770365751,30+ mi,2023-10-31,2025-12-31,27,0,True,True,False,True,False
+30656,Atlanta,Monroe,6222,39.48460100708968,30+ mi,,,0,0,True,False,False,False,False
+30663,Atlanta,Rutledge,16023,46.345202992027424,30+ mi,,,0,0,False,False,False,False,False
+30666,Atlanta,Statham,9256,48.518448419911046,30+ mi,,,0,0,False,False,False,False,False
+30680,Atlanta,Winder,1195,43.23307769694077,30+ mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+31064,Atlanta,Monticello,9726,50.9062498605612,30+ mi,,,0,0,False,False,False,False,False
+31085,Atlanta,Shady Dale,20396,49.19408934275261,30+ mi,,,0,0,False,False,False,False,False
+31816,Atlanta,Manchester,14375,61.33192329526609,30+ mi,,,0,0,True,False,False,False,False
+31830,Atlanta,Warm Springs,19257,61.781330280968525,30+ mi,,,0,0,False,False,False,False,False
+33510,Tampa,Brandon,3955,9.660488768817318,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33511,Tampa,Brandon,446,10.2082119062506,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33523,Tampa,Dade City,6874,34.79821921888598,30+ mi,,,0,0,True,False,False,False,False
+33525,Tampa,Dade City,5112,31.328414731292103,30+ mi,2024-10-31,2025-12-31,13,2,True,True,False,True,False
+33527,Tampa,Dover,7250,15.045311592215429,10-20 mi,,,0,0,True,False,False,False,False
+33534,Tampa,Gibsonton,6602,10.33658681530216,10-20 mi,2021-07-31,2025-12-31,53,1,True,True,False,True,False
+33540,Tampa,Zephyrhills,9130,29.370456530388868,20-30 mi,,,0,0,False,False,False,False,False
+33541,Tampa,Zephyrhills,4897,24.490910821779337,20-30 mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+33542,Tampa,Zephyrhills,5511,26.24022860939563,20-30 mi,2022-03-31,2025-12-31,45,1,True,True,False,True,False
+33543,Tampa,Wesley Chapel,1970,19.77591991469681,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33544,Tampa,Wesley Chapel,3874,21.463980517890203,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33545,Tampa,Wesley Chapel,3763,24.376888191854025,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33547,Tampa,Lithia,4419,22.45250094841887,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33548,Tampa,Lutz,9937,13.836579018867935,10-20 mi,2024-04-30,2025-12-31,21,0,True,True,False,True,False
+33549,Tampa,Lutz,6268,13.375851191858825,10-20 mi,2024-03-31,2025-12-31,22,0,True,True,False,True,False
+33556,Tampa,Odessa,2988,17.47746984464455,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+33558,Tampa,Lutz,3419,15.41588146989178,10-20 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+33559,Tampa,Lutz,6830,14.996829464161452,10-20 mi,2023-04-30,2025-12-31,33,0,True,True,False,True,False
+33563,Tampa,Plant City,4753,20.80850744574819,20-30 mi,2020-07-31,2025-12-31,66,0,True,True,False,True,False
+33565,Tampa,Plant City,6817,21.164870752664587,20-30 mi,,,0,0,True,False,False,False,False
+33566,Tampa,Plant City,5385,22.18097173256671,20-30 mi,2023-04-30,2025-12-31,33,0,True,True,False,True,False
+33567,Tampa,Plant City,8401,20.88024436789036,20-30 mi,,,0,0,False,False,False,False,False
+33569,Tampa,Riverview,3916,11.98778548244096,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33570,Tampa,Ruskin,2957,17.49982853886705,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33572,Tampa,Apollo Beach,4735,12.988579986070963,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33573,Tampa,Sun City Center,3219,16.739057662436903,10-20 mi,2021-09-30,2025-12-31,52,0,True,True,False,True,False
+33576,Tampa,San Antonio,12288,26.303790991223103,20-30 mi,2025-03-31,2025-12-31,10,0,True,True,False,True,False
+33578,Tampa,Riverview,424,8.632815559100742,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33579,Tampa,Riverview,999,14.927350816944616,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33584,Tampa,Seffner,3709,10.738408023400918,10-20 mi,2021-07-31,2025-12-31,54,0,True,True,False,True,False
+33592,Tampa,Thonotosassa,8026,15.071372080799462,10-20 mi,,,0,0,False,False,False,False,False
+33594,Tampa,Valrico,2317,13.131526881764731,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33596,Tampa,Valrico,4031,14.738189203239536,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33598,Tampa,Wimauma,3012,20.47078608506543,20-30 mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+33602,Tampa,Tampa,6084,0.4538509818379582,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33603,Tampa,Tampa,6248,2.6866299996746963,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+33604,Tampa,Tampa,2090,4.833759608147797,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33605,Tampa,Tampa,7462,1.7212159586206242,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33606,Tampa,Tampa,5182,1.028124100883266,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33607,Tampa,Tampa,5206,3.957324295296036,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33609,Tampa,Tampa,6436,3.527029661432751,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33610,Tampa,Tampa,1230,5.994881202667861,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33611,Tampa,Tampa,2739,4.85293724475748,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33612,Tampa,Tampa,845,7.17487802852348,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33613,Tampa,Tampa,2035,9.447725880239163,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+33614,Tampa,Tampa,1298,4.957310535299651,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33615,Tampa,Tampa,1125,8.474589012920307,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33616,Tampa,Tampa,7099,7.401767881863089,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33617,Tampa,Temple Terrace,1177,7.500056789430497,0-10 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+33618,Tampa,Tampa,4525,9.1633936588382,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+33619,Tampa,Tampa,1694,4.879645656026415,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33624,Tampa,Tampa,1953,10.154478799363533,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33625,Tampa,Citrus Park,3928,10.297670827257658,10-20 mi,2022-01-31,2025-12-31,47,1,True,True,False,True,False
+33626,Tampa,Westchase,3612,11.734904534979565,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33629,Tampa,Tampa,4435,3.612289138976835,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33634,Tampa,Tampa,5724,7.00451670601227,0-10 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+33635,Tampa,Tampa,6704,11.022816493565331,10-20 mi,2022-04-30,2025-12-31,45,0,True,True,False,True,False
+33637,Tampa,Temple Terrace,6937,8.90009501760547,0-10 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+33647,Tampa,Tampa,206,16.496819860369815,10-20 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+33701,Tampa,Saint Petersburg,6684,16.225592995757953,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33702,Tampa,Saint Petersburg,3613,12.650932577385763,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33703,Tampa,Saint Petersburg,4809,13.381739193253251,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33704,Tampa,Saint Petersburg,7226,14.766841150445272,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33705,Tampa,Saint Petersburg,3910,18.489081773287264,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33706,Tampa,Saint Pete Beach,7834,22.932172282372004,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33707,Tampa,Gulfport,5211,21.541069997894823,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33708,Tampa,Madeira Beach,7955,22.700234489942503,20-30 mi,2021-07-31,2025-12-31,54,0,True,True,False,True,False
+33709,Tampa,Saint Petersburg,5012,19.010938735553346,10-20 mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+33710,Tampa,Saint Petersburg,3089,19.90803648549615,10-20 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+33711,Tampa,Saint Petersburg,6361,20.080926493491752,20-30 mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+33712,Tampa,Saint Petersburg,5057,19.45093746299121,10-20 mi,2020-10-31,2025-12-31,63,0,True,True,False,True,False
+33713,Tampa,Saint Petersburg,3536,17.353023107505475,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33714,Tampa,Saint Petersburg,6395,16.24844309328107,10-20 mi,2021-03-31,2025-12-31,57,1,True,True,False,True,False
+33715,Tampa,Tierra Verde,11760,25.31421475950621,20-30 mi,,,0,0,True,False,False,False,False
+33716,Tampa,Saint Petersburg,7362,12.79997650980652,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33755,Tampa,Clearwater,4520,19.976266231009426,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33756,Tampa,Clearwater,3414,20.538245149478644,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33759,Tampa,Clearwater,7292,15.66811821572814,10-20 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+33760,Tampa,South Highpoint,7671,15.917536722927856,10-20 mi,2019-03-31,2025-12-31,82,0,True,True,False,True,True
+33761,Tampa,Clearwater,6659,17.328955226477994,10-20 mi,2022-11-30,2025-12-31,37,1,True,True,False,True,False
+33762,Tampa,Clearwater,12420,13.707372071318272,10-20 mi,2023-05-31,2025-12-31,32,0,True,True,False,True,False
+33763,Tampa,Clearwater,6048,17.866485720788464,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+33764,Tampa,Clearwater,3968,17.292939124140208,10-20 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+33765,Tampa,Clearwater,8285,17.656666886995882,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+33767,Tampa,Clearwater,10943,22.616326413420744,20-30 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+33770,Tampa,Largo,4873,21.26963271026848,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+33771,Tampa,Largo,4291,18.61293520875172,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+33772,Tampa,Seminole,5550,21.91482770931769,20-30 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+33773,Tampa,Largo,7557,18.740284885172414,10-20 mi,2022-03-31,2025-12-31,45,1,True,True,False,True,False
+33774,Tampa,Largo,6089,23.033248576867084,20-30 mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+33776,Tampa,Seminole,8374,23.48155516621844,20-30 mi,,,0,0,True,False,False,False,False
+33777,Tampa,Seminole,6629,19.624004285067087,10-20 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+33778,Tampa,Largo,7612,21.211262392006716,20-30 mi,2025-02-28,2025-12-31,11,0,True,True,False,True,False
+33781,Tampa,Pinellas Park,4126,17.41538630806153,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+33782,Tampa,Pinellas Park,5477,16.45758365538372,10-20 mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+33785,Tampa,Indian Rocks Beach,13404,24.264951016837777,20-30 mi,,,0,0,True,False,False,False,False
+33786,Tampa,Belleair Beach,20502,22.997377299838316,20-30 mi,,,0,0,False,False,False,False,False
+34601,Tampa,Brooksville,5315,44.613953508920865,30+ mi,2024-11-30,2025-12-31,14,0,True,True,False,True,False
+34602,Tampa,Brooksville,9060,39.81911231199853,30+ mi,,,0,0,True,False,False,False,False
+34604,Tampa,Brooksville,8327,36.69582899229142,30+ mi,2024-08-31,2025-12-31,14,3,True,True,False,True,False
+34606,Tampa,Spring Hill,3898,36.98575288621347,30+ mi,2021-09-30,2025-12-31,51,1,True,True,False,True,False
+34607,Tampa,Hernando Beach,10530,45.78237964854743,30+ mi,,,0,0,False,False,False,False,False
+34608,Tampa,Spring Hill,2686,37.45944950884183,30+ mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+34609,Tampa,Spring Hill,1250,36.90321688832379,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+34610,Tampa,Spring Hill,7129,29.38418997321341,20-30 mi,,,0,0,True,False,False,False,False
+34613,Tampa,Weeki Wachee,6619,42.5787903528844,30+ mi,2025-12-31,2025-12-31,1,0,True,True,False,True,False
+34614,Tampa,Weeki Wachee,8886,48.438827101613505,30+ mi,,,0,0,False,False,False,False,False
+34637,Tampa,Land O Lakes,9665,24.91149306670208,20-30 mi,,,0,0,True,False,False,False,False
+34638,Tampa,Land O Lakes,2008,23.01378707717826,20-30 mi,2021-06-30,2025-12-31,55,0,True,True,False,True,False
+34639,Tampa,Land O Lakes,3033,22.08514634575073,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+34652,Tampa,New Port Richey,4107,26.76708321873939,20-30 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+34653,Tampa,New Port Richey,2901,24.877772067129236,20-30 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+34654,Tampa,New Port Richey,5001,26.396214187619897,20-30 mi,2024-09-30,2025-12-31,16,0,True,True,False,True,False
+34655,Tampa,New Port Richey,1023,21.873112985845832,20-30 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+34661,Tampa,Nobleton,32153,48.05193280978014,30+ mi,,,0,0,False,False,False,False,False
+34667,Tampa,Hudson,3718,32.852155129713275,30+ mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+34668,Tampa,Port Richey,1110,28.455260498658987,20-30 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+34669,Tampa,Hudson,7962,29.737504015614014,20-30 mi,2025-12-31,2025-12-31,1,0,True,True,False,True,False
+34677,Tampa,Oldsmar,5756,14.83543742282103,10-20 mi,2022-04-30,2025-12-31,44,1,True,True,False,True,False
+34681,Tampa,Palm Harbor,33010,21.9142890372544,20-30 mi,,,0,0,False,False,False,False,False
+34683,Tampa,Palm Harbor,3113,20.90994725930802,20-30 mi,2021-09-30,2025-12-31,52,0,True,True,False,True,False
+34684,Tampa,Palm Harbor,4504,18.84165803964909,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+34685,Tampa,Palm Harbor,7511,17.37475877842632,10-20 mi,2023-04-30,2025-12-31,33,0,True,True,False,True,False
+34688,Tampa,Tarpon Springs,10119,19.341174843752192,10-20 mi,,,0,0,True,False,False,False,False
+34689,Tampa,Tarpon Springs,4803,23.23294771476628,20-30 mi,2021-06-30,2025-12-31,55,0,True,True,False,True,False
+34690,Tampa,Holiday,8677,23.61143822221212,20-30 mi,2022-05-31,2025-12-31,43,1,True,True,False,True,False
+34691,Tampa,Holiday,6100,25.521431021783147,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+34695,Tampa,Safety Harbor,6266,14.70296652442606,10-20 mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+34698,Tampa,Dunedin,2494,21.281910134799386,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37012,Nashville,Alexandria,16954,43.649358318991965,30+ mi,,,0,0,False,False,False,False,False
+37013,Nashville,Nashville,11,11.457191723598342,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37014,Nashville,Arrington,13277,21.897399579055516,20-30 mi,,,0,0,False,False,False,False,False
+37015,Nashville,Ashland City,6835,19.634802972235217,10-20 mi,2022-09-30,2025-12-31,39,1,True,True,False,True,False
+37016,Nashville,Auburntown,22571,39.71699957840925,30+ mi,,,0,0,False,False,False,False,False
+37022,Nashville,Bethpage,11952,35.15580908404666,30+ mi,,,0,0,False,False,False,False,False
+37025,Nashville,Bon Aqua,11673,33.10059624873461,30+ mi,,,0,0,False,False,False,False,False
+37026,Nashville,Bradyville,18765,49.708095071977105,30+ mi,,,0,0,False,False,False,False,False
+37027,Nashville,Brentwood,635,11.608587860041265,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37029,Nashville,Burns,11504,28.67585228744052,20-30 mi,,,0,0,False,False,False,False,False
+37030,Nashville,Carthage,11073,47.16861190932786,30+ mi,,,0,0,False,False,False,False,False
+37031,Nashville,Castalian Springs,14989,30.303795774469265,30+ mi,,,0,0,False,False,False,False,False
+37032,Nashville,Cedar Hill,13604,28.05201309208732,20-30 mi,,,0,0,False,False,False,False,False
+37035,Nashville,Chapmansboro,13812,24.703190250073515,20-30 mi,,,0,0,False,False,False,False,False
+37036,Nashville,Charlotte,11652,27.31446873914441,20-30 mi,,,0,0,False,False,False,False,False
+37037,Nashville,Christiana,10079,40.00035836329312,30+ mi,,,0,0,True,False,False,False,False
+37046,Nashville,College Grove,11294,26.979964185315385,20-30 mi,,,0,0,False,False,False,False,False
+37048,Nashville,Walnut Grove,11117,24.65015961087216,20-30 mi,,,0,0,False,False,False,False,False
+37049,Nashville,Cross Plains,15146,27.798096667889133,20-30 mi,,,0,0,False,False,False,False,False
+37051,Nashville,Vanleer,15251,36.65685924066657,30+ mi,,,0,0,False,False,False,False,False
+37055,Nashville,Dickson,3879,37.58727095129859,30+ mi,,,0,0,True,False,False,False,False
+37057,Nashville,Dixon Springs,18523,45.152806439636166,30+ mi,,,0,0,False,False,False,False,False
+37060,Nashville,Eagleville,15443,29.987208950500953,20-30 mi,,,0,0,False,False,False,False,False
+37062,Nashville,Fairview,8450,23.38678035475772,20-30 mi,,,0,0,True,False,False,False,False
+37064,Nashville,Franklin,280,21.835932825189733,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37066,Nashville,Gallatin,381,24.07703263923683,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37067,Nashville,Franklin,3276,17.62837493437463,10-20 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+37069,Nashville,Franklin,5585,14.401574180177985,10-20 mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+37072,Nashville,Goodlettsville,3267,12.900223570978946,10-20 mi,2023-07-31,2025-12-31,30,0,True,True,False,True,False
+37073,Nashville,Greenbrier,7978,18.46406907740213,10-20 mi,,,0,0,True,False,False,False,False
+37074,Nashville,Hartsville,9962,39.16469167094569,30+ mi,,,0,0,False,False,False,False,False
+37075,Nashville,Hendersonville,201,15.26136911527297,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37076,Nashville,Nashville,2057,11.369963475486184,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37080,Nashville,Nashville,11594,13.790795883784932,10-20 mi,,,0,0,False,False,False,False,False
+37082,Nashville,Kingston Springs,12744,19.4406360039955,10-20 mi,,,0,0,False,False,False,False,False
+37083,Nashville,Lafayette,7643,50.279590869628265,30+ mi,,,0,0,False,False,False,False,False
+37085,Nashville,Lascassas,12067,31.580208831437957,30+ mi,,,0,0,False,False,False,False,False
+37086,Nashville,La Vergne,1817,15.816222700142417,10-20 mi,2019-01-31,2025-12-31,84,0,True,True,False,True,True
+37087,Nashville,Lebanon,884,29.168762392091363,20-30 mi,2023-12-31,2025-11-30,24,0,True,True,False,True,False
+37090,Nashville,Lebanon,5958,27.07444356817536,20-30 mi,2023-11-30,2025-12-31,26,0,True,True,False,True,False
+37095,Nashville,Liberty,17809,47.73066754535115,30+ mi,,,0,0,False,False,False,False,False
+37115,Nashville,Nashville,2010,7.541899084972471,0-10 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+37118,Nashville,Milton,20794,36.92445706969302,30+ mi,,,0,0,False,False,False,False,False
+37122,Nashville,Mount Juliet,225,16.30849025637844,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37127,Nashville,Murfreesboro,5599,36.80690002357853,30+ mi,2023-06-30,2025-12-31,31,0,True,True,False,True,False
+37128,Nashville,Murfreesboro,202,30.35297648336729,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37129,Nashville,Murfreesboro,320,24.582974668916233,20-30 mi,2019-03-31,2025-12-31,82,0,True,True,False,True,True
+37130,Nashville,Murfreesboro,515,32.39682898237583,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37135,Nashville,Nolensville,5522,18.283393422305704,10-20 mi,,,0,0,True,False,False,False,False
+37138,Nashville,Nashville,4567,10.734642095596213,10-20 mi,2021-12-31,2025-12-31,48,1,True,True,False,True,False
+37141,Nashville,Orlinda,21177,31.218566653115676,30+ mi,,,0,0,False,False,False,False,False
+37143,Nashville,Pegram,14260,14.20596030701214,10-20 mi,,,0,0,False,False,False,False,False
+37145,Nashville,Pleasant Shade,17189,50.21295678414913,30+ mi,,,0,0,False,False,False,False,False
+37146,Nashville,Pleasant View,11834,21.651368288304724,20-30 mi,,,0,0,False,False,False,False,False
+37148,Nashville,Portland,4566,32.31600982308835,30+ mi,,,0,0,False,False,False,False,False
+37149,Nashville,Readyville,15327,41.04628990105627,30+ mi,,,0,0,False,False,False,False,False
+37150,Nashville,Red Boiling Springs,13463,59.76005413398861,30+ mi,,,0,0,False,False,False,False,False
+37151,Nashville,Riddleton,25774,42.15059840908293,30+ mi,,,0,0,False,False,False,False,False
+37153,Nashville,Rockvale,11452,30.500304260644857,30+ mi,,,0,0,False,False,False,False,False
+37167,Nashville,Smyrna,376,19.817302652470563,10-20 mi,2018-06-30,2025-12-31,91,0,True,True,False,True,True
+37172,Nashville,Springfield,3221,26.629349167963067,20-30 mi,2024-07-31,2025-12-31,18,0,True,True,False,True,False
+37174,Nashville,Spring Hill,1118,31.66595454934292,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37179,Nashville,Thompsons Station,6183,25.58514247143393,20-30 mi,2023-10-31,2025-11-30,26,0,True,True,False,True,False
+37181,Nashville,Vanleer,19380,40.8959918674352,30+ mi,,,0,0,False,False,False,False,False
+37184,Nashville,Watertown,11782,35.7825292949569,30+ mi,,,0,0,False,False,False,False,False
+37186,Nashville,Westmoreland,9581,42.89911472046619,30+ mi,,,0,0,False,False,False,False,False
+37187,Nashville,White Bluff,10810,23.444472042451192,20-30 mi,,,0,0,False,False,False,False,False
+37188,Nashville,White House,7231,22.317619697988825,20-30 mi,2024-12-31,2025-12-31,13,0,True,True,False,True,False
+37189,Nashville,Nashville,12710,8.240127375739753,0-10 mi,,,0,0,False,False,False,False,False
+37190,Nashville,Woodbury,10074,47.5412538399763,30+ mi,,,0,0,False,False,False,False,False
+37201,Nashville,Nashville,19841,0.0228705136854909,0-10 mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+37203,Nashville,Nashville,5088,1.3410015063263077,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37204,Nashville,Nashville,7399,4.189246921821626,0-10 mi,2018-02-28,2025-12-31,95,0,True,True,False,True,True
+37205,Nashville,Nashville,4759,6.339895622187403,0-10 mi,2019-05-31,2025-12-31,80,0,True,True,False,True,True
+37206,Nashville,Nashville,4705,2.779494275784032,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37207,Nashville,Nashville,1849,4.509107142350973,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37208,Nashville,Nashville,6299,1.865707824797401,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37209,Nashville,Nashville,2522,10.17440814146648,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37210,Nashville,Nashville,7404,2.8304095644321476,0-10 mi,2018-04-30,2025-12-31,93,0,True,True,False,True,True
+37211,Nashville,Nashville,172,7.5777488811331635,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37212,Nashville,Nashville,6719,2.6454367244107004,0-10 mi,2018-11-30,2025-12-31,86,0,True,True,False,True,True
+37214,Nashville,Nashville,3786,6.47401547671135,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37215,Nashville,Nashville,5355,6.676622529408894,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37216,Nashville,Nashville,6569,4.383718095687946,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+37217,Nashville,Nashville,3167,7.913639868214479,0-10 mi,2020-12-31,2025-12-31,61,0,True,True,False,True,False
+37218,Nashville,Nashville,8135,7.789043562573976,0-10 mi,2024-04-30,2025-12-31,20,1,True,True,False,True,False
+37219,Nashville,Nashville,20615,0.2506613417686682,0-10 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+37220,Nashville,Nashville,11917,6.872495014554606,0-10 mi,,,0,0,False,False,False,False,False
+37221,Nashville,Nashville,1877,13.13617175016303,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+38401,Nashville,Columbia,273,39.58422972810622,30+ mi,2019-03-31,2025-12-31,81,1,True,True,False,True,True
+38451,Nashville,Culleoka,13423,50.273000023264494,30+ mi,,,0,0,False,False,False,False,False
+38461,Nashville,Hampshire,18421,50.49379272699328,30+ mi,,,0,0,False,False,False,False,False
+38474,Nashville,Mount Pleasant,10890,51.51541388080885,30+ mi,,,0,0,False,False,False,False,False
+38476,Nashville,Primm Springs,20634,32.8911826105496,30+ mi,,,0,0,False,False,False,False,False
+38482,Nashville,Santa Fe,19056,34.47871264431263,30+ mi,,,0,0,False,False,False,False,False
+38487,Nashville,Williamsport,21715,40.11321865677188,30+ mi,,,0,0,False,False,False,False,False
+38547,Nashville,Carthage,18213,42.913956553575744,30+ mi,,,0,0,False,False,False,False,False
+38552,Nashville,Chestnut Mound,27929,53.913165364894134,30+ mi,,,0,0,False,False,False,False,False
+38560,Nashville,Elmwood,20259,51.602832532312576,30+ mi,,,0,0,False,False,False,False,False
+38563,Nashville,Gordonsville,19153,42.360777171121704,30+ mi,,,0,0,False,False,False,False,False
+38567,Nashville,Hickman,21015,47.64576060394994,30+ mi,,,0,0,False,False,False,False,False
+38569,Nashville,Lancaster,25745,51.406158451480465,30+ mi,,,0,0,False,False,False,False,False
+75001,Dallas,Addison,7252,12.91474719541012,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75002,Dallas,Allen,110,24.26317923224665,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75006,Dallas,Carrollton,1056,14.136961136389624,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75007,Dallas,Carrollton,644,16.85234284534545,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75009,Dallas,Celina,3163,38.959192401602806,30+ mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+75010,Dallas,Carrollton,2909,18.68497939702896,10-20 mi,2022-03-31,2025-12-31,46,0,True,True,False,True,False
+75013,Dallas,Allen,1084,24.109395204371303,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75019,Dallas,Coppell,1548,16.843118366027735,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75022,Dallas,Flower Mound,4547,25.388617258052182,20-30 mi,2025-03-31,2025-12-31,10,0,True,True,False,True,False
+75023,Dallas,Plano,1261,19.758505498386672,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75024,Dallas,Plano,1335,20.85606097022024,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75025,Dallas,Plano,708,21.93389654201908,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75028,Dallas,Flower Mound,1157,23.58012699132799,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75032,Dallas,Rockwall,2057,21.953880557826217,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75033,Dallas,Frisco,552,28.364081867434656,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75034,Dallas,Frisco,926,23.962956111109,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75035,Dallas,Frisco,76,26.979278765486068,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75036,Dallas,Frisco,2917,25.602419482859336,20-30 mi,2024-09-30,2025-12-31,15,1,True,True,False,True,False
+75038,Dallas,Irving,2858,12.475995053194332,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+75039,Dallas,Irving,5053,11.087386444556744,10-20 mi,2018-11-30,2025-12-31,86,0,True,True,False,True,True
+75040,Dallas,Garland,356,14.726829363521306,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75041,Dallas,Garland,3050,11.07899680701012,10-20 mi,2023-12-31,2025-12-31,24,1,True,True,False,True,False
+75042,Dallas,Garland,2248,11.88609730744924,10-20 mi,2024-03-31,2025-12-31,22,0,True,True,False,True,False
+75043,Dallas,Garland,401,13.83326886246983,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75044,Dallas,Garland,1214,15.566605452049949,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75048,Dallas,Sachse,3815,18.342528400384044,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+75050,Dallas,Grand Prairie,1381,12.108162087869678,10-20 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+75051,Dallas,Grand Prairie,1911,11.872372249835744,10-20 mi,2023-02-28,2025-12-31,35,0,True,True,False,True,False
+75052,Dallas,Grand Prairie,21,15.565469826777893,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75054,Dallas,Grand Prairie,7683,17.39074069700532,10-20 mi,2024-09-30,2025-12-31,16,0,True,True,False,True,False
+75056,Dallas,The Colony,276,21.673530192028434,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75057,Dallas,Lewisville,7829,21.587619461154116,20-30 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+75060,Dallas,Irving,1408,9.170142681597078,0-10 mi,2022-09-30,2025-12-31,40,0,True,True,False,True,False
+75061,Dallas,Irving,728,10.456774586392454,10-20 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+75062,Dallas,Irving,1005,10.564114978956557,10-20 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+75063,Dallas,Irving,1450,15.032117275991508,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75065,Dallas,Lake Dallas,8956,26.061546098730968,20-30 mi,,,0,0,True,False,False,False,False
+75067,Dallas,Lewisville,285,20.302024193139403,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75068,Dallas,Little Elm,183,29.153633358294854,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75069,Dallas,McKinney,1688,29.230805180634775,20-30 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+75070,Dallas,McKinney,301,26.78484526699877,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75071,Dallas,McKinney,219,33.842366896134585,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75072,Dallas,McKinney,598,28.99221334937455,20-30 mi,2018-01-31,2025-12-31,93,3,True,True,False,False,True
+75074,Dallas,Plano,861,19.163423719990917,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75075,Dallas,Plano,2319,17.231157732984883,10-20 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+75077,Dallas,Highland Village,1988,26.047654727308153,20-30 mi,2020-12-31,2025-12-31,61,0,True,True,False,True,False
+75078,Dallas,Prosper,794,32.1477006767795,30+ mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+75080,Dallas,Richardson,712,14.167646774284666,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75081,Dallas,Richardson,2632,13.051996475213588,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75082,Dallas,Richardson,4059,16.86994894500009,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75087,Dallas,Rockwall,1356,23.783933376943548,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+75088,Dallas,Rowlett,4138,16.818850519652713,10-20 mi,2022-03-31,2025-12-31,46,0,True,True,False,True,False
+75089,Dallas,Rowlett,3392,18.420965059415987,10-20 mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+75093,Dallas,Plano,1225,17.845852249148194,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75094,Dallas,Murphy,5302,19.91093415723475,10-20 mi,,,0,0,True,False,False,False,False
+75098,Dallas,Wylie,221,22.40634705455758,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75104,Dallas,Cedar Hill,996,16.705223544745913,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75114,Dallas,Crandall,7988,23.32690622278365,20-30 mi,2025-01-31,2025-12-31,10,2,True,True,False,True,False
+75115,Dallas,Desoto,586,12.82677234630503,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75116,Dallas,Duncanville,6080,10.41599115581788,10-20 mi,2025-06-30,2025-12-31,7,0,True,True,False,True,False
+75119,Dallas,Ennis,3008,33.486681776386625,30+ mi,2023-04-30,2025-12-31,32,1,True,True,False,True,False
+75125,Dallas,Ferris,10290,19.431584953169196,10-20 mi,,,0,0,False,False,False,False,False
+75126,Dallas,Forney,158,20.119857483485788,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75134,Dallas,Lancaster,5921,10.64646315045973,10-20 mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+75135,Dallas,Caddo Mills,8920,38.82719335800541,30+ mi,,,0,0,False,False,False,False,False
+75137,Dallas,Duncanville,6557,11.89071659270155,10-20 mi,2021-12-31,2025-12-31,47,2,True,True,False,True,False
+75141,Dallas,Hutchins,11536,11.174954687867512,10-20 mi,,,0,0,False,False,False,False,False
+75142,Dallas,Kaufman,5896,34.891505693106105,30+ mi,,,0,0,True,False,False,False,False
+75143,Dallas,Kemp,7444,42.91259341557292,30+ mi,,,0,0,True,False,False,False,False
+75146,Dallas,Lancaster,5047,14.772754235576851,10-20 mi,2021-11-30,2025-12-31,49,1,True,True,False,True,False
+75147,Dallas,Mabank,10605,49.01154951003573,30+ mi,2024-06-30,2025-12-31,19,0,True,True,False,True,False
+75149,Dallas,Mesquite,641,10.34420958529591,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75150,Dallas,Mesquite,468,9.977818749835029,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75152,Dallas,Palmer,13029,24.247166798893716,20-30 mi,,,0,0,False,False,False,False,False
+75154,Dallas,Red Oak,1060,17.424486598945315,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+75158,Dallas,Scurry,11920,31.49393032122675,30+ mi,,,0,0,False,False,False,False,False
+75159,Dallas,Seagoville,4537,19.054933397151515,10-20 mi,2024-02-29,2025-12-31,23,0,True,True,False,True,False
+75160,Dallas,Terrell,4200,29.264813794673657,20-30 mi,2025-07-31,2025-12-31,6,0,True,True,False,True,False
+75161,Dallas,Terrell,10680,36.87040100924318,30+ mi,,,0,0,False,False,False,False,False
+75165,Dallas,Waxahachie,878,27.956278427023857,20-30 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+75166,Dallas,Lavon,13061,26.035872961795793,20-30 mi,2025-04-30,2025-12-31,9,0,True,True,False,True,False
+75167,Dallas,Waxahachie,7761,29.522154605100983,20-30 mi,,,0,0,True,False,False,False,False
+75169,Dallas,Wills Point,7303,46.89147611528147,30+ mi,,,0,0,False,False,False,False,False
+75172,Dallas,Wilmer,16283,13.7990959606626,10-20 mi,,,0,0,True,False,False,False,False
+75173,Dallas,Lavon,10092,30.497322385901978,30+ mi,,,0,0,False,False,False,False,False
+75180,Dallas,Balch Springs,4361,11.079500277782577,10-20 mi,2025-06-30,2025-12-31,7,0,True,True,False,True,False
+75181,Dallas,Mesquite,3251,14.45790097554829,10-20 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+75182,Dallas,Sunnyvale,9531,14.575311289406828,10-20 mi,,,0,0,False,False,False,False,False
+75189,Dallas,Royse City,1155,30.40018446793255,30+ mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+75201,Dallas,Dallas,6934,0.8491486750653144,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75202,Dallas,Dallas,13555,0.4291397037307411,0-10 mi,2019-01-31,2025-12-31,84,0,True,True,False,True,True
+75203,Dallas,Dallas,7748,2.2245292866896667,0-10 mi,2021-06-30,2025-12-31,55,0,True,True,False,True,False
+75204,Dallas,Dallas,3067,1.8517221202177243,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75205,Dallas,Highland Park,4641,4.207345837201253,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75206,Dallas,Dallas,2300,4.084373965821122,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75208,Dallas,Dallas,3419,2.900409091227497,0-10 mi,2018-04-30,2025-12-31,93,0,True,True,False,True,True
+75209,Dallas,Dallas,7910,5.250140001997153,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+75210,Dallas,Dallas,10653,2.9066907063888117,0-10 mi,,,0,0,False,False,False,False,False
+75211,Dallas,Cockrell Hill,184,6.9832081857546,0-10 mi,2019-10-31,2025-12-31,75,0,True,True,False,True,True
+75212,Dallas,Dallas,4449,4.7812762945279665,0-10 mi,2021-02-28,2025-12-31,58,1,True,True,False,True,False
+75214,Dallas,Dallas,3141,4.803713587319514,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75215,Dallas,Dallas,7492,2.633629616163915,0-10 mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+75216,Dallas,Dallas,788,4.575966769501076,0-10 mi,2023-03-31,2025-12-31,34,0,True,True,False,True,False
+75217,Dallas,Dallas,116,7.990343648009648,0-10 mi,2022-03-31,2025-12-31,46,0,True,True,False,True,False
+75218,Dallas,Dallas,5055,6.971760559853359,0-10 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+75219,Dallas,Dallas,5534,2.577028560697584,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75220,Dallas,Dallas,1614,7.864720503279551,0-10 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+75223,Dallas,Dallas,8961,3.183835460784702,0-10 mi,2025-09-30,2025-12-31,4,0,True,True,False,True,False
+75224,Dallas,Dallas,2507,5.094371640047861,0-10 mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+75225,Dallas,University Park,5581,6.13674247560875,0-10 mi,2018-10-31,2025-12-31,87,0,True,True,False,True,True
+75226,Dallas,Dallas,13620,1.266295162715443,0-10 mi,2021-01-31,2025-12-31,60,0,True,True,False,True,False
+75227,Dallas,Dallas,476,6.420100549171292,0-10 mi,2022-04-30,2025-12-31,45,0,True,True,False,True,False
+75228,Dallas,Dallas,263,7.602986445528277,0-10 mi,2021-06-30,2025-12-31,55,0,True,True,False,True,False
+75229,Dallas,Dallas,2967,9.083743926746685,0-10 mi,,,0,0,True,False,False,False,False
+75230,Dallas,Dallas,4770,8.738667890904122,0-10 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+75231,Dallas,Dallas,2244,7.303746816278632,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75232,Dallas,Dallas,3291,8.473027017728732,0-10 mi,,,0,0,True,False,False,False,False
+75233,Dallas,Dallas,8259,6.632874872598758,0-10 mi,,,0,0,True,False,False,False,False
+75234,Dallas,Farmers Branch,4006,11.555352163956508,10-20 mi,2019-03-31,2025-12-31,81,1,True,True,False,True,True
+75235,Dallas,Dallas,6444,4.937533506374636,0-10 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+75236,Dallas,Dallas,7184,10.080108553635704,10-20 mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+75237,Dallas,Dallas,6086,8.857332031177991,0-10 mi,2024-04-30,2025-12-31,21,0,True,True,False,True,False
+75238,Dallas,Dallas,3299,8.753775027672221,0-10 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+75240,Dallas,Dallas,5831,10.637397448302798,10-20 mi,2019-08-31,2025-12-31,77,0,True,True,False,True,True
+75241,Dallas,Dallas,3103,7.880210302971023,0-10 mi,2021-11-30,2025-12-31,49,1,True,True,False,True,False
+75243,Dallas,Dallas,357,10.05118969111435,10-20 mi,2019-01-31,2025-12-31,84,0,True,True,False,True,True
+75244,Dallas,Farmers Branch,8408,10.555920720294678,10-20 mi,2019-11-30,2025-12-31,74,0,True,True,False,True,True
+75246,Dallas,Dallas,18215,1.7938403312307287,0-10 mi,,,0,0,True,False,False,False,False
+75248,Dallas,Dallas,2258,13.367051105734989,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75249,Dallas,Dallas,7319,13.744605817296694,10-20 mi,2025-08-31,2025-12-31,5,0,True,True,False,True,False
+75252,Dallas,Dallas,4473,15.245579019397898,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75253,Dallas,Dallas,5586,12.97703969917008,10-20 mi,2024-03-31,2025-12-31,22,0,True,True,False,True,False
+75254,Dallas,Dallas,4366,11.600938627016772,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75287,Dallas,Dallas,772,15.63100170905794,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+75401,Dallas,Greenville,5967,49.02451338959856,30+ mi,2023-03-31,2025-12-31,33,1,True,True,False,True,False
+75402,Dallas,Greenville,6491,45.784877590167795,30+ mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+75407,Dallas,Princeton,3859,32.02551391830636,30+ mi,2021-09-30,2025-12-31,52,0,True,True,False,True,False
+75409,Dallas,Anna,3482,43.20268095790427,30+ mi,2021-09-30,2025-12-31,52,0,True,True,False,True,False
+75422,Dallas,Campbell,14518,56.49284664347,30+ mi,,,0,0,False,False,False,False,False
+75423,Dallas,Celeste,15228,49.651887851119184,30+ mi,,,0,0,False,False,False,False,False
+75424,Dallas,Blue Ridge,15360,43.51784630526936,30+ mi,,,0,0,False,False,False,False,False
+75428,Dallas,Commerce,9389,61.48689883084892,30+ mi,2025-04-30,2025-12-31,9,0,True,True,False,True,False
+75442,Dallas,Farmersville,8355,38.00978322608976,30+ mi,2025-08-31,2025-12-31,5,0,True,True,False,True,False
+75453,Dallas,Lone Oak,15645,52.67064992852705,30+ mi,,,0,0,False,False,False,False,False
+75454,Dallas,Melissa,6681,37.57641961602173,30+ mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+75474,Dallas,Quinlan,6813,41.18579464574636,30+ mi,,,0,0,False,False,False,False,False
+76001,Dallas,Arlington,2269,23.158396247809648,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+76002,Dallas,Arlington,2733,20.27960221404117,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76005,Dallas,Arlington,33010,16.283739658961213,10-20 mi,2022-08-31,2025-12-31,41,0,True,True,False,True,False
+76006,Dallas,Arlington,5960,17.776102240928545,10-20 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+76008,Dallas,Aledo,5201,48.6646351548013,30+ mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+76009,Dallas,Alvarado,4939,34.2813633092487,30+ mi,,,0,0,False,False,False,False,False
+76010,Dallas,Arlington,690,16.902575685969495,10-20 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+76011,Dallas,Arlington,5137,16.687955048380232,10-20 mi,2021-02-28,2025-12-31,59,0,True,True,False,True,False
+76012,Dallas,Arlington,3832,19.94705043056491,10-20 mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+76013,Dallas,Arlington,2958,21.183083950788063,20-30 mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+76014,Dallas,Arlington,3359,17.811539349963564,10-20 mi,2018-03-31,2025-12-31,93,1,True,True,False,True,True
+76015,Dallas,Arlington,6878,20.558406852449465,20-30 mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+76016,Dallas,Arlington,3490,23.57991209431086,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76017,Dallas,Arlington,1234,22.74493228453612,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76018,Dallas,Arlington,4378,18.792468695484352,10-20 mi,2021-06-30,2025-12-31,55,0,True,True,False,True,False
+76020,Dallas,Azle,2911,45.1909456041073,30+ mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+76021,Dallas,Bedford,2891,20.084228218078557,20-30 mi,2023-03-31,2025-12-31,34,0,True,True,False,True,False
+76022,Dallas,Bedford,8288,20.56853628333073,20-30 mi,2021-08-31,2025-12-31,53,0,True,True,False,True,False
+76023,Dallas,Boyd,10753,49.916814790929315,30+ mi,,,0,0,False,False,False,False,False
+76028,Dallas,Burleson,106,34.09358745321766,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76031,Dallas,Cleburne,5453,42.89530550290719,30+ mi,,,0,0,True,False,False,False,False
+76033,Dallas,Cleburne,3278,53.660097207065064,30+ mi,2023-06-30,2025-12-31,31,0,True,True,False,True,False
+76034,Dallas,Colleyville,4675,21.981146633219023,20-30 mi,,,0,0,False,False,False,False,False
+76036,Dallas,Crowley,2509,38.98813344172856,30+ mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+76039,Dallas,Euless,2096,17.767821575870787,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76040,Dallas,Euless,1990,18.02395000755452,10-20 mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+76044,Dallas,Godley,10570,49.56160079720353,30+ mi,,,0,0,True,False,False,False,False
+76050,Dallas,Grandview,10789,40.9444989140728,30+ mi,,,0,0,False,False,False,False,False
+76051,Dallas,Grapevine,1091,20.029311413290152,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76052,Dallas,Haslet,3286,36.16034759966681,30+ mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+76053,Dallas,Hurst,3145,22.46618796606081,20-30 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+76054,Dallas,Hurst,9154,22.861215743542058,20-30 mi,,,0,0,False,False,False,False,False
+76058,Dallas,Joshua,5916,42.26677461285197,30+ mi,,,0,0,False,False,False,False,False
+76059,Dallas,Keene,16713,40.799392761688054,30+ mi,,,0,0,False,False,False,False,False
+76060,Dallas,Kennedale,10126,26.212659952286963,20-30 mi,,,0,0,False,False,False,False,False
+76063,Dallas,Mansfield,104,24.723224711582063,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76064,Dallas,Maypearl,18144,35.17333671830221,30+ mi,,,0,0,False,False,False,False,False
+76065,Dallas,Midlothian,1178,24.01207570287013,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76066,Dallas,Millsap,12291,70.09938217609104,30+ mi,,,0,0,False,False,False,False,False
+76071,Dallas,Newark,16202,42.53144632245246,30+ mi,,,0,0,False,False,False,False,False
+76073,Dallas,Paradise,11374,57.96690432354069,30+ mi,,,0,0,False,False,False,False,False
+76078,Dallas,Rhome,9726,44.37951329649862,30+ mi,,,0,0,False,False,False,False,False
+76082,Dallas,Springtown,5229,55.99325205636534,30+ mi,,,0,0,True,False,False,False,False
+76084,Dallas,Venus,8751,29.23252356942688,20-30 mi,2024-12-31,2025-12-31,13,0,True,True,False,True,False
+76085,Dallas,Weatherford,8166,52.317117047822464,30+ mi,,,0,0,False,False,False,False,False
+76086,Dallas,Weatherford,6473,57.68496507838026,30+ mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+76087,Dallas,Weatherford,2240,58.27184083358298,30+ mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+76088,Dallas,Weatherford,7389,64.43047203349647,30+ mi,,,0,0,True,False,False,False,False
+76092,Dallas,Southlake,2961,23.855304539287,20-30 mi,,,0,0,True,False,False,False,False
+76093,Dallas,Rio Vista,18910,52.82029139669439,30+ mi,,,0,0,False,False,False,False,False
+76102,Dallas,Fort Worth,9285,30.93699232276079,30+ mi,2018-11-30,2025-12-31,86,0,True,True,False,True,True
+76103,Dallas,Fort Worth,7305,27.709153515851888,20-30 mi,2025-06-30,2025-12-31,7,0,True,True,False,True,False
+76104,Dallas,Fort Worth,6007,30.455384581380144,30+ mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+76105,Dallas,Fort Worth,5456,27.738394797571605,20-30 mi,,,0,0,False,False,False,False,False
+76106,Dallas,Fort Worth,2846,32.80619896700783,30+ mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+76107,Dallas,Fort Worth,3269,34.066638223950065,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76108,Dallas,Fort Worth,1572,42.20441563522529,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76109,Dallas,Fort Worth,4253,34.69217746237561,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76110,Dallas,Fort Worth,3258,31.81822640364319,30+ mi,2019-01-31,2025-12-31,83,1,True,True,False,True,True
+76111,Dallas,Fort Worth,6226,29.26509866747917,20-30 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+76112,Dallas,Fort Worth,1639,24.53158970168182,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+76114,Dallas,River Oaks,4356,35.47150021811719,30+ mi,2018-05-31,2025-12-31,92,0,True,True,False,True,True
+76115,Dallas,Fort Worth,7015,31.746250897091777,30+ mi,,,0,0,True,False,False,False,False
+76116,Dallas,Fort Worth,1058,37.97776809767555,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76117,Dallas,Haltom City,3123,27.39536613576111,20-30 mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+76118,Dallas,Fort Worth,6899,23.103595172022153,20-30 mi,2023-04-30,2025-12-31,33,0,True,True,False,True,False
+76119,Dallas,Fort Worth,809,27.64126932490693,20-30 mi,2023-02-28,2025-12-31,35,0,True,True,False,True,False
+76120,Dallas,Fort Worth,6386,22.31194634179518,20-30 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+76123,Dallas,Fort Worth,1697,36.82103006364211,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76126,Dallas,Benbrook,4196,42.65629479108937,30+ mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+76131,Dallas,Saginaw,833,32.70429091946075,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76132,Dallas,Fort Worth,4451,36.751689018830206,30+ mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+76133,Dallas,Fort Worth,888,34.92940223282856,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76134,Dallas,Fort Worth,3589,32.32906873666395,30+ mi,2021-05-31,2025-12-31,56,0,True,True,False,True,False
+76135,Dallas,Fort Worth,5789,39.307347430993715,30+ mi,2024-03-31,2025-12-31,22,0,True,True,False,True,False
+76137,Dallas,Fort Worth,528,29.2972531099385,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76140,Dallas,Everman,2809,29.991999914216553,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76148,Dallas,Watauga,5429,27.192211697256955,20-30 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+76164,Dallas,Fort Worth,8052,32.35994611757316,30+ mi,2024-04-30,2025-12-31,21,0,True,True,False,True,False
+76177,Dallas,Fort Worth,4958,32.2229559423797,30+ mi,2020-12-31,2025-12-31,61,0,True,True,False,True,False
+76179,Dallas,Fort Worth,85,38.13853856367168,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76180,Dallas,North Richland Hills,2017,25.21689555497265,20-30 mi,2018-12-31,2025-12-31,85,0,True,True,False,True,True
+76182,Dallas,North Richland Hills,3633,25.062451621092094,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76201,Dallas,Denton,4207,36.79266600326533,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76205,Dallas,Denton,5557,34.62540733025049,30+ mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+76207,Dallas,Denton,6390,37.83800323325474,30+ mi,2021-11-30,2025-12-31,49,1,True,True,False,True,False
+76208,Dallas,Denton,3584,33.42755297868994,30+ mi,2022-04-30,2025-12-31,45,0,True,True,False,True,False
+76209,Dallas,Denton,4433,36.313956434378184,30+ mi,2022-03-31,2025-12-31,45,1,True,True,False,True,False
+76210,Dallas,Corinth,1189,31.077491499833467,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76225,Dallas,Alvord,15104,65.18318510877599,30+ mi,,,0,0,False,False,False,False,False
+76226,Dallas,Argyle,1570,31.69854311082042,30+ mi,2022-01-31,2025-12-31,47,1,True,True,False,True,False
+76227,Dallas,Aubrey,471,36.13401417705712,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76234,Dallas,Decatur,5731,54.04314311244389,30+ mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+76244,Dallas,Fort Worth,115,29.753138428207254,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76247,Dallas,Justin,5893,37.86783981430289,30+ mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+76248,Dallas,Keller,2155,27.06784963210287,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76249,Dallas,Krum,10133,45.42284252937467,30+ mi,,,0,0,True,False,False,False,False
+76258,Dallas,Pilot Point,9507,41.84063293003731,30+ mi,,,0,0,True,False,False,False,False
+76259,Dallas,Ponder,13047,41.75384532784286,30+ mi,,,0,0,True,False,False,False,False
+76262,Dallas,Roanoke,1184,29.37339830728432,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+76266,Dallas,Sanger,6087,47.75350013325171,30+ mi,2025-01-31,2025-12-31,11,1,True,True,False,True,False
+76270,Dallas,Alvord,18135,73.08408441553884,30+ mi,,,0,0,False,False,False,False,False
+76426,Dallas,Chico,9122,66.03056708688484,30+ mi,,,0,0,False,False,False,False,False
+76431,Dallas,Chico,15618,71.94316797613934,30+ mi,,,0,0,False,False,False,False,False
+76486,Dallas,Perrin,22461,74.72508239568404,30+ mi,,,0,0,False,False,False,False,False
+76487,Dallas,Poolville,14319,65.71229561594154,30+ mi,,,0,0,False,False,False,False,False
+76527,Austin,Florence,13229,39.574970677394575,30+ mi,,,0,0,False,False,False,False,False
+76530,Austin,Granger,17837,36.3826071669719,30+ mi,,,0,0,False,False,False,False,False
+76537,Austin,Jarrell,7499,39.12081400609846,30+ mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+76574,Austin,Taylor,6055,30.469734967680036,30+ mi,2023-07-31,2025-12-31,29,1,True,True,False,True,False
+76578,Austin,Thrall,20919,35.681407133896876,30+ mi,,,0,0,False,False,False,False,False
+76651,Dallas,Italy,14627,41.084711465622846,30+ mi,,,0,0,False,False,False,False,False
+76670,Dallas,Italy,21066,45.63095613547117,30+ mi,,,0,0,False,False,False,False,False
+78602,Austin,Bastrop,2336,26.566508220776555,20-30 mi,2023-03-31,2025-12-31,33,1,True,True,False,True,False
+78610,Austin,Buda,1127,13.984512695743376,10-20 mi,2018-03-31,2025-12-31,92,2,True,True,False,True,True
+78612,Austin,Cedar Creek,7591,19.13249000403891,10-20 mi,,,0,0,True,False,False,False,False
+78613,Austin,Cedar Park,48,17.2784166185304,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78615,Austin,Coupland,15617,25.17561596200377,20-30 mi,,,0,0,False,False,False,False,False
+78616,Austin,Dale,9030,26.08397562251917,20-30 mi,,,0,0,False,False,False,False,False
+78617,Austin,Del Valle,3831,11.790903793237474,10-20 mi,2022-03-31,2025-12-31,46,0,True,True,False,True,False
+78619,Austin,Driftwood,13472,19.968565325048555,10-20 mi,,,0,0,False,False,False,False,False
+78620,Austin,Dripping Springs,5238,23.38264316137985,20-30 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+78621,Austin,Elgin,4369,23.60509542216355,20-30 mi,2024-03-31,2025-12-31,22,0,True,True,False,True,False
+78622,Austin,Luling,32057,33.37984893650715,30+ mi,,,0,0,False,False,False,False,False
+78626,Austin,Georgetown,1310,28.2251190891996,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78628,Austin,Georgetown,717,27.676013915131968,20-30 mi,2018-05-31,2025-12-31,92,0,True,True,False,True,True
+78632,Austin,Harwood,21007,43.29755820780434,30+ mi,,,0,0,False,False,False,False,False
+78633,Austin,Georgetown,3803,32.49599754818926,30+ mi,2023-11-30,2025-12-31,26,0,True,True,False,True,False
+78634,Austin,Hutto,855,23.702178305087383,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+78640,Austin,Kyle,151,19.17499855223459,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78641,Austin,Leander,28,22.5451210541327,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78642,Austin,Liberty Hill,5604,31.889830140022923,30+ mi,2022-06-30,2025-12-31,43,0,True,True,False,True,False
+78644,Austin,Lockhart,4979,27.453567359604214,20-30 mi,,,0,0,True,False,False,False,False
+78645,Austin,Lago Vista,8277,18.52644415523056,10-20 mi,2023-01-31,2025-12-31,35,1,True,True,False,True,False
+78648,Austin,Luling,10451,39.96402621158219,30+ mi,,,0,0,False,False,False,False,False
+78650,Austin,McDade,15961,31.635637643463873,30+ mi,,,0,0,False,False,False,False,False
+78652,Austin,Austin,9254,11.265337763016555,10-20 mi,,,0,0,True,False,False,False,False
+78653,Austin,Manor,1030,14.428639477227462,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+78654,Austin,Marble Falls,6030,34.81084132012784,30+ mi,2024-12-31,2025-12-31,12,1,True,True,False,True,False
+78655,Austin,Martindale,14041,31.4537785063386,30+ mi,,,0,0,False,False,False,False,False
+78656,Austin,Maxwell,19748,25.158479592030165,20-30 mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+78659,Austin,Paige,15412,37.330068265213065,30+ mi,,,0,0,False,False,False,False,False
+78660,Austin,Pflugerville,4,15.114162788487318,10-20 mi,2018-01-31,2025-12-31,92,4,True,True,False,False,True
+78661,Austin,Luling,32290,37.52099192916552,30+ mi,,,0,0,False,False,False,False,False
+78662,Austin,Red Rock,14531,28.610250649309386,20-30 mi,,,0,0,False,False,False,False,False
+78664,Austin,Round Rock,449,17.652797180602327,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78665,Austin,Round Rock,463,20.705638303274583,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78666,Austin,San Marcos,80,30.049413552369945,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78669,Austin,Spicewood,7892,25.565366578317935,20-30 mi,2024-09-30,2025-12-31,16,0,True,True,False,True,False
+78676,Austin,Wimberley,6377,29.175282999299156,20-30 mi,2025-03-31,2025-12-31,10,0,True,True,False,True,False
+78681,Austin,Round Rock,595,19.2155691470624,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78701,Austin,Austin,8853,0.478679687524033,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78702,Austin,Austin,4799,1.9552744112663984,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78703,Austin,Austin,5309,2.2598219468021035,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78704,Austin,Austin,952,1.8498162194435863,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78705,Austin,Austin,4816,2.11749543217191,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78717,Austin,Austin,2190,15.526470630406424,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78719,Austin,Austin,15943,9.728607562763653,0-10 mi,,,0,0,False,False,False,False,False
+78721,Austin,Austin,9443,3.8293666096232686,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+78722,Austin,Austin,11792,2.6107437947772283,0-10 mi,2019-01-31,2025-12-31,84,0,True,True,False,True,True
+78723,Austin,Austin,2311,4.563967621825139,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78724,Austin,Austin,3254,7.948109548932575,0-10 mi,2023-04-30,2025-12-31,33,0,True,True,False,True,False
+78725,Austin,Austin,10462,8.618042306524615,0-10 mi,2022-03-31,2025-12-31,45,1,True,True,False,True,False
+78726,Austin,Austin,7979,12.73045038738288,10-20 mi,2019-05-31,2025-12-31,79,1,True,True,False,True,True
+78727,Austin,Austin,4575,11.472694298623814,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78728,Austin,Austin,4302,13.538659665838424,10-20 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+78729,Austin,Austin,3789,13.301202881952994,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78730,Austin,Austin,10118,8.775845261104743,0-10 mi,,,0,0,True,False,False,False,False
+78731,Austin,Austin,4622,5.89242337058149,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78732,Austin,Austin,6193,11.73853282920686,10-20 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+78733,Austin,Austin,9153,9.08677620220864,0-10 mi,,,0,0,False,False,False,False,False
+78734,Austin,Austin,5760,14.368781875713369,10-20 mi,2022-10-31,2025-12-31,39,0,True,True,False,True,False
+78735,Austin,Austin,6331,7.263293443307007,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78736,Austin,Austin,9364,12.142051167463327,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+78737,Austin,Austin,4096,13.900986172908404,10-20 mi,2023-02-28,2025-12-31,35,0,True,True,False,True,False
+78738,Austin,Austin,4914,14.711960514697743,10-20 mi,2021-03-31,2025-12-31,58,0,True,True,False,True,False
+78739,Austin,Austin,6107,10.552557229801527,10-20 mi,,,0,0,True,False,False,False,False
+78741,Austin,Austin,1387,3.1500161601579113,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78744,Austin,Austin,1180,6.160986262652993,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78745,Austin,Austin,492,5.005476119335747,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78746,Austin,West Lake Hills,4278,4.327046965385906,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78747,Austin,Austin,5131,9.690107829592336,0-10 mi,2021-11-30,2025-12-31,50,0,True,True,False,True,False
+78748,Austin,Austin,997,8.553076062413501,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78749,Austin,Austin,3161,7.306110367675768,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78750,Austin,Austin,3518,12.398504169507683,10-20 mi,2018-12-31,2025-12-31,85,0,True,True,False,True,True
+78751,Austin,Austin,7549,3.487607395834116,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78752,Austin,Austin,6083,5.280250827123085,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78753,Austin,Austin,648,9.308709830593177,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78754,Austin,Austin,3945,9.037581554276873,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78756,Austin,Austin,9723,3.985028550314076,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78757,Austin,Austin,4800,6.0575951810852136,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78758,Austin,Austin,1035,8.822309978795333,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78759,Austin,Austin,1531,9.556599481471592,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+78953,Austin,Rosanky,19527,37.23626921743285,30+ mi,,,0,0,False,False,False,False,False
+78957,Austin,Smithville,10010,37.95994756801813,30+ mi,,,0,0,False,False,False,False,False
+85003,Phoenix,Phoenix,9505,0.1329042352628554,0-10 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+85004,Phoenix,Phoenix,9038,0.4563756106072015,0-10 mi,2019-03-31,2025-12-31,80,2,True,True,False,True,True
+85006,Phoenix,Phoenix,5857,1.985045873982675,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85007,Phoenix,Phoenix,8308,0.7794947659447987,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+85008,Phoenix,Phoenix,562,5.2528684225079925,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85009,Phoenix,Phoenix,774,2.988553623358814,0-10 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+85012,Phoenix,Phoenix,10169,4.069502315573514,0-10 mi,2018-04-30,2025-12-31,93,0,True,True,False,True,True
+85013,Phoenix,Phoenix,5474,4.320877414709177,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85014,Phoenix,Phoenix,4514,4.18211152859537,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85015,Phoenix,Phoenix,1799,4.370832701776482,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85016,Phoenix,Phoenix,2622,4.976870783342036,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85017,Phoenix,Phoenix,1433,4.912886512003989,0-10 mi,2022-11-30,2025-12-31,37,1,True,True,False,True,False
+85018,Phoenix,Phoenix,2472,6.8661106956269755,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85019,Phoenix,Phoenix,4115,5.769841620545965,0-10 mi,2025-12-31,2025-12-31,1,0,True,True,False,True,False
+85020,Phoenix,Phoenix,2895,8.188903063371498,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85021,Phoenix,Phoenix,2042,7.817326792320617,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85022,Phoenix,Phoenix,783,12.419149899523052,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85023,Phoenix,Phoenix,2667,12.830734084694456,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85024,Phoenix,Phoenix,4289,16.73458600778448,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85027,Phoenix,Phoenix,1985,15.85928855925786,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85028,Phoenix,Phoenix,6156,9.99275621485581,0-10 mi,2024-12-31,2025-12-31,12,1,True,True,False,True,False
+85029,Phoenix,Phoenix,1080,10.296367751483446,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85031,Phoenix,Phoenix,3572,6.041546629570786,0-10 mi,2021-06-30,2025-12-31,54,1,True,True,False,True,False
+85032,Phoenix,Phoenix,232,12.963486362644776,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85033,Phoenix,Phoenix,567,8.474887365343697,0-10 mi,2022-06-30,2025-12-31,43,0,True,True,False,True,False
+85034,Phoenix,Phoenix,11890,3.816534990060233,0-10 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+85035,Phoenix,Phoenix,873,6.997809128826111,0-10 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+85037,Phoenix,Phoenix,820,11.323286800035136,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85040,Phoenix,Phoenix,2913,4.221474445120786,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85041,Phoenix,Phoenix,378,4.669265241451128,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85042,Phoenix,Phoenix,1373,6.607659882371919,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85043,Phoenix,Phoenix,2308,7.00870700603481,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85044,Phoenix,Phoenix,2197,8.58112556275643,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85045,Phoenix,Phoenix,11543,10.496656795104371,10-20 mi,,,0,0,True,False,False,False,False
+85048,Phoenix,Phoenix,2714,10.524905359139897,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85050,Phoenix,Phoenix,3130,17.08048830361404,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85051,Phoenix,Phoenix,1496,8.23425544606991,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85053,Phoenix,Phoenix,3670,12.876775313192487,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85054,Phoenix,Phoenix,9675,17.753086301261828,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85083,Phoenix,Phoenix,6181,21.238570092266475,20-30 mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+85085,Phoenix,Phoenix,3553,20.99808757420977,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85086,Phoenix,Anthem,1853,25.995015306598265,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85087,Phoenix,New River,9760,33.153518575270866,30+ mi,,,0,0,False,False,False,False,False
+85118,Phoenix,Gold Canyon,7711,41.67109432626991,30+ mi,,,0,0,False,False,False,False,False
+85119,Phoenix,Apache Junction,4743,33.08543410422641,30+ mi,2022-03-31,2025-12-31,46,0,True,True,False,True,False
+85120,Phoenix,Apache Junction,3405,30.032579241270696,30+ mi,2023-02-28,2025-12-31,35,0,True,True,False,True,False
+85122,Phoenix,Casa Grande,486,41.40341106443013,30+ mi,2018-02-28,2025-12-31,95,0,True,True,False,True,True
+85123,Phoenix,Arizona City,10152,55.83542806275033,30+ mi,2025-06-30,2025-12-31,7,0,True,True,False,True,False
+85128,Phoenix,Coolidge,6319,46.94138950035001,30+ mi,2024-02-29,2025-12-31,23,0,True,True,False,True,False
+85131,Phoenix,Eloy,6029,62.09617837794649,30+ mi,,,0,0,False,False,False,False,False
+85132,Phoenix,Florence,1941,61.568201853816305,30+ mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+85137,Phoenix,Miami,17401,64.6155826948975,30+ mi,,,0,0,False,False,False,False,False
+85138,Phoenix,Maricopa,710,30.2055794336909,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85139,Phoenix,Maricopa,5650,37.04190039806582,30+ mi,2024-05-31,2025-12-31,20,0,True,True,False,True,False
+85140,Phoenix,San Tan Valley,1904,36.65726009959335,30+ mi,2019-01-31,2025-12-31,84,0,True,True,False,True,True
+85142,Phoenix,Queen Creek,238,29.624567955357936,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85143,Phoenix,San Tan Valley,1343,38.01796624824258,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85145,Phoenix,Red Rock,28589,74.24816848627894,30+ mi,,,0,0,False,False,False,False,False
+85173,Phoenix,Superior,16797,55.69895389834299,30+ mi,,,0,0,False,False,False,False,False
+85192,Phoenix,Bylas,21660,87.54626465364368,30+ mi,,,0,0,False,False,False,False,False
+85193,Phoenix,Casa Grande,11977,46.001957628186005,30+ mi,,,0,0,False,False,False,False,False
+85194,Phoenix,Casa Grande,9584,45.90074562181193,30+ mi,,,0,0,False,False,False,False,False
+85201,Phoenix,Mesa,1111,13.113398870681792,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85202,Phoenix,Mesa,1978,12.59579786184552,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85203,Phoenix,Mesa,2629,15.808162784639045,10-20 mi,2020-12-31,2025-12-31,61,0,True,True,False,True,False
+85204,Phoenix,Mesa,361,17.15022975940374,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85205,Phoenix,Mesa,1514,20.9875762598046,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85206,Phoenix,Mesa,2314,21.096620322674273,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+85207,Phoenix,Mesa,916,25.391757293244535,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85208,Phoenix,Mesa,2537,25.86295637794152,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85209,Phoenix,Mesa,1588,25.991448758448104,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85210,Phoenix,Mesa,2286,14.07796866805475,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85212,Phoenix,Mesa,470,27.233630784935286,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85213,Phoenix,Mesa,2130,17.923463633237564,10-20 mi,2019-03-31,2025-12-31,82,0,True,True,False,True,True
+85215,Phoenix,Mesa,7207,29.010566864618895,20-30 mi,2022-10-31,2025-12-31,39,0,True,True,False,True,False
+85224,Phoenix,Chandler,1264,14.47224231167722,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85225,Phoenix,Chandler,180,16.86301675897147,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85226,Phoenix,Chandler,1712,14.86994548080107,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85233,Phoenix,Gilbert,2066,16.650945309101356,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85234,Phoenix,Gilbert,844,20.297841868090728,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85248,Phoenix,Chandler,2414,20.231401352220956,20-30 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,False
+85249,Phoenix,Chandler,1217,22.166199698252125,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85250,Phoenix,Scottsdale,7481,12.08996949929882,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85251,Phoenix,Scottsdale,2094,9.547834350147127,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85253,Phoenix,Paradise Valley,6917,9.47830821857185,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85254,Phoenix,Scottsdale,1325,13.59940855927956,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85255,Phoenix,Scottsdale,1498,21.081560647468205,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85257,Phoenix,Scottsdale,3822,9.467444076502352,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85258,Phoenix,Scottsdale,5036,13.011641568758645,10-20 mi,2018-01-31,2025-12-31,94,2,True,True,False,False,True
+85259,Phoenix,Scottsdale,5718,18.657031289947803,10-20 mi,2022-01-31,2025-12-31,48,0,True,True,False,True,False
+85260,Phoenix,Scottsdale,2048,15.430353594526052,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85262,Phoenix,Scottsdale,8806,32.303092967230725,30+ mi,,,0,0,False,False,False,False,False
+85263,Phoenix,Rio Verde,14868,44.77302018147794,30+ mi,,,0,0,False,False,False,False,False
+85264,Phoenix,Fort McDowell,19740,37.74969137534508,30+ mi,,,0,0,False,False,False,False,False
+85266,Phoenix,Scottsdale,9341,23.489744012393107,20-30 mi,,,0,0,False,False,False,False,False
+85268,Phoenix,Fountain Hills,5191,22.41799352859088,20-30 mi,2021-06-30,2025-12-31,55,0,True,True,False,True,False
+85281,Phoenix,Tempe,1216,8.382683062688592,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85282,Phoenix,Tempe,793,9.140191399180871,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85283,Phoenix,Tempe,1516,10.213684359250236,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85284,Phoenix,Tempe,5786,11.253710175046267,10-20 mi,,,0,0,True,False,False,False,False
+85286,Phoenix,Chandler,978,18.60014286627998,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85295,Phoenix,Gilbert,876,22.016972859931982,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85296,Phoenix,Gilbert,1024,20.527530594319927,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85297,Phoenix,Gilbert,1822,22.997373214699405,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85298,Phoenix,Gilbert,1741,24.784001914448577,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85301,Phoenix,Glendale,314,8.27759756451093,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85302,Phoenix,Glendale,2348,10.083080037817467,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85303,Phoenix,Glendale,2458,10.156600388077358,10-20 mi,2021-05-31,2025-12-31,56,0,True,True,False,True,False
+85304,Phoenix,Glendale,4096,11.66482797663986,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+85305,Phoenix,Glendale,7192,11.714714207349315,10-20 mi,2022-05-31,2025-12-31,44,0,True,True,False,True,False
+85306,Phoenix,Glendale,4788,13.327052118829226,10-20 mi,2018-04-30,2025-12-31,93,0,True,True,False,True,True
+85307,Phoenix,Glendale,7903,14.55529732006456,10-20 mi,2022-11-30,2025-12-31,37,1,True,True,False,True,False
+85308,Phoenix,Glendale,334,15.877169531615076,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85310,Phoenix,Phoenix,6302,18.02999189705154,10-20 mi,2022-04-30,2025-12-31,45,0,True,True,False,True,False
+85322,Phoenix,Arlington,19174,50.080951970662134,30+ mi,,,0,0,False,False,False,False,False
+85323,Phoenix,Avondale,1106,14.54661549075178,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85326,Phoenix,Buckeye,199,32.905849646153435,30+ mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85331,Phoenix,Cave Creek,2984,31.1001926793128,30+ mi,,,0,0,True,False,False,False,False
+85335,Phoenix,El Mirage,2759,17.200945662668982,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85337,Phoenix,Gila Bend,15509,56.110318985245435,30+ mi,,,0,0,False,False,False,False,False
+85338,Phoenix,Goodyear,296,19.949956477511808,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85339,Phoenix,Phoenix,657,14.862089286205611,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85340,Phoenix,Litchfield Park,1743,20.504291960293397,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85342,Phoenix,Morristown,13966,40.44077514159257,30+ mi,,,0,0,False,False,False,False,False
+85345,Phoenix,Peoria,415,13.031418126504644,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85351,Phoenix,Sun City,3602,16.112270727313856,10-20 mi,2024-02-29,2025-11-30,22,0,True,True,False,True,False
+85353,Phoenix,Tolleson,1033,11.72710846108789,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85354,Phoenix,Tonopah,10793,57.32687283959216,30+ mi,,,0,0,False,False,False,False,False
+85355,Phoenix,Waddell,7506,23.326739183593,20-30 mi,2024-12-31,2025-12-31,13,0,True,True,False,True,False
+85361,Phoenix,Wittmann,10346,38.07235344540041,30+ mi,,,0,0,False,False,False,False,False
+85363,Phoenix,Youngtown,12263,16.14335760293605,10-20 mi,,,0,0,True,False,False,False,False
+85373,Phoenix,Sun City,6735,19.920580521006197,10-20 mi,,,0,0,True,False,False,False,False
+85374,Phoenix,Surprise,1770,22.772107001816867,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85375,Phoenix,Sun City West,3240,22.279087432669016,20-30 mi,2023-01-31,2025-12-31,36,0,True,True,False,True,False
+85377,Phoenix,Carefree,28361,27.52621944741566,20-30 mi,,,0,0,False,False,False,False,False
+85378,Phoenix,Surprise,10085,19.44825711668662,10-20 mi,2024-03-31,2025-12-31,21,1,True,True,False,True,False
+85379,Phoenix,Surprise,903,20.11497592011913,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85381,Phoenix,Peoria,4166,14.157049916267384,10-20 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+85382,Phoenix,Peoria,1641,17.330828098303297,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85383,Phoenix,Peoria,233,27.483523522893645,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85387,Phoenix,Surprise,5266,27.85651584947106,20-30 mi,2024-01-31,2025-12-31,24,0,True,True,False,True,False
+85388,Phoenix,Surprise,2804,23.034015418831853,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85390,Phoenix,Wickenburg,10925,55.63617939038101,30+ mi,,,0,0,False,False,False,False,False
+85392,Phoenix,Avondale,2261,13.52735122642098,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85395,Phoenix,Goodyear,2107,19.11230004745119,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+85396,Phoenix,Buckeye,2815,36.53891699016929,30+ mi,2018-01-31,2025-12-31,94,2,True,True,False,False,True
+85623,Phoenix,Oracle,12864,92.84422200274858,30+ mi,,,0,0,False,False,False,False,False
+85631,Phoenix,San Manuel,15777,106.26964761609706,30+ mi,,,0,0,False,False,False,False,False
+85739,Phoenix,Saddlebrooke,7678,84.67941133613053,30+ mi,,,0,0,False,False,False,False,False
+89002,Las Vegas,Henderson,2540,15.6414511429022,10-20 mi,2021-07-31,2025-12-31,54,0,True,True,False,True,False
+89004,Las Vegas,Las Vegas,32153,17.11370331338811,10-20 mi,,,0,0,False,False,False,False,False
+89005,Las Vegas,Boulder City,7801,20.200462911191476,20-30 mi,2024-12-31,2025-12-31,12,1,True,True,False,True,False
+89007,Las Vegas,Bunkerville,23842,61.77660569618336,30+ mi,,,0,0,False,False,False,False,False
+89011,Las Vegas,Henderson,3485,11.803781053502142,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89012,Las Vegas,Henderson,2556,12.238829634799576,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89014,Las Vegas,Henderson,1995,8.890318233113533,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89015,Las Vegas,Henderson,851,15.154716410334268,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89018,Las Vegas,Indian Springs,21343,40.15385183738641,30+ mi,,,0,0,False,False,False,False,False
+89019,Las Vegas,Jean,18454,34.31951403662398,30+ mi,,,0,0,False,False,False,False,False
+89021,Las Vegas,Logandale,15906,49.86567148073728,30+ mi,,,0,0,False,False,False,False,False
+89027,Las Vegas,Mesquite,6379,73.71855395652348,30+ mi,2025-03-31,2025-12-31,10,0,True,True,False,True,False
+89029,Las Vegas,Laughlin,10342,76.8404705704451,30+ mi,2025-01-31,2025-12-31,12,0,True,True,False,True,False
+89030,Las Vegas,North Las Vegas,1014,3.413841216707145,0-10 mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+89031,Las Vegas,North Las Vegas,137,6.420325160597122,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89032,Las Vegas,North Las Vegas,1067,4.056882957757206,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89034,Las Vegas,Mesquite,17536,71.02377123213866,30+ mi,,,0,0,False,False,False,False,False
+89040,Las Vegas,Overton,16126,37.07315530337747,30+ mi,,,0,0,False,False,False,False,False
+89044,Las Vegas,Henderson,3619,16.534995347794244,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89046,Las Vegas,Searchlight,21792,48.948469601051315,30+ mi,,,0,0,False,False,False,False,False
+89052,Las Vegas,Henderson,566,13.145507177917352,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89074,Las Vegas,Henderson,821,9.79371070817699,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89081,Las Vegas,North Las Vegas,2459,6.699789270175625,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89084,Las Vegas,North Las Vegas,1524,9.007555716795656,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89085,Las Vegas,North Las Vegas,14112,10.215927669374686,10-20 mi,,,0,0,False,False,False,False,False
+89086,Las Vegas,North Las Vegas,9706,8.316269474406605,0-10 mi,2023-11-30,2025-12-31,26,0,True,True,False,True,False
+89101,Las Vegas,Las Vegas,1625,1.5030561680774988,0-10 mi,2021-10-31,2025-12-31,51,0,True,True,False,True,False
+89102,Las Vegas,Las Vegas,2690,2.6163384163597554,0-10 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+89103,Las Vegas,Las Vegas,1171,5.202124128292369,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89104,Las Vegas,Las Vegas,1966,2.445366141869823,0-10 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+89106,Las Vegas,Las Vegas,4234,1.2877014987453104,0-10 mi,2022-11-30,2025-12-31,38,0,True,True,False,True,False
+89107,Las Vegas,Las Vegas,2565,3.407080440462979,0-10 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+89108,Las Vegas,Las Vegas,182,4.943847442322423,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89109,Las Vegas,Las Vegas,11457,2.7422483361671772,0-10 mi,2022-02-28,2025-12-31,47,0,True,True,False,True,False
+89110,Las Vegas,Las Vegas,279,5.201378309380735,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89113,Las Vegas,Las Vegas,2837,9.756574915667183,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89115,Las Vegas,North Las Vegas,269,8.37891643834201,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89117,Las Vegas,Las Vegas,618,7.623018452888354,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89118,Las Vegas,Las Vegas,4923,7.159157907820316,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89119,Las Vegas,Las Vegas,1009,5.721029913407987,0-10 mi,2018-01-31,2025-12-31,95,1,True,True,False,False,True
+89120,Las Vegas,Las Vegas,5051,6.666129659529401,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89121,Las Vegas,Las Vegas,265,4.492162896546569,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89122,Las Vegas,Las Vegas,899,7.564448776656422,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89123,Las Vegas,Las Vegas,537,9.12622440742845,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89124,Las Vegas,Mount Charleston,12513,33.575715415645206,30+ mi,,,0,0,False,False,False,False,False
+89128,Las Vegas,Las Vegas,1972,6.782628901210781,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89129,Las Vegas,Las Vegas,707,9.12782015007733,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89130,Las Vegas,Las Vegas,2704,7.383377851737927,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89131,Las Vegas,Las Vegas,956,10.946982870263264,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89134,Las Vegas,Las Vegas,5220,9.218613260335054,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89135,Las Vegas,Las Vegas,3372,13.41481274536269,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89138,Las Vegas,Las Vegas,7743,12.315871465017535,10-20 mi,2021-04-30,2025-12-31,57,0,True,True,False,True,False
+89139,Las Vegas,Las Vegas,1315,9.83272124238823,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89141,Las Vegas,Las Vegas,1658,12.809595063429096,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89142,Las Vegas,Las Vegas,2851,6.682018726439087,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89143,Las Vegas,Las Vegas,7501,13.364416865933116,10-20 mi,2021-12-31,2025-12-31,49,0,True,True,False,True,False
+89144,Las Vegas,Las Vegas,6736,9.565246107663596,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89145,Las Vegas,Las Vegas,4396,7.130725465165824,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89146,Las Vegas,Las Vegas,5620,4.6781895120966945,0-10 mi,2018-03-31,2025-12-31,94,0,True,True,False,True,True
+89147,Las Vegas,Las Vegas,675,8.242923564428931,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89148,Las Vegas,Las Vegas,379,10.961524731940251,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89149,Las Vegas,Las Vegas,1361,10.842984709343073,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89156,Las Vegas,Las Vegas,4090,9.314028995399156,0-10 mi,2021-07-31,2025-12-31,54,0,True,True,False,True,False
+89158,Las Vegas,Las Vegas,30164,4.597746393315052,0-10 mi,,,0,0,True,False,False,False,False
+89161,Las Vegas,Las Vegas,5279,22.002034929067285,20-30 mi,,,0,0,False,False,False,False,False
+89166,Las Vegas,Las Vegas,4719,21.358356615438467,20-30 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89169,Las Vegas,Las Vegas,5497,3.008144386133869,0-10 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89178,Las Vegas,Las Vegas,4306,14.869820239893146,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True
+89179,Las Vegas,Las Vegas,8290,21.5288389442557,20-30 mi,2022-12-31,2025-12-31,37,0,True,True,False,True,False
+89183,Las Vegas,Las Vegas,1562,11.834385047470434,10-20 mi,2018-01-31,2025-12-31,96,0,True,True,True,False,True

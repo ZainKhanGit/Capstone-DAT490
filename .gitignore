@@ -1,0 +1,15 @@
+# Python environment and caches (rebuild with: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt)
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Raw downloads (large; re-download using docs/SOURCES.md; keep a backup copy elsewhere)
+data/raw/
+
+# macOS / editor noise
+.DS_Store
+
+# Secrets: the Census API key lives in the environment, never in files
+.env
+*.key

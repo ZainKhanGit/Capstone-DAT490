@@ -1,0 +1,36 @@
+column,label,male_code,female_code
+occ_003,"Management, business, science, and arts occupations:",C24010_003E,C24010_039E
+occ_004,"Management, business, science, and arts occupations:!!Management, business, and financial occupations:",C24010_004E,C24010_040E
+occ_005,"Management, business, science, and arts occupations:!!Management, business, and financial occupations:!!Management occupations",C24010_005E,C24010_041E
+occ_006,"Management, business, science, and arts occupations:!!Management, business, and financial occupations:!!Business and financial operations occupations",C24010_006E,C24010_042E
+occ_007,"Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:",C24010_007E,C24010_043E
+occ_008,"Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Computer and mathematical occupations",C24010_008E,C24010_044E
+occ_009,"Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Architecture and engineering occupations",C24010_009E,C24010_045E
+occ_010,"Management, business, science, and arts occupations:!!Computer, engineering, and science occupations:!!Life, physical, and social science occupations",C24010_010E,C24010_046E
+occ_011,"Management, business, science, and arts occupations:!!Education, legal, community service, arts, and media occupations:",C24010_011E,C24010_047E
+occ_012,"Management, business, science, and arts occupations:!!Education, legal, community service, arts, and media occupations:!!Community and social service occupations",C24010_012E,C24010_048E
+occ_013,"Management, business, science, and arts occupations:!!Education, legal, community service, arts, and media occupations:!!Legal occupations",C24010_013E,C24010_049E
+occ_014,"Management, business, science, and arts occupations:!!Education, legal, community service, arts, and media occupations:!!Educational instruction, and library occupations",C24010_014E,C24010_050E
+occ_015,"Management, business, science, and arts occupations:!!Education, legal, community service, arts, and media occupations:!!Arts, design, entertainment, sports, and media occupations",C24010_015E,C24010_051E
+occ_016,"Management, business, science, and arts occupations:!!Healthcare practitioners and technical occupations:",C24010_016E,C24010_052E
+occ_017,"Management, business, science, and arts occupations:!!Healthcare practitioners and technical occupations:!!Health diagnosing and treating practitioners and other technical occupations",C24010_017E,C24010_053E
+occ_018,"Management, business, science, and arts occupations:!!Healthcare practitioners and technical occupations:!!Health technologists and technicians",C24010_018E,C24010_054E
+occ_019,Service occupations:,C24010_019E,C24010_055E
+occ_020,Service occupations:!!Healthcare support occupations,C24010_020E,C24010_056E
+occ_021,Service occupations:!!Protective service occupations:,C24010_021E,C24010_057E
+occ_022,"Service occupations:!!Protective service occupations:!!Firefighting and prevention, and other protective service workers including supervisors",C24010_022E,C24010_058E
+occ_023,Service occupations:!!Protective service occupations:!!Law enforcement workers including supervisors,C24010_023E,C24010_059E
+occ_024,Service occupations:!!Food preparation and serving related occupations,C24010_024E,C24010_060E
+occ_025,Service occupations:!!Building and grounds cleaning and maintenance occupations,C24010_025E,C24010_061E
+occ_026,Service occupations:!!Personal care and service occupations,C24010_026E,C24010_062E
+occ_027,Sales and office occupations:,C24010_027E,C24010_063E
+occ_028,Sales and office occupations:!!Sales and related occupations,C24010_028E,C24010_064E
+occ_029,Sales and office occupations:!!Office and administrative support occupations,C24010_029E,C24010_065E
+occ_030,"Natural resources, construction, and maintenance occupations:",C24010_030E,C24010_066E
+occ_031,"Natural resources, construction, and maintenance occupations:!!Farming, fishing, and forestry occupations",C24010_031E,C24010_067E
+occ_032,"Natural resources, construction, and maintenance occupations:!!Construction and extraction occupations",C24010_032E,C24010_068E
+occ_033,"Natural resources, construction, and maintenance occupations:!!Installation, maintenance, and repair occupations",C24010_033E,C24010_069E
+occ_034,"Production, transportation, and material moving occupations:",C24010_034E,C24010_070E
+occ_035,"Production, transportation, and material moving occupations:!!Production occupations",C24010_035E,C24010_071E
+occ_036,"Production, transportation, and material moving occupations:!!Transportation occupations",C24010_036E,C24010_072E
+occ_037,"Production, transportation, and material moving occupations:!!Material moving occupations",C24010_037E,C24010_073E
