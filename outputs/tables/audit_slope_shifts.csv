@@ -1,0 +1,9 @@
+metro,largest_shift,mean_interval_width,shifted
+Phoenix,0.76,0.37,True
+Austin,0.76,0.71,True
+Atlanta,1.47,0.61,True
+Dallas,0.11,0.44,False
+Tampa,0.89,0.72,True
+Charlotte,0.47,0.62,False
+Nashville,1.21,0.44,True
+Las Vegas,0.2,0.57,False

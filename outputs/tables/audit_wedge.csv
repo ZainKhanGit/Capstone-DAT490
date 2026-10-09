@@ -1,0 +1,9 @@
+metro,n_top_fifth,mean_direction,bearing_deg,R,perm_p,pct_within_60deg,median_mi_top,median_mi_rest
+Phoenix,29,NE,41,0.66,0.0,76,20.2,16.8
+Austin,17,NW,312,0.72,0.0004,76,9.1,18.8
+Atlanta,40,N,22,0.77,0.0,90,14.4,28.6
+Dallas,50,NE,32,0.73,0.0,88,20.0,26.5
+Tampa,26,NW,330,0.42,0.7748,58,17.4,18.9
+Charlotte,21,S,163,0.27,0.1524,57,12.8,26.8
+Nashville,19,S,183,0.63,0.0024,74,15.3,30.4
+Las Vegas,14,SW,241,0.47,0.0788,57,13.3,8.6

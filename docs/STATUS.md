@@ -7,6 +7,7 @@ The takeaway paragraphs in the notebook are labeled DRAFT; the report text is de
 regenerated figures, the rebuilt PDF and this note.
 
 ## Final deliverable
+(see the 2026-10-11 update at the bottom)
 PDF report, built from LaTeX (same toolchain as the plan and lit review, same structure as the prior-team example: long data
 sources/cleaning section, figures each explained in prose, data-sources-only references). The assignment text does not name a
 format; **check the Canvas page for any required format or length** before submitting. Supporting files to attach or link:
@@ -47,3 +48,14 @@ metro and housing type more than distance. Rents (inner and middle metro only, 4
 - Plain `git` in Terminal may fail (broken Xcode shortcut); working copy: `/Library/Developer/CommandLineTools/usr/bin/git`.
 - Census key: `CENSUS_API_KEY` in `~/.zshrc`; step 4 does not need it again (responses cached).
 - Not done: GitHub remote; backup copy of `data/raw/` (352 MB, not in git).
+
+## 2026-10-11 update: interpretation audit applied
+- `docs/interpretation_audit.md` (and `.pdf`) lists every interpretive claim in 2.2-2.6 with the number behind it. All proposed
+  corrections were applied to the report and the notebook (donut reduced to Atlanta only, wedge claim limited to the five metros
+  where a direction test passes, Las Vegas direction fixed, education claim removed, Austin sentence made consistent, Phoenix
+  classification fixed, rents paragraph reworded, two-center price levels limited to Dallas-Fort Worth).
+- New results in the report: pre-2020 trend controlled (later exposure slopes +0.03 and +0.13, intervals include zero), direction
+  test (Table 4), band comparison with bootstrap intervals (Table 7).
+- `src/audit_checks.py` computes the extra checks; `src/check_report_numbers.py` verifies 267 numbers/phrases against the data and
+  the .tex. Run both before submitting; the second must say FAILED 0.
+- Report is now 26 pages (was 24).

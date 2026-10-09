@@ -50,6 +50,11 @@ Then open `notebooks/01_eda.ipynb` and pick the "Python 3 (capstone venv)" kerne
 downsampled copies of `outputs/figures/`). To rebuild after changing the pipeline or figures:
 
 ```bash
+./.venv/bin/python src/audit_checks.py                   # extra checks behind the interpretive claims (tables in outputs/tables/audit_*.csv)
 .venv/bin/python report/make_tables.py                 # tables from data/clean and outputs/tables
 cd report && xelatex Team10_EDA.tex && xelatex Team10_EDA.tex   # run twice for cross-references
 ```
+
+Before submitting, `.venv/bin/python src/check_report_numbers.py` recomputes every number the report states from the data and
+checks that it appears in `report/Team10_EDA.tex` (it exits with an error if any check fails). `docs/interpretation_audit.md`
+lists each interpretive claim with the number behind it.

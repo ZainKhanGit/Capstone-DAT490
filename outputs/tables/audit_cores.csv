@@ -1,0 +1,5 @@
+metro,role,city,n_within_10mi,median_value_k
+Dallas,primary,Dallas,36,221
+Dallas,second,Fort Worth,29,183
+Tampa,primary,Tampa,22,220
+Tampa,second,St. Petersburg,20,227

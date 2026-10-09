@@ -1,0 +1,8 @@
+exclusion,slope,lo,hi,n
+all ZIPs,-4.25,-7.12,-1.29,147
+drop zhvi_incomplete,-4.25,-7.13,-1.28,146
+drop metro_col_only,-4.25,-7.12,-1.29,147
+drop acs_baseline_missing,-4.27,-7.14,-1.31,146
+drop wfh_unreliable,0.47,-3.71,4.83,131
+drop ZIPs beyond 60 mi,-1.78,-6.14,2.78,139
+drop ZIPs beyond 40 mi,8.06,1.43,15.12,127

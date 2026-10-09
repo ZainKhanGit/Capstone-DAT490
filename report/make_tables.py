@@ -118,3 +118,38 @@ for _, r in ref.iterrows():
     rows.append([r.metro + ("" if r.role == "primary" else f" (2nd: {r.city})"), r.building.split(" (")[0].replace("&", "\\&"),
                  f"{r.lat:.4f}", num(r.lon, 4), src.replace("&", "\\&")])
 write("t_centers.tex", ["Metro", "Center", "Lat.", "Lon.", "Source"], rows, "llrrl", font=r"\scriptsize")
+
+# ---- Table 7: direction test for the highest-value fifth (audit_wedge.csv)
+w = pd.read_csv(T / "audit_wedge.csv")
+names = {"N": "north", "NE": "northeast", "E": "east", "SE": "southeast", "S": "south", "SW": "southwest", "W": "west", "NW": "northwest"}
+rows = []
+for _, r in w.iterrows():
+    ptxt = "$<$0.001" if r.perm_p < 0.001 else f"{r.perm_p:.2f}" if r.perm_p >= 0.01 else f"{r.perm_p:.3f}"
+    rows.append([r.metro + (" (from the midpoint of the two halls)" if r.metro == "Dallas" else ""), f"{int(r.n_top_fifth)}", names[r.mean_direction],
+                 f"{r.R:.2f}", ptxt, f"{int(r.pct_within_60deg)}\\%", "yes" if r.perm_p < 0.01 else "no"])
+write("t_wedge.tex", ["Metro", "Top-fifth ZIPs", "Mean direction", "Concentration R", "Permutation p", "Within 60$^\\circ$", "Directional (p $<$ 0.01)"],
+      rows, "lrlrrrr")
+
+# ---- Table 8: exposure slopes with the pre-2020 trend controlled (audit_exposure_controls.csv)
+ec = pd.read_csv(T / "audit_exposure_controls.csv")
+ec.columns = ["outcome", "controls", "slope", "ci", "r2", "n"]
+rows = []
+for outc, lab in (("2019_2022", "2020--22 growth"), ("2022_2025", "2023--25 growth")):
+    r = [lab]
+    for ctl in ("WFH only", "+ pre-2020 growth", "+ pre-2020 growth + income"):
+        x = ec[(ec.outcome == outc) & (ec.controls == ctl)].iloc[0]
+        lo, hi = [float(v) for v in x.ci.strip("[]").split(",")]
+        r.append(f"{num(x.slope, 2, True)} [{num(lo, 2)}, {num(hi, 2)}]")
+    rows.append(r)
+write("t_exposure_controls.tex", ["Outcome", "Work-from-home share only", "+ pre-2020 growth", "+ pre-2020 growth and income"], rows, "lccc")
+
+# ---- Table 9: inner and outer distance bands relative to the metro (audit_band_bootstrap.csv)
+bb = pd.read_csv(T / "audit_band_bootstrap.csv")
+rows = []
+for m in ("Atlanta", "Nashville", "Austin", "Tampa"):
+    for band, lab in (("0-10 mi", "0--10 mi"), ("30+ mi", "30+ mi")):
+        r = bb[(bb.metro == m) & (bb.band == band)].iloc[0]
+        rows.append([m, lab, f"{int(r.n)}", f"{r['2018-01_med']:.1f}", f"{r['2022-12_med']:.1f}",
+                     f"{r['2025-12_med']:.1f} [{r['2025-12_lo']:.1f}, {r['2025-12_hi']:.1f}]"])
+write("t_donut.tex", ["Metro", "Band", "ZIPs", "Jan 2018", "Dec 2022", "Dec 2025 [95\\% interval]"], rows, "llrrrr")
+print("tables written:", sorted(p.name for p in OUT.glob("*.tex")))
