@@ -18,12 +18,12 @@ from statsmodels.nonparametric.smoothers_lowess import lowess
 import matplotlib.patheffects as pe
 
 INK = {"primary": "#0b0b0b", "secondary": "#52514e", "muted": "#898781",
-       "grid": "#e1e0d9", "axis": "#c3c2b7", "surface": "#fcfcfb"}
+       "grid": "#e1e0d9", "axis": "#c3c2b7", "surface": "#ffffff"}
 C1, C2 = "#2a78d6", "#eb6834"        # categorical slots 1 and 2
 BLUE_700 = "#0d366b"                 # sequential blue step 700, for fit lines on one-color panels
 ORDINAL = ["#86b6ef", "#3987e5", "#184f95"]   # blue steps 250/400/600: ordered dates or periods (validated --ordinal)
 LOWESS_FRAC = 0.45                   # share of ZIPs in each local fit; the same everywhere
-HALO = [pe.withStroke(linewidth=3.8, foreground="#fcfcfb")]
+HALO = [pe.withStroke(linewidth=3.8, foreground="#ffffff")]
 MINUS = "−"
 # Report-size layout: figures are 8.5 in wide and shown at about 6.5 in in the PDF, so a 10 pt label prints at 7.7 pt.
 FIG_W = 8.5

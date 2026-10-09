@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{lmodern}
+\usepackage{authblk}
 \usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt}
@@ -35,8 +36,11 @@
   \end{minipage}\par\vspace{10pt}}
 
 \title{Exploratory Data Analysis:\\ Remote Work and Urban Housing Prices in Eight Sun Belt Metros}
-\author{Sai Krishna Varshith Danda \and Gayathri Kota \and Eshitha Chowdary Kaka \and Zain Khan\\[2pt]
-Arizona State University, Tempe, AZ 85281, USA}
+\author[1]{Sai Krishna Varshith Danda}
+\author[1]{Gayathri Kota}
+\author[1]{Eshitha Chowdary Kaka}
+\author[1]{Zain Khan}
+\affil[1]{Arizona State University, Tempe, AZ 85281, USA}
 \date{October 9, 2026}
 
 \begin{document}
@@ -134,7 +138,7 @@ miles). Two flags do not follow the pattern. The seven ZIP codes with no 2015--2
 little power, so we say there is no evidence of a peripheral pattern for them, not that there is none. Patchy ZORI is
 the second exception, for a mechanical reason: outer ZIP codes mostly have no rents at all, so only inner ones can be
 patchy. The practical consequence is that dropping flagged ZIP codes trims the outer edge of every metro, which is where a
-price--distance gradient is estimated. We therefore keep every ZIP code by default, carry the flags in the data, and show
+price-distance gradient is estimated. We therefore keep every ZIP code by default, carry the flags in the data, and show
 results for the full and the flag-free samples side by side (Section~\ref{sec:robust}).
 
 \fig{2_1c_flags_by_distance.jpg}{fig:flags}{Share of ZIP codes in each distance band carrying each data-quality flag. Darker
@@ -185,11 +189,14 @@ then holds. Only Atlanta follows it and keeps going: its level slope moves from 
 growth slope from $-$0.44 to $+$0.69 to $+$1.03 points per year per 10 miles (Figure~\ref{fig:atlanta}). Austin flattens only
 in 2023--25 (growth slope $+$0.63). Tampa flattens in 2020--22 ($+$0.57) and then turns negative ($-$0.32), which contradicts
 ``holds''. Phoenix goes the other way: its growth slope falls from $+$0.46 to $-$0.30 and its level slope steepens from
-$-$4.3\% to $-$5.6\% (Figure~\ref{fig:phoenix}). Charlotte shows no change (Figure~\ref{fig:charlotte}), and Nashville's
+$-$4.3\% to $-$5.6\% (Figure~\ref{fig:phoenix}). Charlotte shows no change, and Nashville's
 outer ZIP codes were already outgrowing the center before 2020 ($+$1.02).
+We show Atlanta and Phoenix in detail because one follows the prediction and the other reverses it; Figure~\ref{fig:slopes}
+summarizes all eight metros, and the per-metro figures for the other six metros and the Tampa two-center growth figure are in the
+project repository (\texttt{outputs/figures/}).
 
 The surprise is how little of this is one story. In Phoenix and Las Vegas the smooth curves are humped, with values peaking
-10 to 25 miles from city hall and falling beyond (Figure~\ref{fig:lv}), which a straight line flattens into a near-zero or mildly
+10 to 25 miles from city hall and falling beyond (Figure~\ref{fig:phoenix} for Phoenix), which a straight line flattens into a near-zero or mildly
 negative slope. Level slopes at different dates have overlapping intervals in every metro, and we did not test whether a
 slope changed between dates. The shifts in growth slopes for Atlanta, Tampa, Phoenix and Nashville are larger than the width of
 their own intervals (even if those are too narrow); the others are not distinguishable from no change. Level slopes move
@@ -212,15 +219,11 @@ distance from city hall. Each dot is a ZIP code; the solid line is a linear fit 
 \fig{2_2_gradient_phoenix.jpg}{fig:phoenix}{Phoenix, same layout. The smooth fit peaks about 20 miles from city hall; triangles
 mark two ZIP codes beyond the axis range.}
 
-\fig{2_2_gradient_charlotte.jpg}{fig:charlotte}{Charlotte, same layout: a steep, stable gradient.}
-
-\fig{2_2_gradient_las_vegas.jpg}{fig:lv}{Las Vegas, same layout: no linear gradient, but a clear hump 10 to 20 miles out.}
-
 \paragraph{Does a second center change the picture?} For Dallas--Fort Worth and Tampa--St.\ Petersburg we recompute distance
 to the nearer of the two city halls. This does not recover a monocentric gradient (Figures~\ref{fig:dalv} and~\ref{fig:dalg}).
 For Dallas, R$^2$ for home values stays at about 0.005 either way and the slope changes sign ($-$1.9\% to $+$1.5\% per 10
 miles) with both intervals spanning zero. For Tampa, R$^2$ rises a little (0.065 to 0.080). For growth the nearest-center
-version helps most in 2020--22 (R$^2$ 0.004 to 0.019 in Dallas, 0.117 to 0.163 in Tampa; Figure~\ref{fig:tampag}). Fitting each
+version helps most in 2020--22 (R$^2$ 0.004 to 0.019 in Dallas, 0.117 to 0.163 in Tampa). Fitting each
 center's ZIP codes separately shows why a pooled line fails: Fort Worth ZIP codes rise in value with distance from Fort
 Worth's city hall by about $+$8\% to $+$10\% per 10 miles (R$^2$ about 0.10) while Dallas ZIP codes are flat or slightly negative.
 The two cores sit at different price levels. The per-center growth slopes also move in opposite directions (Dallas from $+$0.47
@@ -236,8 +239,6 @@ ZIP codes (line color matches the dots). Dot color is the center each ZIP code i
 \fig{2_2_two_center_growth_dallas.jpg}{fig:dalg}{Dallas--Fort Worth, annualized growth, same layout as
 Figure~\ref{fig:dalv}.}
 
-\fig{2_2_two_center_growth_tampa.jpg}{fig:tampag}{Tampa--St.\ Petersburg, annualized growth, same layout.}
-
 \subsection{Spatial structure}
 The maps ask whether expensive ZIP codes form rings around the center, as the monocentric model predicts, or separate
 patches, as a polycentric metro would. Figure~\ref{fig:lvlmap} shows December 2019 home value in fifths within each metro. In
@@ -252,8 +253,9 @@ grew more slowly than the metro in 2023--25 and the outer ones faster, which mat
 has a similarly slow core, but its far-south ZIP codes are also slow, which is why its slope is near zero. Before 2020 the pattern
 was different: Atlanta's ZIP codes north of city hall were slow and those south and southeast fast; the Dallas and Fort Worth
 cores grew faster than their surroundings, with the northern suburbs slower; Phoenix's inner core and far southeast were
-fastest. In six of eight metros the growth contrast between ZIP codes was larger before 2020 than in 2020--22 (not Austin,
-and Atlanta barely), so the post-2020 maps are, if anything, quieter than the pre-2020 ones. The maps are descriptive: growth
+fastest. In seven of eight metros (all but Austin) growth varied more across ZIP codes before 2020 than in 2020--22 (the standard
+deviation of annualized growth was 4.9 against 3.5 points a year in Atlanta and 4.2 against 1.9 in Dallas), so the post-2020
+maps are, if anything, quieter than the pre-2020 ones. The maps are descriptive: growth
 is relative to the metro median so metro-wide movements are removed; large, thinly populated ZIP codes dominate the area
 (Las Vegas is hard to read for this reason); and we have not measured spatial clustering or explained why the wedges form.
 
@@ -286,7 +288,7 @@ the 2022 rate shock. The direction of travel ($-$1.48 to $-$0.30 to $+$0.40) is 
 starting point it is not evidence for it.
 
 Two further points. The strongest relationship in the figure is the pre-2020 placebo, and the plan's predicted positive
-relationship in 2020--22 does not appear within metros. Dropping the 233 ZIP codes with an unreliable estimate (hollow
+relationship in 2020--22 does not appear within metros. Dropping the 233 ZIP codes in this sample with an unreliable estimate (hollow
 diamonds in Figure~\ref{fig:expo}) barely changes the slopes ($-$1.41, $-$0.26, $+$0.52), though those ZIP codes scatter much more
 widely. Nothing here separates exposure from income, education and housing type, which the measure tracks closely, and nothing
 controls for them. Any model of the post-2020 relationship has to deal with the pre-2020 one first, for instance by including
@@ -307,14 +309,13 @@ smooth fit.}
 points, with 95\% intervals (OLS), all ZIP codes and ZIP codes with a reliable estimate only.}
 
 \subsection{Price paths and groups of ZIP codes (sub-question 3)}
-Every metro followed the same broad shape (Figure~\ref{fig:paths}): a steep rise from 2020 to 2022 (a typical ZIP index of about
-140 to 170 by late 2022, December 2019 $=100$) and then a flat or falling stretch, with Austin falling furthest. Within most
+Every metro followed the same broad shape (Figure~\ref{fig:paths}): a steep rise from 2020 to 2022 (metro median ZIP indexes of about 143 to 162 by December 2022, December 2019 $=100$) and then a flat or falling stretch, with Austin falling furthest. Within most
 metros the distance bands move together: in Phoenix, Dallas and Charlotte each band's median stays within about 4\% of the metro
 as a whole throughout (Figure~\ref{fig:relpaths}). The exceptions are the clearest signs of a donut. In Atlanta the innermost band
 (0--10 miles) fell to 85\% of the metro's median index by December 2022 and 83\% by December 2025 while the 30-plus-mile band rose
 to about 105\%. In Tampa the 30-plus-mile band jumped to about 106\% by December 2022 and stayed there, though the inner band also
 recovered to about 106\% by 2025. In Austin and Las Vegas the outer band swings (Austin's dipped to about 92\% in 2022 and
-recovered; Las Vegas's, with only 7 ZIP codes, fell to about 96\%).
+recovered; Las Vegas's, with only 7 ZIP codes, fell to about 94\% in 2022 and ended near 96\%).
 
 Grouping the 1,072 ZIP codes with complete series by the shape of their path (k-means on the log index) gives four groups
 (Figure~\ref{fig:clusters}, Table~\ref{tab:clusters}). Group 3 (89 ZIP codes, 74\% of them in Austin) shows a boom and a correction,
@@ -323,7 +324,7 @@ single-family detached homes, mostly Atlanta and Dallas) rose least, peaking nea
 differ mainly in amplitude. The groups follow metro and housing type more than distance: median distances are 22, 20, 15 and 4
 miles, so only the small urban-core group is distinctively central. The plan expected three to five groups including delayed
 appreciation and stagnation; we find a boom-and-correction group and a low-appreciation group but no delayed-appreciation group.
-The silhouette width is modest (0.28 to 0.38 across the numbers of groups we tried; 0.36 at four, no better than 0.375 at two),
+The silhouette width is modest (0.22 to 0.38 across two to eight groups; 0.36 at four, no better than 0.375 at two),
 so we cannot say that four is the right number of groups or that the groups are real types and not a partition of a continuum.
 The 27 ZIP codes with incomplete series, mostly in the outer ring, are left out, and the band medians in Las Vegas and the outer
 bands of Austin and Tampa rest on 4 to 15 ZIP codes.
