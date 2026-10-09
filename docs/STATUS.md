@@ -1,7 +1,8 @@
-# Where we left off (updated 2026-10-09)
+# Where we left off (updated 2026-10-09, later)
 
 **Pipeline: done** (`python src/run_pipeline.py`, about 20 s; reports in `outputs/logs/`).
-**Figure 2.2 (the gradient): built, not yet interpreted in the notebook.** Everything else in Section 2 is still a TODO.
+**Section 2: 2.1, 2.2, 2.3 and 2.4 are built and have DRAFT takeaway paragraphs in the notebook** (2.2 committed in `b7a6cfd`;
+2.1, 2.3, 2.4, the 2.2 takeaways and `src/viz_eda.py` are not committed yet). **Still to do: 2.5, 2.6, Section 3, references.**
 
 ## What exists for 2.2
 - `src/viz.py`: shared style and builders. Palette = dataviz reference palette (blue/orange validated all-pairs;
@@ -32,15 +33,22 @@ correlation), so they are probably too narrow.
   while Dallas ZIPs are flat or slightly negative, i.e. the two cores sit at different price levels.
 - Not shown: suburban job centers (Plano, Las Colinas, Scottsdale, ...). LODES would be the way to test them.
 
+## What 2.1, 2.3 and 2.4 show (details in the notebook takeaways)
+- 2.1: prices are right-skewed (skew 2.6 -> 0.4 in logs); metro medians diverge after 2022 (Austin -15% from its peak);
+  spread across ZIPs inside a metro is as big as many between-metro differences; data-quality flags rise with distance.
+- 2.3: expensive ZIPs form wedges on one side of the center, not rings or patches; pre-2020 growth maps have more spatial
+  contrast than 2020-22 and 2023-25. Only the Phoenix and Dallas growth maps were inspected closely; check the other six.
+- 2.4 (SQ2): within a metro, higher pre-2020 WFH share goes with SLOWER growth before 2020 (-1.48 pts/yr per +5 pp), slightly
+  slower in 2020-22 (-0.30), faster only in 2023-25 (+0.40). Contradicts "positive, strongest in 2021-22". The measure tracks
+  income (+0.66), professional jobs (+0.74) and home value (+0.74), and high-value ZIPs grew slowest pre-2020 (-0.72), so
+  the strong pre-trend has to be handled in any model. Reliable-only slopes are about the same.
+
 ## Next steps
-1. Write the takeaway paragraph under each 2.2 figure (the empty markdown cell at the end of 2.2). Report the
-   mixed result plainly, including what contradicts the plan; do not force the monocentric story.
-2. Build 2.1 (distributions, log scale), 2.3 (choropleths of growth relative to metro median, shared diverging scale,
-   mark the centers), 2.4 (SQ2: pre-pandemic WFH share vs growth; show the 248 unreliable-WFH ZIPs with a different
-   marker, decided), 2.5 (indexed paths), 2.6 (full vs flag-free sample; ZORI inner/middle-metro check).
+1. Read and edit the DRAFT takeaways under 2.1, 2.2, 2.3, 2.4 (the user asked for plain, non-overclaiming text).
+2. Build 2.5 (indexed paths, Dec 2019 = 100, faceted by distance band; optional simple k-means with silhouette) and 2.6
+   (full vs flag-free sample; ZORI inner/middle-metro check on the fixed sample).
 3. Section 3 (implications) and references (data sources only; `docs/SOURCES.md`).
-4. Not committed yet: `src/viz.py`, `outputs/figures/`, `outputs/tables/`, notebook edits, `requirements.txt`
-   (added statsmodels). Commit when ready.
+4. Commit the new work (`src/viz_eda.py`, new figures/tables, notebook, STATUS).
 
 ## Decisions already made (do not reopen)
 - Metro = ZHVI `Metro` column; 12 column-only ZIPs flagged; 5 crosswalk-only ZIPs left out.
