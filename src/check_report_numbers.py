@@ -22,7 +22,7 @@ import viz  # noqa: E402
 warnings.filterwarnings("ignore")
 ROOT = Path(__file__).resolve().parents[1]
 C, T = ROOT / "data" / "clean", ROOT / "outputs" / "tables"
-TEX = re.sub(r"\s+", " ", (ROOT / "report" / "Team10_EDA.tex").read_text())
+TEX = re.sub(r"\s+", " ", (ROOT / "report" / "Team10_EDA.tex").read_text() + " " + " ".join(f.read_text() for f in sorted((ROOT / "report" / "tables").glob("*.tex"))))   # the report text plus its generated tables
 
 passed, failed = [], []
 
@@ -41,7 +41,9 @@ def chk(label, computed, claimed, dec=1, signed=False, plain=None, ctx=None):
     tol = 0.5 * 10 ** (-dec) + 1e-9
     ok_val = abs(float(computed) - float(claimed)) <= tol
     token = plain if plain is not None else (S(claimed, dec) if signed else U(abs(claimed), dec) if claimed >= 0 else S(claimed, dec))
-    ok_txt = (token in TEX) and (ctx is None or ctx in TEX)
+    # the same number can be typeset as prose ($+$0.63) or as a table entry (+0.63, or a bare 0.64 inside an interval)
+    forms = [token, token.replace("$+$", "+")] + ([token.replace("$+$", "")] if "interval" in label or "low" in label or "high" in label else [])
+    ok_txt = any(f in TEX for f in forms) and (ctx is None or ctx in TEX)
     (passed if ok_val and ok_txt else failed).append(
         f"{label}: data {float(computed):.{dec + 2}f} vs report {claimed} | value {'ok' if ok_val else 'MISMATCH'} | text {'ok' if ok_txt else 'NOT FOUND: ' + (ctx or token)}")
 
@@ -151,9 +153,9 @@ for lab, m, meas, pn, claim, dec in [
     chk(lab, S_(m, meas, pn).slope, claim, dec, signed=True)
 x = S_("Austin", "growth", "2020–2022"); chk("Austin 2020-22 interval low", x.lo, -0.22, 2, signed=True); chk("Austin 2020-22 interval high", x.hi, 0.64, 2, signed=True)
 x = S_("Tampa", "growth", "2023–2025"); chk("Tampa 2023-25 interval low", x.lo, -0.68, 2, signed=True); chk("Tampa 2023-25 interval high", x.hi, 0.03, 2, signed=True)
-chk("Charlotte level slope", S_("Charlotte", "level", "Dec 2019").slope, -18, 0, plain="about $-$18\\%")
-chk("Austin level slope", S_("Austin", "level", "Dec 2019").slope, -15, 0, plain="Austin ($-$15\\%)")
-chk("Nashville level slope", S_("Nashville", "level", "Dec 2019").slope, -13, 0, plain="Nashville ($-$13\\%)")
+chk("Charlotte level slope", S_("Charlotte", "level", "Dec 2019").slope, -18.1, 1, signed=True)
+chk("Austin level slope", S_("Austin", "level", "Dec 2019").slope, -14.9, 1, signed=True)
+chk("Nashville level slope", S_("Nashville", "level", "Dec 2019").slope, -13.5, 1, signed=True)
 true("Charlotte R2 about 0.5", 0.45 <= S_("Charlotte", "level", "Dec 2019").r2 <= 0.52)
 true("Atlanta/Tampa/Phoenix R2 under 0.12", max(S_(m, "level", p).r2 for m in ("Atlanta", "Tampa", "Phoenix") for p in ("Dec 2019", "Dec 2022", "Dec 2025")) < 0.12)
 true("Dallas/Las Vegas R2 below 0.01", max(S_(m, "level", p).r2 for m in ("Dallas", "Las Vegas") for p in ("Dec 2019", "Dec 2022", "Dec 2025")) < 0.01)
@@ -173,7 +175,7 @@ true("Las Vegas quadratic p (Dec 2025) < 0.001", hump[(hump.metro == "Las Vegas"
 chk("Phoenix level slope beyond-40-mi dropped", phx.loc["drop ZIPs beyond 40 mi", "slope"], 8.1, 1, signed=True)
 chk("   interval low", phx.loc["drop ZIPs beyond 40 mi", "lo"], 1.4, 1, signed=True); chk("   interval high", phx.loc["drop ZIPs beyond 40 mi", "hi"], 15.1, 1, signed=True)
 chk("ZIPs beyond 40 miles removed", phx.loc["all ZIPs", "n"] - phx.loc["drop ZIPs beyond 40 mi", "n"], 20, 0, plain="20 ZIP codes beyond 40 miles")
-chk("unreliable-WFH ZIPs in Phoenix sample", phf["phoenix_wfh_unreliable_n"], 16, 0, plain="16 ZIP codes with unreliable")
+chk("unreliable-WFH ZIPs in Phoenix sample", phf["phoenix_wfh_unreliable_n"], 16, 0, plain="16 ZIP codes with an unreliable work-from-home share")
 chk("their median distance", phf["phoenix_wfh_unreliable_median_mi"], 56, 0, plain="median distance 56 miles")
 chk("Phoenix flag-free level slope", phx.loc["drop wfh_unreliable", "slope"], 0.5, 1, plain="$+$0.5\\%")
 true("other three Phoenix flags change nothing", all(abs(phx.loc[f"drop {k}", "slope"] - phx.loc["all ZIPs", "slope"]) < 0.1 for k in ("zhvi_incomplete", "metro_col_only", "acs_baseline_missing")))

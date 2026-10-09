@@ -22,18 +22,13 @@
   \refstepcounter{fignum}\label{#2}%
   {\small\raggedright\textbf{Figure \thefignum.} #3\par}
   \end{figure}}
-\newcommand{\tabsmall}[3]{%
-  \begin{minipage}{\linewidth}\centering
+\newcommand{\tab}[3]{%
+  \begin{table}[tbp]\centering
   \refstepcounter{tabnum}\label{#2}%
   {\small\raggedright\textbf{Table \thetabnum.} #3\par}\vspace{3pt}
   \input{tables/#1}
-  \end{minipage}\par\vspace{10pt}}
-\newcommand{\tab}[3]{%
-  \begin{minipage}{\linewidth}\centering
-  \refstepcounter{tabnum}\label{#2}%
-  {\small\raggedright\textbf{Table \thetabnum.} #3\par}\vspace{3pt}
-  \resizebox{\linewidth}{!}{\input{tables/#1}}
-  \end{minipage}\par\vspace{10pt}}
+  \end{table}}
+\newcommand{\tabsmall}{\tab}   % kept for older calls; every table is now set at the same size, unscaled
 
 \title{Exploratory Data Analysis:\\ Remote Work and Urban Housing Prices in Eight Sun Belt Metros}
 \author[1]{Sai Krishna Varshith Danda}
@@ -184,22 +179,18 @@ distance, without controls or metro-by-month effects; they are not the planned e
 remote work did. Third, the smooth (LOWESS) curves are drawn only over the range holding 95\% of a metro's ZIP codes and rest
 on few ZIP codes beyond roughly 40 to 60 miles, so their far ends should not be over-read.
 
-Home values fall with distance in six of the eight metros, but the strength varies (Table~\ref{tab:slopes},
-Figure~\ref{fig:slopes}). Charlotte (about $-$18\% per 10 miles, R$^2$ about 0.5), Austin ($-$15\%) and Nashville ($-$13\%)
-have steep, fairly tight gradients. Atlanta, Tampa and Phoenix are weaker ($-$4\% to $-$9\%, R$^2$ under 0.12). Dallas and Las
-Vegas have no linear gradient at all (slopes near zero, R$^2$ below 0.01). The prediction was a flattening in 2020--22 that
-then holds. Only Atlanta follows it and keeps going: its level slope moves from $-$7.7\% to $-$6.0\% to $-$3.0\% and its
-growth slope from $-$0.44 to $+$0.69 to $+$1.03 points per year per 10 miles (Figure~\ref{fig:atlanta}). The growth-slope change
-from before 2020 to 2020--22 is clear (the intervals do not overlap); the level-slope intervals at the three dates overlap, and
-we did not test the change. Austin's growth slope is positive only in 2023--25 ($+$0.63), though it is not clearly different from
-its 2020--22 value ($+$0.21, interval $-$0.22 to $+$0.64). Tampa's growth slope is $+$0.57 in 2020--22 and $-$0.32 in 2023--25
-(interval $-$0.68 to $+$0.03), so its flattening did not hold. Phoenix goes the other way on growth: its growth slope falls from
-$+$0.46 to $-$0.30. Its level slope is $-$4.3\% at the first date and $-$5.6\% at the last, with overlapping intervals, and the
-gradient disappears when the 16 ZIP codes with unreliable exposure estimates (median distance 56 miles) are dropped
-(Section~\ref{sec:robust}; Figure~\ref{fig:phoenix}). Charlotte shows no detectable change, and Nashville's outer ZIP codes were
-already outgrowing the center before 2020 ($+$1.02). We show Atlanta and Phoenix in detail because one follows the prediction
-and the other reverses it; Figure~\ref{fig:slopes} summarizes all eight metros, and the per-metro figures for the other six
-metros and the Tampa two-center growth figure are in the project repository (\texttt{outputs/figures/}).
+Home values fall with distance in six of the eight metros: steeply in Charlotte (R$^2$ about 0.5), Austin (0.15 to 0.24) and
+Nashville (0.26 to 0.37), weakly in Atlanta, Tampa and Phoenix (R$^2$ under 0.12), and not at all in Dallas and Las Vegas (below
+0.01). Table~\ref{tab:slopes} and Figure~\ref{fig:slopes} give every slope and interval. Against the prediction, a flattening in
+2020--22 that then holds, the metros fall into three groups. \emph{Flatten:} Atlanta, clearly and persistently (growth slope
+$-$0.44, then $+$0.69, then $+$1.03 points per year per 10 miles; Figure~\ref{fig:atlanta}), and Austin, where the growth slope
+turns positive only in 2023--25 and is not clearly different from its 2020--22 value. \emph{Do not flatten:} Charlotte, Dallas and
+Las Vegas show no detectable change, and Nashville's outer ZIP codes were already outgrowing the center before 2020
+($+$1.02). \emph{Reverse:} Tampa flattens in 2020--22 and falls back ($+$0.57, then $-$0.32, interval $-$0.68 to $+$0.03), and
+Phoenix's growth slope falls from $+$0.46 to $-$0.30, though its gradient depends on far-out ZIP codes
+(Section~\ref{sec:robust}; Figure~\ref{fig:phoenix}). We show Atlanta and Phoenix in detail because one follows the prediction and
+the other reverses it; the per-metro figures for the other six metros and the Tampa two-center growth figure are in the project
+repository (\texttt{outputs/figures/}).
 
 The surprise is how little of this is one story. In Phoenix and Las Vegas the smooth curves are humped, with values peaking about
 24 and 15 miles from city hall and falling beyond (Figure~\ref{fig:phoenix} for Phoenix); a quadratic term is significant in both

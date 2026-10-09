@@ -59,3 +59,11 @@ metro and housing type more than distance. Rents (inner and middle metro only, 4
 - `src/audit_checks.py` computes the extra checks; `src/check_report_numbers.py` verifies 267 numbers/phrases against the data and
   the .tex. Run both before submitting; the second must say FAILED 0.
 - Report is now 26 pages (was 24).
+
+## 2026-10-11 later: fonts, Section 2.2, final files
+- Font audit found tables at 5.7 to 10 pt (each was scaled to fit) and figures in Arial against a Latin Modern page. Now every table is
+  9 pt, unscaled, and figures use Latin Modern Roman. Slope table is two stacked panels so it fits at that size.
+- Section 2.2's metro-by-metro prose is one paragraph grouped as flatten / do not flatten / reverse; Table 3 and Figure 4 carry the numbers.
+- Final files: `report/Team10_EDA.pdf` and `report/Team10_EDA.tex` (27 pages). `report/Team10_EDA_source.zip` bundles the .tex with
+  the figures and tables it needs.
+- Both checks pass: `src/audit_checks.py` ran cleanly, `src/check_report_numbers.py` reports FAILED 0 (268 checks).

@@ -28,6 +28,7 @@ MINUS = "−"
 # Report-size layout: figures are 8.5 in wide and shown at about 6.5 in in the PDF, so a 10 pt label prints at 7.7 pt.
 FIG_W = 8.5
 FS = {"title": 12.5, "sub": 10.0, "note": 9.8, "sup": 14.5, "small": 9.5}
+FS = {k: round(v * 1.12, 2) for k, v in FS.items()}   # same scale as TEXT_SCALE below
 
 # period -> (start December, end December, years, column title)
 GROWTH = {
@@ -38,14 +39,36 @@ GROWTH = {
 LEVEL_DATES = [("2019-12-31", "Dec 2019"), ("2022-12-31", "Dec 2022"), ("2025-12-31", "Dec 2025")]
 
 
+TEXT_SCALE = 1.12   # Latin Modern has a smaller x-height than Arial, so figure text is scaled up to read at the same size
+
+
+def fs(x: float) -> float:
+    """Scale a figure font size (points at the 8.5 in design width)."""
+    return round(x * TEXT_SCALE, 2)
+
+
+def _register_latin_modern() -> str:
+    """Use the report's own typeface (Latin Modern Roman) in the figures. Falls back to DejaVu Serif if it is not installed."""
+    import subprocess
+    from matplotlib import font_manager
+    ok = True
+    for n in ("lmroman10-regular", "lmroman10-bold", "lmroman10-italic"):
+        path = subprocess.run(["kpsewhich", n + ".otf"], capture_output=True, text=True).stdout.strip()
+        if path:
+            font_manager.fontManager.addfont(path)
+        else:
+            ok = False
+    return "Latin Modern Roman" if ok else "DejaVu Serif"
+
+
 def set_style() -> None:
+    family = _register_latin_modern()
     plt.rcParams.update({
         "figure.facecolor": INK["surface"], "axes.facecolor": INK["surface"],
         "savefig.facecolor": INK["surface"], "figure.dpi": 110, "savefig.dpi": 200,
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Arial", "DejaVu Sans"],
-        "font.size": 11, "axes.titlesize": 12.5, "axes.labelsize": 11,
-        "xtick.labelsize": 10, "ytick.labelsize": 10, "legend.fontsize": 10.5,
+        "font.family": [family, "DejaVu Serif"],
+        "font.size": fs(11), "axes.titlesize": fs(12.5), "axes.labelsize": fs(11),
+        "xtick.labelsize": fs(10), "ytick.labelsize": fs(10), "legend.fontsize": fs(10.5),
         "text.color": INK["primary"], "axes.labelcolor": INK["secondary"],
         "xtick.color": INK["muted"], "ytick.color": INK["muted"],
         "axes.edgecolor": INK["axis"], "axes.linewidth": 0.8,
@@ -286,7 +309,7 @@ def gradient_metro(d: pd.DataFrame, metro: str, center_name: str = None, xcol="d
     note = (f"Each dot is one of {len(g)} ZIP codes with data at every date ({dropped} of {n_all} left out). Distance is "
             f"measured to {center_name}. Growth is annualized so periods of different length compare.")
     if off:
-        note += f" \u25b2\u25bc = beyond the axis range, drawn at the edge and kept in the fits ({off})."
+        note += f" Triangles = ZIP beyond the axis range, drawn at the edge and kept in the fits ({off})."
     _note(fig, note)
     _legend(fig, extra=[_dot_key()])
     _layout(fig, 0.045, h_pad=2.0, w_pad=1.0)
@@ -333,7 +356,7 @@ def two_center(d: pd.DataFrame, metro: str, primary: str = None, second: str = N
                 _lines(ax, g[xcol], g[c], f, xmax, log=log)
                 rho = stats.spearmanr(g[xcol], g[c])[0]
                 _heading(ax, ttl, f"{first}{signed(cval(f), 2 if not log else 1)}{unit}\n"
-                                  f"R\u00b2 {f['r2']:.3f} \u00b7 \u03c1 {signed(rho, 2)}")
+                                  f"R\u00b2 {f['r2']:.3f} \u00b7 rank corr. {signed(rho, 2)}")
                 out.append((rowname, "pooled", title, cval(f), cval({'slope': f['lo']}), cval({'slope': f['hi']}),
                             f["r2"], rho, f["n"]))
             else:
@@ -367,7 +390,7 @@ def two_center(d: pd.DataFrame, metro: str, primary: str = None, second: str = N
             f"({int((g['nearest_center'] == second).sum())} of {len(g)} are nearer to {second}). Row C fits each center's ZIPs "
             "separately, line color matching the dots. Slopes are per 10 miles (% for values, points per year for growth).")
     if off:
-        note += f" \u25b2\u25bc = beyond the axis range, kept in the fits."
+        note += f" Triangles = ZIP beyond the axis range, kept in the fits."
     _note(fig, note)
     handles = [_dot_key(C1, f"Nearer to {primary}"), _dot_key(C2, f"Nearer to {second}")]
     _legend(fig, extra=handles)
@@ -429,7 +452,7 @@ def slope_summary(tab: pd.DataFrame):
         ax.grid(axis="x", visible=True)
         ax.grid(axis="y", visible=False)
         ax.axhline(len(METRO_ORDER) - 0.5, color=INK["axis"], lw=0.8, zorder=1)
-        ax.tick_params(axis="y", labelcolor=INK["secondary"], labelsize=10.5)
+        ax.tick_params(axis="y", labelcolor=INK["secondary"], labelsize=fs(10.5))
     axes[0].set_title("Home value level", loc="left", fontsize=FS["title"], fontweight="bold", pad=8)
     axes[1].set_title("Annualized growth", loc="left", fontsize=FS["title"], fontweight="bold", pad=8)
     h_lv = [Line2D([0], [0], marker="o", color=c, lw=1.8, markersize=7, label=l)

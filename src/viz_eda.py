@@ -16,7 +16,7 @@ from scipy import stats
 from matplotlib.dates import num2date as matplotlib_num2date
 
 import viz
-from viz import (BLUE_700, C1, C2, FIG_W, FS, GROWTH, INK, LEVEL_DATES, METRO_ORDER, MINUS, ORDINAL, TWO_CENTER,
+from viz import (BLUE_700, C1, C2, FIG_W, FS, fs, GROWTH, INK, LEVEL_DATES, METRO_ORDER, MINUS, ORDINAL, TWO_CENTER,
                  _heading, _layout, _level_axis, _money, _note, _pct_axis, _robust_limits, _sample, _suptitle, signed)
 
 SEQ_BLUE = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]  # steps 100..700
@@ -129,7 +129,7 @@ def flags_by_distance(flags: pd.DataFrame):
     for i in range(m.shape[0]):
         for j in range(m.shape[1]):
             val = m.iat[i, j]
-            ax.text(j, i, f"{val:.0f}%" if val >= 0.5 else "0%", ha="center", va="center", fontsize=11,
+            ax.text(j, i, f"{val:.0f}%" if val >= 0.5 else "0%", ha="center", va="center", fontsize=fs(11),
                     color="white" if norm(val) > 0.45 else INK["primary"])
     ax.set_xticks(range(m.shape[1]))
     ax.set_xticklabels([f"{c}\n(n = {k:,})" for c, k in zip(m.columns, n)])
@@ -165,7 +165,7 @@ def _scalebar(ax, miles=20):
     L = miles * 1609.344
     x, y = x0 + 0.03 * (x1 - x0), y0 + 0.035 * (y1 - y0)
     ax.plot([x, x + L], [y, y], color=INK["primary"], lw=2.2, solid_capstyle="butt", zorder=9)
-    ax.text(x + L / 2, y + 0.012 * (y1 - y0), f"{miles} mi", ha="center", va="bottom", fontsize=9.5, color=INK["secondary"])
+    ax.text(x + L / 2, y + 0.012 * (y1 - y0), f"{miles} mi", ha="center", va="bottom", fontsize=fs(9.5), color=INK["secondary"])
 
 
 def relative_growth(d: pd.DataFrame) -> pd.DataFrame:
@@ -208,9 +208,9 @@ def growth_maps(zc: gpd.GeoDataFrame, rel: pd.DataFrame, ref: pd.DataFrame, metr
         _heading(ax, name, f"Dec {a} \u2192 Dec {b}")
     sm = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
     cb = fig.colorbar(sm, ax=axes, orientation="horizontal", fraction=0.05, pad=0.04, extend="both", aspect=45)
-    cb.set_label("Annualized growth relative to the metro median (points per year)", fontsize=10.5)
+    cb.set_label("Annualized growth relative to the metro median (points per year)", fontsize=fs(10.5))
     cb.outline.set_visible(False)
-    cb.ax.tick_params(length=0, labelsize=10)
+    cb.ax.tick_params(length=0, labelsize=fs(10))
     cb.ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: signed(v, 0) if v else "0"))
     n_missing = int(g[[f"rel_{c}" for c in GROWTH]].isna().any(axis=1).sum())
     stars = "Black star = city hall" if metro not in TWO_CENTER else "Black stars = the two city halls"
@@ -246,7 +246,7 @@ def level_quintile_maps(zc: gpd.GeoDataFrame, d: pd.DataFrame, ref: pd.DataFrame
         _scalebar(ax, 20 if max(xmax - xmin, ymax - ymin) < 150 * 1609 else 40)
     h = [plt.Rectangle((0, 0), 1, 1, color=c) for c in classes]
     fig.legend(h, ["Lowest fifth", "2nd", "3rd", "4th", "Highest fifth"], loc="lower center", ncol=5, frameon=False,
-               title="Dec 2019 home value, ranked within each metro's ZIPs", title_fontsize=10.5, handlelength=1.4)
+               title="Dec 2019 home value, ranked within each metro's ZIPs", title_fontsize=fs(10.5), handlelength=1.4)
     _suptitle(fig, "Where the expensive ZIPs are: rings or patches?", y=0.995)
     _note(fig, "Red star = city hall (two in Dallas\u2013Fort Worth and Tampa\u2013St. Petersburg). Fifths are within each metro, so "
           "colors compare places inside a metro, not prices across metros. Grey = no data; white = not in our ZIP set. "
@@ -411,12 +411,12 @@ def exposure_corr(x: pd.DataFrame):
     for i in range(n):
         for j in range(i + 1):
             v = m[i, j]
-            ax.text(j, i, f"{v:+.2f}".replace("-", MINUS) if i != j else "1", ha="center", va="center", fontsize=10,
+            ax.text(j, i, f"{v:+.2f}".replace("-", MINUS) if i != j else "1", ha="center", va="center", fontsize=fs(10),
                     color="white" if abs(v) > 0.62 and i != j else INK["primary"])
     ax.set_xticks(range(n))
-    ax.set_xticklabels([l for _, l in EXPOSURE_VARS], rotation=40, ha="right", fontsize=10)
+    ax.set_xticklabels([l for _, l in EXPOSURE_VARS], rotation=40, ha="right", fontsize=fs(10))
     ax.set_yticks(range(n))
-    ax.set_yticklabels([l for _, l in EXPOSURE_VARS], fontsize=10)
+    ax.set_yticklabels([l for _, l in EXPOSURE_VARS], fontsize=fs(10))
     ax.grid(False)
     for s in ax.spines.values():
         s.set_visible(False)
@@ -467,7 +467,7 @@ def trajectory_panels(P: pd.DataFrame, d: pd.DataFrame):
                         path_effects=viz.HALO)
         ax.axhline(100, color=INK["axis"], lw=0.9, zorder=1)
         ax.set_yscale("log")
-        ax.set_title(f"{metro} (n = {len(zips)})", loc="left", fontsize=11.5, fontweight="bold")
+        ax.set_title(f"{metro} (n = {len(zips)})", loc="left", fontsize=fs(11.5), fontweight="bold")
     ticks = [60, 80, 100, 150, 200, 300]
     axes[0][0].set_xlim(dates[0], dates[-1])
     axes[0][0].set_ylim(55, 330)
@@ -480,7 +480,7 @@ def trajectory_panels(P: pd.DataFrame, d: pd.DataFrame):
     axes[0][0].xaxis.set_major_formatter(FuncFormatter(lambda v, _: str(pd.Timestamp(matplotlib_num2date(v)).year)))
     h = [Line2D([0], [0], color=c, lw=2.4, label=b) for c, b in zip(BAND_COLORS, BANDS)]
     fig.legend(handles=h, loc="lower center", ncol=4, frameon=False, title="Distance from city hall (thin lines = ZIPs, thick = band median)",
-               title_fontsize=10.5, columnspacing=1.4)
+               title_fontsize=fs(10.5), columnspacing=1.4)
     _suptitle(fig, "Price paths of every ZIP, by distance from the center")
     _note(fig, f"{len(P)} ZIP codes with a complete monthly series, Jan 2018 to Dec 2025. Log scale, so equal percentage changes look equal.")
     _layout(fig, 0.085, h_pad=1.4, w_pad=0.6)
@@ -503,7 +503,7 @@ def relative_paths(P: pd.DataFrame, d: pd.DataFrame):
                 ax.plot(dates, rel.loc[zz].median().to_numpy(), color=col, lw=2.2, path_effects=viz.HALO, zorder=4)
         ax.axhline(100, color=INK["axis"], lw=0.9, zorder=1)
         ax.axvline(pd.Timestamp("2019-12-31"), color=INK["grid"], lw=1.0, zorder=0)
-        ax.set_title(metro, loc="left", fontsize=11.5, fontweight="bold")
+        ax.set_title(metro, loc="left", fontsize=fs(11.5), fontweight="bold")
     axes[0][0].set_xlim(dates[0], dates[-1])
     axes[0][0].set_ylim(78, 124)
     for ax in axes[:, 0]:
@@ -512,7 +512,7 @@ def relative_paths(P: pd.DataFrame, d: pd.DataFrame):
     axes[0][0].xaxis.set_major_formatter(FuncFormatter(lambda v, _: str(pd.Timestamp(matplotlib_num2date(v)).year)))
     h = [Line2D([0], [0], color=c, lw=2.4, label=b) for c, b in zip(BAND_COLORS, BANDS)]
     fig.legend(handles=h, loc="lower center", ncol=4, frameon=False, title="Distance from city hall (band median)",
-               title_fontsize=10.5, columnspacing=1.4)
+               title_fontsize=fs(10.5), columnspacing=1.4)
     _suptitle(fig, "Did outer ZIPs gain on inner ZIPs?")
     _note(fig, "Each ZIP's index (Dec 2019 = 100) divided by its metro's median index, so 100 = the metro as a whole; median by "
           "distance band. Grey vertical line = Dec 2019.")
@@ -554,7 +554,7 @@ def cluster_figure(P: pd.DataFrame, d: pd.DataFrame, sil: pd.Series, labels: pd.
     ax.set_ylabel("Silhouette width")
     ax.set_ylim(0, max(0.6, sil.max() * 1.15))
     ax.axhline(0.25, color=INK["axis"], lw=1.0)
-    ax.text(sil.index.min(), 0.25, "0.25", ha="left", va="bottom", fontsize=9.5, color=INK["secondary"])
+    ax.text(sil.index.min(), 0.25, "0.25", ha="left", va="bottom", fontsize=fs(9.5), color=INK["secondary"])
     viz._heading(ax, "How distinct are the groups?", f"Orange = k chosen ({k})\nBelow 0.25 is weak")
     ax = axes[1]
     dates = P.columns
@@ -565,7 +565,7 @@ def cluster_figure(P: pd.DataFrame, d: pd.DataFrame, sil: pd.Series, labels: pd.
         col = CLUSTER_COLORS[c]
         ax.fill_between(dates, mu - sd, mu + sd, color=col, alpha=0.13, linewidth=0)
         ax.plot(dates, mu.to_numpy(), color=col, lw=2.2, path_effects=viz.HALO, zorder=4)
-        ax.text(dates[-1] + pd.Timedelta(days=40), mu.iloc[-1], f"{c + 1}", color=INK["primary"], fontsize=11.5,
+        ax.text(dates[-1] + pd.Timedelta(days=40), mu.iloc[-1], f"{c + 1}", color=INK["primary"], fontsize=fs(11.5),
                 fontweight="bold", va="center")
     ax.axhline(100, color=INK["axis"], lw=0.9, zorder=1)
     ax.set_xlim(dates[0], dates[-1] + pd.Timedelta(days=120))
@@ -573,7 +573,7 @@ def cluster_figure(P: pd.DataFrame, d: pd.DataFrame, sil: pd.Series, labels: pd.
     viz._heading(ax, "Average path of each group", "Line = group mean, band = ±1 standard deviation")
     h = [Line2D([0], [0], color=CLUSTER_COLORS[c], lw=2.4, label=f"Group {c + 1} (n = {int((labels == c).sum())})")
          for c in range(k)]
-    ax.legend(handles=h, loc="upper left", frameon=False, fontsize=10.5)
+    ax.legend(handles=h, loc="upper left", frameon=False, fontsize=fs(10.5))
     ax = axes[2]
     comp = pd.crosstab(labels, dd.loc[labels.index, "metro_short"], normalize="index").reindex(columns=METRO_ORDER) * 100
     cmap = LinearSegmentedColormap.from_list("seq", SEQ_BLUE)
@@ -581,9 +581,9 @@ def cluster_figure(P: pd.DataFrame, d: pd.DataFrame, sil: pd.Series, labels: pd.
     for i in range(comp.shape[0]):
         for j in range(comp.shape[1]):
             v = comp.iat[i, j]
-            ax.text(j, i, f"{v:.0f}", ha="center", va="center", fontsize=10, color="white" if v > 28 else INK["primary"])
+            ax.text(j, i, f"{v:.0f}", ha="center", va="center", fontsize=fs(10), color="white" if v > 28 else INK["primary"])
     ax.set_xticks(range(len(METRO_ORDER)))
-    ax.set_xticklabels(METRO_ORDER, fontsize=10, rotation=45, ha="right")
+    ax.set_xticklabels(METRO_ORDER, fontsize=fs(10), rotation=45, ha="right")
     ax.xaxis.tick_bottom()
     ax.set_yticks(range(comp.shape[0]))
     ax.set_yticklabels([f"Group {i + 1}" for i in range(comp.shape[0])])

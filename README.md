@@ -58,3 +58,9 @@ cd report && xelatex Team10_EDA.tex && xelatex Team10_EDA.tex   # run twice for 
 Before submitting, `.venv/bin/python src/check_report_numbers.py` recomputes every number the report states from the data and
 checks that it appears in `report/Team10_EDA.tex` (it exits with an error if any check fails). `docs/interpretation_audit.md`
 lists each interpretive claim with the number behind it.
+
+## Fonts
+
+The report is set in Latin Modern (body 10.9 pt, captions 10 pt, tables 9 pt, headings 12 to 17 pt). Figures are drawn in Latin Modern
+Roman too (read from the TinyTeX fonts, with a DejaVu Serif fallback; sizes are scaled in `src/viz.py` by `TEXT_SCALE`), so figure
+text matches the page. All tables use one size and are not scaled to fit.
