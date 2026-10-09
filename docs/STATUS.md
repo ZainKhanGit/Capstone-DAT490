@@ -1,10 +1,10 @@
 # Where we left off (updated 2026-10-09, end of day)
 
 **Everything is built.** Pipeline (8 steps), the full EDA notebook (sections 1, 2.1 to 2.6, 3, references) and the written
-report `report/Team10_EDA.pdf` (30 pages: 24 main, 6 appendix; source `report/Team10_EDA.tex`).
+report `report/Team10_EDA.pdf` (35 pages: 27 body including references, 8 appendix; source `report/Team10_EDA.tex`).
 The takeaway paragraphs in the notebook are labeled DRAFT; the report text is derived from them and from the data-quality reports.
-**Not committed since `d7710d6`:** `src/viz_eda.py` additions (2.5, 2.6), new figures/tables, the notebook edits, `report/`,
-`docs/STATUS.md`, README, `.gitignore`, `requirements.txt` (scikit-learn added; pymupdf was only used to preview the PDF).
+**Committed through `aaa0b40`.** Not yet committed: the report-size figure rewrite (`src/viz.py`, `src/viz_eda.py`, new `src/make_figures.py`),
+regenerated figures, the rebuilt PDF and this note.
 
 ## Final deliverable
 PDF report, built from LaTeX (same toolchain as the plan and lit review, same structure as the prior-team example: long data
@@ -13,13 +13,13 @@ format; **check the Canvas page for any required format or length** before submi
 `notebooks/01_eda.ipynb` (reproducible analysis), the repo (code, `docs/SOURCES.md`).
 
 Rebuild: `.venv/bin/python report/make_tables.py`, then `cd report && xelatex Team10_EDA.tex` twice.
-Figures in `report/figures/` are 1800 px JPEG copies of `outputs/figures/*.png`; recopy them if a figure changes.
+Figures in `report/figures/` are 1800 px JPEG copies of `outputs/figures/*.png`, written by `src/make_figures.py`.
 
 ## Known issues to decide
-1. **Figure text is small in the PDF** (about 5 pt when the 12.2 in wide figures are shrunk to the 6.5 in text width). Fix =
-   regenerate figures at about 8.5 in wide with the same font sizes (layouts need re-tuning).
+1. ~~Figure text small~~ FIXED: figures are now 8.5 in wide with 10-12.5 pt text (about 7.6 pt on the page at 6.5 in). Regenerate
+   everything with `.venv/bin/python src/make_figures.py` (also refreshes `report/figures/*.jpg`); sizes live in `viz.FS` / `viz.FIG_W`.
 2. The 2.3 takeaway is based on all eight growth maps (checked); the report quotes only what was seen.
-3. The report body is 24 pages; the prior example was 14. Trim if the assignment gives a page limit (the appendix can go first).
+3. The report body is 27 pages including references (35 with the appendix); the prior example was 14. Trim if the assignment gives a page limit (the appendix can go first).
 4. Statistical caveats are stated wherever they apply: plain OLS intervals ignore spatial correlation, simple fits are not the
    event study, and the smooth curves rest on few ZIPs at the far end.
 

@@ -2,6 +2,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
+\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.9}\renewcommand{\textfraction}{0.08}\renewcommand{\floatpagefraction}{0.7}
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -15,11 +16,11 @@
 \newcounter{fignum}
 \newcounter{tabnum}
 \newcommand{\fig}[3]{%
-  \begin{minipage}{\linewidth}\centering
+  \begin{figure}[tbp]\centering
   \includegraphics[width=\linewidth]{#1}\par\vspace{2pt}
   \refstepcounter{fignum}\label{#2}%
   {\small\raggedright\textbf{Figure \thefignum.} #3\par}
-  \end{minipage}\par\vspace{10pt}}
+  \end{figure}}
 \newcommand{\tabsmall}[3]{%
   \begin{minipage}{\linewidth}\centering
   \refstepcounter{tabnum}\label{#2}%
@@ -424,6 +425,7 @@ Courthouse) and Las Vegas, for building coordinates. \url{https://en.wikipedia.o
 points and for coordinate cross-checks. \url{https://nominatim.openstreetmap.org} (retrieved October 6, 2026).
 \end{thebibliography}
 
+\clearpage
 \appendix
 \section{Remaining metro figures}
 Same layouts as in the main text.

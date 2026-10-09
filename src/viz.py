@@ -25,6 +25,9 @@ ORDINAL = ["#86b6ef", "#3987e5", "#184f95"]   # blue steps 250/400/600: ordered 
 LOWESS_FRAC = 0.45                   # share of ZIPs in each local fit; the same everywhere
 HALO = [pe.withStroke(linewidth=3.8, foreground="#fcfcfb")]
 MINUS = "−"
+# Report-size layout: figures are 8.5 in wide and shown at about 6.5 in in the PDF, so a 10 pt label prints at 7.7 pt.
+FIG_W = 8.5
+FS = {"title": 12.5, "sub": 10.0, "note": 9.8, "sup": 14.5, "small": 9.5}
 
 # period -> (start December, end December, years, column title)
 GROWTH = {
@@ -41,8 +44,8 @@ def set_style() -> None:
         "savefig.facecolor": INK["surface"], "figure.dpi": 110, "savefig.dpi": 200,
         "font.family": "sans-serif",
         "font.sans-serif": ["Arial", "DejaVu Sans"],
-        "font.size": 10.5, "axes.titlesize": 11.5, "axes.labelsize": 10.5,
-        "xtick.labelsize": 9.5, "ytick.labelsize": 9.5, "legend.fontsize": 10,
+        "font.size": 11, "axes.titlesize": 12.5, "axes.labelsize": 11,
+        "xtick.labelsize": 10, "ytick.labelsize": 10, "legend.fontsize": 10.5,
         "text.color": INK["primary"], "axes.labelcolor": INK["secondary"],
         "xtick.color": INK["muted"], "ytick.color": INK["muted"],
         "axes.edgecolor": INK["axis"], "axes.linewidth": 0.8,
@@ -129,13 +132,40 @@ def _pct_axis(ax):
     ax.yaxis.set_major_formatter(FuncFormatter(_pct))
 
 
-def _heading(ax, title, sub, lines=1):
-    ax.set_title(title, loc="left", fontsize=11.5, fontweight="bold", pad=21 + 12 * (lines - 1))
-    ax.text(0, 1.025, sub, transform=ax.transAxes, ha="left", va="bottom", fontsize=9.3,
-            color=INK["secondary"], linespacing=1.35)
+def _heading(ax, title, sub="", lines=None):
+    """Bold title above a smaller grey sub-heading of one or more lines (separate lines with newlines)."""
+    n = (sub.count("\n") + 1) if sub else 0
+    ax.set_title(title, loc="left", fontsize=FS["title"], fontweight="bold", pad=5 + n * FS["sub"] * 1.4)
+    if sub:
+        ax.annotate(sub, xy=(0, 1), xycoords="axes fraction", xytext=(0, 3), textcoords="offset points",
+                    ha="left", va="bottom", fontsize=FS["sub"], color=INK["secondary"], linespacing=1.3)
 
 
-def _scatter(ax, x, y, color, ylim=None, size=20):
+def _note(fig, text, y=None):
+    """Grey explanatory note under the title. Returns (and remembers) the figure-fraction y where the note ends, so the
+    panels can start directly below it."""
+    w, h = fig.get_size_inches()
+    if y is None:
+        y = 1 - (FS["sup"] * 1.45 + 3) / (h * 72)
+    per_line = int(w * 72 * 0.96 / (FS["note"] * 0.5))          # Arial averages about half an em per character
+    lines = -(-len(text) // per_line)
+    fig.text(0.012, y, text, fontsize=FS["note"], color=INK["secondary"], ha="left", va="top", wrap=True)
+    fig._note_bottom = y - lines * FS["note"] * 1.32 / (h * 72)
+    return fig._note_bottom
+
+
+def _layout(fig, bottom=0.0, **kw):
+    """tight_layout with the top edge set just under the note (or the title if there is no note)."""
+    w, h = fig.get_size_inches()
+    top = getattr(fig, "_note_bottom", 1 - (FS["sup"] * 1.5 + 4) / (h * 72)) - 0.006
+    fig.tight_layout(rect=(0, bottom, 1, top), **kw)
+
+
+def _suptitle(fig, text, y=0.995):
+    fig.suptitle(text, x=0.012, y=y, ha="left", fontsize=FS["sup"], fontweight="bold")
+
+
+def _scatter(ax, x, y, color, ylim=None, size=16):
     """Dots; a ZIP beyond the axis range is drawn as a triangle at the edge (it stays in every fit)."""
     x, y = np.asarray(x, float), np.asarray(y, float)
     if ylim is None:
@@ -146,7 +176,7 @@ def _scatter(ax, x, y, color, ylim=None, size=20):
     ax.scatter(x[ins], y[ins], s=size, color=color, alpha=0.5, linewidths=0, zorder=2)
     for m, mk, edge in ((y > hi, "^", hi), (y < lo, "v", lo)):
         if m.any():
-            ax.scatter(x[m], np.full(m.sum(), edge), s=40, marker=mk, color=color, alpha=0.95,
+            ax.scatter(x[m], np.full(m.sum(), edge), s=36, marker=mk, color=color, alpha=0.95,
                        edgecolors=INK["surface"], linewidths=1.0, zorder=3, clip_on=False)
     return int((~ins).sum())
 
@@ -208,7 +238,7 @@ def _legend(fig, extra=(), y=0.0):
                        Line2D([0], [0], color=BLUE_700, lw=2.0, ls=(0, (4.5, 2.5)),
                               label="Smooth fit (LOWESS)")]
     fig.legend(handles=h, loc="lower center", ncol=len(h), frameon=False, handletextpad=0.5,
-               columnspacing=1.8, bbox_to_anchor=(0.5, y))
+               columnspacing=1.4, bbox_to_anchor=(0.5, y))
 
 
 def _dot_key(color=C1, label="ZIP code"):
@@ -222,7 +252,7 @@ def gradient_metro(d: pd.DataFrame, metro: str, center_name: str = None, xcol="d
     center_name = center_name or CENTER_NAME[metro]
     g, dropped, n_all = _sample(d, metro)
     xmax = float(np.ceil(g[xcol].max() / 10) * 10) + 2
-    fig, axes = plt.subplots(2, 3, figsize=(12.2, 7.4), sharex=True)
+    fig, axes = plt.subplots(2, 3, figsize=(FIG_W, 8.6), sharex=True)
 
     lv = [f"level_{lab}" for _, lab in LEVEL_DATES]
     lo, hi = g[lv].min().min() * 0.9, g[lv].max().max() * 1.1
@@ -230,8 +260,8 @@ def gradient_metro(d: pd.DataFrame, metro: str, center_name: str = None, xcol="d
         _scatter(ax, g[xcol], g[c], C1)
         f = ols(g[xcol], np.log(g[c]))
         _lines(ax, g[xcol], g[c], f, xmax, log=True)
-        _heading(ax, lab, f"{signed(_pct_per_10mi(f['slope']))}% per 10 mi  (95% CI "
-                          f"{signed(_pct_per_10mi(f['lo']))} to {signed(_pct_per_10mi(f['hi']))})")
+        _heading(ax, lab, f"{signed(_pct_per_10mi(f['slope']))}% per 10 mi\n95% CI {signed(_pct_per_10mi(f['lo']))} "
+                          f"to {signed(_pct_per_10mi(f['hi']))}")
         _level_axis(ax, lo, hi)
     axes[0][0].set_ylabel("Home value (ZHVI, log scale)")
 
@@ -243,26 +273,23 @@ def gradient_metro(d: pd.DataFrame, metro: str, center_name: str = None, xcol="d
         f = ols(g[xcol], g[c])
         _lines(ax, g[xcol], g[c], f, xmax)
         ax.axhline(0, color=INK["axis"], lw=1.0, zorder=1)
-        _heading(ax, f"{name}  (Dec {a} \u2192 Dec {b})",
-                 f"{signed(10 * f['slope'], 2)} pts/yr per 10 mi  (95% CI {signed(10 * f['lo'], 2)} to "
-                 f"{signed(10 * f['hi'], 2)})")
+        _heading(ax, name, f"Dec {a} \u2192 Dec {b}\n{signed(10 * f['slope'], 2)} pts/yr per 10 mi\n"
+                           f"95% CI {signed(10 * f['lo'], 2)} to {signed(10 * f['hi'], 2)}")
         ax.set_ylim(*ylim)
         _pct_axis(ax)
-        ax.set_xlabel(f"Distance from {center_name} (miles)")
+    axes[1][1].set_xlabel("Distance from city center (miles)")
     axes[1][0].set_ylabel("Annualized growth in home value")
     for ax in axes.ravel():
         ax.set_xlim(0, xmax)
 
-    fig.suptitle(f"{metro}: home values and growth by distance from {center_name}",
-                 x=0.012, y=0.992, ha="left", fontsize=14, fontweight="bold")
-    note = (f"Each dot is one of {len(g)} ZIP codes with data at every date ({dropped} of {n_all} left out so the "
-            "same ZIPs appear in every panel). Growth is annualized so periods of different length compare. "
-            "The smooth fit is drawn over the range holding 95% of the ZIPs.")
+    _suptitle(fig, f"{metro}: home values and growth by distance from the center")
+    note = (f"Each dot is one of {len(g)} ZIP codes with data at every date ({dropped} of {n_all} left out). Distance is "
+            f"measured to {center_name}. Growth is annualized so periods of different length compare.")
     if off:
-        note += f" \u25b2\u25bc = ZIP beyond the axis range, drawn at the edge and kept in the fits ({off})."
-    fig.text(0.012, 0.947, note, fontsize=9.2, color=INK["secondary"], ha="left", va="top", wrap=True)
+        note += f" \u25b2\u25bc = beyond the axis range, drawn at the edge and kept in the fits ({off})."
+    _note(fig, note)
     _legend(fig, extra=[_dot_key()])
-    fig.tight_layout(rect=(0, 0.04, 1, 0.915), h_pad=2.4, w_pad=1.6)
+    _layout(fig, 0.045, h_pad=2.0, w_pad=1.0)
     return fig
 
 
@@ -274,41 +301,39 @@ def two_center(d: pd.DataFrame, metro: str, primary: str = None, second: str = N
     primary, second = (primary, second) if primary else TWO_CENTER[metro]
     g, dropped, n_all = _sample(d, metro)
     xmax = float(np.ceil(g["dist_cityhall_mi"].max() / 10) * 10) + 2
-    fig, axes = plt.subplots(3, 3, figsize=(12.2, 10.8), sharex=True, sharey=True)
-    rows = [("dist_cityhall_mi", f"Distance to {primary} City Hall (miles)", "A. First-named city only"),
-            ("dist_nearest_mi", f"Distance to the nearer of the two city halls (miles)",
-             "B. Nearest of two centers, one pooled fit"),
-            ("dist_nearest_mi", f"Distance to the nearer of the two city halls (miles)",
-             "C. Nearest of two centers, a fit per center")]
+    fig, axes = plt.subplots(3, 3, figsize=(FIG_W, 10.4), sharex=True, sharey=True)
+    rows = [("dist_cityhall_mi", f"Miles from {primary} City Hall", "A. First-named city"),
+            ("dist_nearest_mi", "Miles from the nearer city hall", "B. Nearest, one fit"),
+            ("dist_nearest_mi", "Miles from the nearer city hall", "C. Nearest, fit per center")]
     if measure == "level":
-        cols = [(f"level_{lab}", lab) for _, lab in LEVEL_DATES]
-        vals = g[[c for c, _ in cols]]
+        cols = [(f"level_{lab}", lab, "") for _, lab in LEVEL_DATES]
+        vals = g[[c for c, _, _ in cols]]
         lo, hi = vals.min().min() * 0.9, vals.max().max() * 1.1
         ylim = None
     else:
-        cols = [(f"ann_{c}", f"{v[3]}  (Dec {v[0]} \u2192 Dec {v[1]})") for c, v in GROWTH.items()]
-        ylim = _robust_limits(g[[c for c, _ in cols]].to_numpy().ravel())
+        cols = [(f"ann_{c}", v[3], f"Dec {v[0]} \u2192 Dec {v[1]}") for c, v in GROWTH.items()]
+        ylim = _robust_limits(g[[c for c, _, _ in cols]].to_numpy().ravel())
     log = measure == "level"
     unit = "% per 10 mi" if log else " pts/yr per 10 mi"
     cval = lambda f: _pct_per_10mi(f["slope"]) if log else 10 * f["slope"]
     colors = {primary: C1, second: C2}
     out, off = [], 0
     for r, (xcol, xlabel, rowname) in enumerate(rows):
-        for ax, (c, title) in zip(axes[r], cols):
+        for ax, (c, title, dates) in zip(axes[r], cols):
             for center in (primary, second):
                 s = g[g["nearest_center"] == center]
-                off += _scatter(ax, s[xcol], s[c], colors[center], ylim=ylim) if r == 0 else \
-                    _scatter(ax, s[xcol], s[c], colors[center], ylim=ylim)
+                off += _scatter(ax, s[xcol], s[c], colors[center], ylim=ylim)
             if not log:
                 ax.axhline(0, color=INK["axis"], lw=1.0, zorder=1)
             y_for_fit = lambda s_: np.log(s_[c]) if log else s_[c]
+            ttl = (title if r == 0 else "")
+            first = (dates + "\n") if (r == 0 and dates) else ""
             if r < 2:
                 f = ols(g[xcol], y_for_fit(g))
                 _lines(ax, g[xcol], g[c], f, xmax, log=log)
                 rho = stats.spearmanr(g[xcol], g[c])[0]
-                _heading(ax, title if r == 0 else "",
-                         f"{signed(cval(f), 2 if not log else 1)}{unit}  \u00b7  R\u00b2 = {f['r2']:.3f}  \u00b7  "
-                         f"Spearman \u03c1 = {signed(rho, 2)}")
+                _heading(ax, ttl, f"{first}{signed(cval(f), 2 if not log else 1)}{unit}\n"
+                                  f"R\u00b2 {f['r2']:.3f} \u00b7 \u03c1 {signed(rho, 2)}")
                 out.append((rowname, "pooled", title, cval(f), cval({'slope': f['lo']}), cval({'slope': f['hi']}),
                             f["r2"], rho, f["n"]))
             else:
@@ -322,9 +347,9 @@ def two_center(d: pd.DataFrame, metro: str, primary: str = None, second: str = N
                     parts.append(f"{center} {signed(cval(f), 2 if not log else 1)}{'%' if log else ''}")
                     out.append((rowname, center, title, cval(f), cval({'slope': f['lo']}), cval({'slope': f['hi']}),
                                 f["r2"], rho, f["n"]))
-                _heading(ax, "", f"{parts[0]}  \u00b7  {parts[1]}  per 10 mi" + ("" if log else " (pts/yr)"))
-        axes[r][0].set_ylabel(f"{rowname}\n" + ("Home value (ZHVI, log scale)" if log else "Annualized growth"),
-                              fontsize=9.8)
+                _heading(ax, "", f"{parts[0]}\n{parts[1]}")
+        axes[r][0].set_ylabel(f"{rowname}\n" + ("Home value (log scale)" if log else "Annualized growth"),
+                              fontsize=FS["small"] + 0.5)
     for ax in axes.ravel():
         ax.set_xlim(0, xmax)
         ax.tick_params(labelbottom=True)
@@ -337,17 +362,16 @@ def two_center(d: pd.DataFrame, metro: str, primary: str = None, second: str = N
         for k in range(3):
             axes[r][k].set_xlabel(rows[r][1] if k == 1 else "")
     what = "home values" if log else "growth"
-    fig.suptitle(f"{primary}\u2013{second}: does a second center change the {what} gradient?",
-                 x=0.012, y=0.994, ha="left", fontsize=14, fontweight="bold")
-    note = (f"Same {len(g)} ZIPs, same {what}; only the distance changes. Dot color is the center each ZIP is nearer to "
-            f"({int((g['nearest_center'] == second).sum())} of {len(g)} are nearer to {second}), in every row. "
-            "Row C fits each center's ZIPs on their own, with line color matching the dots.")
+    _suptitle(fig, f"{primary}\u2013{second}: does a second center change the {what} gradient?")
+    note = (f"Same {len(g)} ZIPs; only the distance changes. Dot color = the center each ZIP is nearer to "
+            f"({int((g['nearest_center'] == second).sum())} of {len(g)} are nearer to {second}). Row C fits each center's ZIPs "
+            "separately, line color matching the dots. Slopes are per 10 miles (% for values, points per year for growth).")
     if off:
-        note += f" \u25b2\u25bc = beyond the axis range, kept in the fits ({off // 3 if off % 3 == 0 else off})."
-    fig.text(0.012, 0.957, note, fontsize=9.2, color=INK["secondary"], ha="left", va="top", wrap=True)
+        note += f" \u25b2\u25bc = beyond the axis range, kept in the fits."
+    _note(fig, note)
     handles = [_dot_key(C1, f"Nearer to {primary}"), _dot_key(C2, f"Nearer to {second}")]
     _legend(fig, extra=handles)
-    fig.tight_layout(rect=(0, 0.035, 1, 0.935), h_pad=2.7, w_pad=1.6)
+    _layout(fig, 0.04, h_pad=1.8, w_pad=1.0)
     return fig, pd.DataFrame(out, columns=["row", "group", "panel", "slope", "slope_lo", "slope_hi", "r2",
                                            "spearman", "n"])
 
@@ -378,20 +402,16 @@ def slope_table(d: pd.DataFrame) -> pd.DataFrame:
 def slope_summary(tab: pd.DataFrame):
     """Dot-and-whisker summary of the OLS gradient slopes: one row per metro (plus the nearest-center rows for
     Dallas and Tampa), three markers per row for the three dates / periods, 95% CI as whiskers."""
-    rows = []
-    for m in METRO_ORDER:
-        rows.append((m, "city hall", m))
-    for m in TWO_CENTER:
-        rows.append((m, "nearest of two centers", f"{m} (nearest of two centers)"))
-    # keep two-center "nearest" rows directly below the main block, in metro order
-    fig, axes = plt.subplots(1, 2, figsize=(12.2, 6.9), sharey=True)
+    rows = [(m, "city hall", m) for m in METRO_ORDER]
+    rows += [(m, "nearest of two centers", f"{m} (nearest of 2)") for m in TWO_CENTER]
+    fig, axes = plt.subplots(1, 2, figsize=(FIG_W, 6.4), sharey=True)
     ylab = [r[2] for r in rows]
     ypos = {lab: i for i, lab in enumerate(ylab)}
-    for ax, measure, labels, xlabel in ((axes[0], "level", [l for _, l in LEVEL_DATES], "Home value: % change per 10 miles from the center"),
+    for ax, measure, labels, xlabel in ((axes[0], "level", [l for _, l in LEVEL_DATES], "% per 10 miles from center"),
                                         (axes[1], "growth", [v[3] for v in GROWTH.values()],
-                                         "Annualized growth: points per year, per 10 miles")):
-        for k, (lab, col) in enumerate(zip(labels, ORDINAL)):
-            off = (k - 1) * 0.22
+                                         "Points per year, per 10 miles")):
+        for kk, (lab, col) in enumerate(zip(labels, ORDINAL)):
+            off = (kk - 1) * 0.24
             for metro, dist, text in rows:
                 t = tab[(tab["metro"] == metro) & (tab["distance"] == dist) & (tab["measure"] == measure)
                         & (tab["panel"] == lab)]
@@ -399,8 +419,8 @@ def slope_summary(tab: pd.DataFrame):
                     continue
                 t = t.iloc[0]
                 y = ypos[text] + off
-                ax.plot([t["lo"], t["hi"]], [y, y], color=col, lw=1.6, solid_capstyle="round", zorder=3)
-                ax.scatter([t["slope"]], [y], s=46, color=col, edgecolors=INK["surface"], linewidths=1.5, zorder=4)
+                ax.plot([t["lo"], t["hi"]], [y, y], color=col, lw=1.8, solid_capstyle="round", zorder=3)
+                ax.scatter([t["slope"]], [y], s=40, color=col, edgecolors=INK["surface"], linewidths=1.4, zorder=4)
         ax.axvline(0, color=INK["muted"], lw=1.0, zorder=1)
         ax.set_xlabel(xlabel)
         ax.set_yticks(range(len(ylab)))
@@ -409,21 +429,20 @@ def slope_summary(tab: pd.DataFrame):
         ax.grid(axis="x", visible=True)
         ax.grid(axis="y", visible=False)
         ax.axhline(len(METRO_ORDER) - 0.5, color=INK["axis"], lw=0.8, zorder=1)
-    axes[0].set_title("Price level (Dec 2019, Dec 2022, Dec 2025)", loc="left", fontsize=11.5, fontweight="bold", pad=10)
-    axes[1].set_title("Annualized growth (by period)", loc="left", fontsize=11.5, fontweight="bold", pad=10)
-    for ax in axes:
-        ax.tick_params(axis="y", labelcolor=INK["secondary"], labelsize=10)
-    h_lv = [Line2D([0], [0], marker="o", color=c, lw=1.6, markersize=7, label=l)
+        ax.tick_params(axis="y", labelcolor=INK["secondary"], labelsize=10.5)
+    axes[0].set_title("Home value level", loc="left", fontsize=FS["title"], fontweight="bold", pad=8)
+    axes[1].set_title("Annualized growth", loc="left", fontsize=FS["title"], fontweight="bold", pad=8)
+    h_lv = [Line2D([0], [0], marker="o", color=c, lw=1.8, markersize=7, label=l)
             for (_, l), c in zip(LEVEL_DATES, ORDINAL)]
-    h_gr = [Line2D([0], [0], marker="o", color=c, lw=1.6, markersize=7, label=v[3])
+    h_gr = [Line2D([0], [0], marker="o", color=c, lw=1.8, markersize=7, label=v[3])
             for v, c in zip(GROWTH.values(), ORDINAL)]
-    axes[0].legend(handles=h_lv, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=3, frameon=False)
-    axes[1].legend(handles=h_gr, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=3, frameon=False)
-    fig.suptitle("The distance gradient by metro: linear (OLS) slopes with 95% intervals", x=0.012, y=0.995,
-                 ha="left", fontsize=14, fontweight="bold")
-    fig.text(0.012, 0.935, "Negative = values or growth fall with distance from the center. A monocentric, "
-             "post-2020 flattening would show the level slope moving toward zero and the growth slope turning "
-             "positive. Intervals that cross zero cannot be told from a flat gradient.", fontsize=9.2,
-             color=INK["secondary"], ha="left", va="top", wrap=True)
-    fig.tight_layout(rect=(0, 0, 1, 0.9), w_pad=2.0)
+    axes[0].legend(handles=h_lv, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=3, frameon=False,
+                   columnspacing=1.0, handletextpad=0.3)
+    axes[1].legend(handles=h_gr, loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=3, frameon=False,
+                   columnspacing=1.0, handletextpad=0.3)
+    _suptitle(fig, "Distance gradient by metro: linear slopes with 95% intervals")
+    _note(fig, "Negative = values or growth fall with distance from the center. A post-2020 flattening would move the "
+          "level slope toward zero and turn the growth slope positive. Intervals that cross zero cannot be told from "
+          "a flat gradient.")
+    _layout(fig, 0, w_pad=1.2)
     return fig
