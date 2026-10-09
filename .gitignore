@@ -13,3 +13,9 @@ data/raw/
 # Secrets: the Census API key lives in the environment, never in files
 .env
 *.key
+
+# LaTeX scratch files (the report PDF itself is tracked)
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc

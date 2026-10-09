@@ -43,3 +43,13 @@ export CENSUS_API_KEY="your key"   # never commit it; request one at https://api
 ```
 
 Then open `notebooks/01_eda.ipynb` and pick the "Python 3 (capstone venv)" kernel.
+
+## The report
+
+`report/Team10_EDA.pdf` is the written deliverable (LaTeX source `report/Team10_EDA.tex`; figures in `report/figures/`,
+downsampled copies of `outputs/figures/`). To rebuild after changing the pipeline or figures:
+
+```bash
+.venv/bin/python report/make_tables.py                 # tables from data/clean and outputs/tables
+cd report && xelatex Team10_EDA.tex && xelatex Team10_EDA.tex   # run twice for cross-references
+```

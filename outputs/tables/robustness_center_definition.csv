@@ -1,0 +1,49 @@
+metro,sample_cityhall,measure,panel,slope_cityhall,lo_cityhall,hi_cityhall,n_cityhall,sample_zctactr,slope_zctactr,lo_zctactr,hi_zctactr,n_zctactr,diff
+Phoenix,all ZIPs,level,Dec 2019,-4.25,-7.119,-1.293,147,all ZIPs,-4.244,-7.107,-1.292,147,0.007
+Phoenix,all ZIPs,level,Dec 2022,-4.645,-7.457,-1.747,147,all ZIPs,-4.637,-7.444,-1.745,147,0.008
+Phoenix,all ZIPs,level,Dec 2025,-5.558,-8.685,-2.324,147,all ZIPs,-5.55,-8.672,-2.322,147,0.008
+Phoenix,all ZIPs,growth,Pre-2020,0.46,0.232,0.689,147,all ZIPs,0.461,0.232,0.689,147,0.0
+Phoenix,all ZIPs,growth,2020–2022,-0.15,-0.302,0.002,147,all ZIPs,-0.15,-0.301,0.002,147,0.0
+Phoenix,all ZIPs,growth,2023–2025,-0.301,-0.473,-0.129,147,all ZIPs,-0.301,-0.472,-0.129,147,0.0
+Austin,all ZIPs,level,Dec 2019,-14.885,-20.047,-9.39,83,all ZIPs,-14.821,-19.987,-9.321,83,0.064
+Austin,all ZIPs,level,Dec 2022,-14.399,-19.819,-8.613,83,all ZIPs,-14.293,-19.724,-8.494,83,0.107
+Austin,all ZIPs,level,Dec 2025,-12.669,-18.697,-6.195,83,all ZIPs,-12.55,-18.588,-6.064,83,0.119
+Austin,all ZIPs,growth,Pre-2020,-0.125,-0.446,0.196,83,all ZIPs,-0.114,-0.434,0.207,83,0.011
+Austin,all ZIPs,growth,2020–2022,0.212,-0.22,0.643,83,all ZIPs,0.231,-0.2,0.661,83,0.019
+Austin,all ZIPs,growth,2023–2025,0.631,0.325,0.936,83,all ZIPs,0.634,0.33,0.939,83,0.004
+Atlanta,all ZIPs,level,Dec 2019,-7.726,-10.617,-4.741,202,all ZIPs,-7.856,-10.728,-4.891,202,-0.13
+Atlanta,all ZIPs,level,Dec 2022,-5.961,-8.476,-3.378,202,all ZIPs,-6.076,-8.575,-3.509,202,-0.115
+Atlanta,all ZIPs,level,Dec 2025,-3.01,-5.99,0.065,202,all ZIPs,-3.156,-6.121,-0.097,202,-0.146
+Atlanta,all ZIPs,growth,Pre-2020,-0.438,-0.871,-0.005,202,all ZIPs,-0.42,-0.852,0.012,202,0.018
+Atlanta,all ZIPs,growth,2020–2022,0.69,0.392,0.989,202,all ZIPs,0.698,0.401,0.995,202,0.007
+Atlanta,all ZIPs,growth,2023–2025,1.03,0.845,1.216,202,all ZIPs,1.021,0.835,1.207,202,-0.009
+Dallas,all ZIPs,level,Dec 2019,-1.888,-4.759,1.07,251,all ZIPs,-2.33,-5.188,0.613,251,-0.443
+Dallas,all ZIPs,level,Dec 2022,-1.671,-4.462,1.202,251,all ZIPs,-2.101,-4.879,0.758,251,-0.43
+Dallas,all ZIPs,level,Dec 2025,-1.755,-4.851,1.443,251,all ZIPs,-2.226,-5.307,0.956,251,-0.471
+Dallas,all ZIPs,growth,Pre-2020,0.008,-0.338,0.353,251,all ZIPs,0.064,-0.282,0.41,251,0.057
+Dallas,all ZIPs,growth,2020–2022,0.081,-0.073,0.235,251,all ZIPs,0.086,-0.068,0.24,251,0.005
+Dallas,all ZIPs,growth,2023–2025,-0.033,-0.195,0.13,251,all ZIPs,-0.047,-0.209,0.116,251,-0.014
+Tampa,all ZIPs,level,Dec 2019,-8.507,-13.538,-3.184,129,all ZIPs,-8.414,-13.503,-3.025,129,0.093
+Tampa,all ZIPs,level,Dec 2022,-7.19,-12.049,-2.062,129,all ZIPs,-7.105,-12.019,-1.917,129,0.084
+Tampa,all ZIPs,level,Dec 2025,-8.095,-13.053,-2.854,129,all ZIPs,-8.109,-13.114,-2.815,129,-0.014
+Tampa,all ZIPs,growth,Pre-2020,0.195,-0.264,0.654,129,all ZIPs,0.189,-0.274,0.652,129,-0.006
+Tampa,all ZIPs,growth,2020–2022,0.565,0.293,0.838,129,all ZIPs,0.561,0.286,0.836,129,-0.004
+Tampa,all ZIPs,growth,2023–2025,-0.324,-0.679,0.031,129,all ZIPs,-0.358,-0.716,-0.001,129,-0.034
+Charlotte,all ZIPs,level,Dec 2019,-18.078,-21.434,-14.579,104,all ZIPs,-18.038,-21.406,-14.525,104,0.041
+Charlotte,all ZIPs,level,Dec 2022,-17.873,-20.911,-14.717,104,all ZIPs,-17.847,-20.895,-14.683,104,0.025
+Charlotte,all ZIPs,level,Dec 2025,-18.409,-21.737,-14.94,104,all ZIPs,-18.388,-21.723,-14.91,104,0.022
+Charlotte,all ZIPs,growth,Pre-2020,-0.382,-0.777,0.013,104,all ZIPs,-0.399,-0.793,-0.004,104,-0.017
+Charlotte,all ZIPs,growth,2020–2022,0.092,-0.193,0.378,104,all ZIPs,0.085,-0.201,0.371,104,-0.007
+Charlotte,all ZIPs,growth,2023–2025,-0.214,-0.458,0.031,104,all ZIPs,-0.215,-0.46,0.03,104,-0.001
+Nashville,all ZIPs,level,Dec 2019,-13.455,-16.67,-10.117,98,all ZIPs,-13.463,-16.677,-10.125,98,-0.007
+Nashville,all ZIPs,level,Dec 2022,-13.897,-17.459,-10.182,98,all ZIPs,-13.906,-17.467,-10.19,98,-0.008
+Nashville,all ZIPs,level,Dec 2025,-12.052,-15.786,-8.151,98,all ZIPs,-12.059,-15.793,-8.159,98,-0.008
+Nashville,all ZIPs,growth,Pre-2020,1.022,0.812,1.232,98,all ZIPs,1.022,0.812,1.232,98,0.001
+Nashville,all ZIPs,growth,2020–2022,-0.192,-0.462,0.077,98,all ZIPs,-0.193,-0.462,0.077,98,-0.0
+Nashville,all ZIPs,growth,2023–2025,0.719,0.545,0.892,98,all ZIPs,0.719,0.545,0.892,98,0.0
+Las Vegas,all ZIPs,level,Dec 2019,0.609,-2.961,4.311,68,all ZIPs,0.928,-2.716,4.709,68,0.319
+Las Vegas,all ZIPs,level,Dec 2022,0.25,-3.22,3.846,68,all ZIPs,0.534,-3.01,4.207,68,0.283
+Las Vegas,all ZIPs,level,Dec 2025,-0.045,-3.683,3.73,68,all ZIPs,0.253,-3.463,4.112,68,0.298
+Las Vegas,all ZIPs,growth,Pre-2020,-0.301,-0.646,0.044,68,all ZIPs,-0.345,-0.694,0.005,68,-0.044
+Las Vegas,all ZIPs,growth,2020–2022,-0.137,-0.451,0.178,68,all ZIPs,-0.149,-0.47,0.171,68,-0.013
+Las Vegas,all ZIPs,growth,2023–2025,-0.099,-0.3,0.102,68,all ZIPs,-0.094,-0.299,0.111,68,0.005

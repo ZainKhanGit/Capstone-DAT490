@@ -1,0 +1,442 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\graphicspath{{figures/}}
+
+% figures and tables numbered by hand-rolled counters (the caption package is not needed)
+\newcounter{fignum}
+\newcounter{tabnum}
+\newcommand{\fig}[3]{%
+  \begin{minipage}{\linewidth}\centering
+  \includegraphics[width=\linewidth]{#1}\par\vspace{2pt}
+  \refstepcounter{fignum}\label{#2}%
+  {\small\raggedright\textbf{Figure \thefignum.} #3\par}
+  \end{minipage}\par\vspace{10pt}}
+\newcommand{\tabsmall}[3]{%
+  \begin{minipage}{\linewidth}\centering
+  \refstepcounter{tabnum}\label{#2}%
+  {\small\raggedright\textbf{Table \thetabnum.} #3\par}\vspace{3pt}
+  \input{tables/#1}
+  \end{minipage}\par\vspace{10pt}}
+\newcommand{\tab}[3]{%
+  \begin{minipage}{\linewidth}\centering
+  \refstepcounter{tabnum}\label{#2}%
+  {\small\raggedright\textbf{Table \thetabnum.} #3\par}\vspace{3pt}
+  \resizebox{\linewidth}{!}{\input{tables/#1}}
+  \end{minipage}\par\vspace{10pt}}
+
+\title{Exploratory Data Analysis:\\ Remote Work and Urban Housing Prices in Eight Sun Belt Metros}
+\author{Sai Krishna Varshith Danda \and Gayathri Kota \and Eshitha Chowdary Kaka \and Zain Khan\\[2pt]
+Arizona State University, Tempe, AZ 85281, USA}
+\date{October 9, 2026}
+
+\begin{document}
+\maketitle
+
+\paragraph{Summary.} We ask whether the flattening of the within-metro house-price gradient seen in 2020--22 persisted
+through 2025 in Phoenix, Austin, Atlanta, Dallas, Tampa, Charlotte, Nashville and Las Vegas, using ZIP-level Zillow prices
+and rents joined to Census data. This exploratory analysis describes the data and does not test our hypotheses formally.
+The hypotheses are not holding uniformly. A flattening that then holds appears clearly in Atlanta, late in Austin, and in
+Tampa before it reverses; four metros show none; and Phoenix's pattern disappears when flagged outer ZIP codes are dropped.
+Pre-pandemic work-from-home share tracks income so closely, and expensive ZIP codes were already growing slowest before 2020,
+that the later relationship with growth cannot be read as an exposure effect. Expensive ZIP codes form wedges, not rings,
+and a single distance-to-downtown variable fits poorly. Data problems cluster at the metro edge.
+
+\section{Data Sources, Preparation, and Cleaning}
+
+\subsection{Sources}
+Our outcome is the Zillow Home Value Index (ZHVI) \cite{zhvi}: the typical value of homes in the 35th to 65th percentile for
+a ZIP code, all homes (single-family and condominium), smoothed and seasonally adjusted, monthly from January 2000 to August
+2026. The file covers 26,268 ZIP codes. Because ZHVI comes from Zillow's valuation models and is smoothed, it blurs the
+month-to-month timing of changes; we treat that as a limitation. Our secondary outcome is the Zillow Observed Rent Index
+(ZORI) \cite{zori}, all homes plus multifamily, smoothed, monthly from January 2015, for 8,459 ZIP codes nationally. Rents do
+not depend directly on mortgage financing, so we use them as a check on whether post-2022 price patterns reflect interest
+rates or location preferences.
+
+Neighborhood characteristics come from the American Community Survey (ACS) 5-year estimates \cite{acs19,acs23} through the
+Census Data API, at ZIP Code Tabulation Area (ZCTA) level. We pull tables B08006 (means of transportation to work, including
+``worked from home''), C24010 (occupation by sex), B19013 (median household income), B25024 (units in structure) and B01003
+(total population), with margins of error, for two releases: 2015--2019, our pre-pandemic baseline, and 2019--2023, used
+only to describe current composition because it mixes behavior from before and after 2020. Distances use ZCTA internal points
+from the Census Gazetteer \cite{gaz}, a county-based metro delineation \cite{cbsa} to cross-check metro membership, and
+cartographic ZCTA boundaries \cite{zcta} for maps. City-hall coordinates, the centers from which we measure distance, were
+compiled by hand from \cite{wiki,osm} (Table~\ref{tab:centers}).
+
+\subsection{Preparation and cleaning}
+\textbf{Selecting the metros.} The ZHVI file labels each ZIP code with a metro, but the label is blank for 4,712 ZIP codes
+and several names collide (Austin, Minnesota; Las Vegas, New Mexico; Charlottesville, Virginia). We kept the ZIP codes whose
+label is one of our eight metros (1,099 ZIP codes) and checked the choice against the Census county-based delineation. The
+two methods agree on 1,087 ZIP codes. Twelve ZIP codes are in the Zillow metro but in a county outside the 2023 delineation
+(for example Marble Falls, Mabank and Perrin, Texas), and five are in a delineation county but have a blank label (four in
+Hickman County, Tennessee and one in Lumpkin County, Georgia). The disagreements look like a vintage difference between
+delineations: the Census file is dated July 2023 and uses different titles for Atlanta, Austin and Las Vegas than Zillow
+does, so those three had to be matched by CBSA code. We kept Zillow's label, flagged the 12 ZIP codes for a sensitivity
+check, and left the 5 out.
+
+\textbf{Reshaping and missing data.} The wide ZHVI file (one column per month) was reshaped to a ZIP-by-month panel of
+351,680 rows (1,099 ZIP codes by 320 months), keeping every month. The 2018--2025 window is applied at analysis time. We do
+not drop ZIP codes with gaps by default. Of the 1,099 ZIP codes, 1,072 (97.5\%) have a complete series for 2018--2025; 17
+start after January 2018 and 10 have gaps in the middle (September 2020 to September 2021). Table~\ref{tab:coverage}
+shows coverage by metro. ZIP codes are kept as five-character text so that leading zeros are not lost.
+
+\textbf{Growth measures.} Growth is the year-over-year change, with December 2019 as the reference month (price index
+$=100$ in December 2019). We cut the window into three periods: 2018--2019, 2020--2022 and 2023--2025, and, because the
+first period is two years and the others three, we annualize growth in all figures so the periods compare. All plots use the
+same 1,082 ZIP codes that have a value at every date (``balanced sample''), so a change in a slope between two panels cannot
+come from a change in who is in the sample. Prices are nominal.
+
+\textbf{Distance to the center.} Our primary distance is from each ZIP code's ZCTA internal point to the city hall of the
+metro's first-named city. We compiled the eight coordinate pairs by hand, with a source recorded for each
+(Table~\ref{tab:centers}), instead of geocoding. Dallas--Fort Worth and Tampa--St.\ Petersburg are two-center metros, so for
+those two we also add Fort Worth and St.\ Petersburg and compute distance to the nearer center. A third definition, the
+centroid of the ZCTA containing the city-hall address, is kept as a robustness check; it sits within 1.5 miles of city hall in
+every metro, so it changes almost nothing (rank correlation 0.986 or higher with city-hall distance). One check failed:
+Dallas City Hall's coordinate falls in ZCTA 75202, while its address ZIP is 75201 (adjacent downtown ZIP codes); the effect is
+under a mile and we left it.
+
+\textbf{ZIP to ZCTA joins and reliability.} ZIP codes join to ZCTAs by identical code. In the 2015--2019 release 1,092 of 1,099
+(99.4\%) match; the seven that do not (in Frisco, McKinney, Arlington, Surprise and Las Vegas, plus Mesquite, Nevada) are
+mostly fast-growing suburbs that were probably created after the 2010 boundaries. All 1,099 match in the 2019--2023 release.
+The ACS work-from-home share is noisy in small ZCTAs, so we compute a margin of error for the share and flag it
+\emph{unreliable} when the margin exceeds half the estimate (a coefficient of variation above 0.30). That flags 248 of 1,092
+ZIP codes (23\%); they sit a median 39 miles from the center against 17 miles for the rest. A rule based on the number of
+workers would have flagged only 4. Census sentinel codes for suppressed values were set to missing.
+
+\textbf{Rents.} ZORI exists for only 799 of our 1,099 ZIP codes (72.7\%), and only 398 have every month of 2018--2025; the
+set also grows over time (for example Dallas has rents for 78 ZIP codes in January 2018 and 196 in December 2025). Rent
+trends are therefore computed on a fixed set of ZIP codes (those with rents in both December 2019 and December 2025).
+Section~\ref{sec:robust} explains why this makes rents a check for the inner and middle metro only.
+
+\tab{t_coverage.tex}{tab:coverage}{Coverage and data quality by metro. ``Complete ZHVI'' = every month 2018--2025;
+``Any ZORI'' = at least one rent observation; ``WFH share unreliable'' = margin of error above half the 2015--2019
+work-from-home share; ``Metro column only'' = Zillow assigns the ZIP code to the metro but the county-based delineation does
+not.}
+
+\tab{t_centers.tex}{tab:centers}{City-hall coordinates, compiled by hand with a source for each (retrieved October 6,
+2026). Fort Worth and St.\ Petersburg are the second centers for the two-center metros. An OpenStreetMap address lookup
+agrees with the Wikipedia point to within 0.25 miles where both exist.}
+
+\subsection{What we found while cleaning: problems sit at the edge}
+Most of the data-quality problems we found are more common far from the center (Figure~\ref{fig:flags}). Beyond 30 miles,
+64\% of ZIP codes have no rent series (6\% within 10 miles), 53\% have an unreliable work-from-home share (11\% within 10
+miles), 6\% have an incomplete price series and 4\% are in Zillow's metro but not the county delineation (none within 20
+miles). Two flags do not follow the pattern. The seven ZIP codes with no 2015--2019 ACS row are not tied to distance
+(a within-metro rank test gives $p=0.39$, and only one of the seven is 30 or more miles out); with seven ZIP codes the test has
+little power, so we say there is no evidence of a peripheral pattern for them, not that there is none. Patchy ZORI is
+the second exception, for a mechanical reason: outer ZIP codes mostly have no rents at all, so only inner ones can be
+patchy. The practical consequence is that dropping flagged ZIP codes trims the outer edge of every metro, which is where a
+price--distance gradient is estimated. We therefore keep every ZIP code by default, carry the flags in the data, and show
+results for the full and the flag-free samples side by side (Section~\ref{sec:robust}).
+
+\fig{2_1c_flags_by_distance.jpg}{fig:flags}{Share of ZIP codes in each distance band carrying each data-quality flag. Darker
+means more ZIP codes. Four of the six rows rise with distance; missing 2015--2019 ACS rows are few and not tied to
+distance, and patchy ZORI falls with distance because outer ZIP codes mostly have no ZORI at all.}
+
+\subsection{Reproducibility}
+All of the above is produced by eight scripts run in order by one command (about 20 seconds once the raw files are in
+place). Each writes a data-quality report that this section draws on. The Census API key is read from an environment
+variable and never stored. Every file used is listed with its URL, vintage, size and retrieval date in the repository's
+\texttt{docs/SOURCES.md}.
+
+\section{Exploratory Data Analysis}
+
+\subsection{Distributions}
+Home values are strongly right-skewed (Figure~\ref{fig:logcheck}): skewness is about 2.6 in dollars and 0.4 in logs, so we
+plot prices on a log scale throughout. Median ZIP values in December 2019 run from about \$204k (Charlotte) to \$331k
+(Austin). Every metro jumped by December 2022 (Austin's median reached \$525k, Phoenix's \$460k) and then diverged: Austin's
+fell to \$446k by December 2025 and Phoenix's to \$441k, while Atlanta, Charlotte and Nashville edged up
+(Figure~\ref{fig:dist}). Annualized growth in 2020--22 had metro medians of 12.6\% (Las Vegas) to 17.5\% (Tampa) a year; in
+2023--25 they ranged from $-$5.1\% (Austin) to $+$1.5\% (Charlotte). Inside a metro, the middle half of ZIP codes spans a
+range of 1.4 to 1.8 times in value, and the spread of growth across ZIP codes (a middle-half range of roughly 1 to 5
+points a year) is as large as many of the differences between metro medians, so a metro average hides a lot. These are nominal
+values from a smoothed, model-based index, so timing is blurred and inflation is not removed.
+
+\fig{2_1a_distributions.jpg}{fig:dist}{Home values (top, log scale) at three dates and annualized growth (bottom) in three
+periods, by metro. Each box is the middle half of the metro's ZIP codes, the white line is the median, and whiskers extend
+1.5 times the middle-half range.}
+
+\fig{2_1b_log_check.jpg}{fig:logcheck}{Why we use a log scale: the distribution of December 2019 home values on a dollar
+axis (left) and a log axis (right).}
+
+\subsection{The gradient (sub-question 1)}
+\label{sec:gradient}
+The monocentric model predicts that home values fall with distance from the center and that the gradient flattens when
+commuting gets cheaper. For each metro we fit home value (in logs) and annualized growth against distance from city hall.
+Three cautions apply to everything in this subsection. First, the intervals are plain ordinary least squares and ignore
+that nearby ZIP codes are correlated, so they are probably too narrow. Second, these are simple fits of one outcome on
+distance, without controls or metro-by-month effects; they are not the planned event study and say nothing about what
+remote work did. Third, the smooth (LOWESS) curves are drawn only over the range holding 95\% of a metro's ZIP codes and rest
+on few ZIP codes beyond roughly 40 to 60 miles, so their far ends should not be over-read.
+
+Home values fall with distance in six of the eight metros, but the strength varies (Table~\ref{tab:slopes},
+Figure~\ref{fig:slopes}). Charlotte (about $-$18\% per 10 miles, R$^2$ about 0.5), Austin ($-$15\%) and Nashville ($-$13\%)
+have steep, fairly tight gradients. Atlanta, Tampa and Phoenix are weaker ($-$4\% to $-$9\%, R$^2$ under 0.12). Dallas and Las
+Vegas have no linear gradient at all (slopes near zero, R$^2$ below 0.01). The prediction was a flattening in 2020--22 that
+then holds. Only Atlanta follows it and keeps going: its level slope moves from $-$7.7\% to $-$6.0\% to $-$3.0\% and its
+growth slope from $-$0.44 to $+$0.69 to $+$1.03 points per year per 10 miles (Figure~\ref{fig:atlanta}). Austin flattens only
+in 2023--25 (growth slope $+$0.63). Tampa flattens in 2020--22 ($+$0.57) and then turns negative ($-$0.32), which contradicts
+``holds''. Phoenix goes the other way: its growth slope falls from $+$0.46 to $-$0.30 and its level slope steepens from
+$-$4.3\% to $-$5.6\% (Figure~\ref{fig:phoenix}). Charlotte shows no change (Figure~\ref{fig:charlotte}), and Nashville's
+outer ZIP codes were already outgrowing the center before 2020 ($+$1.02).
+
+The surprise is how little of this is one story. In Phoenix and Las Vegas the smooth curves are humped, with values peaking
+10 to 25 miles from city hall and falling beyond (Figure~\ref{fig:lv}), which a straight line flattens into a near-zero or mildly
+negative slope. Level slopes at different dates have overlapping intervals in every metro, and we did not test whether a
+slope changed between dates. The shifts in growth slopes for Atlanta, Tampa, Phoenix and Nashville are larger than the width of
+their own intervals (even if those are too narrow); the others are not distinguishable from no change. Level slopes move
+little between December 2019 and December 2025 (within about 1.5 points everywhere except Atlanta, $+$4.7, and Austin,
+$+$2.2), which is arithmetic: a growth slope of $+$1 point per year per 10 miles adds only about 3 points to the level slope
+over three years. We also cannot compare with dense metros, because none are in our sample, so the plan's expectation that
+flattening is smaller here is untested.
+
+\tab{t_slopes.tex}{tab:slopes}{Distance gradients by metro (OLS, 95\% intervals in brackets): home value (log) at three dates, as
+\% change per 10 miles from the center; annualized growth in three periods, as points per year per 10 miles. The rows marked
+``nearest of 2'' use distance to the nearer of the two centers.}
+
+\fig{2_2_slope_summary.jpg}{fig:slopes}{The slopes of Table~\ref{tab:slopes} with 95\% intervals. Negative means values or growth fall with
+distance. A monocentric post-2020 flattening would move the level slope toward zero and turn the growth slope positive.
+Intervals that cross zero cannot be told from a flat gradient.}
+
+\fig{2_2_gradient_atlanta.jpg}{fig:atlanta}{Atlanta: home value (log scale, top) and annualized growth (bottom) against
+distance from city hall. Each dot is a ZIP code; the solid line is a linear fit and the dashed line a smooth fit.}
+
+\fig{2_2_gradient_phoenix.jpg}{fig:phoenix}{Phoenix, same layout. The smooth fit peaks about 20 miles from city hall; triangles
+mark two ZIP codes beyond the axis range.}
+
+\fig{2_2_gradient_charlotte.jpg}{fig:charlotte}{Charlotte, same layout: a steep, stable gradient.}
+
+\fig{2_2_gradient_las_vegas.jpg}{fig:lv}{Las Vegas, same layout: no linear gradient, but a clear hump 10 to 20 miles out.}
+
+\paragraph{Does a second center change the picture?} For Dallas--Fort Worth and Tampa--St.\ Petersburg we recompute distance
+to the nearer of the two city halls. This does not recover a monocentric gradient (Figures~\ref{fig:dalv} and~\ref{fig:dalg}).
+For Dallas, R$^2$ for home values stays at about 0.005 either way and the slope changes sign ($-$1.9\% to $+$1.5\% per 10
+miles) with both intervals spanning zero. For Tampa, R$^2$ rises a little (0.065 to 0.080). For growth the nearest-center
+version helps most in 2020--22 (R$^2$ 0.004 to 0.019 in Dallas, 0.117 to 0.163 in Tampa; Figure~\ref{fig:tampag}). Fitting each
+center's ZIP codes separately shows why a pooled line fails: Fort Worth ZIP codes rise in value with distance from Fort
+Worth's city hall by about $+$8\% to $+$10\% per 10 miles (R$^2$ about 0.10) while Dallas ZIP codes are flat or slightly negative.
+The two cores sit at different price levels. The per-center growth slopes also move in opposite directions (Dallas from $+$0.47
+in 2020--22 to $-$0.25 in 2023--25, Fort Worth from $-$0.29 to $+$0.37), an exploratory observation from small groups. This shows a
+second center matters for the price level, not that two city halls explain the gradient. A city hall is not where the jobs
+are, and suburban job centers are not in the test. The St.\ Petersburg group has only 39 ZIP codes and its level-slope
+interval runs from about $-$15\% to $+$34\% per 10 miles, so it says almost nothing.
+
+\fig{2_2_two_center_level_dallas.jpg}{fig:dalv}{Dallas--Fort Worth, home values. Row A: distance to Dallas City Hall. Row B:
+distance to the nearer of the two city halls, one pooled fit. Row C: the same distances with a separate fit for each center's
+ZIP codes (line color matches the dots). Dot color is the center each ZIP code is nearer to, in every row.}
+
+\fig{2_2_two_center_growth_dallas.jpg}{fig:dalg}{Dallas--Fort Worth, annualized growth, same layout as
+Figure~\ref{fig:dalv}.}
+
+\fig{2_2_two_center_growth_tampa.jpg}{fig:tampag}{Tampa--St.\ Petersburg, annualized growth, same layout.}
+
+\subsection{Spatial structure}
+The maps ask whether expensive ZIP codes form rings around the center, as the monocentric model predicts, or separate
+patches, as a polycentric metro would. Figure~\ref{fig:lvlmap} shows December 2019 home value in fifths within each metro. In
+most metros the highest-value ZIP codes form a wedge on one side of the center: north and northeast of Phoenix's city hall, west
+and northwest of Austin's, north of Atlanta's, northwest of Las Vegas's, and in a band north of both city halls in
+Dallas--Fort Worth, where both cores sit in lower fifths. A wedge is not the shape the monocentric model predicts, and it is why
+one distance variable fits poorly in Section~\ref{sec:gradient}.
+
+The growth maps (Figures~\ref{fig:mapatl}--\ref{fig:mapdal}; the rest are in Appendix~A) show growth relative to each
+metro's own median, on one color scale for all eight metros. In Atlanta, Austin and Nashville the ZIP codes around the center
+grew more slowly than the metro in 2023--25 and the outer ones faster, which matches their positive 2023--25 slopes; Charlotte
+has a similarly slow core, but its far-south ZIP codes are also slow, which is why its slope is near zero. Before 2020 the pattern
+was different: Atlanta's ZIP codes north of city hall were slow and those south and southeast fast; the Dallas and Fort Worth
+cores grew faster than their surroundings, with the northern suburbs slower; Phoenix's inner core and far southeast were
+fastest. In six of eight metros the growth contrast between ZIP codes was larger before 2020 than in 2020--22 (not Austin,
+and Atlanta barely), so the post-2020 maps are, if anything, quieter than the pre-2020 ones. The maps are descriptive: growth
+is relative to the metro median so metro-wide movements are removed; large, thinly populated ZIP codes dominate the area
+(Las Vegas is hard to read for this reason); and we have not measured spatial clustering or explained why the wedges form.
+
+\fig{2_3b_level_quintile_maps.jpg}{fig:lvlmap}{December 2019 home value as fifths within each metro. Red star = city hall (two
+in Dallas--Fort Worth and Tampa--St.\ Petersburg). Fifths are within each metro, so colors compare places inside a metro, not
+prices across metros.}
+
+\fig{2_3a_growth_map_atlanta.jpg}{fig:mapatl}{Atlanta: annualized growth relative to the metro median, by period. Warm =
+faster than the metro, cool = slower. The same color scale is used for all metros.}
+
+\fig{2_3a_growth_map_phoenix.jpg}{fig:mapphx}{Phoenix, same layout.}
+
+\fig{2_3a_growth_map_dallas.jpg}{fig:mapdal}{Dallas--Fort Worth, same layout; the two stars are the two city halls.}
+
+\subsection{Pre-pandemic work-from-home share and growth (sub-question 2)}
+The plan predicted a positive relationship between a ZIP code's pre-2020 work-from-home potential and its price growth
+afterward, strongest in 2021--22 and weakening but not disappearing through 2025. We measure exposure by the share of workers
+who worked from home in the 2015--2019 ACS.
+
+The first thing to know is that high-work-from-home and high-income ZIP codes are close to being the same ZIP codes
+(Figures~\ref{fig:confound} and~\ref{fig:corr}). Within a metro, the work-from-home share has a rank correlation of $+$0.66 with
+income, $+$0.74 with home value and $+$0.74 with the share of management and professional workers. Expensive ZIP codes were
+already growing slowest before 2020 (growth against December 2019 value, $-$0.72). So the pre-2020 relationship between
+exposure and growth is strongly negative ($-$1.48 points a year per $+$5 percentage points of work-from-home share, R$^2$ 0.13;
+Figure~\ref{fig:expo}, Table~\ref{tab:expo}): before remote work could matter, affluent ZIP codes were on a slower path. That
+pre-trend makes the levels of the later slopes uninterpretable as an exposure effect. Within metros the slope is $-$0.30 in
+2020--22 and $+$0.40 in 2023--25 (pooled: $+$0.17 and $-$0.10). A slope that is less negative than before could reflect
+exposure, or simply the same affluent ZIP codes flattening out, or anything else that hit expensive homes differently, such as
+the 2022 rate shock. The direction of travel ($-$1.48 to $-$0.30 to $+$0.40) is consistent with the hypothesis, but with this
+starting point it is not evidence for it.
+
+Two further points. The strongest relationship in the figure is the pre-2020 placebo, and the plan's predicted positive
+relationship in 2020--22 does not appear within metros. Dropping the 233 ZIP codes with an unreliable estimate (hollow
+diamonds in Figure~\ref{fig:expo}) barely changes the slopes ($-$1.41, $-$0.26, $+$0.52), though those ZIP codes scatter much more
+widely. Nothing here separates exposure from income, education and housing type, which the measure tracks closely, and nothing
+controls for them. Any model of the post-2020 relationship has to deal with the pre-2020 one first, for instance by including
+pre-period growth and income and testing for pre-trends. The same three cautions apply as in Section~\ref{sec:gradient}.
+
+\fig{2_4c_exposure_confounds.jpg}{fig:confound}{What the work-from-home share is entangled with, within metro: income (left)
+and distance (right). Hollow diamonds are ZIP codes whose work-from-home share is unreliable.}
+
+\fig{2_4b_exposure_corr.jpg}{fig:corr}{Within-metro rank correlations among the exposure measure, its likely confounders and
+growth. Each variable is first converted to its percentile within its own metro.}
+
+\fig{2_4a_exposure_scatter.jpg}{fig:expo}{Growth against pre-2020 work-from-home share. Top: within metro (both measured against
+the metro median). Bottom: metros pooled. Left column is a check on growth before 2020. Dots are ZIP codes (hollow diamonds
+unreliable), large dots are means of eighths of the ZIP codes with 95\% intervals, solid line is a linear fit and dashed line a
+smooth fit.}
+
+\tab{t_exposure.tex}{tab:expo}{Slopes of annualized growth on work-from-home share, in points per year per $+$5 percentage
+points, with 95\% intervals (OLS), all ZIP codes and ZIP codes with a reliable estimate only.}
+
+\subsection{Price paths and groups of ZIP codes (sub-question 3)}
+Every metro followed the same broad shape (Figure~\ref{fig:paths}): a steep rise from 2020 to 2022 (a typical ZIP index of about
+140 to 170 by late 2022, December 2019 $=100$) and then a flat or falling stretch, with Austin falling furthest. Within most
+metros the distance bands move together: in Phoenix, Dallas and Charlotte each band's median stays within about 4\% of the metro
+as a whole throughout (Figure~\ref{fig:relpaths}). The exceptions are the clearest signs of a donut. In Atlanta the innermost band
+(0--10 miles) fell to 85\% of the metro's median index by December 2022 and 83\% by December 2025 while the 30-plus-mile band rose
+to about 105\%. In Tampa the 30-plus-mile band jumped to about 106\% by December 2022 and stayed there, though the inner band also
+recovered to about 106\% by 2025. In Austin and Las Vegas the outer band swings (Austin's dipped to about 92\% in 2022 and
+recovered; Las Vegas's, with only 7 ZIP codes, fell to about 96\%).
+
+Grouping the 1,072 ZIP codes with complete series by the shape of their path (k-means on the log index) gives four groups
+(Figure~\ref{fig:clusters}, Table~\ref{tab:clusters}). Group 3 (89 ZIP codes, 74\% of them in Austin) shows a boom and a correction,
+ending about 33\% above December 2019 after a peak near 169. Group 4 (48 ZIP codes, median 4 miles from city hall, 18\%
+single-family detached homes, mostly Atlanta and Dallas) rose least, peaking near 128. Groups 1 and 2 (520 and 415 ZIP codes)
+differ mainly in amplitude. The groups follow metro and housing type more than distance: median distances are 22, 20, 15 and 4
+miles, so only the small urban-core group is distinctively central. The plan expected three to five groups including delayed
+appreciation and stagnation; we find a boom-and-correction group and a low-appreciation group but no delayed-appreciation group.
+The silhouette width is modest (0.28 to 0.38 across the numbers of groups we tried; 0.36 at four, no better than 0.375 at two),
+so we cannot say that four is the right number of groups or that the groups are real types and not a partition of a continuum.
+The 27 ZIP codes with incomplete series, mostly in the outer ring, are left out, and the band medians in Las Vegas and the outer
+bands of Austin and Tampa rest on 4 to 15 ZIP codes.
+
+\fig{2_5a_trajectories.jpg}{fig:paths}{Price paths of every ZIP code (thin lines) by distance band, with band medians
+(thick), December 2019 $=100$, log scale.}
+
+\fig{2_5b_relative_paths.jpg}{fig:relpaths}{Each ZIP code's index divided by its metro's median index, median by distance band.
+If outer ZIP codes gained on inner ones after 2020, the outer-band lines rise above the inner ones.}
+
+\fig{2_5c_clusters.jpg}{fig:clusters}{k-means grouping of ZIP codes by price path: average silhouette width by number of groups
+(left), the mean path of each group with a one-standard-deviation band (middle), and the metro mix of each group (right).}
+
+\tab{t_clusters.tex}{tab:clusters}{What each group looks like (medians): distance from city hall, December 2019 home value, 2015--2019
+household income and work-from-home share, single-family detached share of homes, and annualized growth in three periods (\%).}
+
+\subsection{Robustness}
+\label{sec:robust}
+\textbf{Flagged ZIP codes.} Dropping the flagged ZIP codes (834 of 1,082 remain) changes the picture more for price levels than for
+growth (Figure~\ref{fig:flagfree}). Level slopes move by up to about 6 points per 10 miles (flatter on average by about 2 points),
+because the flagged ZIP codes are mostly cheap, outer ones. Growth slopes change by 0.00 on average (range $-$0.37 to $+$0.59
+points per year per 10 miles). Phoenix is the case that matters: with the flagged ZIP codes removed its level slope goes from
+$-$4.3\% to $+$0.5\% per 10 miles and all three growth slopes are near zero ($+$0.09, $+$0.03, $-$0.09), so its earlier results come
+from far-out ZIP codes. Atlanta's pattern survives and is stronger in 2020--22 ($+$1.25); Nashville's and Tampa's growth slopes hold
+up; Dallas turns clearly negative in 2023--25 ($-$0.35). The flag-free subset is a selected sample, neither more nor less correct
+than the full one.
+
+\textbf{Center definition.} Using the ZCTA centroid of the city-hall ZIP code instead of city hall changes no slope by more than
+0.5 percentage points (levels) or 0.06 points per year (growth).
+
+\textbf{Rents.} Rents were meant to check whether post-2022 price patterns reflect mortgage rates, but ZORI is weakest where the
+gradient question lives. Only 36\% of ZIP codes 30 or more miles from the center have any rent series, against 94\% within 10 miles
+(Table~\ref{tab:zori}); only 13\% of the outer ZIP codes have rents at both December 2019 and December 2025. Coverage is also
+selective: among ZIP codes 20 or more miles out, those with rents have a median population of 35,786 against 4,872, and 9.0\% against
+0.3\% of homes in buildings of five or more units. The rent check is therefore an inner and middle metro check; it can support or
+weaken a rate-shock explanation there but cannot rule one out for the outer ring. On the 478 ZIP codes with rents at both ends,
+price growth rose with distance in 2020--22 ($+$0.83 points per year per 10 miles) and rents did too ($+$0.41). In 2023--25 price
+growth no longer rose with distance ($-$0.07) while rent growth still did ($+$0.33; Figure~\ref{fig:rent}). That is the pattern
+the plan said would point toward interest rates rather than location preferences, but it is a pattern, not proof: the sample is
+selective, ZORI is smoothed, and the comparison uses the same simple distance fits as above.
+
+\tabsmall{t_zori.tex}{tab:zori}{Rent (ZORI) coverage by distance from city hall, as a share of the ZHVI ZIP codes in each band.}
+
+\fig{2_6a_flag_free.jpg}{fig:flagfree}{Gradient slopes on all ZIP codes (blue) and on flag-free ZIP codes only (orange). Dots are
+OLS slopes and whiskers 95\% intervals (probably too narrow).}
+
+\fig{2_6c_rent_vs_price.jpg}{fig:rent}{Prices (top, blue) and rents (bottom, orange) on the same 478 ZIP codes, growth minus the
+metro median against distance from city hall. Only 41 of these ZIP codes are 30 or more miles out.}
+
+\section{Implications}
+\textbf{Does the hypothesis hold?} Not uniformly. The expected flattening of the price gradient in 2020--22 that then holds
+appears clearly in Atlanta, late in Austin, and in Tampa before it reverses; Phoenix, Charlotte, Dallas and Las Vegas show nothing,
+and Nashville's outer-ZIP advantage predates 2020. Phoenix's pattern disappears when flagged outer ZIP codes are dropped. The
+prediction for sub-question 2 (more pre-pandemic work-from-home potential, more growth, strongest in 2021--22) is not what we
+see: within metros the relationship is negative until 2023--25, and it is entangled with income and an existing pre-2020 trend.
+Sub-question 3's groups are only moderately distinct and track metro and housing type more than distance.
+
+\textbf{What this means for the modeling.}
+\begin{enumerate}
+\item A single linear distance term is a poor description in these metros. Expensive ZIP codes form wedges and humps, two-center
+metros have centers at different price levels, and Dallas and Las Vegas have no linear gradient. The models should allow a smooth
+distance effect and center-specific terms, and polycentric structure (the job-center data we set aside) is worth bringing back.
+\item The post-2020 exposure effect cannot be read from a post-2020 slope alone. Include pre-period growth and income, and show
+the pre-2020 coefficients in the event study.
+\item Results at the metro edge are fragile. Report full-sample and flag-free estimates together, cluster the standard errors
+for spatial correlation, and treat any finding that depends on the far outer ZIP codes (Phoenix) as provisional.
+\item Rents can check the rate-shock explanation only for the inner and middle metro. Keep the fixed ZIP set and say that the
+outer ring is not covered.
+\item The plan's metro-by-month fixed effects remove metro-wide movements, which is the right tool for the 2022 rate shock; the
+maps and relative paths here already show that within-metro contrasts are small next to the metro-wide rise.
+\end{enumerate}
+
+\textbf{What the data cannot answer.} Whether remote work caused any of this; what happened in the outer ring, where rents and
+reliable exposure measures are thin; and whether other centers explain the wedges. \textbf{Next.} Add the job-center data, build
+the event-study specification with pre-trend tests and spatially clustered errors, and repeat the grouping within metros so that
+group membership is not just metro.
+
+\begin{thebibliography}{9}\setlength{\itemsep}{0pt}
+\bibitem{zhvi} Zillow Group. Zillow Home Value Index (ZHVI), ZIP code, all homes, mid-tier, smoothed, seasonally adjusted. Zillow
+Research, data through August 2026. \url{https://www.zillow.com/research/data/} (retrieved October 6, 2026).
+\bibitem{zori} Zillow Group. Zillow Observed Rent Index (ZORI), ZIP code, all homes plus multifamily, smoothed. Zillow Research,
+data through August 2026. \url{https://www.zillow.com/research/data/} (retrieved October 6, 2026).
+\bibitem{acs19} U.S. Census Bureau. American Community Survey 5-Year Estimates, 2015--2019, tables B08006, C24010, B19013, B25024,
+B01003, ZIP Code Tabulation Areas. Census Data API. \url{https://www.census.gov/data/developers/data-sets/acs-5year.html}
+(retrieved October 6, 2026).
+\bibitem{acs23} U.S. Census Bureau. American Community Survey 5-Year Estimates, 2019--2023, same tables and geography. Census Data
+API (retrieved October 6, 2026).
+\bibitem{gaz} U.S. Census Bureau. 2024 Gazetteer Files, ZIP Code Tabulation Areas.
+\url{https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html} (retrieved October 6, 2026).
+\bibitem{cbsa} U.S. Census Bureau. Core Based Statistical Areas, Metropolitan Divisions, and Combined Statistical Areas, July 2023
+(List 1).
+\url{https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx}
+(retrieved October 6, 2026).
+\bibitem{zcta} U.S. Census Bureau. Cartographic Boundary File, 2020 ZIP Code Tabulation Areas, 1:500,000.
+\url{https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip} (retrieved October 6, 2026).
+\bibitem{wiki} Wikipedia contributors. City hall articles for Phoenix, Austin, Atlanta, Dallas, Tampa, Nashville (Davidson County
+Courthouse) and Las Vegas, for building coordinates. \url{https://en.wikipedia.org} (retrieved October 6, 2026).
+\bibitem{osm} OpenStreetMap contributors. Nominatim address search, for the Charlotte, Fort Worth and St.\ Petersburg city-hall
+points and for coordinate cross-checks. \url{https://nominatim.openstreetmap.org} (retrieved October 6, 2026).
+\end{thebibliography}
+
+\appendix
+\section{Remaining metro figures}
+Same layouts as in the main text.
+
+\fig{2_2_gradient_austin.jpg}{fig:austin}{Austin: home values and growth by distance from city hall.}
+\fig{2_2_gradient_nashville.jpg}{fig:nashville}{Nashville: home values and growth by distance from city hall.}
+\fig{2_2_gradient_tampa.jpg}{fig:tampa}{Tampa: home values and growth by distance from city hall.}
+\fig{2_2_gradient_dallas.jpg}{fig:dallas}{Dallas: home values and growth by distance from city hall.}
+\fig{2_2_two_center_level_tampa.jpg}{fig:tampav}{Tampa--St.\ Petersburg, home values, two-center comparison.}
+\fig{2_3a_growth_map_austin.jpg}{fig:mapaus}{Austin: growth relative to the metro median.}
+\fig{2_3a_growth_map_tampa.jpg}{fig:maptpa}{Tampa: growth relative to the metro median.}
+\fig{2_3a_growth_map_charlotte.jpg}{fig:mapclt}{Charlotte: growth relative to the metro median.}
+\fig{2_3a_growth_map_nashville.jpg}{fig:mapnash}{Nashville: growth relative to the metro median.}
+\fig{2_3a_growth_map_las_vegas.jpg}{fig:maplv}{Las Vegas: growth relative to the metro median.}
+
+\end{document}

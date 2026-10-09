@@ -143,7 +143,8 @@ def flags_by_distance(flags: pd.DataFrame):
     fig.suptitle("Most data-quality problems are more common far from the center", x=0.012, y=0.985, ha="left",
                  fontsize=14, fontweight="bold")
     fig.text(0.012, 0.915, "Share of ZIP codes in each distance band (city-hall distance) with each flag. Darker = more ZIPs. "
-             "The one exception, missing 2015–2019 ACS rows, is small and not tied to distance.",
+             "Two rows do not rise with distance: missing 2015–2019 ACS rows (few ZIPs, not tied to distance) and patchy ZORI "
+             "(outer ZIPs mostly have no ZORI at all, so only inner ZIPs can be patchy).",
              fontsize=9.2, color=INK["secondary"], ha="left", va="top", wrap=True)
     fig.tight_layout(rect=(0, 0, 1, 0.87))
     return fig
@@ -217,10 +218,10 @@ def growth_maps(zc: gpd.GeoDataFrame, rel: pd.DataFrame, ref: pd.DataFrame, metr
     stars = "Black star = city hall" if metro not in TWO_CENTER else "Black stars = the two city halls"
     fig.suptitle(f"{metro}: where growth ran ahead of or behind the metro as a whole", x=0.012, y=0.985, ha="left",
                  fontsize=14, fontweight="bold")
-    fig.text(0.012, 0.915, f"{stars}. Grey = a ZIP in our set with no data ({n_missing}); white = not in our ZIP set. The same color scale "
+    fig.text(0.012, 0.935, f"{stars}. Grey = a ZIP in our set with no data ({n_missing}); white = not in our ZIP set. The same color scale "
              f"is used for all eight metros and all three periods (clipped at \u00b1{lim:g} points per year).", fontsize=9.2,
              color=INK["secondary"], ha="left", va="top")
-    fig.subplots_adjust(top=0.84, bottom=0.2, left=0.01, right=0.99, wspace=0.04)
+    fig.subplots_adjust(top=0.80, bottom=0.2, left=0.01, right=0.99, wspace=0.04)
     return fig
 
 
@@ -430,3 +431,301 @@ def exposure_corr(x: pd.DataFrame):
              ha="left", va="top", wrap=True)
     fig.tight_layout(rect=(0, 0, 1, 0.9))
     return fig, pd.DataFrame(m, index=[l for _, l in EXPOSURE_VARS], columns=[l for _, l in EXPOSURE_VARS])
+
+
+# ============================================================================== 2.5 trajectories (SQ3, exploratory)
+BANDS = ["0-10 mi", "10-20 mi", "20-30 mi", "30+ mi"]
+BAND_COLORS = ["#86b6ef", "#3987e5", "#1c5cab", "#0d366b"]   # blue steps 250/400/550/700, validated as an ordinal ramp
+CLUSTER_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4"]   # categorical slots 1-5, adjacent-validated
+
+
+def path_matrix(panel: pd.DataFrame, d: pd.DataFrame) -> pd.DataFrame:
+    """ZIP x month matrix of the index (Dec 2019 = 100), 2018-01 to 2025-12, for ZIPs with a full series."""
+    w = panel[(panel["date"] >= "2018-01-01") & (panel["date"] <= "2025-12-31")]
+    m = w.pivot(index="zip", columns="date", values="index_dec2019")
+    keep = d.loc[d["balanced"], "zip"]
+    m = m.loc[m.index.intersection(keep)].dropna(how="any")
+    return m
+
+
+def _band_of(d: pd.DataFrame, zips) -> pd.Series:
+    return d.set_index("zip").loc[zips, "dist_band"] if "dist_band" in d else None
+
+
+def trajectory_panels(P: pd.DataFrame, d: pd.DataFrame):
+    """Figure 2.5a: every ZIP's price path (Dec 2019 = 100, log axis), colored by distance band; thick line = band median."""
+    dd = d.set_index("zip")
+    fig, axes = plt.subplots(2, 4, figsize=(12.2, 7.0), sharex=True, sharey=True)
+    dates = P.columns
+    for ax, metro in zip(axes.ravel(), METRO_ORDER):
+        zips = P.index[dd.loc[P.index, "metro_short"] == metro]
+        band = dd.loc[zips, "dist_band"]
+        for b, col in zip(BANDS, BAND_COLORS):
+            zz = zips[band.values == b]
+            if len(zz) == 0:
+                continue
+            ax.plot(dates, P.loc[zz].T.to_numpy(), color=col, lw=0.5, alpha=0.28, zorder=2)
+        for b, col in zip(BANDS, BAND_COLORS):
+            zz = zips[band.values == b]
+            if len(zz) >= 3:
+                ax.plot(dates, P.loc[zz].median().to_numpy(), color=col, lw=2.2, zorder=4,
+                        path_effects=viz.HALO)
+        ax.axhline(100, color=INK["axis"], lw=0.9, zorder=1)
+        ax.set_yscale("log")
+        ax.set_title(f"{metro}  (n = {len(zips)})", loc="left", fontsize=11, fontweight="bold")
+    ticks = [60, 80, 100, 150, 200, 300]
+    axes[0][0].set_xlim(dates[0], dates[-1])
+    axes[0][0].set_ylim(55, 330)
+    axes[0][0].set_yticks(ticks)
+    axes[0][0].yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.0f}"))
+    axes[0][0].yaxis.set_minor_locator(viz.NullLocator())
+    for ax in axes[:, 0]:
+        ax.set_ylabel("Price index (Dec 2019 = 100)")
+    h = [Line2D([0], [0], color=c, lw=2.4, label=b) for c, b in zip(BAND_COLORS, BANDS)]
+    fig.legend(handles=h, loc="lower center", ncol=4, frameon=False, title="Distance from city hall (thin lines = ZIPs, thick = band median)",
+               title_fontsize=10, columnspacing=1.8)
+    fig.suptitle("Price paths of every ZIP, by distance from the center", x=0.012, y=0.994, ha="left",
+                 fontsize=14, fontweight="bold")
+    fig.text(0.012, 0.945, f"{len(P)} ZIP codes with a complete monthly series, Jan 2018 to Dec 2025. Log scale, so equal "
+             "percentage changes look equal.", fontsize=9.2, color=INK["secondary"], ha="left", va="top")
+    fig.tight_layout(rect=(0, 0.075, 1, 0.925), h_pad=1.6, w_pad=0.8)
+    return fig
+
+
+def relative_paths(P: pd.DataFrame, d: pd.DataFrame):
+    """Figure 2.5b: each ZIP's index divided by its metro's median index (100 = the metro as a whole), median by distance
+    band. If outer ZIPs gained on inner ZIPs after 2020 (a donut), the outer-band lines rise above the inner ones."""
+    dd = d.set_index("zip")
+    fig, axes = plt.subplots(2, 4, figsize=(12.2, 7.0), sharex=True, sharey=True)
+    dates = P.columns
+    for ax, metro in zip(axes.ravel(), METRO_ORDER):
+        zips = P.index[dd.loc[P.index, "metro_short"] == metro]
+        rel = 100 * P.loc[zips] / P.loc[zips].median()
+        band = dd.loc[zips, "dist_band"]
+        for b, col in zip(BANDS, BAND_COLORS):
+            zz = zips[band.values == b]
+            if len(zz) >= 3:
+                ax.plot(dates, rel.loc[zz].median().to_numpy(), color=col, lw=2.2, path_effects=viz.HALO, zorder=4)
+        ax.axhline(100, color=INK["axis"], lw=0.9, zorder=1)
+        ax.axvline(pd.Timestamp("2019-12-31"), color=INK["grid"], lw=1.0, zorder=0)
+        ax.set_title(metro, loc="left", fontsize=11, fontweight="bold")
+    axes[0][0].set_xlim(dates[0], dates[-1])
+    axes[0][0].set_ylim(78, 124)
+    for ax in axes[:, 0]:
+        ax.set_ylabel("Index relative to the metro median")
+    h = [Line2D([0], [0], color=c, lw=2.4, label=b) for c, b in zip(BAND_COLORS, BANDS)]
+    fig.legend(handles=h, loc="lower center", ncol=4, frameon=False, title="Distance from city hall (band median)",
+               title_fontsize=10, columnspacing=1.8)
+    fig.suptitle("Did outer ZIPs gain on inner ZIPs? Price index relative to the metro, by distance band", x=0.012,
+                 y=0.994, ha="left", fontsize=14, fontweight="bold")
+    fig.text(0.012, 0.945, "Each ZIP's index (Dec 2019 = 100) divided by its metro's median index, so 100 = the metro as a whole. Grey "
+             "vertical line = Dec 2019.", fontsize=9.2, color=INK["secondary"], ha="left", va="top")
+    fig.tight_layout(rect=(0, 0.075, 1, 0.925), h_pad=1.6, w_pad=0.8)
+    return fig
+
+
+def cluster_paths(P: pd.DataFrame, ks=range(2, 9), k_final=None, seed=0):
+    """K-means on each ZIP's log price index (Dec 2019 = 0). Returns silhouette by k, labels for k_final (the best k in
+    3..5 if not given), ordered by the final index level, and the matrix used."""
+    from sklearn.cluster import KMeans
+    from sklearn.metrics import silhouette_score
+    X = np.log(P.to_numpy() / 100.0)
+    sil = {}
+    for k in ks:
+        lab = KMeans(n_clusters=k, n_init=20, random_state=seed).fit_predict(X)
+        sil[k] = silhouette_score(X, lab)
+    if k_final is None:
+        k_final = max((k for k in sil if 3 <= k <= 5), key=sil.get)
+    km = KMeans(n_clusters=k_final, n_init=20, random_state=seed).fit(X)
+    order = np.argsort(-km.cluster_centers_[:, -1])            # cluster 1 = highest end level
+    rank = {old: new for new, old in enumerate(order)}
+    labels = pd.Series([rank[l] for l in km.labels_], index=P.index, name="cluster")
+    return pd.Series(sil, name="silhouette"), labels, k_final
+
+
+def cluster_figure(P: pd.DataFrame, d: pd.DataFrame, sil: pd.Series, labels: pd.Series, k: int):
+    """Figure 2.5c: silhouette by k; mean path of each group (+-1 sd band); metro composition of each group."""
+    dd = d.set_index("zip")
+    fig, axes = plt.subplots(1, 3, figsize=(12.2, 5.2), gridspec_kw={"width_ratios": [0.9, 1.5, 1.1]})
+    ax = axes[0]
+    ax.plot(sil.index, sil.values, color=BLUE_700, lw=2.0, marker="o", markersize=7, markerfacecolor=BLUE_700,
+            markeredgecolor=INK["surface"], markeredgewidth=1.5)
+    ax.scatter([k], [sil[k]], s=110, color=C2, edgecolors=INK["surface"], linewidths=1.5, zorder=5)
+    ax.set_xlabel("Number of groups (k)")
+    ax.set_xticks(list(sil.index))
+    ax.set_ylabel("Average silhouette width")
+    ax.set_ylim(0, max(0.6, sil.max() * 1.15))
+    ax.axhline(0.25, color=INK["axis"], lw=1.0)
+    ax.text(sil.index.min(), 0.25, "0.25", ha="left", va="bottom", fontsize=8.5, color=INK["secondary"])
+    viz._heading(ax, "How distinct are the groups?", f"Orange dot = k chosen ({k}); higher is better; below 0.25 is weak")
+    ax = axes[1]
+    dates = P.columns
+    X = P                                   # already an index with Dec 2019 = 100
+    for c in range(k):
+        zz = labels.index[labels == c]
+        mu, sd = X.loc[zz].mean(), X.loc[zz].std()
+        col = CLUSTER_COLORS[c]
+        ax.fill_between(dates, mu - sd, mu + sd, color=col, alpha=0.13, linewidth=0)
+        ax.plot(dates, mu.to_numpy(), color=col, lw=2.2, path_effects=viz.HALO, zorder=4)
+        ax.text(dates[-1] + pd.Timedelta(days=40), mu.iloc[-1], f"{c + 1}", color=INK["primary"], fontsize=10.5,
+                fontweight="bold", va="center")
+    ax.axhline(100, color=INK["axis"], lw=0.9, zorder=1)
+    ax.set_xlim(dates[0], dates[-1] + pd.Timedelta(days=120))
+    ax.set_ylabel("Price index (Dec 2019 = 100)")
+    viz._heading(ax, "Average path of each group", "Line = group mean, band = ±1 standard deviation")
+    h = [Line2D([0], [0], color=CLUSTER_COLORS[c], lw=2.4, label=f"Group {c + 1} (n = {int((labels == c).sum())})")
+         for c in range(k)]
+    ax.legend(handles=h, loc="upper left", frameon=False, fontsize=9.5)
+    ax = axes[2]
+    comp = pd.crosstab(labels, dd.loc[labels.index, "metro_short"], normalize="index").reindex(columns=METRO_ORDER) * 100
+    cmap = LinearSegmentedColormap.from_list("seq", SEQ_BLUE)
+    ax.imshow(comp.to_numpy(), cmap=cmap, norm=Normalize(0, 60), aspect="auto")
+    for i in range(comp.shape[0]):
+        for j in range(comp.shape[1]):
+            v = comp.iat[i, j]
+            ax.text(j, i, f"{v:.0f}", ha="center", va="center", fontsize=9.5, color="white" if v > 28 else INK["primary"])
+    ax.set_xticks(range(len(METRO_ORDER)))
+    ax.set_xticklabels(METRO_ORDER, fontsize=9, rotation=45, ha="right")
+    ax.xaxis.tick_bottom()
+    ax.set_yticks(range(comp.shape[0]))
+    ax.set_yticklabels([f"Group {i + 1}" for i in range(comp.shape[0])])
+    ax.grid(False)
+    for s in ax.spines.values():
+        s.set_visible(False)
+    ax.tick_params(length=0)
+    viz._heading(ax, "Metro mix of each group", "% of each group's ZIPs, by metro")
+    fig.suptitle(f"Grouping ZIP codes by the shape of their price path (k-means, {len(P)} ZIPs)", x=0.012, y=0.995, ha="left",
+                 fontsize=14, fontweight="bold")
+    fig.tight_layout(rect=(0, 0, 1, 0.92), w_pad=2.2)
+    return fig, comp
+
+
+def cluster_profile(d: pd.DataFrame, acs: pd.DataFrame, labels: pd.Series) -> pd.DataFrame:
+    """Medians of what each group's ZIPs look like."""
+    x = d.set_index("zip").loc[labels.index].join(
+        acs.set_index("zip")[["wfh_share_2019", "median_hh_income_2019", "sf_detached_share_2019", "pop_2019"]])
+    x["cluster"] = labels + 1
+    x["end_index"] = np.nan
+    g = x.groupby("cluster").agg(
+        zips=("metro_short", "size"),
+        median_distance_mi=("dist_cityhall_mi", "median"),
+        median_value_dec2019=("level_Dec 2019", "median"),
+        median_income=("median_hh_income_2019", "median"),
+        median_wfh_share=("wfh_share_2019", "median"),
+        median_sf_detached=("sf_detached_share_2019", "median"),
+        growth_pre2020=("ann_cum_2017_2019", "median"),
+        growth_2020_22=("ann_cum_2019_2022", "median"),
+        growth_2023_25=("ann_cum_2022_2025", "median"))
+    return g
+
+
+# ============================================================================== 2.6 robustness
+CORE_FLAGS = ["zhvi_incomplete", "metro_col_only", "acs_baseline_missing", "wfh_unreliable"]
+
+
+def flag_free(d: pd.DataFrame, flags: pd.DataFrame) -> pd.DataFrame:
+    """Balanced-sample ZIPs with none of the four flags that affect the price analysis (the two ZORI flags are about
+    rents and are left out of this definition)."""
+    f = flags.set_index("zip")[CORE_FLAGS].any(axis=1).rename("any_flag")
+    x = d.merge(f, left_on="zip", right_index=True, how="left")
+    x["any_flag"] = x["any_flag"].fillna(False).astype(bool)
+    return x
+
+
+def robustness_table(d: pd.DataFrame, flags: pd.DataFrame, distance="dist_cityhall_mi") -> pd.DataFrame:
+    """OLS gradient slopes per metro on (a) the balanced sample and (b) the flag-free subset."""
+    x = flag_free(d, flags)
+    rows = []
+    for metro in METRO_ORDER:
+        g = x[(x["metro_short"] == metro) & x["balanced"]]
+        for sample, gs in (("all ZIPs", g), ("flag-free ZIPs", g[~g["any_flag"]])):
+            for _, lab in LEVEL_DATES:
+                f = viz.ols(gs[distance], np.log(gs[f"level_{lab}"]))
+                rows.append((metro, sample, "level", lab, viz._pct_per_10mi(f["slope"]), viz._pct_per_10mi(f["lo"]),
+                             viz._pct_per_10mi(f["hi"]), f["n"]))
+            for col, (_, _, _, name) in GROWTH.items():
+                f = viz.ols(gs[distance], gs[f"ann_{col}"])
+                rows.append((metro, sample, "growth", name, 10 * f["slope"], 10 * f["lo"], 10 * f["hi"], f["n"]))
+    return pd.DataFrame(rows, columns=["metro", "sample", "measure", "panel", "slope", "lo", "hi", "n"])
+
+
+def robustness_figure(tab: pd.DataFrame):
+    """Figure 2.6a: the gradient slope on all ZIPs vs. only ZIPs with no data-quality flag, per metro."""
+    fig, axes = plt.subplots(2, 3, figsize=(12.2, 8.4), sharey=True)
+    ypos = {m: i for i, m in enumerate(METRO_ORDER)}
+    cols = {"all ZIPs": C1, "flag-free ZIPs": C2}
+    for r, (measure, labels, unit) in enumerate([
+            ("level", [l for _, l in LEVEL_DATES], "Home value: % change per 10 miles"),
+            ("growth", [v[3] for v in GROWTH.values()], "Growth: points per year, per 10 miles")]):
+        for ax, lab in zip(axes[r], labels):
+            for k, (sample, col) in enumerate(cols.items()):
+                t = tab[(tab["measure"] == measure) & (tab["panel"] == lab) & (tab["sample"] == sample)]
+                for _, row in t.iterrows():
+                    y = ypos[row["metro"]] + (k - 0.5) * 0.3
+                    ax.plot([row["lo"], row["hi"]], [y, y], color=col, lw=1.6, solid_capstyle="round", zorder=3)
+                    ax.scatter([row["slope"]], [y], s=42, color=col, edgecolors=INK["surface"], linewidths=1.4, zorder=4)
+            ax.axvline(0, color=INK["muted"], lw=1.0, zorder=1)
+            ax.set_title(lab, loc="left", fontsize=11, fontweight="bold")
+            ax.set_xlabel(unit, fontsize=9.5)
+            ax.set_yticks(range(len(METRO_ORDER)))
+            ax.set_yticklabels(METRO_ORDER)
+            ax.set_ylim(len(METRO_ORDER) - 0.4, -0.6)
+            ax.grid(axis="x", visible=True)
+            ax.grid(axis="y", visible=False)
+    n_all = tab[(tab["sample"] == "all ZIPs") & (tab["panel"] == "Dec 2019")]["n"].sum()
+    n_ff = tab[(tab["sample"] == "flag-free ZIPs") & (tab["panel"] == "Dec 2019")]["n"].sum()
+    h = [Line2D([0], [0], marker="o", color=C1, lw=1.6, markersize=7, label=f"All ZIPs ({int(n_all):,})"),
+         Line2D([0], [0], marker="o", color=C2, lw=1.6, markersize=7, label=f"Flag-free ZIPs ({int(n_ff):,})")]
+    fig.legend(handles=h, loc="lower center", ncol=2, frameon=False, columnspacing=2.0)
+    fig.suptitle("Does dropping flagged ZIPs change the gradient?", x=0.012, y=0.994, ha="left", fontsize=14,
+                 fontweight="bold")
+    fig.text(0.012, 0.955, "Flag-free = no incomplete ZHVI series, no Metro/crosswalk disagreement, no missing 2015–2019 ACS row, and a "
+             "reliable work-from-home share. Dots = OLS slope, whiskers = 95% interval (plain OLS, probably too narrow).",
+             fontsize=9.2, color=INK["secondary"], ha="left", va="top", wrap=True)
+    fig.tight_layout(rect=(0, 0.045, 1, 0.93), h_pad=2.2, w_pad=1.2)
+    return fig
+
+
+def rent_vs_price(d: pd.DataFrame, zorig: pd.DataFrame):
+    """Figure 2.6c: on the ZIPs that have rents at both ends (the fixed ZORI sample), growth against distance for prices
+    (top) and rents (bottom), 2019-22 and 2022-25. Each is measured against its metro median."""
+    z = zorig[["zip", "cum_2019_2022", "cum_2022_2025"]].rename(
+        columns={"cum_2019_2022": "rent_2019_2022", "cum_2022_2025": "rent_2022_2025"})
+    x = d[d["balanced"]].merge(z, on="zip", how="inner")
+    spec = [("ann_cum_2019_2022", "rent_2019_2022", "2020–2022  (Dec 2019 → Dec 2022)"),
+            ("ann_cum_2022_2025", "rent_2022_2025", "2023–2025  (Dec 2022 → Dec 2025)")]
+    for _, rc, _ in spec:
+        yrs = 3
+        x[f"{rc}_ann"] = 100 * ((1 + x[rc] / 100) ** (1 / yrs) - 1)
+    fig, axes = plt.subplots(2, 2, figsize=(12.2, 8.2), sharex=True)
+    xmax = float(np.ceil(x["dist_cityhall_mi"].max() / 10) * 10) + 2
+    out = []
+    for r, (kind, label) in enumerate([("price", "Home values (ZHVI)"), ("rent", "Rents (ZORI)")]):
+        for ax, (pc, rc, title) in zip(axes[r], spec):
+            yc = pc if kind == "price" else f"{rc}_ann"
+            y = x[yc] - x.groupby("metro_short")[yc].transform("median")
+            ylim = _robust_limits(y, pad=0.8)
+            off = viz._scatter(ax, x["dist_cityhall_mi"], y, C1 if kind == "price" else C2, ylim=ylim)
+            f = viz.ols(x["dist_cityhall_mi"], y)
+            viz._lines(ax, x["dist_cityhall_mi"], y, f, xmax, color=BLUE_700)
+            ax.axhline(0, color=INK["axis"], lw=1.0, zorder=1)
+            ax.set_ylim(*ylim)
+            ax.set_xlim(0, xmax)
+            viz._pct_axis(ax)
+            viz._heading(ax, title if r == 0 else "", f"{label}: {signed(10 * f['slope'], 2)} pts/yr per 10 mi  "
+                         f"(95% CI {signed(10 * f['lo'], 2)} to {signed(10 * f['hi'], 2)})  ·  n = {f['n']}")
+            out.append((kind, title, 10 * f["slope"], 10 * f["lo"], 10 * f["hi"], f["r2"], f["n"]))
+        axes[r][0].set_ylabel(f"{label}\nGrowth minus metro median (points per year)", fontsize=9.8)
+    for ax in axes[1]:
+        ax.set_xlabel("Distance from city hall (miles)")
+    n30 = int((x["dist_cityhall_mi"] >= 30).sum())
+    fig.suptitle("Prices vs rents on the same ZIPs: does the rent check support the price pattern?", x=0.012, y=0.994,
+                 ha="left", fontsize=14, fontweight="bold")
+    fig.text(0.012, 0.955, f"Only the {len(x)} ZIPs with rents at both Dec 2019 and Dec 2025 (blue dots = prices, orange = rents; same ZIPs in both "
+             f"rows). Just {n30} are 30+ miles from the center, so this is an inner and middle metro check; it says little about the outer ring. "
+             "Solid = linear fit, dashed = smooth fit.", fontsize=9.2, color=INK["secondary"], ha="left", va="top", wrap=True)
+    h = [Line2D([0], [0], color=BLUE_700, lw=2.0, label="Linear fit (OLS)"),
+         Line2D([0], [0], color=BLUE_700, lw=2.0, ls=(0, (4.5, 2.5)), label="Smooth fit (LOWESS)")]
+    fig.legend(handles=h, loc="lower center", ncol=2, frameon=False)
+    fig.tight_layout(rect=(0, 0.04, 1, 0.925), h_pad=2.6, w_pad=1.4)
+    return fig, pd.DataFrame(out, columns=["series", "period", "slope", "lo", "hi", "r2", "n"])
