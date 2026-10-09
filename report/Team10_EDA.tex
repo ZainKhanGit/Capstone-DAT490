@@ -2,7 +2,10 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
-\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.9}\renewcommand{\textfraction}{0.08}\renewcommand{\floatpagefraction}{0.7}
+% float placement: a page of floats must be 95% full (so a lone tall figure shares a page with text instead of getting its own
+% mostly blank page), and [!tbp] lets figures and tables override the default limits on floats per page.
+\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.9}\renewcommand{\textfraction}{0.08}\renewcommand{\floatpagefraction}{0.95}
+\setcounter{topnumber}{3}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{6}
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{amsmath}
@@ -17,13 +20,13 @@
 \newcounter{fignum}
 \newcounter{tabnum}
 \newcommand{\fig}[3]{%
-  \begin{figure}[tbp]\centering
+  \begin{figure}[!tbp]\centering
   \includegraphics[width=\linewidth]{#1}\par\vspace{2pt}
   \refstepcounter{fignum}\label{#2}%
   {\small\raggedright\textbf{Figure \thefignum.} #3\par}
   \end{figure}}
 \newcommand{\tab}[3]{%
-  \begin{table}[tbp]\centering
+  \begin{table}[!tbp]\centering
   \refstepcounter{tabnum}\label{#2}%
   {\small\raggedright\textbf{Table \thetabnum.} #3\par}\vspace{3pt}
   \input{tables/#1}

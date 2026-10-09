@@ -67,3 +67,10 @@ metro and housing type more than distance. Rents (inner and middle metro only, 4
 - Final files: `report/Team10_EDA.pdf` and `report/Team10_EDA.tex` (27 pages). `report/Team10_EDA_source.zip` bundles the .tex with
   the figures and tables it needs.
 - Both checks pass: `src/audit_checks.py` ran cleanly, `src/check_report_numbers.py` reports FAILED 0 (268 checks).
+
+## 2026-10-11 later still: page layout
+- Large blank bands on some pages were float placement (a lone tall figure forming its own mostly empty page), not a rendering failure.
+  Fix in the preamble: `\floatpagefraction` raised from 0.7 to 0.95 and `[!tbp]` on figures and tables. Wasted vertical space fell from about
+  1,600 pt to 326 pt and the report went from 27 to 25 pages. Relaxing the other float fractions or using `[!htbp]` made it worse (28 to 30 pages).
+- Build log: 0 overfull boxes, 0 missing files, 0 undefined references; 12 harmless underfull notices (narrow table cells and bibliography URLs);
+  one notice that page 11 holds only a float (the 8-inch two-center figure).
