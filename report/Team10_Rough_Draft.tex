@@ -671,18 +671,16 @@ explain which ZIP codes grew faster.
 The exposure coefficient changes sign when controls are added. Without controls, the within-metro slope is $-$0.30 percentage
 points of annual growth in 2020-2022 and $+$0.40 in 2023-2025 per five points of work-from-home share. With income, home value,
 housing type, and distance held fixed, plain OLS gives $+$0.29 and $-$0.35; adding pre-2020 growth changes these to $+$0.26 and
-$-$0.32. A sign that reverses with reasonable controls is not a stable remote-work result.
+$-$0.32. This reversal indicates substantial confounding between work-from-home exposure and other neighborhood characteristics.
+Because the direction changes after the controls are added, neither the raw nor controlled comparison isolates a stable remote-work
+effect.
 
 The BCa spatial intervals exclude zero in the controlled specifications, but the 2020-2022 conclusion changes under symmetric
 and basic intervals, and the 2023-2025 basic interval just includes zero. The mixed model also produces a smaller late-period
 coefficient. We therefore treat the exposure analysis as evidence of confounding, not as evidence that remote work increased or
 decreased a ZIP code's price growth. Work-from-home share is strongly correlated with income and initial home value, and the data do
-not supply an exogenous source of exposure.
-
-The reversal across specifications indicates substantial confounding between work-from-home exposure and other neighborhood
-characteristics. Because the direction changes after income, value, housing type, distance, and prior growth are held fixed, neither
-the raw nor controlled comparison isolates a stable remote-work effect. Variance-inflation diagnostics remain below conventional
-warning levels, so this instability is not simply a numerical failure caused by nearly duplicate columns.
+not supply an exogenous source of exposure. Variance-inflation diagnostics remain below conventional warning levels, so the sign
+change is not simply a numerical failure caused by nearly duplicate columns.
 
 Bootstrap shape also affects the strength of the claim. The resampled exposure coefficients are asymmetric, with their long side
 generally extending away from zero. Percentile and BCa intervals exclude zero in all four controlled comparisons, while symmetric
@@ -723,11 +721,6 @@ score 0.34-0.46 and 0.26-0.34 under random five-fold splits. Random mixing there
 portable than they are. Place and housing variables provide most of the usable signal. Adding work-from-home share changes held-out
 $R^2$ by no more than 0.02 in either direction for any model. Its permutation importance is near zero, while initial home value and
 pre-2020 growth matter more in the late period.
-
-The error scale reinforces the modest interpretation. Predicting the training mean produces an RMSE of about 2.27 percentage
-points per year for 2020-2022 and 2.05 for 2023-2025. The fitted models lower those errors to roughly 1.97-2.06 and 1.90-1.95.
-These are improvements, but not enough to support precise ZIP-level forecasts. Ridge, lasso, forest, and boosting also score
-fairly close to one another, suggesting that additional nonlinear flexibility does not uncover a large hidden structure.
 
 The ablation sequence directly addresses Sub-Question 2. Place and housing variables already produce most of the held-out score;
 income and professional occupation share add some information; work-from-home share adds essentially none; and pre-2020 growth is
