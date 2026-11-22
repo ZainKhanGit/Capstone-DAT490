@@ -43,6 +43,12 @@ tab.to_csv(T / "m_event_study.csv", index=False)
 summ.to_csv(T / "m_event_summary.csv", index=False)
 save(VM.event_study_figure(tab), "m_1_event_study")
 
+# Sensitivity check requested during the rough-draft review: rerun the pooled model and
+# spatial bootstrap on the seven metros other than Atlanta.
+tab_no_atlanta, summ_no_atlanta = M.event_study(gd[gd["metro_short"] != "Atlanta"].copy(), B=1000)
+tab_no_atlanta.to_csv(T / "m_event_study_excluding_atlanta.csv", index=False)
+summ_no_atlanta.to_csv(T / "m_event_summary_excluding_atlanta.csv", index=False)
+
 # 2. mixed model
 M.mixed_model(xd).to_csv(T / "m_mixed_model.csv", index=False)
 

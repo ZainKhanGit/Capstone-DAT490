@@ -67,10 +67,12 @@ for _, r in e.iterrows():
     rows.append([nm, f"{int(r['n'])}", num(r["2022"], 2, True), ci(r["2022 lo"], r["2022 hi"]),
                  num(r["2025"], 2, True), ci(r["2025 lo"], r["2025 hi"]),
                  num(r["2025 minus 2022"], 2, True), ci(r["diff lo"], r["diff hi"])])
-# This is an algebraic sensitivity calculation from the saved metro weights,
-# not a newly bootstrapped model.  Its missing interval is therefore explicit.
-rows.insert(1, ["Pooled, excluding Atlanta", "880", "+0.09", "not estimated",
-                "+0.09", "not estimated", "0.00", "not estimated"])
+# This sensitivity model is re-estimated and spatially bootstrapped after Atlanta is removed.
+no_atlanta = pd.read_csv(T / "m_event_summary_excluding_atlanta.csv").iloc[0]
+rows.insert(1, ["Pooled, excluding Atlanta", f"{int(no_atlanta['n']):,}",
+                num(no_atlanta["2022"], 2, True), ci(no_atlanta["2022 lo"], no_atlanta["2022 hi"]),
+                num(no_atlanta["2025"], 2, True), ci(no_atlanta["2025 lo"], no_atlanta["2025 hi"]),
+                num(no_atlanta["2025 minus 2022"], 2, True), ci(no_atlanta["diff lo"], no_atlanta["diff hi"])])
 write("t_m_event_post.tex", ["Scope", "ZIPs", "2022", "95\\% interval", "2025", "95\\% interval",
                              STACK("2025 minus", "2022"), "95\\% interval"], rows,
       "lrrrrrrr", pad=2.2)

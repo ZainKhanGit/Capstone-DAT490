@@ -412,10 +412,9 @@ slopes, while Phoenix is better described by a curved surface. We therefore keep
 followed by the two alternate-center checks. Positive values mean ZIP codes farther from the center appreciated faster. Comparing
 the three periods separates a pre-existing pattern from a pandemic shift and a later reversal.}
 
-Figure~\ref{fig:slopes} makes the cross-metro differences visible. Atlanta moves from a negative pre-2020 growth slope to positive
-slopes in both later periods. Measured from Tampa city hall, Tampa has a positive 2020-2022 slope but a negative 2023-2025 slope,
-which is a reversal rather than persistence. Nashville already has an outward growth pattern before 2020, so its later result cannot be read as a new pandemic
-break. The remaining estimates are smaller, less stable, or sensitive to the choice of center.
+Figure~\ref{fig:slopes} reinforces the substantial cross-metro heterogeneity. Atlanta shows the clearest persistent outward shift.
+Tampa reverses after 2022 when distance is measured from Tampa city hall, while Nashville's outward pattern begins before 2020,
+weakening a pandemic interpretation. The remaining estimates are smaller, less stable, or sensitive to the choice of center.
 
 \figH{2_3b_level_quintile_maps}{fig:valuemaps}{December 2019 home values grouped into fifths within each metro. Metro panels are in
 alphabetical order. The maps show whether expensive ZIP codes form a ring around the center or a directional patch that a single
@@ -433,19 +432,12 @@ their own metro.}
 
 \subsection{How the exploratory analysis changed the design}
 
-The exploratory work changed the formal analysis in four ways. First, the large differences across metros required metro-specific
-estimates rather than one pooled line. Second, nearby ZIP codes moved together, so intervals that treat every ZIP code as independent
-would be too narrow. Third, work-from-home share overlapped strongly with income and initial home value, which required nested
-controls and a separate prediction test. Fourth, the first cluster solution had only modest separation, so we compare several
-clustering methods instead of treating one set of groups as a discovered truth.
+The exploratory analysis revealed substantial cross-metro heterogeneity, spatial dependence among nearby ZIP codes, overlap between
+work-from-home exposure and neighborhood characteristics, and weak separation among the initial price-path clusters. These findings
+motivated metro-specific estimates, spatial inference, nested exposure models, and comparisons across clustering methods.
 
-The maps also changed how we interpret distance. If high-value ZIP codes form a ring, distance is a reasonable summary. If they lie
-mainly north, east, or along one development corridor, the same slope averages a directional pattern. We use the plots to diagnose
-that problem, not to select the result we prefer.
-
-These comparisons remain descriptive because they do not hold constant permanent ZIP differences or metro-wide annual shocks. The
-next section explains the models used to test whether the gradient changed after 2019, whether work-from-home exposure adds a stable
-signal, and whether the price paths form distinct groups.
+The maps also show that distance is an imperfect summary when high-value ZIP codes follow directional corridors or multiple centers
+rather than concentric rings. Because these comparisons remain descriptive, the next section introduces the formal models.
 
 \section{Methods}
 
@@ -636,9 +628,9 @@ effect of the pandemic or remote work.
 \tabH{t_m_event_pre}{tab:eventpre}{Event-study coefficients for the pre-period and early post-period years. Every point estimate is
 shown with its spatial block-bootstrap interval so the pre-trend assessment can be checked directly.}
 
-\tabH{t_m_event_post}{tab:event}{Event-study coefficients for 2022 and 2025 and their change. The pooled estimate excluding Atlanta
-is an algebraic point estimate from the saved metro weights; it has no bootstrap interval because the model was not resampled after
-Atlanta was removed. All other intervals come from the spatial block bootstrap.}
+\tabH{t_m_event_post}{tab:event}{Event-study coefficients for 2022 and 2025 and their change. All intervals come from the spatial
+block bootstrap. The pooled estimate excluding Atlanta re-estimates the model and resamples the 880 ZIP codes in the other seven
+metros.}
 
 The change between 2022 and 2025 is as important as either endpoint. A coefficient that rises after 2022 suggests continued
 relative gains farther out; a stable coefficient suggests persistence without further widening; and a decline suggests partial
@@ -662,9 +654,9 @@ having different permanent price levels, and metro-by-year effects show that it 
 faster than another. At the same time, the formal model confirms the EDA's warning about heterogeneity. A pooled coefficient is not
 the effect experienced by a representative metro, because no single metro reproduces the pooled trajectory exactly.
 
-The leave-Atlanta calculation makes that influence concrete. Applying the saved pooled-model weights to the seven remaining metro
-coefficients gives about $+$0.09 in both 2022 and 2025, compared with $+$0.48 and $+$1.15 in the eight-metro model. This is a point
-estimate only, not a new inferential result, because the spatial bootstrap was not rerun after excluding Atlanta.
+The leave-Atlanta calculation makes that influence concrete. Re-estimating the model on the seven remaining metros gives about
+$+$0.09 in both 2022 and 2025, compared with $+$0.48 and $+$1.15 in the eight-metro model. The block intervals span zero for 2022,
+2025, and the change between them. The pooled outward shift is therefore not supported after Atlanta is removed.
 
 \tabH{t_m_weights}{tab:eventweights}{Metro weights in the pooled event-study coefficient. Metros are listed alphabetically. The
 weights sum to one and show that the pooled estimate reflects both the number of ZIP codes and the spread of distance within each
@@ -687,17 +679,10 @@ coefficient. We therefore treat the exposure analysis as evidence of confounding
 decreased a ZIP code's price growth. Work-from-home share is strongly correlated with income and initial home value, and the data do
 not supply an exogenous source of exposure.
 
-The reversal across specifications is substantively revealing. In the raw within-metro comparison, high-work-from-home ZIP codes
-grew more slowly during 2020-2022. Once income, value, housing type, and distance are held fixed, the coefficient becomes positive.
-That change implies that high-exposure ZIP codes also carried characteristics associated with slower early-pandemic growth. In the
-later period the raw coefficient is positive but the controlled coefficient is negative, showing a different balance of the same
-overlapping characteristics. Neither comparison isolates a pure remote-work channel.
-
-Adding each ZIP's pre-2020 growth changes the coefficients only modestly in the fully controlled models, but the exploratory model
-showed that prior growth explained much of the raw association. This difference is expected: the fully controlled specification
-already absorbs several correlates of earlier growth. Variance-inflation diagnostics remain below conventional warning levels, so
-the instability is not simply a numerical failure caused by nearly duplicate columns. It reflects meaningful overlap in what the
-variables represent.
+The reversal across specifications indicates substantial confounding between work-from-home exposure and other neighborhood
+characteristics. Because the direction changes after income, value, housing type, distance, and prior growth are held fixed, neither
+the raw nor controlled comparison isolates a stable remote-work effect. Variance-inflation diagnostics remain below conventional
+warning levels, so this instability is not simply a numerical failure caused by nearly duplicate columns.
 
 Bootstrap shape also affects the strength of the claim. The resampled exposure coefficients are asymmetric, with their long side
 generally extending away from zero. Percentile and BCa intervals exclude zero in all four controlled comparisons, while symmetric
@@ -752,19 +737,14 @@ do not transfer across metros, though the design does not test that mechanism di
 
 \tab{t_m_cv}{tab:cv}{Prediction scores with all features. Errors are percentage points of annual metro-relative growth.}
 
-The model-by-model results show why the prediction finding is described as modest rather than unsuccessful. For 2020-2022, ridge
-has the best held-out-metro $R^2$ at 0.25 and an RMSE of 1.97, while gradient boosting is close at 0.24 and 1.99. Random forest has
-the highest random-split score, 0.45, but the lowest held-out-metro score, 0.18. That gap is evidence that the forest learns patterns
-that work among geographically mixed ZIP codes but do not transfer as well to a new market. For 2023-2025, ridge, random forest,
-and gradient boosting all have a held-out-metro $R^2$ of 0.14, while lasso is 0.10. Their RMSE values differ by only 0.05 percentage
-points per year. The practical conclusion is not that one algorithm should replace the others. It is that model choice cannot
-overcome the limited amount of transferable information in the available ZIP-level features.
+Model choice matters less than validation design. The clearest example is the early-period random forest, whose $R^2$ falls from
+0.45 under random five-fold validation to 0.18 when an entire metro is held out. Ridge, lasso, random forest, and gradient boosting
+otherwise produce relatively similar held-out errors, suggesting that additional model flexibility cannot overcome the limited
+amount of transferable ZIP-level information.
 
-These scores also put the remaining error in context. An $R^2$ of 0.25 means that three quarters of the variation around the
-training mean remains unexplained when a new metro is held out. In the later period, roughly 86 to 90 percent remains unexplained.
-The models can support broad screening or scenario comparison, but their errors are too large for precise neighborhood forecasts
-or investment decisions. This limitation is important because a visually convincing fitted relationship inside the sample can
-still have little value when the same model is applied somewhere it was not trained.
+The remaining error is substantial. Even the best early-period held-out $R^2$ of 0.25 leaves three quarters of the variation
+unexplained, while the later-period models leave roughly 86 to 90 percent unexplained. The models capture broad patterns but are not
+accurate enough for precise ZIP-level forecasting or investment decisions.
 
 Permutation importance points to initial home value, housing mix, population, and prior growth as the leading features, although
 their importance varies widely across the held-out metros. Work-from-home importance is approximately $+$0.05 in the early period
@@ -870,10 +850,8 @@ change from 2022 to 2025 is only $+$0.17, with an interval from $-$1.35 to $+$1.
 show a nonzero post-2022 change in price, rent, or their difference. The rent evidence is useful as a coverage-limited check, not as
 support for a mortgage-rate explanation.
 
-Across these checks, the main findings survive, but their scope becomes narrower: the pooled outward change is meaningful as an
-average, metro patterns remain heterogeneous, work-from-home exposure is not a portable ZIP-level signal, and the price paths are
-better described as continuous variation than discrete types. The Discussion interprets those findings together rather than
-treating any single model as the final answer.
+Together, these robustness checks narrow the scope of the main findings without overturning them. The Discussion considers their
+implications across the three research questions.
 
 \section{Discussion}
 
@@ -1004,8 +982,9 @@ case.
 
 The next steps can be prioritized by how directly they test the main conclusion:
 \begin{enumerate}
-\item Re-estimate the event study without Atlanta, with full uncertainty intervals, and compare the linear distance measure with
-distance bands. This would show whether the pooled result depends on one metro or on the assumption of a straight-line gradient.
+\item Compare the re-estimated event study without Atlanta with a distance-band specification. The completed spatial bootstrap
+shows that the linear pooled result is not distinguishable from zero without Atlanta; distance bands would test whether that
+conclusion depends on the assumption of a straight-line gradient.
 \item Replace city-hall distance with distance or travel time to measured employment centers using workplace job counts. This is
 the most direct response to the polycentric patterns found in Dallas-Fort Worth, Phoenix, and Tampa-St. Petersburg.
 \item Build an occupation-based remote-work-capacity measure and compare it with the residential work-from-home share. The two

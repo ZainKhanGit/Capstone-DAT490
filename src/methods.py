@@ -79,7 +79,9 @@ def event_study(gd, ref=2019, B=1000):
     Y = (L[yrs].to_numpy() - L[[ref]].to_numpy())
     x = d["dist_nearest_mi"].to_numpy() / 10
     out, boots = [], {}
-    scopes = [("All eight (within-metro)", np.ones(len(d), bool))] + [(m, (d["metro_short"] == m).to_numpy()) for m in METROS]
+    available_metros = [m for m in METROS if (d["metro_short"] == m).any()]
+    pooled_name = "All eight (within-metro)" if len(available_metros) == 8 else f"All {len(available_metros)} (within-metro)"
+    scopes = [(pooled_name, np.ones(len(d), bool))] + [(m, (d["metro_short"] == m).to_numpy()) for m in available_metros]
     for name, sel in scopes:
         Ys, xs, ms, bl = Y[sel], x[sel], d["metro_short"].to_numpy()[sel], d["block"].to_numpy()[sel]
         beta = _slopes(Ys, xs, ms)
