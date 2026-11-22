@@ -2,6 +2,8 @@
 
 This appendix identifies the code used to build the capstone analysis, figures, tables, and numerical checks. Raw Zillow downloads are not stored in the repository. Their source details are recorded in `docs/SOURCES.md`, and the raw files can be placed in `data/raw/` before running the pipeline.
 
+Team repository: <https://github.com/ZainKhanGit/Capstone-DAT490>
+
 ## Reproduction sequence
 
 1. Install the packages listed in `requirements.txt`.
