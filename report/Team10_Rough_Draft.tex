@@ -601,9 +601,7 @@ The repository contains a numbered data pipeline, two executable notebooks, save
 automated numerical checks. Source-specific cleaning occurs before analysis, and the EDA and formal models use the same cleaned
 files. Figures and tables are generated from saved analytical outputs rather than manually re-entered values. This arrangement
 creates an auditable chain from raw source, to cleaned panel, to model result, to the number or graphic shown in the paper.
-The complete code appendix, notebooks, source files, and numerical audit scripts are available in the team repository at
-\url{https://github.com/ZainKhanGit/Capstone-DAT490}. A file-level reproduction guide is provided in
-\texttt{CODE\_APPENDIX.md}.
+Appendix C provides the team repository link and a file-level guide to the code used for the analysis.
 
 Before submission, the complete pipeline, report-table builders, both notebooks, and both numerical audit scripts are rerun in
 sequence. The purpose is not only computational convenience. A single reproducible state prevents a revised model from appearing
@@ -1138,6 +1136,20 @@ The Tampa-St. Petersburg panels lead to the same design lesson but a different s
 both individual distances and the later-period conclusion. The slope from Tampa city hall changes sign, while the nearer-center
 slope is close to zero. A stronger follow-up would use travel time to several employment centers and would test whether those
 centers changed between 2019 and 2025, rather than assuming that either city hall represents every household's destination.
+
+\section{Code Appendix}
+
+The complete project code is available in the team repository.
+\begin{center}
+\url{https://github.com/ZainKhanGit/Capstone-DAT490}
+\end{center}
+The repository contains the numbered data pipeline, the exploratory and methods notebooks, model-estimation files, figure and
+table builders, and numerical audit scripts. The root file
+\path{CODE_APPENDIX.md} gives the reproduction sequence and maps each part of the paper to its main code files.
+
+Raw third-party Zillow downloads are not stored in the repository. Their source and retrieval details are recorded in
+\texttt{docs/SOURCES.md}. Census data can be rebuilt through the documented API step, and the cleaned analytical files are
+included so that the reported results can be inspected without redistributing the complete raw downloads.
 
 \clearpage
 \footnotesize
