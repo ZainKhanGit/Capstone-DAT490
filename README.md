@@ -1,22 +1,33 @@
-# Remote Work and Urban Housing Prices — Team 10
+# Remote Work and Urban Housing Prices - Team 10
 
 Reproducible data pipeline, exploratory analysis, formal modeling, and written reports for the ASU DAT 490 capstone project. We ask whether the
-flattening of the within-metro house-price gradient seen in 2020–22 persisted through 2025 in eight
-Sun Belt metros (Phoenix, Austin, Atlanta, Dallas, Tampa, Charlotte, Nashville, Las Vegas), using
+flattening of the within-metro house-price gradient seen in 2020-22 persisted through 2025 in eight
+Sun Belt metros (Atlanta, Austin, Charlotte, Dallas, Las Vegas, Nashville, Phoenix, and Tampa), using
 ZIP-level Zillow prices and rents joined to Census data. The plan and literature review are in `docs/`.
 
 See [`CODE_APPENDIX.md`](CODE_APPENDIX.md) for the reproduction sequence and a file-by-file map from the paper to the analysis code.
+
+## Current deliverables
+
+- [`report/Team10_Rough_Draft.pdf`](report/Team10_Rough_Draft.pdf): complete capstone rough draft
+- [`report/Team10_Rough_Draft.tex`](report/Team10_Rough_Draft.tex): editable LaTeX source
+- [`report/Team10_Methodology.pdf`](report/Team10_Methodology.pdf): earlier methodology submission
+- [`notebooks/01_eda.ipynb`](notebooks/01_eda.ipynb): exploratory analysis notebook
+- [`notebooks/02_methods.ipynb`](notebooks/02_methods.ipynb): formal analysis notebook
+
+The root `main.tex` file is the original team template retained from the repository setup. The current paper is the rough-draft file in `report/`.
 
 ## Folder map
 
 | Folder | What is in it |
 |---|---|
 | `src/` | The pipeline: eight numbered steps, `config.py`, and `run_pipeline.py` |
-| `notebooks/` | `01_eda.ipynb`, the exploratory analysis (the deliverable) |
+| `notebooks/` | Exploratory and formal methods notebooks |
 | `data/raw/` | Downloaded inputs (not in git; see `docs/SOURCES.md`) |
 | `data/reference/` | Hand-compiled city-hall coordinates, with a source for each |
 | `data/clean/` | Pipeline outputs (rebuilt by the pipeline) |
-| `outputs/logs/` | Data-quality reports, one per step; Section 1 of the EDA quotes these |
+| `outputs/` | Data-quality logs, saved model results, tables, and full-resolution figures |
+| `report/` | Current and prior reports, LaTeX tables, and report-ready figures |
 | `docs/` | Project plan, literature review, `SOURCES.md` (provenance of every file), `STATUS.md` (where we left off, next steps) |
 
 ## Set up
@@ -46,20 +57,23 @@ export CENSUS_API_KEY="your key"   # never commit it; request one at https://api
 
 Then open `notebooks/01_eda.ipynb` and pick the "Python 3 (capstone venv)" kernel.
 
-## The report
+## Build the reports
 
-`report/Team10_EDA.pdf` is the written deliverable (LaTeX source `report/Team10_EDA.tex`; figures in `report/figures/`,
-downsampled copies of `outputs/figures/`). To rebuild after changing the pipeline or figures:
+The current capstone paper is `report/Team10_Rough_Draft.pdf`, with source in `report/Team10_Rough_Draft.tex`. Figures in
+`report/figures/` are report-ready copies of the full-resolution graphics in `outputs/figures/`. To rebuild the analytical outputs:
 
 ```bash
-./.venv/bin/python src/audit_checks.py                   # extra checks behind the interpretive claims (tables in outputs/tables/audit_*.csv)
-.venv/bin/python report/make_tables.py                 # tables from data/clean and outputs/tables
-cd report && xelatex Team10_EDA.tex && xelatex Team10_EDA.tex   # run twice for cross-references
+python src/audit_checks.py
+python src/make_method_results.py
+python src/make_figures.py
+python src/make_method_figures.py
+python report/make_tables.py
+python report/make_method_tables.py
+cd report && xelatex Team10_Rough_Draft.tex && xelatex Team10_Rough_Draft.tex
 ```
 
-Before submitting, `.venv/bin/python src/check_report_numbers.py` recomputes every number the report states from the data and
-checks that it appears in `report/Team10_EDA.tex` (it exits with an error if any check fails). `docs/interpretation_audit.md`
-lists each interpretive claim with the number behind it.
+Before submitting, `src/check_report_numbers.py` and `src/check_method_numbers.py` recompute the report's audited numerical claims.
+`docs/interpretation_audit.md` preserves the earlier EDA interpretation audit; the current rough draft supersedes its proposed wording.
 
 ## Fonts
 

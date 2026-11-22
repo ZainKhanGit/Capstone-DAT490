@@ -3,6 +3,8 @@ title: "Interpretation audit of Sections 2.2 to 2.6"
 subtitle: "Team 10 EDA report, version dated October 11, 2026"
 ---
 
+> Historical project record: this audit was prepared for the earlier EDA report. The current capstone rough draft incorporates later formal models, corrected distance definitions, and additional robustness checks. Use `report/Team10_Rough_Draft.pdf` and `docs/STATUS.md` for the current conclusions.
+
 # Status
 
 **All proposals in this list were applied to the report (version dated October 11, 2026), plus the two-center price-level fix.** The list below is kept as the record of what each sentence rested on and what changed. After applying it, the report's numbers were re-checked by `src/check_report_numbers.py` (267 checks: each number is recomputed from the data and confirmed to appear in the report text).
