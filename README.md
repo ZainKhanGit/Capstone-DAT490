@@ -1,9 +1,11 @@
 # Remote Work and Urban Housing Prices — Team 10
 
-Data pipeline and exploratory analysis for the capstone project (ASU, DAT 490). We ask whether the
+Reproducible data pipeline, exploratory analysis, formal modeling, and written reports for the ASU DAT 490 capstone project. We ask whether the
 flattening of the within-metro house-price gradient seen in 2020–22 persisted through 2025 in eight
 Sun Belt metros (Phoenix, Austin, Atlanta, Dallas, Tampa, Charlotte, Nashville, Las Vegas), using
 ZIP-level Zillow prices and rents joined to Census data. The plan and literature review are in `docs/`.
+
+See [`CODE_APPENDIX.md`](CODE_APPENDIX.md) for the reproduction sequence and a file-by-file map from the paper to the analysis code.
 
 ## Folder map
 
@@ -64,3 +66,9 @@ lists each interpretive claim with the number behind it.
 The report is set in Latin Modern (body 10.9 pt, captions 10 pt, tables 9 pt, headings 12 to 17 pt). Figures are drawn in Latin Modern
 Roman too (read from the TinyTeX fonts, with a DejaVu Serif fallback; sizes are scaled in `src/viz.py` by `TEXT_SCALE`), so figure
 text matches the page. All tables use one size and are not scaled to fit.
+
+## Methodology submission (second assignment)
+
+`report/Team10_Methodology.pdf` describes the planned methods with first results; `notebooks/02_methods.ipynb` reproduces them
+(code in `src/methods.py`). Regenerate with `.venv/bin/python src/make_method_results.py` (about 10 minutes), then
+`.venv/bin/python report/make_method_tables.py` and `xelatex` twice in `report/`. `src/check_method_numbers.py` must report FAILED 0.

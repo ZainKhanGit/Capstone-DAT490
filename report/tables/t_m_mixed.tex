@@ -1,0 +1,11 @@
+\footnotesize\setlength{\tabcolsep}{1.8pt}
+\begin{tabular}{llrrrrrr}
+\toprule
+Outcome & Controls & \shortstack[r]{OLS\\coefficient} & \shortstack[r]{Bootstrap\\SE} & \shortstack[r]{Plain OLS\\(HC1)} & \shortstack[r]{OLS, clustered\\by county} & \shortstack[r]{OLS, spatial block\\bootstrap (BCa)} & \shortstack[r]{Mixed model\\(county effect)} \\
+\midrule
+2020-22 & Controls & +0.29 & 0.163 & [0.00, +0.58] & [+0.05, +0.54] & [+0.06, +0.64] & +0.31 [+0.16, +0.46] \\
+2020-22 & + pre-2020 & +0.26 & 0.151 & [$-$0.01, +0.53] & [+0.04, +0.47] & [+0.04, +0.58] & +0.26 [+0.11, +0.40] \\
+2023-25 & Controls & $-$0.35 & 0.131 & [$-$0.54, $-$0.15] & [$-$0.57, $-$0.13] & [$-$0.64, $-$0.13] & $-$0.15 [$-$0.29, $-$0.01] \\
+2023-25 & + pre-2020 & $-$0.32 & 0.123 & [$-$0.51, $-$0.13] & [$-$0.54, $-$0.10] & [$-$0.58, $-$0.11] & $-$0.12 [$-$0.26, +0.02] \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,407 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.9}\renewcommand{\textfraction}{0.08}\renewcommand{\floatpagefraction}{0.95}
+\setcounter{topnumber}{3}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{6}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{authblk}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\graphicspath{{figures/}}
+
+\newcounter{fignum}
+\newcounter{tabnum}
+\newcommand{\fig}[3]{%
+  \begin{figure}[!tbp]\centering
+  \includegraphics[width=\linewidth]{#1}\par\vspace{2pt}
+  \refstepcounter{fignum}\label{#2}%
+  {\small\raggedright\textbf{Figure \thefignum.} #3\par}
+  \end{figure}}
+\newcommand{\tab}[3]{%
+  \begin{table}[!tbp]\centering
+  \refstepcounter{tabnum}\label{#2}%
+  {\small\raggedright\textbf{Table \thetabnum.} #3\par}\vspace{3pt}
+  \input{tables/#1}
+  \end{table}}
+
+\title{Methodology:\\ Remote Work and Urban Housing Prices in Eight Sun Belt Metros}
+\author[1]{Sai Krishna Varshith Danda}
+\author[1]{Gayathri Kota}
+\author[1]{Eshitha Chowdary Kaka}
+\author[1]{Zain Khan}
+\affil[1]{Arizona State University, Tempe, AZ 85281, USA}
+\date{October 21, 2026}
+
+\begin{document}
+\maketitle
+
+\paragraph{Summary.} This document picks up where our exploratory analysis stopped. That analysis described the data and
+showed that the pattern we expected (a flatter price-versus-distance gradient after 2020 that stays flat) holds clearly in only
+one of our eight metros, Atlanta. Here we say which methods we will use to test that more carefully, why we chose them, and what
+they show so far. We use three kinds of methods. For the gradient (Sub-Question 1) and for work-from-home exposure
+(Sub-Question 2) we use regression models, with intervals that allow nearby ZIP codes to move together. For the price-path groups
+(Sub-Question 3) we compare three clustering methods. We also fit prediction models (ridge, lasso, random forest and gradient
+boosting), not to forecast prices, but to ask whether work-from-home share helps explain later growth once we hold out whole
+metros. The first results are modest. The gradient keeps widening in Atlanta, the work-from-home coefficient changes sign
+depending on what we control for, and prediction models explain only 10 to 30 percent of the variation in growth within a metro
+they have never seen. The accompanying notebook, \texttt{02\_methods.ipynb}, contains these results and figures. It loads the saved model scores for the
+slowest step and recomputes them when its \texttt{RUN\_FULL\_ML} flag is set, and it needs the \texttt{src/} and
+\texttt{outputs/tables/} folders next to it to run.
+
+\section{What the Exploratory Analysis Told Us About Method}
+
+Five findings from the first report shape the methods below.
+\begin{enumerate}
+\item \textbf{Neighboring ZIP codes are not independent.} We expected this, but we had not measured it. Section~\ref{sec:moran}
+shows a strong spatial correlation. It means ordinary confidence intervals are too narrow and that a random train/test split
+would leak information between neighbors.
+\item \textbf{The result differs by metro.} Atlanta behaves as hypothesized, Austin only late, Tampa flattens and then falls back,
+Charlotte, Dallas and Las Vegas show nothing, and Phoenix goes the other way. So we estimate each metro on its own as well as
+all eight together.
+\item \textbf{Work-from-home share overlaps with income and home value} (correlations of $+$0.66 and $+$0.74 in the first
+report), so a simple comparison cannot separate remote work from neighborhood wealth.
+\item \textbf{Our slopes were plain OLS fits.} The plan promised an event study with fixed effects. This document is where we
+build it.
+\item \textbf{Price-path groups were only weakly separated} (silhouette about 0.36), so we need to check whether the groups
+depend on the clustering method.
+\end{enumerate}
+
+We keep the same sample and definitions as before. Prices are the Zillow Home Value Index \cite{zhvi}. The sample is the 1,082 ZIP
+codes that have a price in every December we use, 2017 to 2025 (the first report's ``balanced sample''). The monthly price paths in
+Section~\ref{sec:cluster} need a value in all 96 months of 2018 to 2025, and 1,072 of those 1,082 have one, so that section uses 10
+fewer ZIP codes (the first report also counted 1,072 ZIP codes with a complete series). Distance is in miles to the nearer city hall
+(two centers for Dallas--Fort Worth and Tampa--St.\ Petersburg), work-from-home share comes from the 2015--2019 American Community
+Survey (ACS) 5-year estimates \cite{acs}, and prices are nominal.
+
+\section{Inferential Statistics}
+
+\subsection{Sub-Question 1: how the gradient changed (event study)}
+\label{sec:event}
+
+\textbf{Model.} For ZIP code $z$ in metro $m$ and year $t$ (we use each December, 2017 to 2025), we estimate
+\begin{equation}
+\ln V_{zt} = \alpha_z + \gamma_{m(z),t} + \sum_{k\neq 2019} \beta_k \cdot \frac{D_z}{10}\cdot \mathbf{1}[t=k] + \varepsilon_{zt},
+\label{eq:event}
+\end{equation}
+where $V_{zt}$ is the home value, $D_z$ is distance to the center in miles, $\alpha_z$ is a ZIP fixed effect and $\gamma_{m,t}$ is a
+metro-by-year effect. The ZIP effects remove anything fixed about a ZIP code (for example, that it is far out and expensive).
+The metro-by-year effects compare each ZIP only with others in its metro in the same year, so a metro-wide event such as the
+2022 jump in mortgage rates does not look like a change in the gradient. December 2019 is the reference year, so $\beta_{2019}=0$.
+Each $\beta_k$ says how much more (or less) a ZIP 10 miles farther out gained, in percent, between December 2019 and December $k$.
+The coefficients for 2017 and 2018 are a check: if they are far from zero, the gradient was already moving before the pandemic.
+
+\textbf{What we ask of it.} Our hypothesis is that $\beta_k$ rises during 2020--22 and then stays up. We therefore look at
+$\beta_{2022}$, at $\beta_{2025}$, and at $\beta_{2025}-\beta_{2022}$ (does the gradient keep widening, hold, or fall back?).
+Because distance is a continuous measure and not a yes/no treatment, the $\beta_k$ are descriptive comparisons between nearer
+and farther ZIP codes. Callaway, Goodman-Bacon and Sant'Anna \cite{callaway} show that such estimates need stronger assumptions
+than the yes/no case to be read causally, and our setting has no untreated comparison group, since the pandemic touched every
+neighborhood. We therefore call the results patterns consistent or inconsistent with a remote-work explanation.
+
+\textbf{Intervals.} Our first report used plain OLS intervals, which treat every ZIP code as an independent draw. We
+replace them with a spatial block bootstrap. We lay a grid of cells about 15 miles across over each metro (235 cells
+in all, between 16 and 44 per metro), redraw whole cells with replacement, refit the model, and take the 2.5th and 97.5th
+percentiles of 1,000 repeats. We use the plain percentile interval here because these intervals turn out to be only mildly lopsided
+(see the check below), whereas the exposure model in Section~\ref{sec:exposure} needs a BCa interval because its intervals are not.
+Neighbors move together inside a cell, so this keeps their dependence. Cameron, Gelbach and Miller
+\cite{cameron} make the related point that ordinary clustered errors are too small when there are few clusters, and that
+resampling helps. We report the ordinary interval next to the bootstrap one so the difference is visible.
+
+\textbf{Planned additions.} (1) A monthly version of equation~\eqref{eq:event} to show timing within a year. (2) The two-center
+versions for Dallas--Fort Worth and Tampa--St.\ Petersburg, using distance to the nearer center and also each center separately.
+(3) The same model on rents (ZORI), as a check on whether post-2022 prices reflect mortgage rates, since rents do not depend on
+financing directly. Mortgage rates are common to everyone in a metro in a given year, so $\gamma_{m,t}$ already absorbs them,
+but they could still hit near and far ZIP codes differently, and the rent comparison is how we will look at that. (4) The sample
+without ZIP codes flagged as unreliable, as in the first report.
+
+\subsection{Sub-Question 2: work-from-home exposure}
+\label{sec:exposure}
+
+\textbf{Model.} For ZIP code $z$ in county $c$ and metro $m$ we regress annualized price growth $g_z$ in a period on the 2015--2019
+work-from-home share (per 5 percentage points), controlling for distance, income, home value in December 2019, the share of
+detached houses and the share of buildings with 20 or more units:
+\begin{equation}
+g_z = \theta_{m(z)} + \beta\,\frac{\mathrm{WFH}_z}{5} + \mathbf{x}_z'\boldsymbol{\delta} + u_{c(z)} + \varepsilon_z,
+\qquad u_c \sim N(0,\sigma_u^2).
+\label{eq:mixed}
+\end{equation}
+Here $\theta_m$ is a metro fixed effect, and $u_c$ is a county random intercept, which is how we handle the nesting of ZIP codes
+inside counties inside metros, a standard multilevel structure for data nested in geography \cite{gelman}. We use fixed effects for the eight metros, because eight is too few to estimate a metro-level variance well, and
+a random effect for the 82 counties. We measure exposure before 2020, following Mondragon and Wieland \cite{mondragon}, so
+that the price changes we want to explain cannot have produced it.
+
+We fit equation~\eqref{eq:mixed} four ways and compare the coefficient $\beta$: plain OLS with robust errors, OLS with errors
+clustered by county, the mixed model, and OLS with the spatial block bootstrap from Section~\ref{sec:event} (grid cells redrawn with
+replacement within each metro). The county random effect is left out of the bootstrap fit, because refitting a mixed model 1,000
+times is slow, and redrawing whole cells already lets neighbors move together. Only the bootstrap deals with spatial correlation.
+The other three intervals are likely too narrow, as Section~\ref{sec:moran} shows, and the mixed model's is narrow because it
+imposes a variance structure, not because the evidence is stronger. We therefore treat the bootstrap interval as the main one and
+the other three as comparisons. For the bootstrap we report the bias-corrected and accelerated (BCa) interval, which adjusts the
+percentile interval for bias and skew (the acceleration comes from a jackknife that leaves out one grid cell at a time).
+Table~\ref{tab:boot} compares it with the percentile, basic and symmetric intervals from the same resamples.
+
+\textbf{Pre-trend control and nested specifications.} Because wealthier ZIP codes were already growing at a different pace before
+2020, we add each ZIP code's own pre-2020 growth as a control. We build the models in steps (controls only, then plus
+pre-2020 growth) so a reader can see which control changes the answer. The variance inflation factors are all below 5 (the
+largest are 4.75 for home value and 4.39 for income), so collinearity alone does not explain a sign change, but we keep
+watching it.
+
+\textbf{Planned additions.} (1) An occupation-based remote-work score in the spirit of Dingel and Neiman \cite{dingel}. The
+occupation shares are already in our ACS pull, and the score would be a second, independent measure of exposure. We left it
+out of the exploratory analysis. (2) Refits without ZIP codes whose work-from-home estimate is unreliable
+(margin of error over half the estimate), because noisy exposure tends to pull the coefficient toward zero. (3) Interactions of
+exposure with distance, to ask whether remote-work exposure matters more in the outer ZIP codes.
+
+\subsection{Is the spatial correlation real? Moran's $I$}
+\label{sec:moran}
+
+Moran's $I$ \cite{moran} measures whether a ZIP code's value looks like the values of its neighbors. We define neighbors as each
+ZIP's eight nearest ZIP codes and test the observed value against 999 random shuffles. We compute it for within-metro growth and
+also for the leftover error (residual) from the control model, since a good model should leave little correlation behind.
+
+\subsection{Initial results}
+
+\textbf{Event study.} Figure~\ref{fig:event} and Table~\ref{tab:event} show the coefficients. Pooled across all eight metros
+(within each metro), the gradient coefficient is $+$0.48 in 2022 (block interval $-$0.35 to $+$1.17) and $+$1.15 in 2025
+(0.07 to 1.98), and the change from 2022 to 2025 is $+$0.67 (0.12 to 1.22). So across the whole sample, farther ZIP codes
+gained more than closer ones after 2019 and the gap did not close. The pooled number hides a lot. In Atlanta the coefficient climbs
+from $+$1.89 in 2022 to $+$4.98 in 2025 (interval 2.40 to 6.46 in 2025), the only metro whose 2025 percentile interval is clearly above
+zero (the robustness note below qualifies this). Tampa is the only metro whose 2022 interval excludes zero ($+$1.51, 0.17 to 2.37), but by 2025 its interval includes zero.
+Phoenix goes down, to $-$1.38 in 2025 (interval $-$3.79 to $+$0.05). Charlotte, Dallas and Las Vegas end 2025 near zero.
+Nashville shows what the pre-trend check is for: its 2017 coefficient is $-$1.92, which means the outer ZIP codes were
+already gaining on the inner ones before 2019.
+
+The interval comparison matters for how we write the results. The block-bootstrap intervals are wider than the ordinary ones by
+a factor of 1.1 (Phoenix) to 3.0 (Atlanta), and 2.1 for the pooled model. A claim that looked solid under the ordinary interval
+is often not solid once neighbors are treated as correlated. Under the block interval, no metro's 2022 coefficient clearly
+separates from zero except Tampa's, which is a weaker statement than our first report made.
+
+We also checked whether the event-study intervals are lopsided the way the exposure intervals turn out to be (below). They are somewhat
+asymmetric (the upper side divided by the lower side has a median of 0.8 and a range of 0.4 to 2.2), but without a consistent
+direction relative to zero, so the lopsidedness is specific to the exposure model. Our main statements also survive a basic or
+symmetric interval built from the same resamples: the pooled 2025 coefficient is above zero, the change from 2022 to 2025 is above
+zero ($+$0.11 to $+$1.21 basic, $+$0.11 to $+$1.22 symmetric), Atlanta's 2025 coefficient is above zero, and Tampa's is still the only 2022
+coefficient that excludes zero. Two borderline 2025 cases do move. Nashville's interval excludes zero under both alternatives (it
+includes zero under the percentile interval, $-$0.16 to $+$2.38), and Tampa's does under the basic interval. Atlanta is therefore the only
+metro that is clear in 2025 under every interval type, and we treat Nashville and Tampa in 2025 as unsettled.
+
+\fig{m_1_event_study}{fig:event}{Event-study coefficients by year, from equation~\eqref{eq:event}. Each point is how much more a
+ZIP code 10 miles farther out gained, in percent, between December 2019 and that December. The blue band is the 95\% interval from
+the spatial block bootstrap. The orange dashes are the ordinary interval that treats ZIP codes as independent.}
+
+\tab{t_m_event}{tab:event}{Gradient coefficient (percent per 10 miles out) relative to December 2019. The 2017 and 2018 columns are the
+pre-trend check. Intervals are from the spatial block bootstrap. The last column divides the block interval's width by the
+ordinary interval's width for 2022.}
+
+\textbf{Work-from-home exposure.} Table~\ref{tab:mixed} shows the work-from-home coefficient for growth in 2020--22 and 2023--25.
+The first thing to notice is that the sign depends on what we hold fixed. In the first report, with no controls, the slope inside a
+metro was $-$0.30 in 2020--22 and $+$0.40 in 2023--25. With income, home value and housing type held fixed, it is the reverse:
+plain OLS gives $+$0.29 per 5 points of work-from-home share in 2020--22 and $-$0.35 in 2023--25. Adding pre-2020 growth moves these
+to $+$0.26 and $-$0.32. Table~\ref{tab:mixed} reports the BCa bootstrap interval, for the reason that follows.
+
+The bootstrap needs care because its intervals are lopsided. The percentile intervals from the 1,000 resamples exclude zero in all
+four specifications, but in each case the side away from zero is about twice as long as the side toward it (the upper side divided
+by the lower side is 1.9 and 2.0 for 2020--22, and 0.49 and 0.52 for 2023--25), and the average of the resampled coefficients sits
+farther from zero than the estimate does. Table~\ref{tab:boot} shows what that does to the verdict. A symmetric interval built from
+the bootstrap standard errors in Table~\ref{tab:mixed} (estimate plus or minus 1.96 standard errors) includes zero for both 2020--22
+specifications ($-$0.03 to $+$0.61 and $-$0.04 to $+$0.55), and a basic (reverse-percentile) interval includes zero in all four,
+although for 2023--25 only just (upper ends $+$0.004 and $+$0.001). The BCa interval, which adjusts the percentile interval for this
+bias and skew, excludes zero in all four ($+$0.06 to $+$0.64 and $+$0.04 to $+$0.58 for 2020--22, $-$0.64 to $-$0.13 and $-$0.58 to $-$0.11
+for 2023--25), and we use it as the main interval. Because the answer for 2020--22 changes with the interval method, we do not treat
+the 2020--22 result as firm. The 2023--25 result is on firmer ground: the percentile, BCa and symmetric intervals exclude zero, and the basic interval
+misses by less than 0.005. BCa is a variant of the percentile interval, so the agreement between those two carries less weight than the
+count suggests, and the basic interval is the one built differently. The result is also still sensitive to the controls. The BCa intervals are 1.0 to 1.3 times as wide as the plain
+robust ones, so for this coefficient the spatial correction changes the width less than it did for the gradient. The mixed model gives a smaller
+2023--25 coefficient ($-$0.15 and $-$0.12 with the pre-trend control), and about 40 to 44 percent of the variance left after the
+controls sits between counties. Its intervals are the narrowest, and we do not count them as extra support. What is not stable is
+the sign across specifications. A coefficient that changes sign when we control for income is not yet a finding about remote work,
+which is why the occupation-based measure and the exposure-by-distance interactions are part of the next step.
+
+\tab{t_m_mixed}{tab:mixed}{Work-from-home coefficient, in percentage points of annual growth per 5 points of 2015--2019
+work-from-home share. The coefficient is the same for the three OLS columns. The bootstrap SE is the standard deviation of the
+1,000 resampled coefficients. The first two intervals and the mixed model are not spatially corrected. The spatial-bootstrap column
+shows the BCa interval (Table~\ref{tab:boot} compares interval types). ``+ pre-2020'' adds each ZIP code's own pre-2020 growth. All models
+include metro fixed effects. Controls are distance, income, home value in December 2019, detached-house share and the share of
+buildings with 20 or more units. Sample: 1,073 ZIP codes in 82 counties.}
+
+\tab{t_m_boot}{tab:boot}{Four 95\% bootstrap intervals for the work-from-home coefficient, all from the same 1,000 resamples.
+Percentile and BCa use percentiles of the resampled coefficients (BCa after a bias and skew adjustment). Basic is the percentile
+interval reflected around the estimate. Symmetric is the estimate plus or minus 1.96 bootstrap standard errors. The last column lists the
+intervals that exclude zero (pct. = percentile, sym. = symmetric). The coefficients are in Table~\ref{tab:mixed}.}
+
+\textbf{Spatial correlation.} Table~\ref{tab:moran} shows that growth is strongly correlated across neighbors (Moran's $I$ of
+0.42 to 0.47 for growth measured against the metro median) and that the controls remove only part of it (0.35 to 0.37 for the
+residuals). Every value is statistically distinguishable from zero at the smallest $p$-value 999 shuffles allow. This confirms that
+independent-error intervals are too narrow here and supports the leave-one-metro-out design in Section~\ref{sec:ml}.
+
+\tab{t_m_moran}{tab:moran}{Moran's $I$ with each ZIP code's eight nearest neighbors. The $p$-value is from 999 random shuffles,
+so 0.001 is the smallest value possible. Residuals come from OLS with the controls in Table~\ref{tab:mixed} and metro fixed effects.}
+
+\section{Data Preparation for Machine Learning}
+\label{sec:prep}
+
+\textbf{Sample and targets.} We use the 1,073 balanced ZIP codes that have a 2015--2019 work-from-home share and complete controls
+(Section~\ref{sec:moran} uses the same sample). The target is annualized growth in 2020--22 or in 2023--25, measured as growth
+minus the median growth of the ZIP code's own metro. We do this because we want to know which ZIP codes outperform their metro, not
+which metro outperformed. It also makes it fair to hold out a whole metro.
+
+\textbf{Features, built in four nested sets.} Set A is place and housing: miles from the center, December 2019 home value, share of
+detached houses, share of buildings with 20 or more units, and population. Set B adds income and the share of management and
+professional jobs. Set C adds work-from-home share. Set D adds each ZIP code's own pre-2020 growth. The steps let us ask, one at a
+time, whether each group of features adds anything. Home value, income and pre-2020 growth are measured against the metro median
+(home value and income in logs), for the same reason the target is.
+
+\textbf{Missing data and transformations.} We use complete cases. Of the 1,082 balanced ZIP codes, 1,076 have a 2015--2019 work-from-home share and 1,073 also have every
+control, so very little is lost. Skewed quantities (value, income, population) are logged.
+The linear models standardize every feature inside the cross-validation loop, so the scaling is learned from training metros only.
+The tree-based models need no scaling.
+
+\textbf{Splitting.} A random split would be easy and wrong here. Because neighboring ZIP codes resemble each other
+(Section~\ref{sec:moran}), a random test ZIP code almost always has a close neighbor in the training set, and the model looks
+better than it will on a new place. Roberts and coauthors \cite{roberts} discuss this problem for spatial and hierarchical data
+and recommend holding out whole blocks. We hold out one metro at a time: train on seven, test on the eighth, repeat eight times. We
+also run an ordinary random 5-fold split on the same models, only to show how much it flatters them.
+
+\section{Unsupervised Learning (Sub-Question 3)}
+\label{sec:cluster}
+
+\textbf{Input.} Each ZIP code's monthly price index from January 2018 to December 2025, with December 2019 set to 100 and the
+logarithm taken (96 values per ZIP code). Only the 1,072 ZIP codes with a value in every one of the 96 months are used. The other 10 of the 1,082
+balanced ZIP codes are missing a month somewhere in the window.
+
+\textbf{Methods.} We compare three clustering methods on the same paths. $k$-means minimizes the squared distance to each group's
+average path. Ward hierarchical clustering builds a tree by merging the two groups whose merger raises within-group spread the
+least, and we cut it at $k$ groups. A Gaussian mixture model assumes each group is a bell-shaped cloud with its own shape. A full
+covariance matrix cannot be estimated from 96 correlated columns, so we fit the mixture on the first five principal components,
+which hold 98\% of the variation in the paths. We choose the number of groups by silhouette width \cite{rousseeuw} (the
+mixture is also compared by BIC), and we measure agreement between methods with the adjusted Rand index (ARI), where 1 means
+identical groups and 0 means agreement no better than chance.
+
+\textbf{Planned additions.} (1) A stability check by refitting on bootstrap samples of ZIP codes (the first report did this for
+$k$-means only). (2) A shape-based distance such as dynamic time warping, which compares the timing of a rise and not just its
+level. (3) A multinomial logistic regression, with the cluster as the outcome and metro, distance, housing type and work-from-home
+share as predictors, to ask what separates the groups. This is the plan's Sub-Question 3 hypothesis, that distance matters less than
+remote-work exposure and housing stock.
+
+\textbf{Initial results.} The first principal component alone holds 71\% of the variation in the paths and the first two hold 86\%. The first one tracks
+how far prices had risen by the end of 2025 (correlation 0.80), so most differences between ZIP codes are differences in how much
+prices rose, and less in the shape of the path.
+Figure~\ref{fig:clusters} and Table~\ref{tab:clusters} show that $k$-means and Ward agree closely (ARI 0.81 for $k=2$ and 3, 0.79 for
+$k=4$), with silhouette widths of 0.36 to 0.37 for $k=2$ to 4 under $k$-means and 0.35 to 0.36 under Ward, dropping to about 0.25 to
+0.28 at $k=5$. That is weak to moderate separation, and it agrees with the first report. The mixture model sees the data
+differently. Its silhouette is near zero and its groups agree little with $k$-means (ARI 0.02 to 0.16 for $k=2$ to 4), and its
+BIC keeps falling as $k$ grows, flattening after $k=4$, so it does not point to a number of groups. Our reading is that the paths form
+one smooth spread and not separate clumps, so any grouping is a convenient slicing and we will describe it that way.
+
+\fig{m_4_cluster_methods}{fig:clusters}{Left: silhouette width by number of groups for three clustering methods on the same 1,072
+price paths (below 0.25 is weak). Right: BIC of the Gaussian mixture, fit on the first five principal components.}
+
+\tab{t_m_clusters}{tab:clusters}{Silhouette width and agreement between methods. ARI is the adjusted Rand index (1 is identical
+groups).}
+
+\section{Supervised Learning}
+\label{sec:ml}
+
+\textbf{Why prediction models at all.} Our questions are about explanation, not forecasting. Breiman \cite{breiman} describes
+two cultures, one that fits a stated statistical model and one that fits a flexible algorithm and studies what it learned. We use
+both on purpose. The regression models of Section 2 assume a form and give interpretable coefficients. The prediction models make
+no such assumption, so they can catch curved or interacting effects the regressions miss. The question we ask of them is whether
+work-from-home share carries information about later growth beyond place, housing and income, and how much of the variation in
+growth any of these features explain in a metro the model has not seen.
+
+\textbf{Models.} Ridge and lasso regression (linear, with penalties that shrink coefficients, the lasso also able to set some to zero),
+a random forest \cite{breiman2} and gradient boosting (two ways of combining many small trees). All come from scikit-learn
+\cite{sklearn}.
+
+\textbf{Tuning and scoring.} Inside each training set we choose hyperparameters by grid search with grouped cross-validation (the
+inner folds also hold out whole metros). The grids are small: four penalties for ridge and lasso, tree depth and leaf size for
+the forest, number of trees and depth for boosting. We then predict the held-out metro. Scores are root mean squared error (RMSE),
+mean absolute error (MAE) and out-of-sample $R^2$, which compares the model with always predicting the average of the training
+metros, so zero means no better than that and negative means worse.
+
+\textbf{Feature selection and importance.} We judge features in three ways: (1) the nested sets A to D, where we look at how the
+held-out score changes as each group is added, (2) the lasso's coefficients, and (3) permutation importance, which shuffles one
+feature in the held-out metro and measures how much the error rises. We prefer permutation importance to the forest's built-in
+importance, which is known to favor features with many distinct values.
+
+\textbf{Ensembles.} Planned: a soft-voting model that averages the predictions of ridge, forest and boosting, and a stacked model
+that learns how to weight them, scored the same way. We expect only a small gain, because the three models score close to each
+other already.
+
+\textbf{Initial results.} Table~\ref{tab:cv} and Figure~\ref{fig:ml} give the scores. Three things stand out.
+\begin{enumerate}
+\item \emph{Prediction is hard, and random splits flatter it.} Predicting the average would give an RMSE of 2.27 points per year
+for 2020--22 growth and 2.05 for 2023--25. With all features, the models reach 1.97 to 2.06 for 2020--22 and 1.90 to 1.95 for 2023--25, a modest improvement. Scored on held-out metros, $R^2$ is 0.18 to 0.25 for
+2020--22 and 0.10 to 0.14 for 2023--25 with all features. The same models score 0.34 to 0.46 and 0.26 to 0.34 under a random
+split. The extra accuracy most likely comes from neighbors and not from understanding, which is the gap we expected from Section~\ref{sec:prep}, although we have not tested that explanation directly.
+\item \emph{Work-from-home share adds nothing we can detect.} Table~\ref{tab:ablation} shows that moving from set B to set C
+changes the held-out $R^2$ by no more than 0.02 in either direction, for every model. Place and housing alone (set A) already give
+most of the score. In the permutation importance (Figure~\ref{fig:imp}) the work-from-home share is near zero for both periods
+($+$0.05 for 2020--22 and 0.00 for 2023--25). The largest importance for 2023--25 is December 2019 home value (0.95), followed
+by pre-2020 growth (0.30).
+\item \emph{Adding pre-2020 growth can hurt on a new metro.} For the random forest on 2020--22 growth, set D scores 0.18 against 0.25
+for set C on held-out metros, while its random-split score stays high (0.45 in Table~\ref{tab:cv}). One possible reason is that a ZIP code's own earlier growth helps
+the model recognize neighbors from the same area, which a random split allows and a new metro does not.
+\end{enumerate}
+The lasso, tuned on all eight metros, kept all nine features at its chosen penalty, so it did not discard anything. The whiskers in
+Figure~\ref{fig:imp} are wide, and for several features they cross zero, so the ranking among the small features is not reliable.
+What we can say is that a few housing features (value, unit mix, population) carry most of the weight and work-from-home share
+carries almost none.
+
+\tab{t_m_cv}{tab:cv}{Held-out scores with all features (set D). RMSE and MAE are in percentage points of annual growth
+(relative to the metro median). The $R^2$ columns compare the model with predicting the training average.}
+
+\tab{t_m_ablation}{tab:ablation}{Held-out $R^2$ (leave one metro out) as feature groups are added.}
+
+\fig{m_2_ml_scores}{fig:ml}{Top: out-of-sample $R^2$ with all features, scored two ways. Filled blue dots hold out one metro at a
+time; hollow orange circles use an ordinary random 5-fold split. Bottom: leave-one-metro-out $R^2$ as feature groups are added.}
+
+\fig{m_3_importance}{fig:imp}{Permutation importance for the random forest, scored on the held-out metro. The bar is the mean over
+the eight held-out metros and the line shows the range. Larger means shuffling the feature hurts the prediction more.}
+
+\section{Limits and Next Steps}
+
+We want to be clear about what this document does not show. The event study describes how the price gradient moved and does not
+isolate remote work as the cause. The sign of the work-from-home coefficient depends on the controls, and we have not yet shown
+which specification is right. The block bootstrap is better than the ordinary interval, but with only eight metros and 16 to 44 cells
+per metro it is itself uncertain. The BCa acceleration is estimated by a jackknife over those same cells, so it inherits that uncertainty.
+The mixed model's own interval is not spatially corrected. The exposure results also depend on the interval method (Table~\ref{tab:boot}). We use annual December values here, and the monthly version is still to come. Zillow's index is
+smoothed, so timing within a year is blurred, and all prices are nominal. The prediction models are fit on about 1,000 ZIP codes in
+eight metros, which is a small sample for a random forest. The importance whiskers are wide.
+
+The next steps, in order: (1) the monthly event study with the two-center versions and the rent outcome, (2) the occupation-based
+exposure measure and the exposure-by-distance interactions, (3) the stability check and the multinomial model for the groups,
+(4) the soft-voting and stacked ensembles, and (5) a final check that conclusions do not change when ZIP codes with unreliable
+work-from-home estimates are dropped. If the results hold up, they go into the final report as formal estimates. If they do not,
+we will say that plainly, as we did in the first report.
+
+\begin{thebibliography}{99}\setlength{\itemsep}{0pt}
+\bibitem{zhvi} Zillow Group. Zillow Home Value Index (ZHVI), ZIP code, all homes, mid-tier, smoothed, seasonally adjusted. Zillow
+Research, data through August 2026. \url{https://www.zillow.com/research/data/} (retrieved October 6, 2026).
+\bibitem{acs} U.S. Census Bureau. American Community Survey 5-Year Estimates, 2015--2019, tables B08006, C24010, B19013, B25024,
+B01003, ZIP Code Tabulation Areas. Census Data API. \url{https://www.census.gov/data/developers/data-sets/acs-5year.html}
+(retrieved October 6, 2026).
+\bibitem{callaway} B. Callaway, A. Goodman-Bacon, and P. H. C. Sant'Anna. Difference-in-differences with a continuous treatment.
+NBER Working Paper 32117, 2024.
+\bibitem{mondragon} J. A. Mondragon and J. Wieland. Housing demand and remote work. NBER Working Paper 30041, 2022, revised May 2025.
+\bibitem{dingel} J. I. Dingel and B. Neiman. How many jobs can be done at home? \textit{Journal of Public Economics}, 189:104235, 2020.
+\bibitem{cameron} A. C. Cameron, J. B. Gelbach, and D. L. Miller. Bootstrap-based improvements for inference with clustered errors.
+\textit{Review of Economics and Statistics}, 90(3):414--427, 2008.
+\bibitem{gelman} A. Gelman and J. Hill. \textit{Data Analysis Using Regression and Multilevel/Hierarchical Models}. Cambridge
+University Press, 2007.
+\bibitem{moran} P. A. P. Moran. Notes on continuous stochastic phenomena. \textit{Biometrika}, 37(1/2):17--23, 1950.
+\bibitem{roberts} D. R. Roberts et al. Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic
+structure. \textit{Ecography}, 40(8):913--929, 2017.
+\bibitem{rousseeuw} P. J. Rousseeuw. Silhouettes: a graphical aid to the interpretation and validation of cluster analysis.
+\textit{Journal of Computational and Applied Mathematics}, 20:53--65, 1987.
+\bibitem{breiman} L. Breiman. Statistical modeling: the two cultures. \textit{Statistical Science}, 16(3):199--231, 2001.
+\bibitem{breiman2} L. Breiman. Random forests. \textit{Machine Learning}, 45(1):5--32, 2001.
+\bibitem{sklearn} F. Pedregosa et al. Scikit-learn: machine learning in Python. \textit{Journal of Machine Learning Research},
+12:2825--2830, 2011.
+\end{thebibliography}
+
+\end{document}

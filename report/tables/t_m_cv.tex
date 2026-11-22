@@ -1,0 +1,17 @@
+\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & RMSE & MAE & \shortstack[r]{$R^2$, leave\\one metro out} & \shortstack[r]{$R^2$, random\\5-fold} \\
+\midrule
+\multicolumn{5}{l}{\textit{Growth in 2020-22 (predict-the-average RMSE 2.27)}} \\
+Ridge & 1.97 & 1.40 & 0.25 & 0.34 \\
+Lasso & 2.03 & 1.44 & 0.20 & 0.34 \\
+Random forest & 2.06 & 1.43 & 0.18 & 0.45 \\
+Gradient boosting & 1.99 & 1.39 & 0.24 & 0.46 \\
+\multicolumn{5}{l}{\textit{Growth in 2023-25 (predict-the-average RMSE 2.05)}} \\
+Ridge & 1.91 & 1.38 & 0.14 & 0.26 \\
+Lasso & 1.95 & 1.41 & 0.10 & 0.26 \\
+Random forest & 1.91 & 1.36 & 0.14 & 0.34 \\
+Gradient boosting & 1.90 & 1.34 & 0.14 & 0.32 \\
+\bottomrule
+\end{tabular}

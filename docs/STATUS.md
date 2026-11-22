@@ -74,3 +74,35 @@ metro and housing type more than distance. Rents (inner and middle metro only, 4
   1,600 pt to 326 pt and the report went from 27 to 25 pages. Relaxing the other float fractions or using `[!htbp]` made it worse (28 to 30 pages).
 - Build log: 0 overfull boxes, 0 missing files, 0 undefined references; 12 harmless underfull notices (narrow table cells and bibliography URLs);
   one notice that page 11 holds only a float (the 8-inch two-center figure).
+
+## 2026-10-21: methodology submission
+- New assignment: methods document plus preliminary results. Files: `report/Team10_Methodology.pdf` (12 pages; source `report/Team10_Methodology.tex`)
+  and `notebooks/02_methods.ipynb` (runs in about a minute; the full model grid is loaded from saved tables unless `RUN_FULL_ML = True`).
+- Code: `src/methods.py` (event study with spatial block bootstrap, mixed-effects model, Moran's I, leave-one-metro-out models, clustering
+  comparison), `src/viz_methods.py`, `src/make_method_results.py` (all results, about 10 minutes), `src/make_method_figures.py` (redraw only),
+  `report/make_method_tables.py`, `src/check_method_numbers.py` (41 checks, must say FAILED 0).
+- Rebuild: `make_method_results.py` (or `make_method_figures.py` if the tables already exist), `report/make_method_tables.py`, then `xelatex` twice in `report/`.
+- Main results: pooled gradient +1.15 per 10 mi by 2025 (Atlanta +4.98 drives it); the work-from-home coefficient changes sign with controls;
+  Moran's I 0.35 to 0.47; held-out R-squared 0.10 to 0.30, work-from-home share adds nothing detectable; clusters weakly separated, mixture disagrees.
+- Bug found and fixed by the checker: the bootstrap order depended on Python's set ordering, so intervals changed between runs. Now sorted.
+- Not committed.
+
+## 2026-10-21 later: review of the methodology document
+- Added a spatial block bootstrap to the exposure model (`methods.exposure_block_bootstrap`, about 5 seconds) as a fourth column of Table 2; the text now
+  treats it as the main interval and says the other three are not spatially corrected. Cited Zillow and ACS in Section 1, explained 1,082 vs 1,072,
+  replaced the example-project sentence with Gelman and Hill, reworded the notebook claim, added a 2017 column to Table 1 and all four models to Table 6.
+- Font audit: all text is Latin Modern; tables 9 pt unscaled; the only inconsistency was a few figure labels printing under 8 pt (now raised).
+- `src/check_method_numbers.py` now has 47 checks (PASSED 47, FAILED 0). Not committed.
+
+## 2026-10-21 later still: bootstrap interval types
+- Reviewer found the exposure-model percentile bootstrap intervals are lopsided (long side away from zero, about 2:1). Confirmed. Added basic, symmetric and BCa intervals
+  (`methods.exposure_block_bootstrap`); Table 2 now shows the bootstrap SE and the BCa interval, new Table 3 compares the four interval types.
+  Percentile and BCa exclude zero in all four specs; symmetric includes zero for 2020-22; basic includes zero in all four (2023-25 only just). 2020-22 is not treated as firm.
+- Event study: mildly lopsided with no consistent direction; main claims hold under basic and symmetric intervals, except Nashville 2025 and Tampa 2025 (borderline).
+- `check_method_numbers.py`: 52 checks, FAILED 0. Not committed.
+
+## 2026-10-21 final check before submission
+- Full recomputation (`make_method_results.py`) reproduced all 14 saved tables exactly. Number check: 52 passed, 0 failed. Notebook re-executed clean (14 code cells, 0 errors, 4 figures).
+- PDF: 13 pages, 0 errors, 0 overfull boxes, 0 undefined references, all 13 references cited, no em dashes, all text Latin Modern (tables 9 pt, captions 10 pt, body 10.9 pt).
+- Last wording fixes: "pre-2020" hyphen in Table 4; two untested leakage explanations softened; Table 3 caption clarified.
+- Submit: report/Team10_Methodology.pdf and notebooks/02_methods.ipynb (the .tex is optional). Not committed.

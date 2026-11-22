@@ -33,8 +33,8 @@ FS = {k: round(v * 1.12, 2) for k, v in FS.items()}   # same scale as TEXT_SCALE
 # period -> (start December, end December, years, column title)
 GROWTH = {
     "cum_2017_2019": (2017, 2019, 2, "Pre-2020"),
-    "cum_2019_2022": (2019, 2022, 3, "2020–2022"),
-    "cum_2022_2025": (2022, 2025, 3, "2023–2025"),
+    "cum_2019_2022": (2019, 2022, 3, "2020-2022"),
+    "cum_2022_2025": (2022, 2025, 3, "2023-2025"),
 }
 LEVEL_DATES = [("2019-12-31", "Dec 2019"), ("2022-12-31", "Dec 2022"), ("2025-12-31", "Dec 2025")]
 
@@ -137,7 +137,7 @@ CENTER_NAME = {"Phoenix": "Phoenix City Hall", "Austin": "Austin City Hall", "At
                "Dallas": "Dallas City Hall", "Tampa": "Tampa City Hall",
                "Charlotte": "Charlotte-Mecklenburg Government Center", "Nashville": "Nashville Metro Courthouse",
                "Las Vegas": "Las Vegas City Hall"}
-METRO_ORDER = ["Phoenix", "Austin", "Atlanta", "Dallas", "Tampa", "Charlotte", "Nashville", "Las Vegas"]
+METRO_ORDER = ["Atlanta", "Austin", "Charlotte", "Dallas", "Las Vegas", "Nashville", "Phoenix", "Tampa"]
 TWO_CENTER = {"Dallas": ("Dallas", "Fort Worth"), "Tampa": ("Tampa", "St. Petersburg")}
 
 # ----------------------------------------------------------------------------- drawing helpers
@@ -385,7 +385,7 @@ def two_center(d: pd.DataFrame, metro: str, primary: str = None, second: str = N
         for k in range(3):
             axes[r][k].set_xlabel(rows[r][1] if k == 1 else "")
     what = "home values" if log else "growth"
-    _suptitle(fig, f"{primary}\u2013{second}: does a second center change the {what} gradient?")
+    _suptitle(fig, f"{primary}-{second}: does a second center change the {what} gradient?")
     note = (f"Same {len(g)} ZIPs; only the distance changes. Dot color = the center each ZIP is nearer to "
             f"({int((g['nearest_center'] == second).sum())} of {len(g)} are nearer to {second}). Row C fits each center's ZIPs "
             "separately, line color matching the dots. Slopes are per 10 miles (% for values, points per year for growth).")

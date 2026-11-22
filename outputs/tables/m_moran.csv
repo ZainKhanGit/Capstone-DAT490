@@ -1,0 +1,7 @@
+period,variable,morans_I,p_value
+pre-2020,growth minus metro median,0.44456577441555956,0.001
+pre-2020,residual after controls,0.34991598301924565,0.001
+2020-22,growth minus metro median,0.46534821758701744,0.001
+2020-22,residual after controls,0.3512938047221984,0.001
+2023-25,growth minus metro median,0.4168710183710292,0.001
+2023-25,residual after controls,0.3749942104226154,0.001

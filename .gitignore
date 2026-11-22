@@ -3,6 +3,8 @@
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+tmp/
+output/
 
 # Raw downloads (large; re-download using docs/SOURCES.md; keep a backup copy elsewhere)
 data/raw/
@@ -19,6 +21,10 @@ report/*.aux
 report/*.log
 report/*.out
 report/*.toc
+report/*.xdv
+report/*.synctex.gz
+report/*.fls
+report/*.fdb_latexmk
 
 # derived bundle (rebuilt, not tracked)
 report/Team10_EDA_source.zip

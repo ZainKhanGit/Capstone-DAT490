@@ -1,0 +1,73 @@
+feature,importance,held_out,target
+dist_nearest_mi,0.06303789156999824,Phoenix,ann_cum_2019_2022_dm
+log_value_dm,0.45580442289092904,Phoenix,ann_cum_2019_2022_dm
+sfd_pct,0.12805889381098173,Phoenix,ann_cum_2019_2022_dm
+mf20_pct,0.3910059146517492,Phoenix,ann_cum_2019_2022_dm
+log_pop,0.291201581017584,Phoenix,ann_cum_2019_2022_dm
+log_income_dm,0.014698701683082937,Phoenix,ann_cum_2019_2022_dm
+mgmt_pct,-0.013841828564237036,Phoenix,ann_cum_2019_2022_dm
+wfh_pct_dm,-0.002733053089784887,Phoenix,ann_cum_2019_2022_dm
+pre_growth_dm,0.009617596334567758,Phoenix,ann_cum_2019_2022_dm
+dist_nearest_mi,0.051138334520814954,Austin,ann_cum_2019_2022_dm
+log_value_dm,0.16949927874559445,Austin,ann_cum_2019_2022_dm
+sfd_pct,0.20626805293133216,Austin,ann_cum_2019_2022_dm
+mf20_pct,1.2353445445382594,Austin,ann_cum_2019_2022_dm
+log_pop,0.24988479851676554,Austin,ann_cum_2019_2022_dm
+log_income_dm,0.03810749726839875,Austin,ann_cum_2019_2022_dm
+mgmt_pct,-0.33540480909953724,Austin,ann_cum_2019_2022_dm
+wfh_pct_dm,-0.004267210025806323,Austin,ann_cum_2019_2022_dm
+pre_growth_dm,-0.013330443471531828,Austin,ann_cum_2019_2022_dm
+dist_nearest_mi,0.3355577762452846,Atlanta,ann_cum_2019_2022_dm
+log_value_dm,0.7042430516751758,Atlanta,ann_cum_2019_2022_dm
+sfd_pct,1.5494080538850266,Atlanta,ann_cum_2019_2022_dm
+mf20_pct,2.3338536661680407,Atlanta,ann_cum_2019_2022_dm
+log_pop,0.40237080254478047,Atlanta,ann_cum_2019_2022_dm
+log_income_dm,-0.12463558438155183,Atlanta,ann_cum_2019_2022_dm
+mgmt_pct,0.17136801188895578,Atlanta,ann_cum_2019_2022_dm
+wfh_pct_dm,-0.03417285784147248,Atlanta,ann_cum_2019_2022_dm
+pre_growth_dm,0.4016685449883705,Atlanta,ann_cum_2019_2022_dm
+dist_nearest_mi,0.31130092810658744,Dallas,ann_cum_2019_2022_dm
+log_value_dm,0.19770550674160944,Dallas,ann_cum_2019_2022_dm
+sfd_pct,0.23035910990326935,Dallas,ann_cum_2019_2022_dm
+mf20_pct,1.0314731487574345,Dallas,ann_cum_2019_2022_dm
+log_pop,0.09477235164707096,Dallas,ann_cum_2019_2022_dm
+log_income_dm,0.01984326082001271,Dallas,ann_cum_2019_2022_dm
+mgmt_pct,-0.06854499624507589,Dallas,ann_cum_2019_2022_dm
+wfh_pct_dm,0.08200287819799526,Dallas,ann_cum_2019_2022_dm
+pre_growth_dm,-0.8585356025932009,Dallas,ann_cum_2019_2022_dm
+dist_nearest_mi,-0.07668016969234533,Tampa,ann_cum_2019_2022_dm
+log_value_dm,1.1371131509115533,Tampa,ann_cum_2019_2022_dm
+sfd_pct,0.08503230005736788,Tampa,ann_cum_2019_2022_dm
+mf20_pct,0.28979179642471425,Tampa,ann_cum_2019_2022_dm
+log_pop,0.012088251578845544,Tampa,ann_cum_2019_2022_dm
+log_income_dm,-0.031359968955047404,Tampa,ann_cum_2019_2022_dm
+mgmt_pct,-0.002356107873126323,Tampa,ann_cum_2019_2022_dm
+wfh_pct_dm,0.031068465287325608,Tampa,ann_cum_2019_2022_dm
+pre_growth_dm,0.2049379531931823,Tampa,ann_cum_2019_2022_dm
+dist_nearest_mi,0.03174080799692658,Charlotte,ann_cum_2019_2022_dm
+log_value_dm,0.673190956080662,Charlotte,ann_cum_2019_2022_dm
+sfd_pct,0.2819839532449461,Charlotte,ann_cum_2019_2022_dm
+mf20_pct,0.859015889437417,Charlotte,ann_cum_2019_2022_dm
+log_pop,0.3799422342197291,Charlotte,ann_cum_2019_2022_dm
+log_income_dm,-0.11208774709645578,Charlotte,ann_cum_2019_2022_dm
+mgmt_pct,0.11432702226281308,Charlotte,ann_cum_2019_2022_dm
+wfh_pct_dm,0.0013543859147413962,Charlotte,ann_cum_2019_2022_dm
+pre_growth_dm,-0.05562659827227563,Charlotte,ann_cum_2019_2022_dm
+dist_nearest_mi,-0.29481324069428416,Nashville,ann_cum_2019_2022_dm
+log_value_dm,-0.9695210533938695,Nashville,ann_cum_2019_2022_dm
+sfd_pct,-0.23640628626991314,Nashville,ann_cum_2019_2022_dm
+mf20_pct,0.2263963004360791,Nashville,ann_cum_2019_2022_dm
+log_pop,0.5544237479196334,Nashville,ann_cum_2019_2022_dm
+log_income_dm,0.35413825162808577,Nashville,ann_cum_2019_2022_dm
+mgmt_pct,-0.2581602913949891,Nashville,ann_cum_2019_2022_dm
+wfh_pct_dm,0.303537787029048,Nashville,ann_cum_2019_2022_dm
+pre_growth_dm,-0.4181144386710005,Nashville,ann_cum_2019_2022_dm
+dist_nearest_mi,0.04664362811981563,Las Vegas,ann_cum_2019_2022_dm
+log_value_dm,0.9230790735675416,Las Vegas,ann_cum_2019_2022_dm
+sfd_pct,0.21283195158531726,Las Vegas,ann_cum_2019_2022_dm
+mf20_pct,0.8703709542059841,Las Vegas,ann_cum_2019_2022_dm
+log_pop,0.512137808100393,Las Vegas,ann_cum_2019_2022_dm
+log_income_dm,0.001865338343888434,Las Vegas,ann_cum_2019_2022_dm
+mgmt_pct,0.017566711847081494,Las Vegas,ann_cum_2019_2022_dm
+wfh_pct_dm,0.02814234346779263,Las Vegas,ann_cum_2019_2022_dm
+pre_growth_dm,0.07293569320584628,Las Vegas,ann_cum_2019_2022_dm

@@ -107,7 +107,7 @@ def log_check(d: pd.DataFrame):
 FLAG_LABELS = {
     "zhvi_incomplete": "ZHVI series incomplete",
     "metro_col_only": "Metro column only",
-    "acs_baseline_missing": "No 2015\u201319 ACS row",
+    "acs_baseline_missing": "No 2015-19 ACS row",
     "wfh_unreliable": "WFH share unreliable",
     "zori_missing": "No ZORI (rents)",
     "zori_incomplete": "ZORI patchy",
@@ -143,7 +143,7 @@ def flags_by_distance(flags: pd.DataFrame):
     ax.tick_params(length=0)
     _suptitle(fig, "Most data-quality problems are worse far from the center", y=0.99)
     _note(fig, "Share of ZIP codes in each distance band (from city hall) with each flag; darker = more. Two rows do not rise "
-          "with distance: missing 2015\u201319 ACS rows (few ZIPs) and patchy ZORI (outer ZIPs mostly have no ZORI at all).")
+          "with distance: missing 2015-19 ACS rows (few ZIPs) and patchy ZORI (outer ZIPs mostly have no ZORI at all).")
     _layout(fig, 0)
     return fig
 
@@ -248,7 +248,7 @@ def level_quintile_maps(zc: gpd.GeoDataFrame, d: pd.DataFrame, ref: pd.DataFrame
     fig.legend(h, ["Lowest fifth", "2nd", "3rd", "4th", "Highest fifth"], loc="lower center", ncol=5, frameon=False,
                title="Dec 2019 home value, ranked within each metro's ZIPs", title_fontsize=fs(10.5), handlelength=1.4)
     _suptitle(fig, "Where the expensive ZIPs are: rings or patches?", y=0.995)
-    _note(fig, "Red star = city hall (two in Dallas\u2013Fort Worth and Tampa\u2013St. Petersburg). Fifths are within each metro, so "
+    _note(fig, "Red star = city hall (two in Dallas-Fort Worth and Tampa-St. Petersburg). Fifths are within each metro, so "
           "colors compare places inside a metro, not prices across metros. Grey = no data; white = not in our ZIP set. "
           "Scale bars: 20 mi (40 mi for Phoenix).")
     _layout(fig, 0.09, h_pad=3.2, w_pad=0.5)
@@ -303,7 +303,7 @@ def exposure_scatter(x: pd.DataFrame):
     fig, axes = plt.subplots(2, 3, figsize=(FIG_W, 8.3))
     rows = [("wfh_pct_dm", "_dm", "WFH share minus metro median (pp)",
              "Growth minus metro median (pts/yr)"),
-            ("wfh_pct", "", "WFH share of workers, 2015\u201319 (%)", "Annualized growth in home value")]
+            ("wfh_pct", "", "WFH share of workers, 2015-19 (%)", "Annualized growth in home value")]
     out = []
     for r, (xc, suf, xlabel, ylabel) in enumerate(rows):
         for ax, (col, (a, b, _, name)) in zip(axes[r], GROWTH.items()):
@@ -340,7 +340,7 @@ def exposure_scatter(x: pd.DataFrame):
                bbox_to_anchor=(0.5, 0.0))
     _suptitle(fig, "Did ZIPs with more pre-pandemic work-from-home grow differently?")
     off_total = sum(o[-1] for o in out)
-    _note(fig, f"{len(x)} ZIP codes with a 2015\u201319 work-from-home (WFH) share and data at every date. Top: compared with other ZIPs in "
+    _note(fig, f"{len(x)} ZIP codes with a 2015-19 work-from-home (WFH) share and data at every date. Top: compared with other ZIPs in "
           "the same metro; bottom: metros pooled (y-axis differs by column). Slope = points per year of growth per +5 percentage "
           "points of WFH share, with 95% interval; 'Reliable' drops ZIPs with an unreliable share. Pre-2020 is a check. "
           + (f"{off_total} points off the axes are in the fits." if off_total else ""))
@@ -354,7 +354,7 @@ def exposure_confounds(x: pd.DataFrame):
     fig, axes = plt.subplots(1, 2, figsize=(FIG_W, 4.3))
     xs = x["wfh_pct_dm"]
     for ax, (col, lab, title, fmt) in zip(axes, [
-            ("log_income", "Median household income, 2015\u20132019", "Income", True),
+            ("log_income", "Median household income, 2015-2019", "Income", True),
             ("dist_cityhall_mi", "Distance from city hall (miles)", "Distance", False)]):
         yv = x[col] - x.groupby("metro_short")[col].transform("median") if fmt else x[col]
         ok = yv.notna() & xs.notna()
@@ -390,8 +390,8 @@ EXPOSURE_VARS = [("wfh_pct", "Work-from-home share"),
                  ("dist_cityhall_mi", "Distance from city hall"),
                  ("log_level", "Home value, Dec 2019 (log)"),
                  ("ann_cum_2017_2019", "Growth, pre-2020"),
-                 ("ann_cum_2019_2022", "Growth, 2020\u201322"),
-                 ("ann_cum_2022_2025", "Growth, 2023\u201325")]
+                 ("ann_cum_2019_2022", "Growth, 2020-22"),
+                 ("ann_cum_2022_2025", "Growth, 2023-25")]
 
 
 def exposure_corr(x: pd.DataFrame):
@@ -675,7 +675,7 @@ def robustness_figure(tab: pd.DataFrame):
          Line2D([0], [0], marker="o", color=C2, lw=1.6, markersize=7, label=f"Flag-free ZIPs ({int(n_ff):,})")]
     fig.legend(handles=h, loc="lower center", ncol=2, frameon=False, columnspacing=2.0)
     _suptitle(fig, "Does dropping flagged ZIPs change the gradient?")
-    _note(fig, "Flag-free = no incomplete ZHVI series, no Metro/crosswalk disagreement, no missing 2015\u201319 ACS row, and a reliable "
+    _note(fig, "Flag-free = no incomplete ZHVI series, no Metro/crosswalk disagreement, no missing 2015-19 ACS row, and a reliable "
           "work-from-home share. Dots = OLS slope, whiskers = 95% interval (plain OLS, probably too narrow). Top row: home value "
           "gradient at three dates; bottom row: growth gradient in three periods.")
     _layout(fig, 0.045, h_pad=2.0, w_pad=0.8)
@@ -688,8 +688,8 @@ def rent_vs_price(d: pd.DataFrame, zorig: pd.DataFrame):
     z = zorig[["zip", "cum_2019_2022", "cum_2022_2025"]].rename(
         columns={"cum_2019_2022": "rent_2019_2022", "cum_2022_2025": "rent_2022_2025"})
     x = d[d["balanced"]].merge(z, on="zip", how="inner")
-    spec = [("ann_cum_2019_2022", "rent_2019_2022", "2020\u20132022"),
-            ("ann_cum_2022_2025", "rent_2022_2025", "2023\u20132025")]
+    spec = [("ann_cum_2019_2022", "rent_2019_2022", "2020-2022"),
+            ("ann_cum_2022_2025", "rent_2022_2025", "2023-2025")]
     for _, rc, _ in spec:
         yrs = 3
         x[f"{rc}_ann"] = 100 * ((1 + x[rc] / 100) ** (1 / yrs) - 1)
